@@ -1,4 +1,5 @@
 <div class="phStickyWrap">
+
     <!-- pageHeader -->
     <header id="pageHeader" class="bg-white">
         <div class="hdTopBar py-2 py-xl-3 bg-dark d-none d-md-block">
@@ -181,10 +182,10 @@
                                         <ul class="list-unstyled mb-0 hdDropdownList">
                                             <li><a class="dropdown-item" href="{{route('downloads')}}">Downloads</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="{{route('news.speeches')}}">News &amp; Speeches</a>
+                                            <li><a class="dropdown-item" href="{{route('news.speeches')}}">News &amp;
+                                                    Speeches</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="eventsGridSidebar.html">Events
-                                                    Grid Sidebar</a></li>
+                                            <li><a class="dropdown-item" href="{{route('events')}}">Events</a></li>
                                             <li><a class="dropdown-item" href="eventSingle.html">Events
                                                     Detail</a></li>
                                         </ul>
@@ -208,8 +209,8 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="nav-item dropdown ddohOpener">
-                                    <a class="nav-link" href="javascript:void(0);">Projects</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{route('projects')}}">Projects</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('contact')}}">Contact</a>

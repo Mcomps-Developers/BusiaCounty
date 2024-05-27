@@ -12,7 +12,7 @@
                                 <a href="services.html">Services</a>
                             </li>
                             <li>
-                                <a href="eventsList.html">Events</a>
+                                <a href="{{route('events')}}">Events</a>
                             </li>
                             <li>
                                 <a href="{{route('news.speeches')}}">News</a>
@@ -21,7 +21,7 @@
                                 <a href="{{route('contact')}}">Contact</a>
                             </li>
                             <li>
-                                <a href="portfolioClassic.html">Portfolio</a>
+                                <a href="{{route('projects')}}">Projects</a>
                             </li>
                         </ul>
                     </nav>

@@ -29,7 +29,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -48,7 +49,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -67,7 +69,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -86,7 +89,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -105,7 +109,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -124,7 +129,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -143,7 +149,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -162,7 +169,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -181,7 +189,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -200,7 +209,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -219,7 +229,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -238,7 +249,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -257,7 +269,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -276,7 +289,8 @@
                                 <div class="drDocColumn position-relative bg-white shadow px-7 pt-7 pb-6 mb-6">
                                     <div class="d-flex mb-3">
                                         <span class="icnWrap flex-shrink-0 pt-1 mr-3">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid" alt="icon">
+                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
+                                                alt="icon">
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
@@ -321,7 +335,7 @@
                                     class="sr-only">icon</span></i>
                             <h3 class="h3Medium text-white mb-2">Need any help?</h3>
                             <p>Here you can get your perfect answer for your problem.</p>
-                            <a href="contact-1.html"
+                            <a href="{{route('contact')}}"
                                 class="btn btnTheme btn-sm font-weight-bold text-capitalize position-relative border-0 p-0"
                                 data-hover="Contact now">
                                 <span class="d-block btnText">Contact now</span>
