@@ -98,16 +98,16 @@
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="icomoon-ico2"><span class="sr-only">icon</span></i>
                             </span>
-                            <h2 class="mb-0">Jobs and <br>Unemployment</h2>
+                            <h2 class="mb-0">Jobs</h2>
                         </a>
                     </li>
                     <li>
-                        <a href="servicesSingle.html" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
+                        <a href="{{route('investor')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="icomoon-ico3"><span class="sr-only">icon</span></i>
                             </span>
-                            <h2 class="mb-0">Business and <br>Industry</h2>
+                            <h2 class="mb-0">Invest and Partner</h2>
                         </a>
                     </li>
                     <li>
@@ -134,7 +134,7 @@
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="icomoon-ico6"><span class="sr-only">icon</span></i>
                             </span>
-                            <h2 class="mb-0">Justice, Safty and <br>the law</h2>
+                            <h2 class="mb-0">Judiciary</h2>
                         </a>
                     </li>
                 </ul>
@@ -143,9 +143,8 @@
         <div class="fabBtNoteTextWrap text-center fontAlter fzMedium pt-6 pt-md-10 pb-6 pb-md-10 pb-lg-14">
             <div class="container">
                 <div class="d-lg-flex justify-content-center align-items-center">
-                    <p class="mb-lg-0">The official guide to living, working, visiting and investing in the
-                        Texas</p>
-                    <a href="javascript:void(0);"
+                    <p class="mb-lg-0">Partner with {{config('app.name')}} and invest in an ocean of opportunities.</p>
+                    <a href="{{route('investor')}}"
                         class="btn btn-dark btnSwitchDark fwMedium position-relative border-0 p-0 btnCustomSmall mt-md-1 mt-lg-0 ml-lg-4"
                         data-hover="Let’s explore more"><span class="d-block btnText fwMedium">Let’s explore
                             more</span></a>

@@ -11,11 +11,14 @@ use App\Livewire\Pages\Downloads;
 use App\Livewire\Pages\EventDetails;
 use App\Livewire\Pages\Events;
 use App\Livewire\Pages\GovernorNote;
+use App\Livewire\Pages\InvestorGuide;
 use App\Livewire\Pages\NewsAndSpeeches;
 use App\Livewire\Pages\NewsAndSpeechesDetails;
 use App\Livewire\Pages\ProjectDetails;
 use App\Livewire\Pages\Projects;
 use App\Livewire\Pages\PublicServiceBoard;
+use App\Livewire\Pages\Subcounties;
+use App\Livewire\Pages\SubcountyDetails;
 use App\Livewire\Pages\Tenders;
 use App\Livewire\Pages\TheExecutive;
 use Illuminate\Support\Facades\Route;
@@ -26,12 +29,21 @@ Route::get('/projects', Projects::class)->name('projects');
 Route::get('/project/details', ProjectDetails::class)->name('project.details');
 Route::get('/departments', Departments::class)->name('departments');
 Route::get('/department/details', DepartmentDetails::class)->name('department.details');
+Route::get('/investors-guide', InvestorGuide::class)->name('investor');
+
+
 Route::prefix('/about')->group(function () {
     Route::get('/busia-county', AboutCounty::class)->name('about');
     Route::get('/governors-note', GovernorNote::class)->name('governors.note');
     Route::get('/county-executive', TheExecutive::class)->name('executive');
     Route::get('/chief-officers', ChiefOfficers::class)->name('chief.officers');
     Route::get('public-service', PublicServiceBoard::class)->name('public.service');
+    Route::get('/sub-counties', Subcounties::class)->name('subcounties');
+    Route::get('/subcounty/details', SubcountyDetails::class)->name('subcounty.details');
+
+    Route::prefix('/municipality')->group(function () {
+        Route::get('/malaba');
+    });
 });
 
 

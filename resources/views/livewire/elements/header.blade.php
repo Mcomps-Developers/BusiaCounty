@@ -16,7 +16,7 @@
                             <li>
                                 <time datetime="2011-01-12">
                                     <i class="icomoon-clock align-middle icn"><span class="sr-only">icon</span></i>
-                                    Open Hours: Mon - Fri 8.00 am - 6.00 pm
+                                    Open Hours: Mon - Fri 8.00 am - 5.00 pm
                                 </time>
                             </li>
                         </ul>
@@ -24,13 +24,13 @@
                     <div class="col-4">
                         <ul class="list-unstyled hdAlterLinksList d-flex justify-content-end flex-wrap mb-0">
                             <li>
-                                <a href="javascript:void(0);">Staff Mail</a>
+                                <a href="https://mail.busiacounty.go.ke">Staff Mail</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">Career</a>
+                                <a href="javascript:void(0);">Jobs</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">Complaints</a>
+                                <a href="javascript:void(0);">Report Corruption</a>
                             </li>
                         </ul>
                     </div>
@@ -84,12 +84,12 @@
                                                     Officers</a></li>
                                             <li><a class="dropdown-item" href="{{route('public.service')}}">Public
                                                     Service</a></li>
-                                            <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+                                            <li><a class="dropdown-item" target="_/blank"
+                                                    href="https://busiaassembly.go.ke/">County Assembly</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="404.html">404</a></li>
-                                            <li><a class="dropdown-item" href="myAccount.html">My Account</a>
+                                            <li><a class="dropdown-item"
+                                                    href="{{route('subcounties')}}">Sub-Counties</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="login.html">Login</a></li>
                                         </ul>
                                     </div>
                                 </li>

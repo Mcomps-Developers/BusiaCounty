@@ -6,10 +6,10 @@
                     <nav class="ftcaNav mb-4 mb-lg-0">
                         <ul class="list-unstyled d-flex flex-wrap mb-0 justify-content-center justify-content-lg-start">
                             <li>
-                                <a href="about.html">About Us</a>
+                                <a href="{{route('about')}}">About Us</a>
                             </li>
                             <li>
-                                <a href="services.html">Services</a>
+                                <a href="{{route('subcounties')}}">Sub-Counties</a>
                             </li>
                             <li>
                                 <a href="{{route('events')}}">Events</a>
@@ -70,15 +70,14 @@
                         </a>
                     </div>
                     <address class="mb-0 ftPlace">
-                        <p class="mb-2"><strong class="font-weight-normal">95 FF3, App Street Avenue <br>NSW
-                                96209, Canada</strong></p>
+                        <p class="mb-2"><strong class="font-weight-normal">Busia, Kenya</strong></p>
                         <ul class="list-unstyled ftpScheduleList mb-0">
                             <li>
                                 <i class="icomoon-clock fwSemiBold icn mr-1 mr-sm-0"><span
                                         class="sr-only">icon</span></i>
                                 <strong class="title font-weight-normal text-white">Opening Hours:</strong>
                                 <br>
-                                <time datetime="2011-01-12">Mon – Fri: 8:00 am – 6:00 pm</time>
+                                <time datetime="2011-01-12">Mon – Fri: 8:00 am – 5:00 pm</time>
                             </li>
                             <li>
                                 <i class="fas fa-phone-alt icn mr-1 mr-sm-0"><span class="sr-only">icon</span></i>
@@ -88,7 +87,7 @@
                             <li>
                                 <i class="fas fa-envelope icn mr-1 mr-sm-0"><span class="sr-only">icon</span></i>
                                 <strong class="title font-weight-normal text-white">Email:</strong>
-                                <a href="mailto:demo@example.com">demo@example.com</a>
+                                <a href="mailto:info@busiacounty.go.ke">info@busiacounty.go.ke</a>
                             </li>
                         </ul>
                     </address>
@@ -145,7 +144,7 @@
                     <div class="ml-xl-n1 ml-xlwd-n7">
                         <h3 class="ftHeading text-white mb-5">County News &amp; Updates</h3>
                         <form action="#" class="ftSubscribeForm">
-                            <label class="d-block mb-7">The latest Egovt news, articles, and resources, sent
+                            <label class="d-block mb-7">The latest County news, articles, and resources, sent
                                 straight to your inbox every month.</label>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control form-control-lg" placeholder="Enter Your Email">
