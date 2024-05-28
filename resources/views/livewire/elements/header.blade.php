@@ -198,10 +198,10 @@
                                 <a class="dropdown-item text-center" href="javascript:void(0);">Ara</a>
                             </div>
                         </div>
-                        <a href="contact-1.html"
+                        <a href="{{route('eservices')}}"
                             class="btn btn-outline-secondary bdrWidthAlter ml-3 ml-xl-6 btnHd d-none d-lg-block text-capitalize position-relative border-0 p-0"
                             data-hover="Report an Issues">
-                            <span class="d-block btnText">Report an Issues</span>
+                            <span class="d-block btnText">E-Services Portal</span>
                         </a>
                         <button class="navbar-toggler pgNavOpener ml-2 bdrWidthAlter position-relative" type="button"
                             data-toggle="collapse" data-target="#pageMainNavCollapse"

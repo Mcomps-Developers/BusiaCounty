@@ -82,7 +82,7 @@
                             <li>
                                 <i class="fas fa-phone-alt icn mr-1 mr-sm-0"><span class="sr-only">icon</span></i>
                                 <strong class="title font-weight-normal text-white">Phone:</strong>
-                                <a href="tel:18001234567">1800 123 4567</a>
+                                <a href="tel:+254700000000">+254700000000</a>
                             </li>
                             <li>
                                 <i class="fas fa-envelope icn mr-1 mr-sm-0"><span class="sr-only">icon</span></i>
@@ -93,25 +93,25 @@
                     </address>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-xl-3 col-xlwd-2 mb-6">
-                    <h3 class="ftHeading text-white mb-4">Service Request</h3>
+                    <h3 class="ftHeading text-white mb-4">Quick Links</h3>
                     <ul class="list-unstyled ftsrLinksList mb-0">
                         <li>
-                            <a href="servicesSingle.html">Apply for a County Job</a>
+                            <a href="javascript:void(0);">Report a crime</a>
                         </li>
                         <li>
-                            <a href="servicesSingle.html">Request a 311 Service</a>
+                            <a href="javascript:void(0);">Contact Centre</a>
                         </li>
                         <li>
-                            <a href="servicesSingle.html">Get a Parking Permit</a>
+                            <a href="javascript:void(0);">County Jobs</a>
                         </li>
                         <li>
-                            <a href="servicesSingle.html">Get a Parking Permit</a>
+                            <a href="javascript:void(0);">ICT</a>
                         </li>
                         <li>
-                            <a href="servicesSingle.html">Online Birth Certificate</a>
+                            <a href="javascript:void(0);">KEBS</a>
                         </li>
                         <li>
-                            <a href="servicesSingle.html">Trade License</a>
+                            <a href="javascript:void(0);">Immigration</a>
                         </li>
                     </ul>
                 </div>
@@ -120,22 +120,22 @@
                         <h3 class="ftHeading text-white mb-4">Useful Links</h3>
                         <ul class="list-unstyled ftsrLinksList mb-0">
                             <li>
-                                <a href="newsClassic.html">Our Blog</a>
+                                <a href="javascript:void(0);">County Assembly</a>
                             </li>
                             <li>
-                                <a href="portfolioClassic.html">Gallery</a>
+                                <a href="javascript:void(0);">Council of Governors</a>
                             </li>
                             <li>
-                                <a href="history.html">Our History</a>
+                                <a href="javascript:void(0);">E-Citizen</a>
                             </li>
                             <li>
-                                <a href="departments.html">Department</a>
+                                <a href="javascript:void(0);">Public Service</a>
                             </li>
                             <li>
-                                <a href="portfolioOverlay.html">Portfolio</a>
+                                <a href="javascript:void(0);">Judiciary</a>
                             </li>
                             <li>
-                                <a href="{{route('downloads')}}">Downloads</a>
+                                <a href="javascript:void(0);">National Police Service</a>
                             </li>
                         </ul>
                     </div>

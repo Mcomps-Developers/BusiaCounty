@@ -36,8 +36,11 @@
                                     class="sr-only">icon</span></i>
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
-                            <h3 class="fwMedium">Business &amp; Administration</h3>
-                            <p>City employment issue opportunities are position descriptions are listed.</p>
+                            <h3 class="fwMedium">Business Licensing</h3>
+                            <p> Single Business Permit, 
+                                Unified Business Permit,
+                                Weights and Measures,
+                                Betting and gaming</p>
                             <a href="departmentsSingle.html"
                                 class="btn btn-outline-light btnNoOver d-block w-100 mt-7">Access Service <i
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
@@ -55,8 +58,12 @@
                                     class="sr-only">icon</span></i>
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
-                            <h3 class="fwMedium">Finance and Economy</h3>
-                            <p>We differentiate ourselves from all the other australian by the real factors.</p>
+                            <h3 class="fwMedium">Land &amp; Urban Planning</h3>
+                            <p>Land Rates Bill,
+                                Ground Rent/SDR,
+                                Land Owner Ammendment,
+                                Land Survey,
+                                Land Clearance</p>
                             <a href="departmentsSingle.html"
                                 class="btn btn-outline-light btnNoOver d-block w-100 mt-7">Access Service <i
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
@@ -74,8 +81,8 @@
                                     class="sr-only">icon</span></i>
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
-                            <h3 class="fwMedium">Constution and Law</h3>
-                            <p>City employment issue opportunities are position descriptions are listed.</p>
+                            <h3 class="fwMedium">Cess Management</h3>
+                            <p>Market Cess, Transport Cess</p>
                             <a href="departmentsSingle.html"
                                 class="btn btn-outline-light btnNoOver d-block w-100 mt-7">Access Service <i
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
@@ -93,8 +100,8 @@
                                     class="sr-only">icon</span></i>
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
-                            <h3 class="fwMedium">Art and Culture</h3>
-                            <p>City employment issue opportunities are position descriptions are listed.</p>
+                            <h3 class="fwMedium">Social Services</h3>
+                            <p>Hire or County Halls, Grounds, School Facilities, County equipment, Studium</p>
                             <a href="departmentsSingle.html"
                                 class="btn btn-outline-light btnNoOver d-block w-100 mt-7">Access Service <i
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
@@ -112,8 +119,8 @@
                                     class="sr-only">icon</span></i>
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
-                            <h3 class="fwMedium">Roads and Transport</h3>
-                            <p>We differentiate ourselves from all the other australian by the real factors.</p>
+                            <h3 class="fwMedium">Parking Management</h3>
+                            <p>Daily parking, seasonal parking, reserverd parking.</p>
                             <a href="departmentsSingle.html"
                                 class="btn btn-outline-light btnNoOver d-block w-100 mt-7">Access Service <i
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
@@ -131,8 +138,8 @@
                                     class="sr-only">icon</span></i>
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
-                            <h3 class="fwMedium">Housing and Land</h3>
-                            <p>City employment issue opportunities are position descriptions are listed.</p>
+                            <h3 class="fwMedium">Property Management</h3>
+                            <p>Tenancy application, Tenancy transfer.</p>
                             <a href="departmentsSingle.html"
                                 class="btn btn-outline-light btnNoOver d-block w-100 mt-7">Access Service <i
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
@@ -150,8 +157,9 @@
                                     class="sr-only">icon</span></i>
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
-                            <h3 class="fwMedium">Park and Recreation</h3>
-                            <p>City employment issue opportunities are position descriptions are listed.</p>
+                            <h3 class="fwMedium">Health Services</h3>
+                            <p>Food handlers certificate, Export certificate, Ambulance services, Other health services.
+                            </p>
                             <a href="departmentsSingle.html"
                                 class="btn btn-outline-light btnNoOver d-block w-100 mt-7">Access Service <i
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
@@ -169,8 +177,15 @@
                                     class="sr-only">icon</span></i>
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
-                            <h3 class="fwMedium">Policing and Crime</h3>
-                            <p>We differentiate ourselves from all the other australian by the real factors.</p>
+                            <h3 class="fwMedium">Essential services</h3>
+                            <p>Fire & disaster management,
+                                Education,
+                                Environment,
+                                Roads, Public works & Transport,
+                                Admin and Other Services,
+                                Agriculture (Fisheries & Vet Services),
+                                Cooperative,
+                                Bus shelter services.</p>
                             <a href="departmentsSingle.html"
                                 class="btn btn-outline-light btnNoOver d-block w-100 mt-7">Access Service <i
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
@@ -188,8 +203,8 @@
                                     class="sr-only">icon</span></i>
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
-                            <h3 class="fwMedium">Agriculture and Food</h3>
-                            <p>City employment issue opportunities are position descriptions are listed.</p>
+                            <h3 class="fwMedium">Other Services</h3>
+                            <p>Advertisement, E-Verify Documents, E-Verify County officer, County Events etc.</p>
                             <a href="departmentsSingle.html"
                                 class="btn btn-outline-light btnNoOver d-block w-100 mt-7">Access Service <i
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
