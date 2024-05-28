@@ -84,12 +84,12 @@
             <div class="flatpWrap position-relative mt-n8 mt-md-n18">
                 <ul class="list-unstyled fabFeaturesList mb-0 d-flex overflow-hidden flex-wrap">
                     <li>
-                        <a href="servicesSingle.html" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
+                        <a href="{{route('executive')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="icomoon-ico1"><span class="sr-only">icon</span></i>
+                                <i class="fa fa-landmark"><span class="sr-only">icon</span></i>
                             </span>
-                            <h2 class="mb-0">Your <br>Goverment</h2>
+                            <h2 class="mb-0">Executive</h2>
                         </a>
                     </li>
                     <li>
@@ -107,16 +107,16 @@
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="icomoon-ico3"><span class="sr-only">icon</span></i>
                             </span>
-                            <h2 class="mb-0">Invest and Partner</h2>
+                            <h2 class="mb-0">Invest</h2>
                         </a>
                     </li>
                     <li>
-                        <a href="servicesSingle.html" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
+                        <a href="{{route('tenders')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="icomoon-ico4"><span class="sr-only">icon</span></i>
                             </span>
-                            <h2 class="mb-0">Roads and <br>Transport</h2>
+                            <h2 class="mb-0">Tenders</h2>
                         </a>
                     </li>
                     <li>
@@ -125,16 +125,16 @@
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="icomoon-ico5"><span class="sr-only">icon</span></i>
                             </span>
-                            <h2 class="mb-0">Culture and <br>Recreation</h2>
+                            <h2 class="mb-0">E-Services</h2>
                         </a>
                     </li>
                     <li>
-                        <a href="servicesSingle.html" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
+                        <a href="{{route('contact')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="icomoon-ico6"><span class="sr-only">icon</span></i>
                             </span>
-                            <h2 class="mb-0">Judiciary</h2>
+                            <h2 class="mb-0">Emargency</h2>
                         </a>
                     </li>
                 </ul>
@@ -152,60 +152,6 @@
             </div>
         </div>
     </aside>
-    <section
-        class="exploreServicesBlock position-relative pt-7 pt-md-12 pt-lg-16 pt-xl-20 pb-0 pb-md-4 pb-lg-8 pb-xl-12">
-        <div class="container">
-            <header class="headingHead mb-7 md-md-9 mb-lg-13">
-                <div class="row align-items-end">
-                    <div class="col-12 col-sm-7 col-xl-5">
-                        <h2 class="mb-0">Let’s explore local services, programs &amp; initiatives.</h2>
-                    </div>
-                    <div class="col-12 col-sm-5 col-xl-7 d-sm-flex justify-content-sm-end">
-                        <a href="services.html"
-                            class="btn btn-dark text-capitalize position-relative border-0 p-0 mt-4 mt-sm-0 mb-sm-1 minWidthMedium"
-                            data-hover="Explore Services">
-                            <span class="d-block btnText">Explore Services</span>
-                        </a>
-                    </div>
-                </div>
-            </header>
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <article class="esColumn position-relative text-center mb-13">
-                        <span class="imgHolder d-block w-100 bgCover"
-                            style="background-image: url({{@asset('assets/images/img04.jpg')}});"></span>
-                        <div class="escCaption bg-white shadow position-absolute pt-4 px-2 pb-5">
-                            <h3 class="fwMedium mb-0">Service Departments</h3>
-                            <a href="servicesSingle.html" class="btnLink fontAlter">Learn More <i
-                                    class="fas fa-chevron-right blIcn"><span class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <article class="esColumn position-relative text-center mb-13">
-                        <span class="imgHolder d-block w-100 bgCover"
-                            style="background-image: url({{@asset('assets/images/img05.jpg')}});"></span>
-                        <div class="escCaption bg-white shadow position-absolute pt-4 px-2 pb-5">
-                            <h3 class="fwMedium mb-0">County Visitors Guide</h3>
-                            <a href="servicesSingle.html" class="btnLink fontAlter">Learn More <i
-                                    class="fas fa-chevron-right blIcn"><span class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <article class="esColumn position-relative text-center mb-13">
-                        <span class="imgHolder d-block w-100 bgCover"
-                            style="background-image: url({{@asset('assets/images/img06.jpg')}});"></span>
-                        <div class="escCaption bg-white shadow position-absolute pt-4 px-2 pb-5">
-                            <h3 class="fwMedium mb-0">Administrations</h3>
-                            <a href="servicesSingle.html" class="btnLink fontAlter">Learn More <i
-                                    class="fas fa-chevron-right blIcn"><span class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
     <article class="aboutMayorBlock pt-md-7 pt-xl-11 pb-7 pb-md-13 pb-lg-20 pb-xl-28">
         <div class="container">
             <div class="row">
@@ -311,7 +257,7 @@
                                     <h2 class="mb-sm-0 fwSemiBold h2Small">County Events</h2>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-5 d-sm-flex justify-content-sm-end">
-                                    <a href="eventsGridSidebar.html" class="btn-link fontAlter">See All Events
+                                    <a href="{{route('events')}}" class="btn-link fontAlter">See All Events
                                         <i class="fas fa-chevron-right blIcn"><span class="sr-only">icon</span></i></a>
                                 </div>
                             </div>
@@ -320,7 +266,7 @@
                             <div class="col-12 col-md-6">
                                 <article class="ueEveColumn position-relative shadow bg-white mb-6">
                                     <div class="imgHolder position-relative">
-                                        <a href="eventSingle.html">
+                                        <a href="{{route('event.details')}}">
                                             <img src="{{asset('assets/images/img09.jpg')}}"
                                                 class="img-fluid d-block w-100" alt="image description">
                                         </a>
@@ -338,7 +284,7 @@
                                         <strong
                                             class="d-block ueCatTitle fwSemiBold text-secondary mb-2">Entertainement</strong>
                                         <h3 class="h3Small fwMedium mb-3">
-                                            <a href="eventSingle.html">Organizing County Photography
+                                            <a href="{{route('event.details')}}">Organizing County Photography
                                                 Contest-2022</a>
                                         </h3>
                                         <address>
@@ -355,7 +301,7 @@
                                                 </li>
                                             </ul>
                                         </address>
-                                        <a href="eventSingle.html"
+                                        <a href="{{route('event.details')}}"
                                             class="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
                                             data-hover="More Details">
                                             <span class="d-block btnText">More Details</span>
@@ -366,7 +312,7 @@
                             <div class="col-12 col-md-6">
                                 <article class="ueEveColumn position-relative shadow bg-white mb-6">
                                     <div class="imgHolder position-relative">
-                                        <a href="eventSingle.html">
+                                        <a href="{{route('event.details')}}">
                                             <img src="{{asset('assets/images/img10.jpg')}}"
                                                 class="img-fluid d-block w-100" alt="image description">
                                         </a>
@@ -382,7 +328,7 @@
                                         <strong
                                             class="d-block ueCatTitle fwSemiBold text-secondary mb-2">Entertainement</strong>
                                         <h3 class="h3Small fwMedium mb-3">
-                                            <a href="eventSingle.html">Cultural Festival & Concert at
+                                            <a href="{{route('event.details')}}">Cultural Festival & Concert at
                                                 domanion</a>
                                         </h3>
                                         <address>
@@ -399,7 +345,7 @@
                                                 </li>
                                             </ul>
                                         </address>
-                                        <a href="eventSingle.html"
+                                        <a href="{{route('event.details')}}"
                                             class="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
                                             data-hover="More Details">
                                             <span class="d-block btnText">More Details</span>
@@ -422,31 +368,31 @@
                             <ul class="list-unstyled cdDocsList mb-0">
                                 <li>
                                     <h3 class="font-weight-normal cdTitle mb-1">
-                                        <a href="documentsSingle.html">Town Board Applications</a>
+                                        <a href="{{route('downloads')}}">Town Board Applications</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">October 4, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="font-weight-normal cdTitle mb-1">
-                                        <a href="documentsSingle.html">Temporary Road Permit Application</a>
+                                        <a href="{{route('downloads')}}">Temporary Road Permit Application</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">September 15, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="font-weight-normal cdTitle mb-1">
-                                        <a href="documentsSingle.html">Commercial Business Permit</a>
+                                        <a href="{{route('downloads')}}">Commercial Business Permit</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">September 8, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="font-weight-normal cdTitle mb-1">
-                                        <a href="documentsSingle.html">Housing Strategic Plan</a>
+                                        <a href="{{route('downloads')}}">Housing Strategic Plan</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
                             </ul>
                             <footer class="ccwFoot text-center mt-2 pt-4">
-                                <a href="documentsSingle.html" class="btn-link fontAlter">More Documents <i
+                                <a href="{{route('downloads')}}" class="btn-link fontAlter">More Documents <i
                                         class="fas fa-chevron-right blIcn"><span class="sr-only">icon</span></i></a>
                             </footer>
                         </article>
@@ -463,7 +409,7 @@
                     <header class="headingHead pt-2 mb-7 mb-lg-0">
                         <h2 class="fwSemiBold mb-2">News and Publications</h2>
                         <p>The news about recent activities for needed peoples.</p>
-                        <a href="newsSingle.html"
+                        <a href="{{route('news.speeches')}}"
                             class="btn btn-outline-secondary bdrWidthAlter text-capitalize position-relative border-0 p-0 mt-5 btnXsMinWidth"
                             data-hover="More News">
                             <span class="d-block btnText">More News</span>
@@ -489,9 +435,11 @@
                                         <i class="icomoon-chat"><span class="sr-only">icon</span></i> 0
                                     </strong>
                                     <h3 class="fwSemiBold mb-6">
-                                        <a href="newsSingle.html">List of County Weekend Celebrations</a>
+                                        <a href="{{route('news.speeches.details')}}">List of County Weekend
+                                            Celebrations</a>
                                     </h3>
-                                    <a href="newsSingle.html" class="btnCr d-inline-block align-top fontAlter">Continue
+                                    <a href="{{route('news.speeches.details')}}"
+                                        class="btnCr d-inline-block align-top fontAlter">Continue
                                         Reading <i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
@@ -514,9 +462,10 @@
                                         <i class="icomoon-chat"><span class="sr-only">icon</span></i> 2
                                     </strong>
                                     <h3 class="fwSemiBold mb-6">
-                                        <a href="newsSingle.html">New Australian Economic Culture</a>
+                                        <a href="{{route('news.speeches.details')}}">New Australian Economic Culture</a>
                                     </h3>
-                                    <a href="newsSingle.html" class="btnCr d-inline-block align-top fontAlter">Continue
+                                    <a href="{{route('news.speeches.details')}}"
+                                        class="btnCr d-inline-block align-top fontAlter">Continue
                                         Reading <i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
@@ -539,9 +488,10 @@
                                         <i class="icomoon-chat"><span class="sr-only">icon</span></i> 3
                                     </strong>
                                     <h3 class="fwSemiBold mb-6">
-                                        <a href="newsSingle.html">Smart County Design Plan 2025</a>
+                                        <a href="{{route('news.speeches.details')}}">Smart County Design Plan 2025</a>
                                     </h3>
-                                    <a href="newsSingle.html" class="btnCr d-inline-block align-top fontAlter">Continue
+                                    <a href="{{route('news.speeches.details')}}"
+                                        class="btnCr d-inline-block align-top fontAlter">Continue
                                         Reading <i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
@@ -553,68 +503,6 @@
         </div>
         <span class="npbBgPattern w-100 h-100 bgCover position-absolute inaccessible"
             style="background-image: url({{asset('assets/images/bgPattern2.jpg')}});"></span>
-    </section>
-    <section class="exploreResourceBlock position-relative pt-7 pt-md-10 pt-lg-16 pt-xl-22 pb-7 pb-md-10">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-xl-4 pt-xl-2">
-                    <header class="erHeadingHead mb-7 mb-lg-11 mb-xl-0">
-                        <h2 class="text-white">Explore Online <br>Services &amp; Resource</h2>
-                        <p>County goverment providing a wide range of online services to people who need help.</p>
-                    </header>
-                </div>
-                <div class="col-12 col-xl-8">
-                    <div class="pl-xl-9">
-                        <div class="row no-gutters shadow">
-                            <div class="col-12 col-md-6 d-md-flex">
-                                <ul class="list-unstyled erLinksList px-7 py-7 px-lg-10 py-lg-10 bg-white w-100 mb-0">
-                                    <li>
-                                        <a href="javascript:void(0);">Parking Permission</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">File a tax Return</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Order Birth certificate </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Get Building Permission</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Apply for Driving License</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Report Pollution</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-6 d-md-flex">
-                                <ul class="list-unstyled erLinksList px-7 py-7 px-lg-10 py-lg-10 bgTheme w-100 mb-0">
-                                    <li>
-                                        <a href="javascript:void(0);">Public Service Identity</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Apply for a County Job</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Professional Licenses</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">National Planning Framework</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Apply for Business License</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Online Court Services</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <section class="exploreHeightsBlock pt-4 pb-6 pb-md-9 pt-lg-7 pb-lg-14 pt-xl-11 pb-xl-20">
         <div class="container">
