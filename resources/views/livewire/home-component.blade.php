@@ -93,7 +93,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="servicesSingle.html" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
+                        <a href="{{route('jobs')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="icomoon-ico2"><span class="sr-only">icon</span></i>

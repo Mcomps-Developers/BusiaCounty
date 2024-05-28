@@ -1,18 +1,18 @@
 <main>
     @section('title')
-    Downloads
+    Careers
     @endsection
     <header class="pageMainHead d-flex position-relative bgCover w-100 text-white"
         style="background-image: url({{@asset('assets/images/img23.jpg')}});">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="text-white mb-2">Downloads</h1>
+                    <h1 class="text-white mb-2">Careers</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Downloads</li>
+                            <li class="breadcrumb-item active" aria-current="page">Careers</li>
                         </ol>
                     </nav>
                 </div>
@@ -34,15 +34,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">City Board Applications</a>
+                                                <a href="{{route('job.details')}}">County Board Applications</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Dec 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">City
+                                                    href="javascript:void(0);" class="text-lDark">County
                                                     Reports</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 roatra isoCol">
@@ -54,15 +54,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Veichle Parking License</a>
+                                                <a href="{{route('job.details')}}">Veichle Parking License</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Oct 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Roads &amp;
                                                     Transport</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 roatra isoCol">
@@ -74,15 +74,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Road Transport Forms</a>
+                                                <a href="{{route('job.details')}}">Road Transport Forms</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Sep 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Roads &amp;
                                                     Transport</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 fineco isoCol">
@@ -94,15 +94,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Economy Growth Report</a>
+                                                <a href="{{route('job.details')}}">Economy Growth Report</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Aug 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Finance &amp;
                                                     Economy</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 roatra isoCol">
@@ -114,15 +114,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Traffic Strategic Plan</a>
+                                                <a href="{{route('job.details')}}">Traffic Strategic Plan</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Sep 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Roads &amp;
                                                     Transport</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 roatra isoCol">
@@ -134,15 +134,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Housing Development Plan</a>
+                                                <a href="{{route('job.details')}}">Housing Development Plan</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Aug 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Public
                                                     Works</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 cirep isoCol">
@@ -154,15 +154,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Health and Security Plan</a>
+                                                <a href="{{route('job.details')}}">Health and Security Plan</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Dec 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Public
                                                     Works</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 fineco isoCol">
@@ -174,15 +174,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Yearly Financial Report-2022</a>
+                                                <a href="{{route('job.details')}}">Yearly Financial Report-2022</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Oct 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Finance &amp;
                                                     Economy</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 busrep isoCol">
@@ -194,15 +194,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Energy Recycle Plan</a>
+                                                <a href="{{route('job.details')}}">Energy Recycle Plan</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Sep 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Finance &amp;
                                                     Economy</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 busrep isoCol">
@@ -214,15 +214,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Budget Allocation-Q3</a>
+                                                <a href="{{route('job.details')}}">Budget Allocation-Q3</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Aug 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Finance &amp;
                                                     Economy</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 cirep isoCol">
@@ -234,15 +234,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Election Survey Report</a>
+                                                <a href="{{route('job.details')}}">Election Survey Report</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Dec 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">City
+                                                    href="javascript:void(0);" class="text-lDark">County
                                                     Reports</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 cirep isoCol">
@@ -254,15 +254,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Covid-19 Daily Updates</a>
+                                                <a href="{{route('job.details')}}">Covid-19 Daily Updates</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Oct 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Public
                                                     Works</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 busrep isoCol">
@@ -274,15 +274,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Rural Devlopement Reports</a>
+                                                <a href="{{route('job.details')}}">Rural Devlopement Reports</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Dec 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">City
+                                                    href="javascript:void(0);" class="text-lDark">County
                                                     Reports</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                             <div class="col-12 col-xl-6 busrep isoCol">
@@ -294,15 +294,15 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Business License Application</a>
+                                                <a href="{{route('job.details')}}">Business License Application</a>
                                             </h2>
                                             <strong class="d-block fileSize font-weight-normal">Oct 11, 2020 - In <a
                                                     href="javascript:void(0);" class="text-lDark">Business
                                                     Reports</a></strong>
                                         </div>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">View Document</a>
+                                    <a href="{{route('job.details')}}"
+                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm">More Details</a>
                                 </div>
                             </div>
                         </div>
@@ -311,10 +311,10 @@
                 <div class="col-12 col-lg-4 col-xl-3 order-lg-1 mb-6 position-static">
                     <aside class="dscSidebar pt-1 mr-xl-n5">
                         <nav class="widget mb-6 mb-lg-10 widgetFiltersNav widgetBgLight py-3 py-lg-5 px-6">
-                            <h3 class="fwSemiBold mb-4 position-relative">Document Filter</h3>
+                            <h3 class="fwSemiBold mb-4 position-relative">Job Filter</h3>
                             <ul class="list-unstyled pl-0 mx-n2 mb-0 mb-3 isoFiltersList">
                                 <li class="active">
-                                    <a href="javascript:void(0);">All Documents</a>
+                                    <a href="javascript:void(0);">All Jobs</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" data-filter=".busrep">Business Reports</a>
@@ -323,7 +323,7 @@
                                     <a href="javascript:void(0);" data-filter=".fineco">Finance &amp; Economy</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" data-filter=".cirep">City Reports</a>
+                                    <a href="javascript:void(0);" data-filter=".cirep">County Reports</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" data-filter=".roatra">Roads &amp; Transport</a>

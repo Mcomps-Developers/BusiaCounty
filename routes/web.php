@@ -14,6 +14,8 @@ use App\Livewire\Pages\EventDetails;
 use App\Livewire\Pages\Events;
 use App\Livewire\Pages\GovernorNote;
 use App\Livewire\Pages\InvestorGuide;
+use App\Livewire\Pages\JobDetails;
+use App\Livewire\Pages\Jobs;
 use App\Livewire\Pages\Municipality;
 use App\Livewire\Pages\NewsAndSpeeches;
 use App\Livewire\Pages\NewsAndSpeechesDetails;
@@ -34,6 +36,8 @@ Route::get('/departments', Departments::class)->name('departments');
 Route::get('/department/details', DepartmentDetails::class)->name('department.details');
 Route::get('/investors-guide', InvestorGuide::class)->name('investor');
 Route::get('/tourism/destination', Destination::class)->name('destination');
+Route::get('/career-center', Jobs::class)->name('jobs');
+Route::get('/job/details', JobDetails::class)->name('job.details');
 
 Route::prefix('e-services')->group(function () {
     Route::get('/services', EServices::class)->name('eservices');

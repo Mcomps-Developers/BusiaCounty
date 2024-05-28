@@ -27,7 +27,7 @@
                                 <a href="https://mail.busiacounty.go.ke">Staff Mail</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">Jobs</a>
+                                <a href="{{route('jobs')}}">Careers</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);">Report Corruption</a>
