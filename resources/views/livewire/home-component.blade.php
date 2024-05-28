@@ -247,10 +247,7 @@
                             <img src="{{asset('assets/images/img07.jpg')}}" class="img-fluid" alt="image description">
                         </span>
                         <span class="img img2 d-block position-absolute">
-                            <img src="{{asset('assets/images/img08.jpg')}}" class="img-fluid" alt="image description">
-                        </span>
-                        <span class="itihBgPattern position-absolute">
-                            <img src="{{asset('assets/images/bgPattern1.png')}}" class="img-fluid" alt="pattern">
+                            <img src="{{asset('assets/images/img01.jpg')}}" class="img-fluid" alt="image description">
                         </span>
                     </div>
                 </div>

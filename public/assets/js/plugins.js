@@ -22,7 +22,7 @@
 
 	function toggleClass(opt, e) {
 		var el = jQuery(e.currentTarget);
-		
+
 		if (!isTouchDevice) {
 			el.one(eventOff, function(){
 				jQuery(this).removeClass(opt.hoverClass);
@@ -42,7 +42,7 @@
 				})
 			}
 		}
-		
+
 		if (!el.hasClass(opt.hoverClass)){
 			if (e) e.preventDefault();
 			el.addClass(opt.hoverClass);
@@ -373,7 +373,7 @@
 
 
 /*
- * jQuery sticky box plugin 
+ * jQuery sticky box plugin
  */
 ;(function($, $win) {
 	'use strict';
@@ -392,7 +392,7 @@
 		},
 
 		findElements: function() {
-			// find parent container in which will be box move 
+			// find parent container in which will be box move
 			this.$container = this.$stickyBox.closest(this.options.container);
 			// define box wrap flag
 			this.isWrap = this.options.positionType === 'fixed' && this.options.setBoxHeight;
@@ -870,23 +870,23 @@ window.ResponsiveHelper = (function($){
 			extraHeight: 0,
 			positionType: 'auto' // 'fixed', 'absolute'
 		}, options);
-		
+
 		return this.each(function(){
 			var win = jQuery(window);
 			var holder = jQuery(this);
 			var fixedBlock = holder.find(options.slideBlock);
 			var positionType = options.positionType, timer, d, stayStatic, prevHeight;
-			
+
 			// skip if block does not exists
 			if(!fixedBlock.length) {
 				return;
 			}
-			
+
 			// detect positioning type
 			if(positionType === 'auto') {
 				positionType = !isFixedPositionSupported || isTouchDevice ? 'absolute' : 'fixed';
 			}
-			
+
 			// recalculate all values
 			function recalculateDimensions() {
 				var origStyle = fixedBlock.attr('style');
@@ -902,14 +902,14 @@ window.ResponsiveHelper = (function($){
 					blockHeight: fixedBlock.outerHeight(true)
 				};
 				fixedBlock.attr('style',origStyle);
-				
+
 				// check for static position
 				if(prevHeight !== d.holderHeight) {
 					prevHeight = d.holderHeight;
 					stayStatic = checkStaticPosition();
 				}
 			}
-			
+
 			// dont fix block if content too small
 			function checkStaticPosition() {
 				var origStyle = fixedBlock.attr('style');
@@ -923,7 +923,7 @@ window.ResponsiveHelper = (function($){
 					fixedBlock.attr('style',origStyle);
 				}
 			}
-			
+
 			function positionFixed() {
 				if(d.scrollTop > d.blockOffset.top - options.extraHeight) {
 					// check that block fits in holder
@@ -939,7 +939,7 @@ window.ResponsiveHelper = (function($){
 					fixedBlock.css({position:'', top:'', left:''});
 				}
 			}
-			
+
 			function positionAbsolute(noAnimation) {
 				// default top position
 				var top = d.blockPosition.top;
@@ -954,7 +954,7 @@ window.ResponsiveHelper = (function($){
 					}
 				}
 				fixedBlock.stop().css({position:'absolute', left: d.blockPosition.left});
-				
+
 				// change block position animation
 				if(noAnimation === true) {
 					fixedBlock.css({top: top});
@@ -962,24 +962,24 @@ window.ResponsiveHelper = (function($){
 					fixedBlock.animate({top: top},{duration: options.animSpeed});
 				}
 			}
-			
+
 			// reposition function
 			function reposition(e) {
 				// detect behavior
 				var noAnimation = (e === true);
-				
+
 				// recalculate size and offsets
 				recalculateDimensions();
 				if(stayStatic) {
 					return;
 				}
-				
+
 				// disable when window is smaller then fixed block
 				if(!options.alwaysStick && d.winHeight < d.blockHeight) {
 					fixedBlock.css({position:'', top:'', left:''});
 					return;
 				}
-				
+
 				// call position handler
 				if(positionType === 'fixed') {
 					positionFixed();
@@ -991,7 +991,7 @@ window.ResponsiveHelper = (function($){
 					timer = setTimeout(positionAbsolute, options.animDelay);
 				}
 			}
-			
+
 			// add event handlers
 			setTimeout(function() {
 				reposition(true);
@@ -1002,7 +1002,7 @@ window.ResponsiveHelper = (function($){
 			},10);
 		});
 	};
-	
+
 	// detect device type
 	var isTouchDevice = (function() {
 		try {
@@ -1011,7 +1011,7 @@ window.ResponsiveHelper = (function($){
 			return false;
 		}
 	}());
-	
+
 	// detect position fixed support
 	var isFixedPositionSupported = (function(){
 		var supported = false, container = document.createElement('div'), fixedBlock = document.createElement('div');
@@ -1083,9 +1083,9 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
 
 /*!
-* jquery.counterup.js 1.0 
+* jquery.counterup.js 1.0
 * Copyright 2013, Benjamin Intal http://gambit.ph @bfintal
-* Released under the GPL v2 License 
+* Released under the GPL v2 License
 * Date: Nov 26, 2013
 */(function(e){"use strict";e.fn.counterUp=function(t){var n=e.extend({time:400,delay:10},t);return this.each(function(){var t=e(this),r=n,i=function(){var e=[],n=r.time/r.delay,i=t.text(),s=/[0-9]+,[0-9]+/.test(i);i=i.replace(/,/g,"");var o=/^[0-9]+$/.test(i),u=/^[0-9]+\.[0-9]+$/.test(i),a=u?(i.split(".")[1]||[]).length:0;for(var f=n;f>=1;f--){var l=parseInt(i/n*f);u&&(l=parseFloat(i/n*f).toFixed(a));if(s)while(/(\d+)(\d{3})/.test(l.toString()))l=l.toString().replace(/(\d+)(\d{3})/,"$1,$2");e.unshift(l)}t.data("counterup-nums",e);t.text("0");var c=function(){t.text(t.data("counterup-nums").shift());if(t.data("counterup-nums").length)setTimeout(t.data("counterup-func"),r.delay);else{delete t.data("counterup-nums");t.data("counterup-nums",null);t.data("counterup-func",null)}};t.data("counterup-func",c);setTimeout(t.data("counterup-func"),r.delay)};t.waypoint(i,{offset:"100%",triggerOnce:!0})})}})(jQuery);
 
@@ -17688,7 +17688,7 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 (function ($) {
     "use strict";
 
-    jQuery.fn.extend({ 
+    jQuery.fn.extend({
 
       countdown100: function(options) {
         var defaults = {
@@ -17717,19 +17717,19 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 
           if(tZ == "") {
             var deadline = new Date(endYear, endMonth - 1, endDate, endHours, endMinutes, endSeconds);
-          } 
+          }
           else {
             var deadline = moment.tz([endYear, endMonth - 1, endDate, endHours, endMinutes, endSeconds], tZ).format();
           }
 
           if(Date.parse(deadline) < Date.parse(timeNow)) {
-            var deadline = new Date(Date.parse(new Date()) + endDate * 24 * 60 * 60 * 1000 + endHours * 60 * 60 * 1000); 
+            var deadline = new Date(Date.parse(new Date()) + endDate * 24 * 60 * 60 * 1000 + endHours * 60 * 60 * 1000);
           }
-          
-          
+
+
           initializeClock(deadline);
 
-          function getTimeRemaining(endtime) { 
+          function getTimeRemaining(endtime) {
             var t = Date.parse(endtime) - Date.parse(new Date());
             var seconds = Math.floor((t / 1000) % 60);
             var minutes = Math.floor((t / 1000 / 60) % 60);
@@ -17744,13 +17744,13 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
             };
           }
 
-          function initializeClock(endtime) { 
+          function initializeClock(endtime) {
             var daysSpan = $(obj).find('.days');
             var hoursSpan = $(obj).find('.hours');
             var minutesSpan = $(obj).find('.minutes');
             var secondsSpan = $(obj).find('.seconds');
 
-            function updateClock() { 
+            function updateClock() {
               var t = getTimeRemaining(endtime);
 
               daysSpan.html(t.days);
@@ -17773,8 +17773,8 @@ var effectTransfer = $.effects.effect.transfer = function( o, done ) {
 
 
 /*!
-* jquery.counterup.js 1.0 
+* jquery.counterup.js 1.0
 * Copyright 2013, Benjamin Intal http://gambit.ph @bfintal
-* Released under the GPL v2 License 
+* Released under the GPL v2 License
 * Date: Nov 26, 2013
 */(function(e){"use strict";e.fn.counterUp=function(t){var n=e.extend({time:400,delay:10},t);return this.each(function(){var t=e(this),r=n,i=function(){var e=[],n=r.time/r.delay,i=t.text(),s=/[0-9]+,[0-9]+/.test(i);i=i.replace(/,/g,"");var o=/^[0-9]+$/.test(i),u=/^[0-9]+\.[0-9]+$/.test(i),a=u?(i.split(".")[1]||[]).length:0;for(var f=n;f>=1;f--){var l=parseInt(i/n*f);u&&(l=parseFloat(i/n*f).toFixed(a));if(s)while(/(\d+)(\d{3})/.test(l.toString()))l=l.toString().replace(/(\d+)(\d{3})/,"$1,$2");e.unshift(l)}t.data("counterup-nums",e);t.text("0");var c=function(){t.text(t.data("counterup-nums").shift());if(t.data("counterup-nums").length)setTimeout(t.data("counterup-func"),r.delay);else{delete t.data("counterup-nums");t.data("counterup-nums",null);t.data("counterup-func",null)}};t.data("counterup-func",c);setTimeout(t.data("counterup-func"),r.delay)};t.waypoint(i,{offset:"100%",triggerOnce:!0})})}})(jQuery);

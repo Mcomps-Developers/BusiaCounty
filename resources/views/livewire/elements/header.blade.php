@@ -50,109 +50,40 @@
                         <div class="collapse navbar-collapse pageMainNavCollapse mt-2 mt-md-0" id="pageMainNavCollapse">
                             <ul class="navbar-nav mainNavigation">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/">Home</a>
+                                    <a class="nav-link" href="/"
+                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Home</a>
                                 </li>
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="list-unstyled mb-0 hdDropdownList">
                                             <li class="dropdown-submenu">
                                                 <a href="javascript:void(0);"
                                                     class="dropdown-item dropdown-toggle dropIcn" role="button"
                                                     data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Services</a>
+                                                    aria-expanded="false">Municipalities</a>
                                                 <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                                     <ul class="list-unstyled mb-0 hdDropdownList">
-                                                        <li><a class="dropdown-item" href="services.html">Services</a>
+                                                        <li><a class="dropdown-item" href="services.html">Busia
+                                                                Municipality</a>
                                                         </li>
-                                                        <li><a class="dropdown-item" href="servicesSingle.html">Services
-                                                                Detail</a>
+                                                        <li><a class="dropdown-item" href="servicesSingle.html">Malaba
+                                                                Municipality</a>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li class="dropdown-submenu">
-                                                <a href="javascript:void(0);"
-                                                    class="dropdown-item dropdown-toggle dropIcn" role="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Documents</a>
-                                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
-                                                    <ul class="list-unstyled mb-0 hdDropdownList">
-                                                        <li><a class="dropdown-item" href="documents.html">Documents</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                                href="documentsSingle.html">Documents Detail</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                            <li><a class="dropdown-item" href="{{route('about')}}">About Busia
+                                                    County</a></li>
+                                            <li><a class="dropdown-item" href="{{route('governors.note')}}">Governor's
+                                                    Note</a></li>
+                                            <li><a class="dropdown-item" href="{{route('executive')}}">The Executive</a>
                                             </li>
-                                            <li class="dropdown-submenu">
-                                                <a href="javascript:void(0);"
-                                                    class="dropdown-item dropdown-toggle dropIcn" role="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Team</a>
-                                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
-                                                    <ul class="list-unstyled mb-0 hdDropdownList">
-                                                        <li><a class="dropdown-item" href="team.html">Team</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="teamSingle.html">Team
-                                                                Detail</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="dropdown-submenu">
-                                                <a href="javascript:void(0);"
-                                                    class="dropdown-item dropdown-toggle dropIcn" role="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Shop</a>
-                                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
-                                                    <ul class="list-unstyled mb-0 hdDropdownList">
-                                                        <li><a class="dropdown-item" href="shop.html">Shop</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="shopSingleProduct.html">Shop
-                                                                Detail</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="cart.html">Cart</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="checkout.html">Checkout</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="dropdown-submenu">
-                                                <a href="javascript:void(0);"
-                                                    class="dropdown-item dropdown-toggle dropIcn" role="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Causes</a>
-                                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
-                                                    <ul class="list-unstyled mb-0 hdDropdownList">
-                                                        <li><a class="dropdown-item" href="causesList.html">Causes
-                                                                List</a></li>
-                                                        <li><a class="dropdown-item" href="causeSingle.html">Causes
-                                                                Detail</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="causesAllItemsLoaded.html">Causes
-                                                                AllitemsLoaded</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="causesGridFourColumn.html">Causes Four
-                                                                Grid</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="causesGridThreeColumn.html">Causes Three
-                                                                Grid</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="causesGridSidebar.html">Causes Grid
-                                                                Sidebar</a></li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li><a class="dropdown-item" href="history.html">History</a></li>
-                                            <li><a class="dropdown-item" href="becomeVolunteer.html">Become
-                                                    Volunteer</a></li>
-                                            <li><a class="dropdown-item" href="donateNow.html">Donate Now</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="about.html">About</a></li>
-                                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                                            <li><a class="dropdown-item" href="{{route('chief.officers')}}">Chief
+                                                    Officers</a></li>
+                                            <li><a class="dropdown-item" href="{{route('public.service')}}">Public
+                                                    Service</a></li>
                                             <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
                                             </li>
                                             <li><a class="dropdown-item" href="404.html">404</a></li>
@@ -168,10 +99,17 @@
                                         aria-expanded="false">Departments</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="list-unstyled mb-0 hdDropdownList">
-                                            <li><a class="dropdown-item" href="departments.html">Departments</a>
+                                            <li><a class="dropdown-item" href="{{route('departments')}}">All
+                                                    Departments</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="departmentsSingle.html">Departments
-                                                    Detail</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{route('department.details')}}">Labour</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{route('department.details')}}">Health</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{route('department.details')}}">Education</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{route('department.details')}}">Lands</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -186,8 +124,8 @@
                                                     Speeches</a>
                                             </li>
                                             <li><a class="dropdown-item" href="{{route('events')}}">Events</a></li>
-                                            <li><a class="dropdown-item" href="eventSingle.html">Events
-                                                    Detail</a></li>
+                                            <li><a class="dropdown-item" href="{{route('tenders')}}">Tenders</a></li>
+                                            <li><a class="dropdown-item" href="{{route('budget')}}">Budgets</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -210,10 +148,12 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('projects')}}">Projects</a>
+                                    <a class="nav-link" href="{{route('projects')}}"
+                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('contact')}}">Contact</a>
+                                    <a class="nav-link" href="{{route('contact')}}"
+                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -235,8 +175,8 @@
                                                     </div>
                                                 </div>
                                                 <p class="mb-0">Popular searches: <br class="d-md-none"><a
-                                                        href="javascript:void(0);">Modern PSD</a>, <a
-                                                        href="javascript:void(0);">Portfolio design</a></p>
+                                                        href="javascript:void(0);">Tenders</a>, <a
+                                                        href="javascript:void(0);"> Careers</a></p>
                                             </div>
                                         </div>
                                     </div>
