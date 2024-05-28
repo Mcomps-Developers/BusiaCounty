@@ -65,10 +65,12 @@
                                                     aria-expanded="false">Municipalities</a>
                                                 <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                                     <ul class="list-unstyled mb-0 hdDropdownList">
-                                                        <li><a class="dropdown-item" href="services.html">Busia
+                                                        <li><a class="dropdown-item"
+                                                                href="{{route('municipality')}}">Busia
                                                                 Municipality</a>
                                                         </li>
-                                                        <li><a class="dropdown-item" href="servicesSingle.html">Malaba
+                                                        <li><a class="dropdown-item"
+                                                                href="{{route('municipality')}}">Malaba
                                                                 Municipality</a>
                                                         </li>
                                                     </ul>
@@ -134,16 +136,11 @@
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">E-Services</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="list-unstyled mb-0 hdDropdownList">
-                                            <li><a class="dropdown-item" href="newsClassic.html">News
-                                                    Classic</a></li>
-                                            <li><a class="dropdown-item" href="newsGridLarge.html">News Grid
-                                                    Large</a></li>
-                                            <li><a class="dropdown-item" href="newsGridSmall.html">News Grid
-                                                    Small</a></li>
-                                            <li><a class="dropdown-item" href="newsGridSidebar.html">News Grid
-                                                    Sidebar</a></li>
-                                            <li><a class="dropdown-item" href="newsSingle.html">News single</a>
+                                            <li><a class="dropdown-item" href="{{route('eservices')}}">E-Services
+                                                    Portal</a>
                                             </li>
+                                            <li><a class="dropdown-item" target="_/blank"
+                                                    href="https://accounts.ecitizen.go.ke/login">E-Citizen</a></li>
                                         </ul>
                                     </div>
                                 </li>

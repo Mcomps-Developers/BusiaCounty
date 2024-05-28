@@ -7,11 +7,14 @@ use App\Livewire\Pages\ChiefOfficers;
 use App\Livewire\Pages\Contact;
 use App\Livewire\Pages\DepartmentDetails;
 use App\Livewire\Pages\Departments;
+use App\Livewire\Pages\Destination;
 use App\Livewire\Pages\Downloads;
+use App\Livewire\Pages\EServices;
 use App\Livewire\Pages\EventDetails;
 use App\Livewire\Pages\Events;
 use App\Livewire\Pages\GovernorNote;
 use App\Livewire\Pages\InvestorGuide;
+use App\Livewire\Pages\Municipality;
 use App\Livewire\Pages\NewsAndSpeeches;
 use App\Livewire\Pages\NewsAndSpeechesDetails;
 use App\Livewire\Pages\ProjectDetails;
@@ -30,7 +33,11 @@ Route::get('/project/details', ProjectDetails::class)->name('project.details');
 Route::get('/departments', Departments::class)->name('departments');
 Route::get('/department/details', DepartmentDetails::class)->name('department.details');
 Route::get('/investors-guide', InvestorGuide::class)->name('investor');
+Route::get('/tourism/destination', Destination::class)->name('destination');
 
+Route::prefix('e-services')->group(function () {
+    Route::get('/services', EServices::class)->name('eservices');
+});
 
 Route::prefix('/about')->group(function () {
     Route::get('/busia-county', AboutCounty::class)->name('about');
@@ -42,7 +49,7 @@ Route::prefix('/about')->group(function () {
     Route::get('/subcounty/details', SubcountyDetails::class)->name('subcounty.details');
 
     Route::prefix('/municipality')->group(function () {
-        Route::get('/malaba');
+        Route::get('/municipality-name', Municipality::class)->name('municipality');
     });
 });
 

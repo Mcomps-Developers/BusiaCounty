@@ -120,7 +120,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="servicesSingle.html" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
+                        <a href="{{route('eservices')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="icomoon-ico5"><span class="sr-only">icon</span></i>
@@ -502,12 +502,12 @@
             </div>
         </div>
         <span class="npbBgPattern w-100 h-100 bgCover position-absolute inaccessible"
-            style="background-image: url({{asset('assets/images/bgPattern2.jpg')}});"></span>
+            style="background-image: url({{@asset('assets/images/bgPattern2.jpg')}});"></span>
     </section>
     <section class="exploreHeightsBlock pt-4 pb-6 pb-md-9 pt-lg-7 pb-lg-14 pt-xl-11 pb-xl-20">
         <div class="container">
             <header class="headingHead text-center mb-12">
-                <h2 class="fwSemiBold">Explore County Gallery</h2>
+                <h2 class="fwSemiBold">Tourism Destinations</h2>
             </header>
         </div>
         <div class="row">
@@ -526,11 +526,11 @@
                                 <div
                                     class="echcCaptionWrap position-absolute w-100 text-white px-3 py-2 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong
-                                            class="d-block font-weight-normal fontBase echCatTitle mb-1">Goverment</strong>
-                                        <span class="d-block">Town of Maximonia</span>
+                                        <strong class="d-block font-weight-normal fontBase echCatTitle mb-1">Teso
+                                            North</strong>
+                                        <span class="d-block">Kakapel</span>
                                     </h3>
-                                    <a href="portfolioClassic.html" class="d-inline-block"><i
+                                    <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
@@ -551,10 +551,10 @@
                                     class="echcCaptionWrap position-absolute w-100 text-white px-3 py-2 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
                                         <strong
-                                            class="d-block font-weight-normal fontBase echCatTitle mb-1">Business</strong>
-                                        <span class="d-block">Modern Buildings</span>
+                                            class="d-block font-weight-normal fontBase echCatTitle mb-1">Samia</strong>
+                                        <span class="d-block">Sio Port</span>
                                     </h3>
-                                    <a href="portfolioClassic.html" class="d-inline-block"><i
+                                    <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
@@ -578,7 +578,7 @@
                                             class="d-block font-weight-normal fontBase echCatTitle mb-1">Business</strong>
                                         <span class="d-block">Mayor of Arsonia</span>
                                     </h3>
-                                    <a href="portfolioClassic.html" class="d-inline-block"><i
+                                    <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
@@ -602,7 +602,7 @@
                                             class="d-block font-weight-normal fontBase echCatTitle mb-1">Culture</strong>
                                         <span class="d-block">Melton Art Museum</span>
                                     </h3>
-                                    <a href="portfolioClassic.html" class="d-inline-block"><i
+                                    <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
@@ -626,7 +626,7 @@
                                             Places</strong>
                                         <span class="d-block">Cinema Teatre</span>
                                     </h3>
-                                    <a href="portfolioClassic.html" class="d-inline-block"><i
+                                    <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
