@@ -358,9 +358,8 @@
                             <h2 class="mb-0 fwSemiBold h2Small">Recent Documents</h2>
                         </header>
                         <article class="cdColumnWidget bg-white shadow px-6 pt-6 pb-5 mb-6">
-                            <i class="fa fa-file-alt d-flex rounded-lg w-100 mb-6"
-                                style="align-items:center; justify-content:center; color:white"><span
-                                    class="sr-only">icon</span></i>
+                            <i class="fa fa-file-alt rounded-lg mb-6"
+                                style="display:flex; max-width:100%; align-items:center; justify-content:center; color:white"></i>
                             <ul class="list-unstyled cdDocsList mb-0">
                                 <li>
                                     <h3 class="font-weight-normal cdTitle mb-1">
