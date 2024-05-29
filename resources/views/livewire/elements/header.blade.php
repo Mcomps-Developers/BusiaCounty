@@ -8,14 +8,14 @@
                     <div class="col-8">
                         <ul class="list-unstyled hdScheduleList mb-0 d-flex flex-wrap align-items-center">
                             <li>
-                                <a href="tel:18001234567">
-                                    <i class="icomoon-telRcv align-middle icn"><span class="sr-only">icon</span></i>
+                                <a href="javascript:void(0);">
+                                    <i class="fa fa-phone text-secondary"></span></i>
                                     Call on: 1800 123 4567
                                 </a>
                             </li>
                             <li>
                                 <time datetime="2011-01-12">
-                                    <i class="icomoon-clock align-middle icn"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-calendar text-secondary"></span></i>
                                     Open Hours: Mon - Fri 8.00 am - 5.00 pm
                                 </time>
                             </li>
