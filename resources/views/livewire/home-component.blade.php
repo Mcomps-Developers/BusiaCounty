@@ -206,7 +206,7 @@
                     <ul class="list-unstyled cfbFeatList d-flex flex-wrap mb-0 justify-content-center">
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="icomoon-ico7"><span class="sr-only">icon</span></i>
+                                <i class="fa fa-running"><span class="sr-only">icon</span></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">62</span>K
                             </h3>
