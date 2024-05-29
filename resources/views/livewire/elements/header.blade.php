@@ -148,7 +148,7 @@
                         <form action="#" class="hdSearchForm ml-3 ml-xl-6">
                             <a class="hdSearchOpener" data-toggle="collapse" href="#hdSearchCollapse" role="button"
                                 aria-expanded="false" aria-controls="hdSearchCollapse">
-                                <i class="fa fa-search">search</span></i>
+                                <i class="fa fa-search text-primary"></span></i>
                             </a>
                             <div class="collapse hdSearchCollapse d-block position-fixed" id="hdSearchCollapse">
                                 <div class="d-flex w-100 h-100 align-items-center jusity-content-center">
