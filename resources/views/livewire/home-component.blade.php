@@ -214,7 +214,7 @@
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="fas fa-tree"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-mountain"><span class="sr-only">icon</span></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">4.8</span>K
                             </h3>
@@ -232,7 +232,7 @@
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="fas fa-location-arrow"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-map-marked"><span class="sr-only">icon</span></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">35</span>
                             </h3>
