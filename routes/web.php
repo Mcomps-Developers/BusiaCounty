@@ -22,6 +22,7 @@ use App\Livewire\Pages\NewsAndSpeechesDetails;
 use App\Livewire\Pages\ProjectDetails;
 use App\Livewire\Pages\Projects;
 use App\Livewire\Pages\PublicServiceBoard;
+use App\Livewire\Pages\ServiceDetails;
 use App\Livewire\Pages\Subcounties;
 use App\Livewire\Pages\SubcountyDetails;
 use App\Livewire\Pages\Tenders;
@@ -41,6 +42,7 @@ Route::get('/job/details', JobDetails::class)->name('job.details');
 
 Route::prefix('e-services')->group(function () {
     Route::get('/services', EServices::class)->name('eservices');
+    Route::get('/service/category/details',ServiceDetails::class)->name('service.details');
 });
 
 Route::prefix('/about')->group(function () {

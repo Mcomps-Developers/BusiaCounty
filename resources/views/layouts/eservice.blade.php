@@ -67,30 +67,7 @@ info@mcomps.co.ke--}}
         </header>
 
         <!-- Visual of the page -->
-        <div class="visual-block visal-theme-6 pt-120 pt-md-140 pt-xl-160 pb-20 pb-md-70"
-            style="background-image: url('{{@asset('e-services/images/bg-visual-6.png')}}');">
-            <div class="container position-relative">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-12 col-lg-7 col-xl-6">
-                        <!-- visual textbox -->
-                        <div class="visual-textbox text-black">
-                            <h1>Welcome to Busia County
-                                eServices Portal.</h1>
-                            <p>Access our services easily and quickly. Create an account and get to enjoy Busia County
-                                services online.</p>
-                            <div class="buttons-block pt-10 pb-30 pt-lg-50">
-                                <button class="btn"><span>Login</span></button>
-                                <button class="btn btn-gray"><span>Register</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5 col-xl-6">
-                        <div class="image-holder"><img src="{{asset('e-services/images/visual-image-6.png')}}"
-                                alt="image"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
         <!-- contain main informative part of the site -->
         {{$slot}}
@@ -129,25 +106,25 @@ info@mcomps.co.ke--}}
                                 class="social-networks no-bg d-flex flex-wrap justify-content-center justify-content-xl-end">
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <i class="icon-facebook-with-circle"></i>
+
                                         <span class="txt">Facebook</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <i class="icon-youtube"></i>
+
                                         <span class="txt">Youtube</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <i class="icon-instagram"></i>
+
                                         <span class="txt">Instagram</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);">
-                                        <i class="icon-linkedin"></i>
+
                                         <span class="txt">Linked In</span>
                                     </a>
                                 </li>
