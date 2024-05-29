@@ -16,13 +16,13 @@ info@mcomps.co.ke--}}
     <title>@yield('title')</title>
     <link href="{{asset('favicon.ico')}}" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <!-- inlcude google nunito sans font cdn link -->
-    <link rel="preconnect" href="{{asset('assets/fonts.gstatic.com/index.html')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com/index.html">
     <link
-        href="{{asset('assets/fonts.googleapis.com/css23985.css?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&amp;display=swap')}}"
+        href="https://fonts.googleapis.com/css23985.css?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&amp;display=swap"
         rel="stylesheet">
     <!-- inlcude google cabin font cdn link -->
     <link
-        href="{{asset('assets/fonts.googleapis.com/css2284e.css?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap')}}"
+        href="https://fonts.googleapis.com/css2284e.css?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
         rel="stylesheet">
     <!-- include the site bootstrap stylesheet -->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}">
@@ -51,7 +51,7 @@ info@mcomps.co.ke--}}
     <!-- include plugins JavaScript -->
     <script src="{{asset('assets/js/plugins.js')}}"></script>
     <!-- include fontAwesome -->
-    <script src="{{asset('assets/kit.fontawesome.com/391f644c42.js')}}"></script>
+    <script src="https://kit.fontawesome.com/391f644c42.js"></script>
     @livewireScripts
 </body>
 
