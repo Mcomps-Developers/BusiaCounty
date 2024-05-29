@@ -214,7 +214,7 @@
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="icomoon-ico8"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-tree"><span class="sr-only">icon</span></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">4.8</span>K
                             </h3>
@@ -223,20 +223,20 @@
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="icomoon-ico9"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-building"><span class="sr-only">icon</span></i>
                             </span>
-                            <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">32</span>%
+                            <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">7</span>
                             </h3>
-                            <h4 class="subtitle mb-0 font-weight-normal">Private &amp; domestic <br>garden land
+                            <h4 class="subtitle mb-0 font-weight-normal">Sub-Counties
                             </h4>
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="icomoon-ico10"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-location-arrow"><span class="sr-only">icon</span></i>
                             </span>
-                            <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">6</span>th
+                            <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">35</span>
                             </h3>
-                            <h4 class="subtitle mb-0 font-weight-normal">Average Costs of Home <br>Ownership
+                            <h4 class="subtitle mb-0 font-weight-normal">Wards
                             </h4>
                         </li>
                     </ul>
