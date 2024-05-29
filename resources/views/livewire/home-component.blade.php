@@ -439,7 +439,7 @@
                                 <div class="npbDescriptionWrap px-5 pt-8 pb-5">
                                     <strong class="d-block npbcmWrap font-weight-normal mb-1">
                                         <span class="mr-5">In Goverment</span>
-                                        <i class="fa fa-chat"></i> 0
+                                        <i class="fas fa-comments"></i> 0
                                     </strong>
                                     <h3 class="fwSemiBold mb-6">
                                         <a href="{{route('news.speeches.details')}}">List of County Weekend
@@ -466,7 +466,7 @@
                                 <div class="npbDescriptionWrap px-5 pt-8 pb-5">
                                     <strong class="d-block npbcmWrap font-weight-normal mb-1">
                                         <span class="mr-5">In Culture</span>
-                                        <i class="fa fa-chat"></i> 2
+                                        <i class="fas fa-comments"></i> 2
                                     </strong>
                                     <h3 class="fwSemiBold mb-6">
                                         <a href="{{route('news.speeches.details')}}">New Australian Economic Culture</a>
@@ -492,7 +492,7 @@
                                 <div class="npbDescriptionWrap px-5 pt-8 pb-5">
                                     <strong class="d-block npbcmWrap font-weight-normal mb-1">
                                         <span class="mr-5">In Developement</span>
-                                        <i class="fa fa-chat"></i> 3
+                                        <i class="fas fa-comments"></i> 3
                                     </strong>
                                     <h3 class="fwSemiBold mb-6">
                                         <a href="{{route('news.speeches.details')}}">Smart County Design Plan 2025</a>
