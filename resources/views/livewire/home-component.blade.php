@@ -1,6 +1,6 @@
 <main>
     @section('title')
-    County Government of Busia
+    The County Government of Busia
     @endsection
     <div class="introBlock ibSlider">
         <div>
@@ -89,7 +89,7 @@
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="fa fa-landmark"></i>
                             </span>
-                            <h2 class="mb-0">Executive</h2>
+                            <h2 class="mb-0">The Executive</h2>
                         </a>
                     </li>
                     <li>
@@ -134,7 +134,7 @@
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
                                 <i class="fas fa-ambulance"></i>
                             </span>
-                            <h2 class="mb-0">Emargency</h2>
+                            <h2 class="mb-0">Emergency</h2>
                         </a>
                     </li>
                 </ul>
