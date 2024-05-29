@@ -32,12 +32,6 @@ info@mcomps.co.ke--}}
     <link rel="stylesheet" href="{{asset('assets/css/colors.css')}}">
     <!-- include the site responsive stylesheet -->
     <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/fonts/iconmoon5b10.woff')}}">
-    <link rel="stylesheet" href="{{asset('assets/fonts/iconmoon5b10.ttf')}}">
-    <link rel="stylesheet" href="{{asset('assets/fonts/iconmoon5b10.svg')}}">
-    <link rel="stylesheet" href="{{asset('assets/fonts/govazd.html')}}">
-    <link rel="stylesheet" href="{{asset('assets/fonts/govazd.ttf')}}">
-    <link rel="stylesheet" href="{{asset('assets/fonts/govazd.woff')}}">
     @livewireStyles
 </head>
 

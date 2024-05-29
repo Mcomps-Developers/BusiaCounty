@@ -96,7 +96,7 @@
                         <a href="{{route('jobs')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="icomoon-ico2"><span class="sr-only">icon</span></i>
+                                <i class="fa fa-briefcase"><span class="sr-only">icon</span></i>
                             </span>
                             <h2 class="mb-0">Jobs</h2>
                         </a>
@@ -105,7 +105,7 @@
                         <a href="{{route('investor')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="icomoon-ico3"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-dollar-sign"><span class="sr-only">icon</span></i>
                             </span>
                             <h2 class="mb-0">Invest</h2>
                         </a>
@@ -114,7 +114,7 @@
                         <a href="{{route('tenders')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="icomoon-ico4"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-folder-open"><span class="sr-only">icon</span></i>
                             </span>
                             <h2 class="mb-0">Tenders</h2>
                         </a>
@@ -123,7 +123,7 @@
                         <a href="{{route('eservices')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="icomoon-ico5"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-laptop"><span class="sr-only">icon</span></i>
                             </span>
                             <h2 class="mb-0">E-Services</h2>
                         </a>
@@ -132,7 +132,7 @@
                         <a href="{{route('contact')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="icomoon-ico6"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-ambulance"><span class="sr-only">icon</span></i>
                             </span>
                             <h2 class="mb-0">Emargency</h2>
                         </a>
