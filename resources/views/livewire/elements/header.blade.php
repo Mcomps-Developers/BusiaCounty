@@ -42,7 +42,7 @@
                 <nav class="navbar navbar-expand-md navbar-light p-0">
                     <div class="logo flex-shrink-0 mr-3 mr-xl-8 mr-xlwd-16">
                         <a href="/">
-                            <img src="{{asset('assets/images/logo.png')}}" class="img-fluid" alt="egovt">
+                            <img src="{{asset('assets/images/logo.png')}}" class="img-fluid" alt="Busia County">
                         </a>
                     </div>
                     <div
@@ -50,8 +50,7 @@
                         <div class="collapse navbar-collapse pageMainNavCollapse mt-2 mt-md-0" id="pageMainNavCollapse">
                             <ul class="navbar-nav mainNavigation">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/"
-                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Home</a>
+                                    <a class="nav-link" href="/" onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Home</a>
                                 </li>
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button"
@@ -131,22 +130,11 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="nav-item dropdown ddohOpener">
-                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">E-Services</a>
-                                    <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
-                                        <ul class="list-unstyled mb-0 hdDropdownList">
-                                            <li><a class="dropdown-item" href="{{route('eservices')}}">E-Services
-                                                    Portal</a>
-                                            </li>
-                                            <li><a class="dropdown-item" target="_/blank"
-                                                    href="https://accounts.ecitizen.go.ke/login">E-Citizen</a></li>
-                                        </ul>
-                                    </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{route('eservices')}}" onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">E-Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('projects')}}"
-                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Projects</a>
+                                    <a class="nav-link" href="{{route('projects')}}" onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Projects</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('contact')}}"
