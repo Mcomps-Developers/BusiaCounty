@@ -363,25 +363,37 @@
                             <ul class="list-unstyled cdDocsList mb-0">
                                 <li>
                                     <h3 class="font-weight-normal cdTitle mb-1">
-                                        <a href="{{route('downloads')}}">Town Board Applications</a>
+                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Town Board Applications</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">October 4, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="font-weight-normal cdTitle mb-1">
-                                        <a href="{{route('downloads')}}">Temporary Road Permit Application</a>
+                                        <a href="{{route('downloads')}}"><i class="fa fa-file-pdf f-2x"></i> Temporary Road Permit Application</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">September 15, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="font-weight-normal cdTitle mb-1">
-                                        <a href="{{route('downloads')}}">Commercial Business Permit</a>
+                                        <a href="{{route('downloads')}}"><i class="fa fa-file-pdf f-2x"></i> Commercial Business Permit</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">September 8, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="font-weight-normal cdTitle mb-1">
-                                        <a href="{{route('downloads')}}">Housing Strategic Plan</a>
+                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i> Housing Strategic Plan</a>
+                                    </h3>
+                                    <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
+                                </li>
+                                <li>
+                                    <h3 class="font-weight-normal cdTitle mb-1">
+                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i> Housing Strategic Plan</a>
+                                    </h3>
+                                    <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
+                                </li>
+                                <li>
+                                    <h3 class="font-weight-normal cdTitle mb-1">
+                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i> Housing Strategic Plan</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
