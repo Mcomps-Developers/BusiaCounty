@@ -447,8 +447,7 @@
                                     </h3>
                                     <a href="{{route('news.speeches.details')}}"
                                         class="btnCr d-inline-block align-top fontAlter">Continue
-                                        Reading <i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span
-                                                class="sr-only">icon</span></i></a>
+                                        Reading <i class="fa fa-arrow-right"></i></a>
                                 </div>
                             </article>
                         </div>
@@ -473,8 +472,7 @@
                                     </h3>
                                     <a href="{{route('news.speeches.details')}}"
                                         class="btnCr d-inline-block align-top fontAlter">Continue
-                                        Reading <i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span
-                                                class="sr-only">icon</span></i></a>
+                                        Reading <i class="fa fa-arrow-right"></i></a>
                                 </div>
                             </article>
                         </div>
@@ -499,8 +497,7 @@
                                     </h3>
                                     <a href="{{route('news.speeches.details')}}"
                                         class="btnCr d-inline-block align-top fontAlter">Continue
-                                        Reading <i class="icomoon-arrowRight bcIcn ml-2 align-middle"><span
-                                                class="sr-only">icon</span></i></a>
+                                        Reading <i class="fa fa-arrow-right"></i></a>
                                 </div>
                             </article>
                         </div>
@@ -538,8 +535,7 @@
                                         <span class="d-block">Kakapel</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
+                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -562,8 +558,7 @@
                                         <span class="d-block">Sio Port</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
+                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -586,8 +581,7 @@
                                         <span class="d-block">Mayor of Arsonia</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
+                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -610,8 +604,7 @@
                                         <span class="d-block">Melton Art Museum</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
+                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -634,8 +627,7 @@
                                         <span class="d-block">Cinema Teatre</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
+                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center bg-white text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
