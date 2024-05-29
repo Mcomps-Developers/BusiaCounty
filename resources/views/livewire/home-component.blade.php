@@ -206,24 +206,24 @@
                     <ul class="list-unstyled cfbFeatList d-flex flex-wrap mb-0 justify-content-center">
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="fa fa-running"><span class="sr-only">icon</span></i>
+                                <i class="icomoon-ico7"><span class="sr-only">icon</span></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">62</span>K
                             </h3>
-                            <h4 class="subtitle mb-0 font-weight-normal">Total People lived <br>in our County</h4>
+                            <h4 class="subtitle mb-0 font-weight-normal">Population</h4>
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="fas fa-mountain"><span class="sr-only">icon</span></i>
+                                <i class="icomoon-ico8"><span class="sr-only">icon</span></i>
                             </span>
-                            <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">4.8</span>K
+                            <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">150</span>KM
                             </h3>
-                            <h4 class="subtitle mb-0 font-weight-normal">Square kilometres <br>region covers
+                            <h4 class="subtitle mb-0 font-weight-normal">Coverrage
                             </h4>
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="fas fa-building"><span class="sr-only">icon</span></i>
+                                <i class="icomoon-ico9"><span class="sr-only">icon</span></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">7</span>
                             </h3>
@@ -232,9 +232,9 @@
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="fas fa-map-marked"><span class="sr-only">icon</span></i>
+                                <i class="icomoon-ico10"><span class="sr-only">icon</span></i>
                             </span>
-                            <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">35</span>
+                            <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">35
                             </h3>
                             <h4 class="subtitle mb-0 font-weight-normal">Wards
                             </h4>
