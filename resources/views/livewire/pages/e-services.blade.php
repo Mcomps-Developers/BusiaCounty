@@ -1,4 +1,4 @@
-<main>
+{{-- <main>
     @section('title')
     E-Services
     @endsection
@@ -37,7 +37,7 @@
                         </div>
                         <div class="egdcCaption py-4 px-3 py-md-8 px-md-6">
                             <h3 class="fwMedium">Business Licensing</h3>
-                            <p> Single Business Permit, 
+                            <p> Single Business Permit,
                                 Unified Business Permit,
                                 Weights and Measures,
                                 Betting and gaming</p>
@@ -210,6 +210,94 @@
                                     class="fas btnBnoIcn fa-arrow-right mx-1"><span class="sr-only">icon</span></i></a>
                         </div>
                     </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main> --}}
+<main class="main">
+
+    <!-- Browse By Categories -->
+    <section
+        class="section section-theme-10 bg-white pt-35 pt-md-50 pt-lg-75 pt-xxl-120 pb-35 pb-md-50 pb-lg-65 pb-xxl-100">
+        <div class="container">
+            <!-- Section header -->
+            <header class="section-header d-flex flex-column-reverse text-center mb-50 mb-lg-75">
+                <h2>Services</h2>
+                <p>E-Services available online</p>
+            </header>
+            <div class="cats-block">
+                <div class="cat-box">
+                    <a href="javascript:void(0);">
+                        <div class="icon-box"><img src="{{asset('e-services/images/cat-ico1.svg')}}" alt="icon"></div>
+                        <div class="cat-text">
+                            <strong class="title">Essential Services</strong>
+                            <p>2 Services available</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="javascript:void(0);">
+                        <div class="icon-box"><img src="{{asset('e-services/images/cat-ico2.svg')}}" alt="icon"></div>
+                        <div class="cat-text">
+                            <strong class="title">Land Services</strong>
+                            <p>2 Services available</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="javascript:void(0);">
+                        <div class="icon-box"><img src="{{asset('e-services/images/cat-ico3.svg')}}" alt="icon"></div>
+                        <div class="cat-text">
+                            <strong class="title">Property Services</strong>
+                            <p>2 Services available</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="javascript:void(0);">
+                        <div class="icon-box"><img src="{{asset('e-services/images/cat-ico4.svg')}}" alt="icon"></div>
+                        <div class="cat-text">
+                            <strong class="title">Advertisement</strong>
+                            <p>2 Services available</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="javascript:void(0);">
+                        <div class="icon-box"><img src="{{asset('e-services/images/cat-ico5.svg')}}" alt="icon"></div>
+                        <div class="cat-text">
+                            <strong class="title">Licensing</strong>
+                            <p>2 Services available</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="javascript:void(0);">
+                        <div class="icon-box"><img src="{{asset('e-services/images/cat-ico6.svg')}}" alt="icon"></div>
+                        <div class="cat-text">
+                            <strong class="title">Parking</strong>
+                            <p>2 Services available</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="javascript:void(0);">
+                        <div class="icon-box"><img src="{{asset('e-services/images/cat-ico7.svg')}}" alt="icon"></div>
+                        <div class="cat-text">
+                            <strong class="title">Health Services</strong>
+                            <p>2 Services available</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="javascript:void(0);">
+                        <div class="icon-box"><img src="{{asset('e-services/images/cat-ico8.svg')}}" alt="icon"></div>
+                        <div class="cat-text">
+                            <strong class="title">Other Services</strong>
+                            <p>2 Services available</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

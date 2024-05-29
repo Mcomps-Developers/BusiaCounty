@@ -8,6 +8,6 @@ class EServices extends Component
 {
     public function render()
     {
-        return view('livewire.pages.e-services')->layout('layouts.base');
+        return view('livewire.pages.e-services')->layout('layouts.eservice');
     }
 }
