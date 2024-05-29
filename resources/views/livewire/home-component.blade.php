@@ -290,13 +290,11 @@
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
                                                 <li>
-                                                    <i class="fa fa-clock"><span
-                                                            class="sr-only">icon</span></i>
+                                                    <i class="fa fa-clock"><span class="sr-only">icon</span></i>
                                                     9:30am - 1:00pm
                                                 </li>
                                                 <li>
-                                                    <i class="fa fa-map-marker"><span
-                                                            class="sr-only">icon</span></i>
+                                                    <i class="fa fa-map-marker"><span class="sr-only">icon</span></i>
                                                     Mayor Office, Texas County
                                                 </li>
                                             </ul>
@@ -334,13 +332,11 @@
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
                                                 <li>
-                                                    <i class="fa fa-clock"><span
-                                                            class="sr-only">icon</span></i>
+                                                    <i class="fa fa-clock"><span class="sr-only">icon</span></i>
                                                     1:00pm - 5:00pm
                                                 </li>
                                                 <li>
-                                                    <i class="fa fa-map-marker"><span
-                                                            class="sr-only">icon</span></i>
+                                                    <i class="fa fa-map-marker"><span class="sr-only">icon</span></i>
                                                     32 Quincy Street, Cambridge, MA
                                                 </li>
                                             </ul>
@@ -359,11 +355,11 @@
                 <aside class="col-12 col-lg-4 uecColBg position-static">
                     <div class="pl-lg-5">
                         <header class="headingHead mb-6 mb-lg-8 mb-xl-12">
-                            <h2 class="mb-0 fwSemiBold h2Small">County Documents</h2>
+                            <h2 class="mb-0 fwSemiBold h2Small">Recent Documents</h2>
                         </header>
                         <article class="cdColumnWidget bg-white shadow px-6 pt-6 pb-5 mb-6">
-                            <i
-                                class="ccwIcn icomoon-document d-flex align-items-center justify-content-center text-white rounded-lg w-100 mb-6"><span
+                            <i class="fa fa-file-alt d-flex rounded-lg w-100 mb-6"
+                                style="align-items:center; justify-content:center; color:white"><span
                                     class="sr-only">icon</span></i>
                             <ul class="list-unstyled cdDocsList mb-0">
                                 <li>
