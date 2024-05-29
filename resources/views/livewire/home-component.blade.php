@@ -87,7 +87,7 @@
                         <a href="{{route('executive')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="fa fa-landmark"><span class="sr-only">icon</span></i>
+                                <i class="fa fa-landmark"></i>
                             </span>
                             <h2 class="mb-0">Executive</h2>
                         </a>
@@ -96,7 +96,7 @@
                         <a href="{{route('jobs')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="fa fa-briefcase"><span class="sr-only">icon</span></i>
+                                <i class="fa fa-briefcase"></i>
                             </span>
                             <h2 class="mb-0">Jobs</h2>
                         </a>
@@ -105,7 +105,7 @@
                         <a href="{{route('investor')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="fas fa-dollar-sign"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-dollar-sign"></i>
                             </span>
                             <h2 class="mb-0">Invest</h2>
                         </a>
@@ -114,7 +114,7 @@
                         <a href="{{route('tenders')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="fas fa-folder-open"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-folder-open"></i>
                             </span>
                             <h2 class="mb-0">Tenders</h2>
                         </a>
@@ -123,7 +123,7 @@
                         <a href="{{route('eservices')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="fas fa-laptop"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-laptop"></i>
                             </span>
                             <h2 class="mb-0">E-Services</h2>
                         </a>
@@ -132,7 +132,7 @@
                         <a href="{{route('contact')}}" class="fflColumn d-block w-100 text-center px-2 pt-4 pb-10">
                             <span
                                 class="icnWrap d-flex align-items-center justify-content-center mx-auto mb-4 rounded-circle">
-                                <i class="fas fa-ambulance"><span class="sr-only">icon</span></i>
+                                <i class="fas fa-ambulance"></i>
                             </span>
                             <h2 class="mb-0">Emargency</h2>
                         </a>
@@ -206,7 +206,7 @@
                     <ul class="list-unstyled cfbFeatList d-flex flex-wrap mb-0 justify-content-center">
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="icomoon-ico7"><span class="sr-only">icon</span></i>
+                                <i class="icomoon-ico7"></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">62</span>K
                             </h3>
@@ -214,7 +214,7 @@
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="icomoon-ico8"><span class="sr-only">icon</span></i>
+                                <i class="icomoon-ico8"></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">150</span>KM
                             </h3>
@@ -223,7 +223,7 @@
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="icomoon-ico9"><span class="sr-only">icon</span></i>
+                                <i class="icomoon-ico9"></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">7</span>
                             </h3>
@@ -232,7 +232,7 @@
                         </li>
                         <li>
                             <span class="icnWrap d-flex align-items-center justify-content-center w-100 mb-4">
-                                <i class="icomoon-ico10"><span class="sr-only">icon</span></i>
+                                <i class="icomoon-ico10"></i>
                             </span>
                             <h3 class="fwSemiBold text-white textCount mb-3"><span class="dataCount">35
                             </h3>
@@ -258,7 +258,7 @@
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-5 d-sm-flex justify-content-sm-end">
                                     <a href="{{route('events')}}" class="btn-link fontAlter">See All Events
-                                        <i class="fas fa-chevron-right blIcn"><span class="sr-only">icon</span></i></a>
+                                        <i class="fas fa-chevron-right blIcn"></i></a>
                                 </div>
                             </div>
                         </header>
@@ -290,11 +290,11 @@
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
                                                 <li>
-                                                    <i class="fa fa-clock"><span class="sr-only">icon</span></i>
+                                                    <i class="fa fa-clock"></i>
                                                     9:30am - 1:00pm
                                                 </li>
                                                 <li>
-                                                    <i class="fa fa-map-marker"><span class="sr-only">icon</span></i>
+                                                    <i class="fa fa-map-marker"></i>
                                                     Mayor Office, Texas County
                                                 </li>
                                             </ul>
@@ -332,11 +332,11 @@
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
                                                 <li>
-                                                    <i class="fa fa-clock"><span class="sr-only">icon</span></i>
+                                                    <i class="fa fa-clock"></i>
                                                     1:00pm - 5:00pm
                                                 </li>
                                                 <li>
-                                                    <i class="fa fa-map-marker"><span class="sr-only">icon</span></i>
+                                                    <i class="fa fa-map-marker"></i>
                                                     32 Quincy Street, Cambridge, MA
                                                 </li>
                                             </ul>
@@ -400,7 +400,7 @@
                             </ul>
                             <footer class="ccwFoot text-center mt-2 pt-4">
                                 <a href="{{route('downloads')}}" class="btn-link fontAlter">More Documents <i
-                                        class="fas fa-chevron-right blIcn"><span class="sr-only">icon</span></i></a>
+                                        class="fas fa-chevron-right blIcn"></i></a>
                             </footer>
                         </article>
                     </div>
@@ -439,7 +439,7 @@
                                 <div class="npbDescriptionWrap px-5 pt-8 pb-5">
                                     <strong class="d-block npbcmWrap font-weight-normal mb-1">
                                         <span class="mr-5">In Goverment</span>
-                                        <i class="fa fa-chat"><span class="sr-only">icon</span></i> 0
+                                        <i class="fa fa-chat"></i> 0
                                     </strong>
                                     <h3 class="fwSemiBold mb-6">
                                         <a href="{{route('news.speeches.details')}}">List of County Weekend
@@ -466,7 +466,7 @@
                                 <div class="npbDescriptionWrap px-5 pt-8 pb-5">
                                     <strong class="d-block npbcmWrap font-weight-normal mb-1">
                                         <span class="mr-5">In Culture</span>
-                                        <i class="fa fa-chat"><span class="sr-only">icon</span></i> 2
+                                        <i class="fa fa-chat"></i> 2
                                     </strong>
                                     <h3 class="fwSemiBold mb-6">
                                         <a href="{{route('news.speeches.details')}}">New Australian Economic Culture</a>
@@ -492,7 +492,7 @@
                                 <div class="npbDescriptionWrap px-5 pt-8 pb-5">
                                     <strong class="d-block npbcmWrap font-weight-normal mb-1">
                                         <span class="mr-5">In Developement</span>
-                                        <i class="fa fa-chat"><span class="sr-only">icon</span></i> 3
+                                        <i class="fa fa-chat"></i> 3
                                     </strong>
                                     <h3 class="fwSemiBold mb-6">
                                         <a href="{{route('news.speeches.details')}}">Smart County Design Plan 2025</a>
@@ -527,7 +527,7 @@
                                 <a href="{{asset('assets/images/img15.jpg')}}"
                                     class="echCountTag position-absolute fwSemiBold text-white px-3 py-1 lightbox"
                                     data-fancybox="true">
-                                    <i class="far fa-image icn"><span class="sr-only">icon</span></i>
+                                    <i class="far fa-image icn"></i>
                                     6
                                 </a>
                                 <div
@@ -551,7 +551,7 @@
                                 <a href="{{asset('assets/images/img17.jpg')}}"
                                     class="echCountTag position-absolute fwSemiBold text-white px-3 py-1 lightbox"
                                     data-fancybox="true">
-                                    <i class="far fa-image icn"><span class="sr-only">icon</span></i>
+                                    <i class="far fa-image icn"></i>
                                     6
                                 </a>
                                 <div
@@ -575,7 +575,7 @@
                                 <a href="{{asset('assets/images/img14.jpg')}}"
                                     class="echCountTag position-absolute fwSemiBold text-white px-3 py-1 lightbox"
                                     data-fancybox="true">
-                                    <i class="far fa-image icn"><span class="sr-only">icon</span></i>
+                                    <i class="far fa-image icn"></i>
                                     6
                                 </a>
                                 <div
@@ -599,7 +599,7 @@
                                 <a href="{{asset('assets/images/img16.jpg')}}"
                                     class="echCountTag position-absolute fwSemiBold text-white px-3 py-1 lightbox"
                                     data-fancybox="true">
-                                    <i class="far fa-image icn"><span class="sr-only">icon</span></i>
+                                    <i class="far fa-image icn"></i>
                                     6
                                 </a>
                                 <div
@@ -623,7 +623,7 @@
                                 <a href="{{asset('assets/images/img18.jpg')}}"
                                     class="echCountTag position-absolute fwSemiBold text-white px-3 py-1 lightbox"
                                     data-fancybox="true">
-                                    <i class="far fa-image icn"><span class="sr-only">icon</span></i>
+                                    <i class="far fa-image icn"></i>
                                     6
                                 </a>
                                 <div
