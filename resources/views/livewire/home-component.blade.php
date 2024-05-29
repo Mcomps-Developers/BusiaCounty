@@ -290,12 +290,12 @@
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
                                                 <li>
-                                                    <i class="icomoon-clock icn position-absolute"><span
+                                                    <i class="fa fa-clock position-absolute"><span
                                                             class="sr-only">icon</span></i>
                                                     9:30am - 1:00pm
                                                 </li>
                                                 <li>
-                                                    <i class="icomoon-location icn position-absolute"><span
+                                                    <i class="fa fa-map-marker position-absolute"><span
                                                             class="sr-only">icon</span></i>
                                                     Mayor Office, Texas County
                                                 </li>
@@ -334,12 +334,12 @@
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
                                                 <li>
-                                                    <i class="icomoon-clock icn position-absolute"><span
+                                                    <i class="fa fa-clock position-absolute"><span
                                                             class="sr-only">icon</span></i>
                                                     1:00pm - 5:00pm
                                                 </li>
                                                 <li>
-                                                    <i class="icomoon-location icn position-absolute"><span
+                                                    <i class="fa fa-map-marker position-absolute"><span
                                                             class="sr-only">icon</span></i>
                                                     32 Quincy Street, Cambridge, MA
                                                 </li>
