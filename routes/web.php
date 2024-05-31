@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IDVerificationController;
 use App\Livewire\HomeComponent;
 use App\Livewire\Pages\AboutCounty;
 use App\Livewire\Pages\Budget;
@@ -42,7 +43,7 @@ Route::get('/job/details', JobDetails::class)->name('job.details');
 
 Route::prefix('e-services')->group(function () {
     Route::get('/services', EServices::class)->name('eservices');
-    Route::get('/service/category/details',ServiceDetails::class)->name('service.details');
+    Route::get('/service/category/details', ServiceDetails::class)->name('service.details');
 });
 
 Route::prefix('/about')->group(function () {
@@ -70,19 +71,4 @@ Route::prefix('resources')->group(function () {
     Route::get('/budgets', Budget::class)->name('budget');
 });
 
-
-
-
-
-
-
-
-// Route::middleware([
-//     'auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified',
-// ])->group(function () {
-//     Route::get('/dashboard', function () {
-//         return view('dashboard');
-//     })->name('dashboard');
-// });
+Route::post('/verify-id', [IDVerificationController::class, 'verify'])->name('verify-id');

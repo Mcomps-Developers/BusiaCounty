@@ -45,19 +45,20 @@
                             <!-- User Form Row -->
                             <div class="jobplugin__form-row">
                                 <div class="jobplugin__form-field">
-                                    <input type="text" placeholder="ID/Passport Number">
+                                    <input type="text" placeholder="ID/Passport Number" id="id_number" :value="old('id_number')"
+                                        name="id_number">
                                 </div>
                             </div>
                             <!-- User Form Row -->
                             <div class="jobplugin__form-row">
                                 <div class="jobplugin__form-field">
-                                    <input type="text" placeholder="First Name">
+                                    <input type="text" placeholder="First Name" name="first_name">
                                 </div>
                             </div>
                         </div>
                         <!-- User Form Button -->
                         <div class="jobplugin__userbox-button">
-                            <button type="button"
+                            <button type="button" id="verifyButton"
                                 class="jobplugin__button large jobplugin__bg-primary hover:jobplugin__bg-secondary">Next</button>
                         </div>
                     </form>
@@ -79,4 +80,35 @@
             </div>
         </div>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('verifyButton').addEventListener('click', function() {
+                const idNumber = document.getElementById('id_number').value;
+
+                fetch('{{ route('verify-id') }}', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                        },
+                        body: JSON.stringify({
+                            id_number: idNumber
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            document.getElementById('first_name').value = data.data.firstName;
+                            document.getElementById('last_name').value = data.data.lastName;
+                        } else {
+                            alert('ID verification failed: ' + data.message);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            });
+        });
+    </script>
+
 </x-guest-layout>

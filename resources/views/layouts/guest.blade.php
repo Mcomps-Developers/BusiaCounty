@@ -132,6 +132,7 @@
     <script src="{{ asset('e-services/js/jquery-3.6.4.min.js') }}"></script>
     <!-- jQuery Functions JS File -->
     <script src="{{ asset('e-services/js/jquery-3.6.4.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/youverify-web-sdk/dist/index.js"></script>
     @livewireScripts
 </body>
 
