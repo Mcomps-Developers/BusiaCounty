@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 {{-- Developed by Mcomps Limited | www.mcomps.co.ke | Contact us: Call/WhatsApp us on +254700106541 or Email us at
-info@mcomps.co.ke--}}
+info@mcomps.co.ke --}}
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{asset('favicon.ico')}}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
     <!-- Page Title -->
-    <title>Busia Services</title>
+    <title>@yield('title')</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/index.html">
     <link rel="preconnect" href="https://fonts.gstatic.com/index.html" crossorigin>
@@ -20,46 +20,47 @@ info@mcomps.co.ke--}}
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Additional Plugins Styles -->
-    <link rel="stylesheet" href="{{asset('e-services/css/vendors.css')}}">
+    <link rel="stylesheet" href="{{ asset('e-services/css/vendors.css') }}">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{asset('e-services/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{ asset('e-services/css/bootstrap.css') }}">
     <!-- Site main stylesheet-->
-    <link rel="stylesheet" href="{{asset('e-services/css/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('e-services/css/main.css') }}">
+    
     @livewireStyles
 </head>
 
 <body>
     <!-- main container of all the page elements -->
     <div id="wrapper">
-        <!-- <div class="page-loader">
+        {{-- <div class="page-loader">
 			<div class="loader-animmte"></div>
 			<div class="loader-logo">
-				<img src="images/favicon.png" alt="Crypto Assassin">
+				<img src="{{asset('e-services/images/favicon.png')}}" alt="Crypto Assassin">
 			</div>
-		</div> -->
+		</div> --}}
         <!-- header of the page -->
         <header class="header header-theme-10">
             <div class="container">
                 <strong class="logo">
-                    <a href="{{route('eservices')}}">
-                        <img class="normal-logo" src="{{asset('assets/images/logo.png')}}" width="175" height="43"
-                            alt="Busia Pay">
-                        <img class="sticky-logo" src="{{asset('assets/images/logo.png')}}" width="175" height="43"
-                            alt="Busia Pay">
+                    <a href="{{ route('eservices') }}">
+                        <img class="normal-logo" src="{{ asset('assets/images/logo.png') }}" width="175"
+                            height="43" alt="Busia Pay">
+                        <img class="sticky-logo" src="{{ asset('assets/images/logo.png') }}" width="175"
+                            height="43" alt="Busia Pay">
                     </a>
                 </strong>
                 <!-- main menu -->
                 <div class="main-nav">
-                    <a href="javascript:void(0);" class="nav-opener d-flex d-lg-none"><span></span></a>
                     <div class="nav-drop">
                         <a href="javascript:void(0);" class="nav-close d-flex d-lg-none"><span></span></a>
                         <!-- navigation -->
                         <ul class="navigation">
                             <li class="mega-menu active">
-                                <a href="{{route('eservices')}}">Home</a>
+                                <a href="{{ route('eservices') }}">Home</a>
                             </li>
                             <li><a href="#!">Help Desk</a></li>
-                            <li class="text-login"><a href="#!">Login</a></li>
+                            <li class="text-login"><a href="{{route('login')}}">Login</a></li>
+                            <li class="text-login"><a href="{{route('register')}}">Create Account</a></li>
                         </ul>
                     </div>
                 </div>
@@ -70,7 +71,7 @@ info@mcomps.co.ke--}}
 
 
         <!-- contain main informative part of the site -->
-        {{$slot}}
+        {{ $slot }}
 
         <!-- footer of the page -->
         <footer class="footer footer-theme-10">
@@ -80,7 +81,8 @@ info@mcomps.co.ke--}}
                         <div class="col-12">
                             <div class="call-to-action">
                                 <div class="text-row">
-                                    <img class="icon" src="{{asset('e-services/images/speaker.svg')}}" alt="icon">
+                                    <img class="icon" src="{{ asset('e-services/images/speaker.svg') }}"
+                                        alt="icon">
                                     <strong class="heading">Enroll Your Business Now</strong>
                                     <p>Make payments easily and quickly. Create an account and get to enjoy paying for
                                         Busia County services online.</p>
@@ -93,17 +95,17 @@ info@mcomps.co.ke--}}
                     </div>
                 </div>
             </div>
-            <div class="sec-footer text-black pt-35 pb-35">
+            <div class="text-black sec-footer pt-35 pb-35">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-xl-6 mb-15 mb-xl-0">
-                            <p>© {{date('Y')}}. {{config('app.name')}}. Powered by <a target="_/blank" class="site-link"
-                                    href="https://mcomps.co.ke">Mcomps</a> All Rights
+                            <p>© {{ date('Y') }}. {{ config('app.name') }}. Powered by <a target="_/blank"
+                                    class="site-link" href="https://mcomps.co.ke">Mcomps</a> All Rights
                                 Reserved.</p>
                         </div>
                         <div class="col-12 col-xl-6">
                             <ul
-                                class="social-networks no-bg d-flex flex-wrap justify-content-center justify-content-xl-end">
+                                class="flex-wrap social-networks no-bg d-flex justify-content-center justify-content-xl-end">
                                 <li>
                                     <a href="javascript:void(0);">
 
@@ -139,16 +141,16 @@ info@mcomps.co.ke--}}
     <script src="https://cdn.jsdelivr.net/npm/%40popperjs/core%402.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap%405.2.3/dist/js/bootstrap.min.js"></script>
     <!-- jQuery Library -->
-    <script src="{{asset('e-services/js/jquery-3.6.4.min.js')}}"></script>
+    <script src="{{ asset('e-services/js/jquery-3.6.4.min.js') }}"></script>
     <!-- jQuery Plugins -->
-    <script src="{{asset('e-services/js/vendor.js')}}"></script>
+    <script src="{{ asset('e-services/js/vendor.js') }}"></script>
     <!-- jQuery Main -->
-    <script src="{{asset('e-services/js/jquery.main.js')}}"></script>
+    <script src="{{ asset('e-services/js/jquery.main.js') }}"></script>
     @livewireScripts
 </body>
 
 
 {{-- Developed by Mcomps Limited | www.mcomps.co.ke | Contact us: Call/WhatsApp us on +254700106541 or Email us at
-info@mcomps.co.ke--}}
+info@mcomps.co.ke --}}
 
 </html>

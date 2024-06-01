@@ -1,48 +1,66 @@
 <x-guest-layout>
-    <x-authentication-card>
-        <x-slot name="logo">
-            <x-authentication-card-logo />
-        </x-slot>
-
-        <x-validation-errors class="mb-4" />
-
-        @session('status')
-            <div class="mb-4 font-medium text-sm text-green-600 dark:text-green-400">
-                {{ $value }}
+    @section('title')
+        Login
+    @endsection
+    <main class="jobplugin__main">
+        <div class="jobplugin__main-holder">
+            <span class="jobplugin__pattern default-right"></span>
+            <span class="jobplugin__pattern default-left"></span>
+            <div class="jobplugin__visual-pattern">
+                <img src="{{ asset('e-services/images/visual-pattern.png') }}" alt="Image Description">
             </div>
-        @endsession
-
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
-
-            <div>
-                <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+            <div class="jobplugin__container">
+                <!-- User Box -->
+                <div class="jobplugin__userbox">
+                    <span class="jobplugin__userbox-bar jobplugin__bg-primary"></span>
+                    <h1 class="jobplugin__text-secondary h3">Login</h1>
+                    {{-- Errors --}}
+                    <x-validation-errors class="mb-4" style="color: red" />
+                    {{-- Session --}}
+                    @session('status')
+                        <div class="mb-4 text-sm font-medium" style="color: green">
+                            {{ $value }}
+                        </div>
+                    @endsession
+                    <!-- User Box Form -->
+                    <form method="POST" action="{{ route('login') }}">
+                        @csrf
+                        <div class="jobplugin__form">
+                            <!-- User Form Row -->
+                            <div class="jobplugin__form-row">
+                                <div class="jobplugin__form-field">
+                                    <input type="text" placeholder="ID Number">
+                                </div>
+                            </div>
+                            <!-- User Form Row -->
+                            <div class="jobplugin__form-row">
+                                <div class="jobplugin__form-field">
+                                    <input type="password" placeholder="PIN ****">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- User Form Button -->
+                        <div class="jobplugin__userbox-button">
+                            <button type="submit"
+                                class="jobplugin__button large jobplugin__bg-primary hover:jobplugin__bg-secondary">Login</button>
+                        </div>
+                    </form>
+                    <div class="jobplugin__userbox-seperator">
+                        <span>or</span>
+                    </div>
+                    <!-- User Form Other Buttons -->
+                    <div class="jobplugin__userbox-others">
+                        <a href="javascript:void(0);" class="button-continue">
+                            <span class="fa fa-apple"></span>
+                            <span class="btn-text">Forgot PIN?</span>
+                        </a>
+                        <a href="{{ route('register') }}" class="button-continue btn-google">
+                            <span class="fa fa-google"></span>
+                            <span class="btn-text">Create Account</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-
-            <div class="mt-4">
-                <x-label for="password" value="{{ __('Password') }}" />
-                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
-            </div>
-
-            <div class="block mt-4">
-                <label for="remember_me" class="flex items-center">
-                    <x-checkbox id="remember_me" name="remember" />
-                    <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-
-                <x-button class="ms-4">
-                    {{ __('Log in') }}
-                </x-button>
-            </div>
-        </form>
-    </x-authentication-card>
+        </div>
+    </main>
 </x-guest-layout>
