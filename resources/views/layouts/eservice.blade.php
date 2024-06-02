@@ -25,7 +25,7 @@ info@mcomps.co.ke --}}
     <link rel="stylesheet" href="{{ asset('e-services/css/bootstrap.css') }}">
     <!-- Site main stylesheet-->
     <link rel="stylesheet" href="{{ asset('e-services/css/main.css') }}">
-    
+
     @livewireStyles
 </head>
 
@@ -59,8 +59,24 @@ info@mcomps.co.ke --}}
                                 <a href="{{ route('eservices') }}">Home</a>
                             </li>
                             <li><a href="#!">Help Desk</a></li>
-                            <li class="text-login"><a href="{{route('login')}}">Login</a></li>
-                            <li class="text-login"><a href="{{route('register')}}">Create Account</a></li>
+                            @if (Route::has('login'))
+                                @auth
+                                    <li class="text-login"><a href="{{ route('dashboard') }}">Account</a></li>
+                                    <li class="text-login"><a href="{{ route('logout') }}"
+                                            class="jobplugin__button jobplugin__bg-primary hover:jobplugin__bg-secondary"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                                    </li>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                        style="display: none;">
+                                        @csrf
+                                    </form>
+                                @else
+                                    <li class="text-login"><a href="{{ route('login') }}">Login</a></li>
+                                    <li class="text-login"><a href="{{ route('register') }}">Create Account</a></li>
+                                @endauth
+                            @endif
+
                         </ul>
                     </div>
                 </div>
@@ -83,12 +99,11 @@ info@mcomps.co.ke --}}
                                 <div class="text-row">
                                     <img class="icon" src="{{ asset('e-services/images/speaker.svg') }}"
                                         alt="icon">
-                                    <strong class="heading">Enroll Your Business Now</strong>
-                                    <p>Make payments easily and quickly. Create an account and get to enjoy paying for
-                                        Busia County services online.</p>
+                                    <strong class="heading">Information Area</strong>
+                                    <p>Post urgent communications here.</p>
                                 </div>
                                 <button class="btn btn-sm btn-orange" type="submit">
-                                    <span class="btn-text">Start Now</span>
+                                    <span class="btn-text">Action Button</span>
                                 </button>
                             </div>
                         </div>

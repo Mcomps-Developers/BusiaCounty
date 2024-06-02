@@ -13,9 +13,23 @@
                             eServices Portal.</h1>
                         <p>Access our services easily and quickly. Create an account and get to enjoy Busia County
                             services online.</p>
+
                         <div class="pt-10 buttons-block pb-30 pt-lg-50">
-                            <a href="{{ route('login') }}" class="btn"><span>Login</span></a>
-                            <a href="{{ route('register') }}" class="btn btn-gray"><span>Register</span></a>
+                            @if (Route::has('login'))
+                                @auth
+                                    <a href="{{ route('dashboard') }}" class="btn"><span>Account</span></a>
+                                    <a href="{{ route('logout') }}" class="btn btn-gray"
+                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><span>Logout</span></a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                        style="display: none;">
+                                        @csrf
+                                    </form>
+                                @else
+                                    <a href="{{ route('login') }}" class="btn"><span>Login</span></a>
+                                    <a href="{{ route('register') }}" class="btn btn-gray"><span>Register</span></a>
+                                @endauth
+                            @endif
+
                         </div>
                     </div>
                 </div>

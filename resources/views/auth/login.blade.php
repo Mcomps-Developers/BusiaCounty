@@ -29,13 +29,13 @@
                             <!-- User Form Row -->
                             <div class="jobplugin__form-row">
                                 <div class="jobplugin__form-field">
-                                    <input type="text" placeholder="ID Number">
+                                    <input type="text" name="id_number" placeholder="ID Number">
                                 </div>
                             </div>
                             <!-- User Form Row -->
                             <div class="jobplugin__form-row">
                                 <div class="jobplugin__form-field">
-                                    <input type="password" placeholder="PIN ****">
+                                    <input type="password" name="password" placeholder="PIN ****">
                                 </div>
                             </div>
                         </div>

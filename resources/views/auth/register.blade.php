@@ -23,7 +23,7 @@
                         </div>
                     @endsession
                     <!-- User Box Form -->
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" action="{{ route('register') }}">
                         @csrf
                         <div class="jobplugin__usertype">
                             <label class="jobplugin__usertype-radio">
@@ -45,20 +45,35 @@
                             <!-- User Form Row -->
                             <div class="jobplugin__form-row">
                                 <div class="jobplugin__form-field">
-                                    <input type="text" placeholder="ID/Passport Number" id="id_number" :value="old('id_number')"
-                                        name="id_number">
+                                    <input type="text" placeholder="ID/Passport Number" id="id_number" name="id_number" :value="old('id_number')">
+                                </div>
+                            </div>
+                            <div class="jobplugin__form-row">
+                                <div class="jobplugin__form-field">
+                                    <input type="tel" placeholder="Phone Number (254)" value="254" id="phone_number" name="phone_number">
                                 </div>
                             </div>
                             <!-- User Form Row -->
                             <div class="jobplugin__form-row">
                                 <div class="jobplugin__form-field">
-                                    <input type="text" placeholder="First Name" name="first_name">
+                                    <input type="text" placeholder="First Name" id="first_name" name="first_name">
+                                </div>
+                            </div>
+                            <div class="jobplugin__form-row">
+                                <div class="jobplugin__form-field">
+                                    <input type="text" placeholder="Last Name" id="last_name" name="last_name">
+                                </div>
+                            </div>
+                            <div class="jobplugin__form-row">
+                                <div class="jobplugin__form-field">
+                                    <input type="password" placeholder="PIN ****" id="pin" name="pin">
                                 </div>
                             </div>
                         </div>
                         <!-- User Form Button -->
                         <div class="jobplugin__userbox-button">
-                            <button type="button" id="verifyButton"
+                            {{-- <button type="button" id="verifyButton" --}}
+                            <button type="submit"
                                 class="jobplugin__button large jobplugin__bg-primary hover:jobplugin__bg-secondary">Next</button>
                         </div>
                     </form>
@@ -84,6 +99,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('verifyButton').addEventListener('click', function() {
                 const idNumber = document.getElementById('id_number').value;
+                const firstName = document.getElementById('first_name').value;
+                const lastName = document.getElementById('last_name').value;
 
                 fetch('{{ route('verify-id') }}', {
                         method: 'POST',
@@ -92,7 +109,9 @@
                             'X-CSRF-TOKEN': '{{ csrf_token() }}'
                         },
                         body: JSON.stringify({
-                            id_number: idNumber
+                            id_number: idNumber,
+                            first_name: firstName,
+                            last_name: lastName
                         })
                     })
                     .then(response => response.json())
@@ -110,5 +129,4 @@
             });
         });
     </script>
-
 </x-guest-layout>

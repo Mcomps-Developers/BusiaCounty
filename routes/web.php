@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\IDVerificationController;
+use App\Livewire\Account\AccountDashboard;
 use App\Livewire\HomeComponent;
 use App\Livewire\Pages\AboutCounty;
 use App\Livewire\Pages\Budget;
@@ -69,6 +70,10 @@ Route::prefix('resources')->group(function () {
     Route::get('/event/details', EventDetails::class)->name('event.details');
     Route::get('/tenders', Tenders::class)->name('tenders');
     Route::get('/budgets', Budget::class)->name('budget');
+});
+
+Route::middleware('auth')->group(function(){
+    Route::get('/account',AccountDashboard::class)->name('dashboard');
 });
 
 Route::post('/verify-id', [IDVerificationController::class, 'verify'])->name('verify-id');

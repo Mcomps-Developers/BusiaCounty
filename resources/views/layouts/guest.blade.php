@@ -9,7 +9,8 @@
     <title>@yield('title')</title>
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="preconnect" href="{{ asset('e-services/fonts.googleapis.com/index.html') }}">
+    <link rel="preconnect" href="{{ asset('e-services/fonts.gstatic.com/index.html') }}" crossorigin>
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <!-- Site Main Stylesheet-->
     <link media="all" rel="stylesheet" href="{{ asset('e-services/css/theme-color.css') }}">
@@ -49,11 +50,27 @@
                         <div class="jobplugin__navigation">
                             <!-- Header Authentication Buttons -->
                             <div class="jobplugin__header-buttons">
-                                <a href="{{ route('login') }}"
-                                    class="jobplugin__button button-white jobplugin__text-primary hover:jobplugin__bg-primary hover:jobplugin__text-white">Login</a>
-                                <a href="{{ route('register') }}"
-                                    class="jobplugin__button jobplugin__bg-primary hover:jobplugin__bg-secondary">Create
-                                    Account</a>
+                                @if (Route::has('login'))
+                                    @auth
+                                        <a href="{{ route('logout') }}"
+                                            class="jobplugin__button jobplugin__bg-primary hover:jobplugin__bg-secondary"
+                                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                            style="display: none;">
+                                            @csrf
+                                        </form>
+                                    @else
+                                        <a href="{{ route('login') }}"
+                                            class="jobplugin__button button-white jobplugin__text-primary hover:jobplugin__bg-primary hover:jobplugin__text-white">Login</a>
+                                        <a href="{{ route('register') }}"
+                                            class="jobplugin__button jobplugin__bg-primary hover:jobplugin__bg-secondary">Create
+                                            Account</a>
+                                    @endauth
+                                @endif
+
                             </div>
                         </div>
                     </div>
@@ -129,10 +146,9 @@
     <!-- jQuery Library -->
     <script src="{{ asset('e-services/js/jquery-3.6.4.min.js') }}"></script>
     <!-- jQuery Plugins File -->
-    <script src="{{ asset('e-services/js/jquery-3.6.4.min.js') }}"></script>
+    <script src="{{ asset('e-services/js/vendor.js') }}"></script>
     <!-- jQuery Functions JS File -->
-    <script src="{{ asset('e-services/js/jquery-3.6.4.min.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/youverify-web-sdk/dist/index.js"></script>
+    <script src="{{ asset('e-services/js/jquery.main.js') }}"></script>
     @livewireScripts
 </body>
 
