@@ -108,9 +108,12 @@
                                             </div>
                                             <!-- Settings Card Buttons -->
                                             <div class="jobplugin__settings-card__verification-buttons">
+                                                @php
+                                                    $amount = $item->license->amount + $item->market->attached_value;
+                                                @endphp
                                                 <button type="button"
                                                     class="jobplugin__button jobplugin__bg-primary small hover:jobplugin__bg-secondary intaSendPayButton"
-                                                    data-amount="{{ $item->license->amount }}+{{$item->market->attached_value}}" data-currency="KES"
+                                                    data-amount="{{ $amount }}" data-currency="KES"
                                                     data-email="{{ Auth::user()->email }}"
                                                     data-first_name="{{ Auth::user()->name }}" data-last_name="NA"
                                                     data-phone_number="{{ Auth::user()->phone_number }}"
