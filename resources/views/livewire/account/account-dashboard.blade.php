@@ -114,8 +114,8 @@
                                                 <button type="button"
                                                     class="jobplugin__button jobplugin__bg-primary small hover:jobplugin__bg-secondary intaSendPayButton"
                                                     data-amount="{{ $amount }}" data-currency="KES"
-                                                    data-email="{{ Auth::user()->email }}"
-                                                    data-first_name="{{ Auth::user()->name }}" data-last_name="NA"
+                                                    data-email="{{ Auth::user()->id_number }}" data-first_name="{{ Auth::user()->first_name }}"
+                                                    data-last_name="{{ Auth::user()->last_name }}"
                                                     data-phone_number="{{ Auth::user()->phone_number }}"
                                                     data-api_ref="{{ $item->reference }}"
                                                     data-country="KE">Renew</button>
