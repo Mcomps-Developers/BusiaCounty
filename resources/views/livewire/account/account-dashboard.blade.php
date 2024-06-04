@@ -35,7 +35,7 @@
                                 </li>
                                 <li>
                                     <div class="jobplugin__settings-card__infolist-buttons">
-                                        <a href="#"
+                                        <a href="javascript:void(0);"
                                             class="jobplugin__button jobplugin__bg-primary small hover:jobplugin__bg-secondary">Top
                                             Up</a>
                                     </div>
@@ -44,26 +44,151 @@
                         </div>
                     </div>
                     <!-- Settings Card -->
-                    <div class="jobplugin__settings-card">
-                        <!-- Settings Card Head -->
-                        <header class="jobplugin__settings-card__head">
-                            <h3 class="h6">My Businesses</h3>
-                            <a href="javascript:void(0);"
-                                class="jobplugin__button jobplugin__bg-primary jobplugin__border-primary small hover:jobplugin__bg-white">Add
-                                a business</a>
-                        </header>
-                        <!-- Settings Card Body -->
-                        <div class="jobplugin__settings-card__body">
-                            <ul class="jobplugin__settings-card__infolist">
-                                <li>
-                                    <p>You haven't set up any business  yet. Add a business so you can access services when
-                                        you're ready.</p>
-                                </li>
-                            </ul>
+                    @if ($businesses->count() < 1)
+                        <div class="jobplugin__settings-card">
+                            <!-- Settings Card Head -->
+                            <header class="jobplugin__settings-card__head">
+                                <h3 class="h6">My Businesses</h3>
+                                <a href="{{ route('business.add') }}"
+                                    class="jobplugin__button jobplugin__bg-primary jobplugin__border-primary small hover:jobplugin__bg-white">Add
+                                    a business</a>
+                            </header>
+                            <!-- Settings Card Body -->
+                            <div class="jobplugin__settings-card__body">
+                                <ul class="jobplugin__settings-card__infolist">
+                                    <li>
+                                        <p>You haven't set up any business yet. Add a business so you can access
+                                            services
+                                            when
+                                            you're ready.</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    @else
+                        <div class="jobplugin__settings-content">
+                            <!-- Settings Content Head -->
+                            <div class="jobplugin__settings-head">
+                                <h2 class="h5">My Businesses</h2>
+                                <span class="jobplugin__settings-head__bar jobplugin__bg-primary"></span>
+                            </div>
+                            <!-- Settings Card -->
+                            @foreach ($businesses as $item)
+                                <div class="jobplugin__settings-card">
+                                    <!-- Settings Card Head -->
+                                    <header class="jobplugin__settings-card__head">
+                                        <h3 class="h6">{{ $item->name }} ({{ $item->license->name }}) |
+                                            Reg No.
+                                            <span class="text-success"
+                                                style="text-transform: uppercase">{{ $item->reference }}</span>
+                                        </h3>
+                                        <a href="{{ route('business.add') }}"
+                                            class="jobplugin__button jobplugin__bg-primary jobplugin__border-primary small hover:jobplugin__bg-white">Add
+                                            a business</a>
+                                    </header>
+                                    <!-- Settings Card Body -->
+                                    <div class="jobplugin__settings-card__body">
+                                        <div class="jobplugin__settings-card__verification">
+                                            <div class="jobplugin__settings-card__verification-placeholder">
+                                                <div class="jobplugin__settings-card__verification-icon">
+                                                    <img src="{{ asset('e-services/images/card.png') }}" alt="Card">
+                                                </div>
+                                                <div
+                                                    class="jobplugin__settings-card__verification-infoicon jobplugin__bg-primary">
+                                                    <span class="rj-icon rj-info"></span>
+                                                </div>
+                                            </div>
+                                            <div class="jobplugin__settings-card__verification-textbox">
+                                                <h4 class="h5">{{ $item->market->name }},
+                                                    {{ $item->address }}</h4>
+                                                <p><b>Registered on </b>
+                                                    {{ date('M d, Y', strtotime($item->created_at)) }}</p>
+                                                <p><b>Renewal Date: </b>
+                                                    {{ date('M d, Y', strtotime($item->renewal_date)) }}</p>
+                                            </div>
+                                            <!-- Settings Card Buttons -->
+                                            <div class="jobplugin__settings-card__verification-buttons">
+                                                <button type="button"
+                                                    class="jobplugin__button jobplugin__bg-primary small hover:jobplugin__bg-secondary intaSendPayButton"
+                                                    data-amount="{{ $item->license->amount }}+{{$item->market->attached_value}}" data-currency="KES"
+                                                    data-email="{{ Auth::user()->email }}"
+                                                    data-first_name="{{ Auth::user()->name }}" data-last_name="NA"
+                                                    data-phone_number="{{ Auth::user()->phone_number }}"
+                                                    data-api_ref="{{ $item->reference }}"
+                                                    data-country="KE">Renew</button>
+                                                <a href="#"
+                                                    class="jobplugin__button jobplugin__bg-secondary jobplugin__border-primary small hover:jobplugin__bg-white">Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
     </div>
 </main>
+<script src="https://unpkg.com/intasend-inlinejs-sdk@3.0.4/build/intasend-inline.js"></script>
+<script>
+    new window.IntaSend({
+            publicAPIKey: '{{ env('INTASEND_PUB_KEY') }}',
+            live: true
+        })
+        .on("COMPLETE", (results) => {
+            // console.log("Success", results);
+            saveTransactionToController(results);
+        })
+        .on("FAILED", (results) => {
+            // console.log("Failed", results);
+            saveTransactionToController(results);
+        })
+        .on("IN-PROGRESS", (results) => console.log("Payment in progress status", results));
+
+    function saveTransactionToController(results) {
+        console.log('Results:', results); // Log the results
+
+        const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+        const url = '{{ env('INTASEND_CALL_BACK') }}';
+
+        console.log('Sending request to:', url); // Log the URL being requested
+
+        fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
+                },
+                body: JSON.stringify({
+                    results: results
+                })
+            })
+            .then(response => {
+                console.log('Response received:', response); // Log the response received
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                // Check if the response body is empty
+                if (response.headers.get('Content-Length') === '0') {
+                    // Response body is empty, return an empty object
+                    return {};
+                }
+                // Log the response body
+                return response.text().then(text => {
+                    console.log('Response body:', text);
+                    return text ? JSON.parse(text) : {};
+                });
+            })
+            .then(data => {
+                console.log('Response data:', data); // Log the response data
+
+                // Reload the current page
+                window.location.reload();
+            })
+            .catch(error => console.error('Error saving transaction:', error));
+
+    }
+</script>

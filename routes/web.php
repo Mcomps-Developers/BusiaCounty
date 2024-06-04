@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\IDVerificationController;
+use App\Http\Controllers\SaveTransaction;
 use App\Livewire\Account\AccountDashboard;
+use App\Livewire\Account\AddBusiness;
+use App\Livewire\Account\Transactions;
 use App\Livewire\HomeComponent;
 use App\Livewire\Pages\AboutCounty;
 use App\Livewire\Pages\Budget;
@@ -29,6 +32,7 @@ use App\Livewire\Pages\Subcounties;
 use App\Livewire\Pages\SubcountyDetails;
 use App\Livewire\Pages\Tenders;
 use App\Livewire\Pages\TheExecutive;
+use App\Models\Transaction;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeComponent::class);
@@ -74,6 +78,11 @@ Route::prefix('resources')->group(function () {
 
 Route::middleware('auth')->group(function(){
     Route::get('/account',AccountDashboard::class)->name('dashboard');
+    Route::get('/add-business',AddBusiness::class)->name('business.add');
+    Route::get('/transactions',Transactions::class)->name('transactions');
 });
 
 Route::post('/verify-id', [IDVerificationController::class, 'verify'])->name('verify-id');
+Route::middleware(['auth:sanctum', config('jetstream.auth_session')])->group(function () {
+    Route::post('/callback-url', [SaveTransaction::class, 'saveTransaction'])->name('save.transaction');
+});
