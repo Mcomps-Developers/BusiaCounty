@@ -59,13 +59,13 @@
                                     alt="icon">
                             </div>
                             <div class="cat-text">
-                                <strong class="title">Essential Services</strong>
-                                <p>2 Services available</p>
+                                <strong class="title">Unified Business License</strong>
+                                <p>Access unified business licensing services.</p>
                             </div>
                         </a>
                     </div>
                     <div class="cat-box">
-                        <a href="{{ route('service.details') }}">
+                        <a href="javascript:void(0);">
                             <div class="icon-box"><img src="{{ asset('e-services/images/cat-ico2.svg') }}"
                                     alt="icon">
                             </div>
@@ -76,7 +76,7 @@
                         </a>
                     </div>
                     <div class="cat-box">
-                        <a href="{{ route('service.details') }}">
+                        <a href="javascript:void(0);">
                             <div class="icon-box"><img src="{{ asset('e-services/images/cat-ico3.svg') }}"
                                     alt="icon">
                             </div>
@@ -87,7 +87,7 @@
                         </a>
                     </div>
                     <div class="cat-box">
-                        <a href="{{ route('service.details') }}">
+                        <a href="javascript:void(0);">
                             <div class="icon-box"><img src="{{ asset('e-services/images/cat-ico4.svg') }}"
                                     alt="icon">
                             </div>
@@ -98,7 +98,7 @@
                         </a>
                     </div>
                     <div class="cat-box">
-                        <a href="{{ route('service.details') }}">
+                        <a href="javascript:void(0);">
                             <div class="icon-box"><img src="{{ asset('e-services/images/cat-ico5.svg') }}"
                                     alt="icon">
                             </div>
@@ -109,7 +109,7 @@
                         </a>
                     </div>
                     <div class="cat-box">
-                        <a href="{{ route('service.details') }}">
+                        <a href="javascript:void(0);">
                             <div class="icon-box"><img src="{{ asset('e-services/images/cat-ico6.svg') }}"
                                     alt="icon">
                             </div>
@@ -120,7 +120,7 @@
                         </a>
                     </div>
                     <div class="cat-box">
-                        <a href="{{ route('service.details') }}">
+                        <a href="javascript:void(0);">
                             <div class="icon-box"><img src="{{ asset('e-services/images/cat-ico7.svg') }}"
                                     alt="icon">
                             </div>
@@ -131,7 +131,7 @@
                         </a>
                     </div>
                     <div class="cat-box">
-                        <a href="{{ route('service.details') }}">
+                        <a href="javascript:void(0);">
                             <div class="icon-box"><img src="{{ asset('e-services/images/cat-ico8.svg') }}"
                                     alt="icon">
                             </div>
