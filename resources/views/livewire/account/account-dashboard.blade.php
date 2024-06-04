@@ -98,6 +98,9 @@
                                                     <span class="rj-icon rj-info"></span>
                                                 </div>
                                             </div>
+                                            @php
+                                                $amount = $item->license->amount + $item->market->attached_value;
+                                            @endphp
                                             <div class="jobplugin__settings-card__verification-textbox">
                                                 <h4 class="h5">{{ $item->market->name }},
                                                     {{ $item->address }}</h4>
@@ -105,16 +108,17 @@
                                                     {{ date('M d, Y', strtotime($item->created_at)) }}</p>
                                                 <p><b>Renewal Date: </b>
                                                     {{ date('M d, Y', strtotime($item->renewal_date)) }}</p>
+                                                <p><b>License Fee: </b>
+                                                    Ksh {{ $amount }}</p>
                                             </div>
                                             <!-- Settings Card Buttons -->
                                             <div class="jobplugin__settings-card__verification-buttons">
-                                                @php
-                                                    $amount = $item->license->amount + $item->market->attached_value;
-                                                @endphp
+
                                                 <button type="button"
                                                     class="jobplugin__button jobplugin__bg-primary small hover:jobplugin__bg-secondary intaSendPayButton"
                                                     data-amount="{{ $amount }}" data-currency="KES"
-                                                    data-email="{{ Auth::user()->id_number }}" data-first_name="{{ Auth::user()->first_name }}"
+                                                    data-email=""
+                                                    data-first_name="{{ Auth::user()->first_name }}"
                                                     data-last_name="{{ Auth::user()->last_name }}"
                                                     data-phone_number="{{ Auth::user()->phone_number }}"
                                                     data-api_ref="{{ $item->reference }}"
