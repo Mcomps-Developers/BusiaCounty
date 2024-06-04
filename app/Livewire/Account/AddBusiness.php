@@ -50,11 +50,8 @@ class AddBusiness extends Component
     public function updated($fields)
     {
         $this->validateOnly($fields);
-        
-        notyf()
-            ->position('x', 'right')
-            ->position('y', 'top')
-            ->success('Succeess.');
+
+
     }
 
     public function addBusiness()
@@ -70,6 +67,11 @@ class AddBusiness extends Component
         $business->renewal_date = Carbon::today();
         $business->user_id = Auth::id();
         $business->save();
+        notyf()
+            ->position('x', 'right')
+            ->position('y', 'top')
+            ->success('Business created.');
+        return redirect()->route('dashboard');
     }
     public function render()
     {

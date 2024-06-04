@@ -36,7 +36,7 @@
                                         <strong
                                             class="jobplugin__settings-card__subbox-title">[{{ $item->tracking_id }}] :
                                             Business Renewal <span
-                                                class="text-success">{{ $item->api_ref }}</span></strong>
+                                                class="text-success"> {{ $item->api_ref }}</span></strong>
                                     </div>
                                     <!-- Settings Card List -->
                                     <ul class="jobplugin__settings-card__subbox-list">
