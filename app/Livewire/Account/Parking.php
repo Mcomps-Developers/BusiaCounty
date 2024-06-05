@@ -55,7 +55,7 @@ class Parking extends Component
                 $randomCode .= $characters[rand(0, strlen($characters) - 1)];
             }
             // Check if the code already exists in the database
-            $existingBusiness = DailyParking::where('reference', $randomCode)->first();
+            $existingBusiness = DailyParking::where('serial', $randomCode)->first();
         } while ($existingBusiness);
 
         $this->serial = $randomCode;
