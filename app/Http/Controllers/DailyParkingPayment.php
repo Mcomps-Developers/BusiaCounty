@@ -63,6 +63,7 @@ class DailyParkingPayment extends Controller
                 ->position('x', 'right')
                 ->position('y', 'top')
                 ->success('Transaction successful');
+                return redirect()->route('parking');
         } catch (\Exception $e) {
             Log::error('Unexpected Exception on updating daily parking payment. Details: ' . $e->getMessage());
             notyf()

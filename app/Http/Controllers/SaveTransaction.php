@@ -64,6 +64,7 @@ class SaveTransaction extends Controller
                 ->position('x', 'right')
                 ->position('y', 'top')
                 ->success('Transaction successful');
+            return redirect()->route('dashboard');
         } catch (\Exception $e) {
             Log::error('Unexpected Exception on updating renewal: ' . $e->getMessage());
             notyf()
