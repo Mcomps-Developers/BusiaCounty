@@ -1,6 +1,6 @@
 <div>
     @section('title')
-        Unified License
+Parking
     @endsection
     <div class="text-white subvisual-block subvisual-theme-1 bg-dark-green d-flex pt-60 pt-md-90 pt-lg-150 pb-30">
         <div class="pattern-image"><img src="{{ asset('e-services/images/bg-pattern-overlay.jpg') }}" width="1920"
@@ -10,8 +10,8 @@
             <div class="row">
                 <div class="col-12" style="padding-top: 60px">
                     <div class="subvisual-textbox">
-                        <h1>Business Licensing</h1>
-                        <p>Unified Business License</p>
+                        <h1>Parking</h1>
+                        <p>Parking License</p>
                     </div>
                 </div>
             </div>
@@ -27,14 +27,14 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
                                 <!-- Featured Category Box -->
-                                <a href="{{ route('business.add') }}" class="featured-category-box alt2">
+                                <a href="{{ route('daily.parking') }}" class="featured-category-box alt2">
                                     <div class="wrap">
                                         <div class="img-holder">
                                             <img src="{{ asset('e-services/images/company-logo02.jpg') }}"
                                                 alt="Javascript Developer">
                                         </div>
                                         <div class="textbox">
-                                            <strong class="h6">Unified Business Permit</strong>
+                                            <strong class="h6">Daily Parking</strong>
                                             <p class="location"><i class="fa fa-info-circle"></i>Apply for unified
                                                 business permit. At the end, you will
                                                 be able to download the permit available for e-verify.</p>
@@ -47,17 +47,15 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
                                 <!-- Featured Category Box -->
-                                <a href="{{ route('business.add') }}" class="featured-category-box alt2">
+                                <a href="javascript:void(0);" class="featured-category-box alt2">
                                     <div class="wrap">
                                         <div class="img-holder">
                                             <img src="{{ asset('e-services/images/company-logo03.jpg') }}"
                                                 alt="Javascript Developer">
                                         </div>
                                         <div class="textbox">
-                                            <strong class="h6">Weights & Measures License</strong>
-                                            <p class="location"><i class="fa fa-info-circle"></i>Apply for weights and
-                                                measures permit. At the end, you will
-                                                be able to download the permit available for e-verify.
+                                            <strong class="h6">Seasonal Parking</strong>
+                                            <p class="location"><i class="fa fa-info-circle"></i>Apply for a specific period of time.
                                             </p>
                                             <div class="tag-wrap">
                                                 <span class="btn btn-success btn-sm">Apply Now</span>
@@ -68,17 +66,16 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
                                 <!-- Featured Category Box -->
-                                <a href="{{ route('business.add') }}" class="featured-category-box alt2">
+                                <a href="javascript:void(0);" class="featured-category-box alt2">
                                     <div class="wrap">
                                         <div class="img-holder">
                                             <img src="{{ asset('e-services/images/company-logo04.jpg') }}"
                                                 alt="Javascript Developer">
                                         </div>
                                         <div class="textbox">
-                                            <strong class="h6">Betting & Gaming Licensing</strong>
+                                            <strong class="h6">Reserved Parking</strong>
                                             <address class="location"><i class="fa fa-info-circle"></i><span
-                                                    class="text">Apply for betting and gaming shop licensing. You
-                                                    license will be verifiable online.</span></address>
+                                                    class="text">Apply for Loading Zone,Trailer parking bay, PSV parking bay, Parking bay event hiring.</span></address>
                                             <div class="tag-wrap">
                                                 <span class="btn btn-success btn-sm">Apply Now</span>
                                             </div>

@@ -41,7 +41,7 @@
                     <div class="jobplugin__header-left">
                         <!-- Logo of the Site -->
                         <strong class="jobplugin__header-logo">
-                            <a href="javascript:void(0);">
+                            <a href="{{ route('eservices') }}">
                                 <img src="{{ asset('assets/images/logo.png') }}" alt="Remote Jobs">
                             </a>
                         </strong>
@@ -81,26 +81,6 @@
         {{ $slot }}
         <!-- Footer of the Page -->
         <footer class="footer footer-theme-10">
-            <div class="pri-footer pt-35 pt-lg-70 pt-xl-90 pb-35 pb-md-20">
-                <div class="container">
-                    <div class="row mb-25 mb-md-40 mb-lg-60 mb-xl-100">
-                        <div class="col-12">
-                            <div class="call-to-action">
-                                <div class="text-row">
-                                    <img class="icon" src="{{ asset('e-services/images/speaker.svg') }}"
-                                        alt="icon">
-                                    <strong class="heading">Enroll Your Business Now</strong>
-                                    <p>Make payments easily and quickly. Create an account and get to enjoy paying for
-                                        Busia County services online.</p>
-                                </div>
-                                <button class="btn btn-sm btn-orange" type="submit">
-                                    <span class="btn-text">Start Now</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="text-black sec-footer pt-35 pb-35">
                 <div class="container">
                     <div class="row align-items-center">

@@ -66,71 +66,104 @@
                             </div>
                         </div>
                     @else
-                        <div class="jobplugin__settings-content">
-                            <!-- Settings Content Head -->
-                            <div class="jobplugin__settings-head">
-                                <h2 class="h5">My Businesses</h2>
-                                <span class="jobplugin__settings-head__bar jobplugin__bg-primary"></span>
-                            </div>
-                            <!-- Settings Card -->
+                        <div class="jobplugin__settings-card">
+                            <!-- Settings Card Head -->
+                            <header class="card__head"
+                                style="display: flex; justify-content: space-between; align-items: center; width: 100%; background-color: #f0f0f0; padding: 10px; border-radius: 8px;">
+                                <h3 class="h6"
+                                    style="margin: 0; flex: 1; text-align: left; color: #333; font-family: Arial, sans-serif;">
+                                    My Businesses</h3>
+                                <a href="{{ route('business.add') }}" class="btn btn-primary btn-sm"
+                                    style="margin: 0; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border: none; border-radius: 8px; font-family: Arial, sans-serif;">Add
+                                    a business</a>
+                            </header>
+                        </div>
+                        <!-- Settings Card -->
+                        <div class="row" style="margin-top: 30px">
                             @foreach ($businesses as $item)
-                                <div class="jobplugin__settings-card">
+                                <div class="card col-md-6" style="margin-top:30px;">
                                     <!-- Settings Card Head -->
+                                    <style>
+                                        .jobplugin__settings-card__head {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            border: 1px solid #ccc;
+                                            padding: 16px;
+                                            border-radius: 8px;
+                                            background-color: #f9f9f9;
+                                        }
+
+                                        .jobplugin__settings-card__head h3 {
+                                            margin: 0 0 8px;
+                                        }
+
+                                        .details-section {
+                                            margin-top: 8px;
+                                            padding-left: 8px;
+                                            border: 1px solid #ccc;
+                                            border-radius: 8px;
+                                            background-color: #f1f1f1;
+                                        }
+                                    </style>
                                     <header class="jobplugin__settings-card__head">
-                                        <h3 class="h6">{{ $item->name }} ({{ $item->license->name }}) |
-                                            Reg No.
-                                            <span class="text-success"
-                                                style="text-transform: uppercase">{{ $item->reference }}</span>
-                                        </h3>
-                                        <a href="{{ route('business.add') }}"
-                                            class="jobplugin__button jobplugin__bg-primary jobplugin__border-primary small hover:jobplugin__bg-white">Add
-                                            a business</a>
-                                    </header>
-                                    <!-- Settings Card Body -->
-                                    <div class="jobplugin__settings-card__body">
-                                        <div class="jobplugin__settings-card__verification">
-                                            <div class="jobplugin__settings-card__verification-placeholder">
-                                                <div class="jobplugin__settings-card__verification-icon">
-                                                    <img src="{{ asset('e-services/images/card.png') }}" alt="Card">
-                                                </div>
-                                                <div
-                                                    class="jobplugin__settings-card__verification-infoicon jobplugin__bg-primary">
-                                                    <span class="rj-icon rj-info"></span>
-                                                </div>
-                                            </div>
+                                        <h3 class="h6">{{ $item->name }} ({{ $item->license->name }})</h3>
+                                        <div>
+                                            <span class="btn btn-sm text-success"
+                                                style="text-transform: uppercase">BR-NO: {{ $item->reference }}</span>
+                                            @if (\Carbon\Carbon::parse($item->renewal_date) >= \Carbon\Carbon::now())
+                                                <span class="btn btn-sm text-info">
+                                                    Active
+                                                @else
+                                                    <span class="btn btn-sm text-danger">
+                                                        Expired
+                                            @endif
+                                            </span>
                                             @php
                                                 $amount = $item->license->amount + $item->market->attached_value;
                                             @endphp
-                                            <div class="jobplugin__settings-card__verification-textbox">
-                                                <h4 class="h5">{{ $item->market->name }},
-                                                    {{ $item->address }}</h4>
-                                                <p><b>Registered on </b>
-                                                    {{ date('M d, Y', strtotime($item->created_at)) }}</p>
-                                                <p><b>Renewal Date: </b>
-                                                    {{ date('M d, Y', strtotime($item->renewal_date)) }}</p>
-                                                <p><b>License Fee: </b>
-                                                    Ksh {{ $amount }}</p>
-                                            </div>
-                                            <!-- Settings Card Buttons -->
-                                            <div class="jobplugin__settings-card__verification-buttons">
 
-                                                <button type="button"
-                                                    class="jobplugin__button jobplugin__bg-primary small hover:jobplugin__bg-secondary intaSendPayButton"
-                                                    data-amount="{{ $amount }}" data-currency="KES"
-                                                    data-email=""
-                                                    data-first_name="{{ Auth::user()->first_name }}"
+                                        </div>
+                                        <div class="jobplugin__settings-card__buttons ">
+                                            <a href="{{ route('business.manage',['reference'=>$item->reference]) }}" class="btn btn-secondary btn-sm"
+                                                style="margin: 0; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border: none; border-radius: 8px; font-family: Arial, sans-serif;">
+                                                Manage Business
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-primary btn-sm intaSendPayButton"
+                                                style="margin: 0; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border: none; border-radius: 8px; font-family: Arial, sans-serif;"
+                                                data-amount="{{ $amount }}" data-currency="KES"
+                                                    data-email="" data-first_name="{{ Auth::user()->first_name }}"
                                                     data-last_name="{{ Auth::user()->last_name }}"
                                                     data-phone_number="{{ Auth::user()->phone_number }}"
                                                     data-api_ref="{{ $item->reference }}"
-                                                    data-country="KE">Renew</button>
-                                                <a href="#"
-                                                    class="jobplugin__button jobplugin__bg-secondary jobplugin__border-primary small hover:jobplugin__bg-white">Details</a>
-                                            </div>
+                                                    data-country="KE">
+                                                @if (\Carbon\Carbon::parse($item->renewal_date) >= \Carbon\Carbon::now())
+                                                    Extend
+                                                @else
+                                                    Renew
+                                                @endif
+                                                Ksh {{ $amount }}
+                                            </a>
                                         </div>
-                                    </div>
+                                    </header>
+                                    <section class="details-section">
+                                        <p style="margin-top: 8px; margin-bottom:0px">Your license
+                                            @if (\Carbon\Carbon::parse($item->renewal_date) >= \Carbon\Carbon::now())
+                                                is
+                                            @else
+                                                was
+                                            @endif
+                                            valid until the end of
+                                            <strong>{{ date('M d, Y', strtotime($item->renewal_date)) }}</strong>.
+                                    </section>
+                                    <section class="details-section">
+                                        <strong>Address</strong>
+                                        <p style="margin-bottom: 0px">{{ $item->market->name }},
+                                            {{ $item->address }}</p>
+                                    </section>
+                                    <hr style="margin-top:30px">
                                 </div>
                             @endforeach
-
                         </div>
                     @endif
                 </div>

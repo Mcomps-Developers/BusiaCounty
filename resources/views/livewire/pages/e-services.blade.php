@@ -109,13 +109,13 @@
                         </a>
                     </div>
                     <div class="cat-box">
-                        <a href="javascript:void(0);">
+                        <a href="{{ route('parking.details') }}">
                             <div class="icon-box"><img src="{{ asset('e-services/images/cat-ico6.svg') }}"
                                     alt="icon">
                             </div>
                             <div class="cat-text">
                                 <strong class="title">Parking</strong>
-                                <p>2 Services available</p>
+                                <p>3 Services available</p>
                             </div>
                         </a>
                     </div>

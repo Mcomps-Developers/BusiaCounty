@@ -1,9 +1,15 @@
 <?php
 
+use App\Http\Controllers\DailyParkingPayment;
 use App\Http\Controllers\IDVerificationController;
 use App\Http\Controllers\SaveTransaction;
 use App\Livewire\Account\AccountDashboard;
 use App\Livewire\Account\AddBusiness;
+use App\Livewire\Account\AllParking;
+use App\Livewire\Account\ManageBusiness;
+use App\Livewire\Account\Parking;
+use App\Livewire\Account\ParkingDetails;
+use App\Livewire\Account\PayDailyParking;
 use App\Livewire\Account\Transactions;
 use App\Livewire\HomeComponent;
 use App\Livewire\Pages\AboutCounty;
@@ -48,7 +54,8 @@ Route::get('/job/details', JobDetails::class)->name('job.details');
 
 Route::prefix('e-services')->group(function () {
     Route::get('/services', EServices::class)->name('eservices');
-    Route::get('/service/category/details', ServiceDetails::class)->name('service.details');
+    Route::get('/service/unified-license', ServiceDetails::class)->name('service.details');
+    Route::get('/service/parking', ParkingDetails::class)->name('parking.details');
 });
 
 Route::prefix('/about')->group(function () {
@@ -76,13 +83,18 @@ Route::prefix('resources')->group(function () {
     Route::get('/budgets', Budget::class)->name('budget');
 });
 
-Route::middleware('auth')->group(function(){
-    Route::get('/account',AccountDashboard::class)->name('dashboard');
-    Route::get('/add-business',AddBusiness::class)->name('business.add');
-    Route::get('/transactions',Transactions::class)->name('transactions');
+Route::middleware('auth')->group(function () {
+    Route::get('/account', AccountDashboard::class)->name('dashboard');
+    Route::get('/add-business', AddBusiness::class)->name('business.add');
+    Route::get('/transactions', Transactions::class)->name('transactions');
+    Route::get('/manage/{reference}', ManageBusiness::class)->name('business.manage');
+    Route::get('/my/parking',AllParking::class)->name('parking');
+    Route::get('/parking/daily', Parking::class)->name('daily.parking');
+    Route::get('/daily-parking/{sticker}/payment',PayDailyParking::class)->name('daily.parking.pay');
 });
 
 Route::post('/verify-id', [IDVerificationController::class, 'verify'])->name('verify-id');
 Route::middleware(['auth:sanctum', config('jetstream.auth_session')])->group(function () {
     Route::post('/callback-url', [SaveTransaction::class, 'saveTransaction'])->name('save.transaction');
+    Route::post('/daily-parking/callback', [DailyParkingPayment::class, 'saveTransaction'])->name('save.transaction');
 });
