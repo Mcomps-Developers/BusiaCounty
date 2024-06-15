@@ -2,14 +2,14 @@
     @section('title')
     Contact Us
     @endsection
-    <header class="pageMainHead d-flex position-relative bgCover w-100 text-white"
-        style="background-image: url({{@asset('assets/images/img190.jpg')}});">
+    <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
+        style="background-image: url(https://placehold.co/1920x300);">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="text-white mb-2">Contact us</h1>
+                    <h1 class="mb-2 text-white">Contact us</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Contact us</li>
@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-12 col-lg-4 col-xl-3 pt-lg-9">
                     <header class="mb-3 mb-lg-10 mb-xl-0">
-                        <h2 class="fwSemiBold h2Medium mb-4">County Contact Centre</h2>
+                        <h2 class="mb-4 fwSemiBold h2Medium">County Contact Centre</h2>
                         <p>These are our network location over the world specific foreign charitable organization.</p>
                     </header>
                 </div>
@@ -34,10 +34,10 @@
                         <div class="px-2">
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
-                                <div class="bg-white w-100 py-8 px-3 px-md-5 gdcHolder">
+                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
                                     <strong class="ardBadge fwSemiBold fontAlter">County Headquarters</strong>
                                     <address class="my-3">250 Main Street, Newton Hall, NY 52143</address>
-                                    <ul class="list-unstyled contactInfoList mb-6">
+                                    <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
@@ -56,10 +56,10 @@
                         <div class="px-2">
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
-                                <div class="bg-white w-100 py-8 px-3 px-md-5 gdcHolder">
+                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
                                     <strong class="ardBadge fwSemiBold fontAlter">Police Department</strong>
                                     <address class="my-3">576 South Street, Police station, NY 13245</address>
-                                    <ul class="list-unstyled contactInfoList mb-6">
+                                    <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
@@ -78,10 +78,10 @@
                         <div class="px-2">
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
-                                <div class="bg-white w-100 py-8 px-3 px-md-5 gdcHolder">
+                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
                                     <strong class="ardBadge fwSemiBold fontAlter">Medical Center</strong>
                                     <address class="my-3">65 Town hall Road, Benshall, Westhorn, NY 5623</address>
-                                    <ul class="list-unstyled contactInfoList mb-6">
+                                    <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
@@ -100,10 +100,10 @@
                         <div class="px-2">
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
-                                <div class="bg-white w-100 py-8 px-3 px-md-5 gdcHolder">
+                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
                                     <strong class="ardBadge fwSemiBold fontAlter">Police Department</strong>
                                     <address class="my-3">576 South Street, Police station, NY 13245</address>
-                                    <ul class="list-unstyled contactInfoList mb-6">
+                                    <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
@@ -122,10 +122,10 @@
                         <div class="px-2">
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
-                                <div class="bg-white w-100 py-8 px-3 px-md-5 gdcHolder">
+                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
                                     <strong class="ardBadge fwSemiBold fontAlter">City Hall</strong>
                                     <address class="my-3">250 Main Street, Newton Hall, NY 52143</address>
-                                    <ul class="list-unstyled contactInfoList mb-6">
+                                    <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
@@ -144,10 +144,10 @@
                         <div class="px-2">
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
-                                <div class="bg-white w-100 py-8 px-3 px-md-5 gdcHolder">
+                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
                                     <strong class="ardBadge fwSemiBold fontAlter">Medical Center</strong>
                                     <address class="my-3">65 Town hall Road, Benshall, Westhorn, NY 5623</address>
-                                    <ul class="list-unstyled contactInfoList mb-6">
+                                    <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
@@ -166,27 +166,27 @@
                     </div>
                     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                         <header class="mb-6 text-center">
-                            <h2 class="fwSemiBold text-capitalize mb-2">Leave your Message</h2>
+                            <h2 class="mb-2 fwSemiBold text-capitalize">Leave your Message</h2>
                             <p>Contact us today using this form and we will reach you asap.</p>
                         </header>
                         <form action="#" class="commentForm">
                             <div class="row mx-n2">
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-6 px-2">
+                                <div class="px-2 col-12 col-sm-6 col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <input type="text" class="form-control d-block w-100" placeholder="Name">
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-6 col-md-12 col-lg-6 px-2">
+                                <div class="px-2 col-12 col-sm-6 col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <input type="email" class="form-control d-block w-100" placeholder="Email">
                                     </div>
                                 </div>
-                                <div class="col-12 px-2">
+                                <div class="px-2 col-12">
                                     <div class="form-group">
                                         <input type="text" class="form-control d-block w-100" placeholder="Subject">
                                     </div>
                                 </div>
-                                <div class="col-12 px-2">
+                                <div class="px-2 col-12">
                                     <div class="form-group">
                                         <textarea class="form-control w-100 d-block"
                                             placeholder="Write your message&hellip;"></textarea>
@@ -194,7 +194,7 @@
                                 </div>
                             </div>
                             <button type="button"
-                                class="btn btnTheme d-flex font-weight-bold text-capitalize position-relative border-0 p-0 mt-2 btnWidthSmall w-100"
+                                class="p-0 mt-2 border-0 btn btnTheme d-flex font-weight-bold text-capitalize position-relative btnWidthSmall w-100"
                                 data-hover="Send Message">
                                 <span class="d-block btnText">Send Message</span>
                             </button>

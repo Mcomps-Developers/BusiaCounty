@@ -2,14 +2,14 @@
     @section('title')
     County Public Service
     @endsection
-    <header class="pageMainHead d-flex position-relative bgCover w-100 text-white"
-        style="background-image: url({{@asset('assets/images/img23.jpg')}});">
+    <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
+        style="background-image: url(https://placehold.co/1920x300);">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="text-white mb-2">Departments</h1>
+                    <h1 class="mb-2 text-white">Departments</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Leadership</a></li>
                             <li class="breadcrumb-item active" aria-current="page">County Public Service</li>
@@ -19,10 +19,10 @@
             </div>
         </div>
     </header>
-    <article class="dsSingleContent pt-7 pb-2 pt-md-10 pb-md-1 pt-lg-16 pb-lg-10 pt-xl-21 pb-xl-16">
+    <article class="pb-2 dsSingleContent pt-7 pt-md-10 pb-md-1 pt-lg-16 pb-lg-10 pt-xl-21 pb-xl-16">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-8 col-xl-9 order-lg-2 mb-6">
+                <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
                     <div class="pl-xl-14">
                         <header class="fzMedium mb-9">
                             <h2 class="fwSemiBold h2vii">{{config('app.name')}} Public Service</h2>
@@ -31,7 +31,7 @@
                                 above. Your investment account should adjust to your life — not the other way around.
                             </p>
                         </header>
-                        <div class="overflow-hidden mb-3 mb-lg-7">
+                        <div class="mb-3 overflow-hidden mb-lg-7">
                             <p>He was installed globally, an annual market growth of 22 percent. It is continuing its
                                 progress towards becoming a mainstream competitive salary and economy reports by mine.
                                 As wind energy continues to gain ground, let’s take a look at three main trends we’re
@@ -42,14 +42,14 @@
                                 cheap enough in many places in the locally also helps to eliminate long-distance.and
                                 around.</p>
                         </div>
-                        <div class="dcsPatchWrap mb-5">
+                        <div class="mb-5 dcsPatchWrap">
                             <h3 class="mb-4">Mandate</h3>
                             <p>One of the most common additions people make to their cars in order to keep the heat out
                                 is a windshield visor. Cars become warm in the summer because direct sunlight enters in
                                 through the windows. This is why we park in the shade whenever we can. Since the largest
                                 windshield.</p>
                         </div>
-                        <div class="dcsPatchWrap mb-6 mb-lg-11">
+                        <div class="mb-6 dcsPatchWrap mb-lg-11">
                             <h3 class="mb-4">Strategic Direction</h3>
                             <p>To help customers block out even more of the sun, consider offering window-tinting
                                 services. Since tinted windows are a little darker than normal windows, they allow in
@@ -65,18 +65,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-xl-3 order-lg-1 mb-6">
-                    <aside class="dscSidebar pt-1 mr-xl-n5">
-                        <section class="widget mb-6 mb-lg-10 widgetDocs">
-                            <ul class="list-unstyled drItemsList pl-0">
+                <div class="mb-6 col-12 col-lg-4 col-xl-3 order-lg-1">
+                    <aside class="pt-1 dscSidebar mr-xl-n5">
+                        <section class="mb-6 widget mb-lg-10 widgetDocs">
+                            <ul class="pl-0 list-unstyled drItemsList">
                                 <li style="margin-bottom:10px;">
-                                    <div class="drItemRow position-relative d-flex px-3 px-md-6 py-3">
-                                        <span class="icnWrap flex-shrink-0 pt-1 mr-3">
+                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
+                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
                                             <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
                                                 alt="icon">
                                         </span>
                                         <div class="descrWrap">
-                                            <h4 class="fontBase font-weight-normal mb-1">
+                                            <h4 class="mb-1 fontBase font-weight-normal">
                                                 <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
                                             </h4>
                                             <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
@@ -84,13 +84,13 @@
                                     </div>
                                 </li>
                                 <li style="margin-bottom:10px;">
-                                    <div class="drItemRow position-relative d-flex px-3 px-md-6 py-3">
-                                        <span class="icnWrap flex-shrink-0 pt-1 mr-3">
+                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
+                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
                                             <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
                                                 alt="icon">
                                         </span>
                                         <div class="descrWrap">
-                                            <h4 class="fontBase font-weight-normal mb-1">
+                                            <h4 class="mb-1 fontBase font-weight-normal">
                                                 <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
                                             </h4>
                                             <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
@@ -98,13 +98,13 @@
                                     </div>
                                 </li>
                                 <li style="margin-bottom:10px;">
-                                    <div class="drItemRow position-relative d-flex px-3 px-md-6 py-3">
-                                        <span class="icnWrap flex-shrink-0 pt-1 mr-3">
+                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
+                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
                                             <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
                                                 alt="icon">
                                         </span>
                                         <div class="descrWrap">
-                                            <h4 class="fontBase font-weight-normal mb-1">
+                                            <h4 class="mb-1 fontBase font-weight-normal">
                                                 <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
                                             </h4>
                                             <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
@@ -112,13 +112,13 @@
                                     </div>
                                 </li>
                                 <li style="margin-bottom:10px;">
-                                    <div class="drItemRow position-relative d-flex px-3 px-md-6 py-3">
-                                        <span class="icnWrap flex-shrink-0 pt-1 mr-3">
+                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
+                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
                                             <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
                                                 alt="icon">
                                         </span>
                                         <div class="descrWrap">
-                                            <h4 class="fontBase font-weight-normal mb-1">
+                                            <h4 class="mb-1 fontBase font-weight-normal">
                                                 <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
                                             </h4>
                                             <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
@@ -127,13 +127,13 @@
                                 </li>
                             </ul>
                         </section>
-                        <div class="widget mb-6 mb-lg-10 widgetHelp bg-lDark pt-5 px-6 pb-8 position-relative">
-                            <i class="icnWrap icomoon-chatq text-white d-block mb-3"><span
+                        <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">
+                            <i class="mb-3 text-white icnWrap icomoon-chatq d-block"><span
                                     class="sr-only">icon</span></i>
-                            <h3 class="h3Medium text-white mb-2">Need any help?</h3>
+                            <h3 class="mb-2 text-white h3Medium">Need any help?</h3>
                             <p>Here you can get your perfect answer for your problem.</p>
                             <a href="{{route('contact')}}"
-                                class="btn btnTheme btn-sm font-weight-bold text-capitalize position-relative border-0 p-0"
+                                class="p-0 border-0 btn btnTheme btn-sm font-weight-bold text-capitalize position-relative"
                                 data-hover="Contact now">
                                 <span class="d-block btnText">Contact now</span>
                             </a>
@@ -143,21 +143,21 @@
                     </aside>
                 </div>
             </div>
-            <section class="meetCouncilBlock noOverlay position-relative pt-3 pt-md-4 pt-lg-6 pt-xl-11 pb-6 pb-lg-10">
+            <section class="pt-3 pb-6 meetCouncilBlock noOverlay position-relative pt-md-4 pt-lg-6 pt-xl-11 pb-lg-10">
                 <div class="container">
-                    <header class="headingHead text-center cdTitle mb-7 mb-md-13">
-                        <h2 class="fwSemiBold mb-4">Board Members</h2>
-                        <p>Board Members of {{config('app.name')}} Public Service Board.</p>
+                    <header class="text-center headingHead cdTitle mb-7 mb-md-13">
+                        <h2 class="mb-4 fwSemiBold">Board Members</h2>
+                        <p>Board Members of The County Government of Busia Public Service Board.</p>
                     </header>
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mccColumn bg-white shadow mb-6 mx-auto mx-sm-0">
+                            <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
-                                    <img src="{{asset('assets/images/img19.jpg')}}" class="img-fluid d-block w-100"
+                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
                                         alt="image description">
                                     <div class="mcssHolder">
                                         <ul
-                                            class="mcssList list-unstyled rounded-pill bg-white overflow-hidden p-0 m-0 d-flex">
+                                            class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                             <li>
                                                 <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
                                                         class="vssIcn fab fa-twitter"></i></a>
@@ -173,24 +173,24 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="mcCaptionWrap px-5 pt-5 pb-4 position-relative">
-                                    <h3 class="fwMedium h3Small mb-1">Cevin Peter</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">City Council President
+                                <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
+                                    <h3 class="mb-1 fwMedium h3Small">Name Here</h3>
+                                    <h4 class="fwSemiBold fontBase text-secondary">Position Here
                                     </h4>
-                                    <hr class="mccSeprator mx-0 mt-4 mb-3">
+                                    <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                     <ul class="list-unstyled mccInfoList">
                                         <li>
-                                            <a href="mailto:president@citygov.com">
-                                                <i class="fas fa-envelope icn mr-1"><span
+                                            <a href="mailto:example@domain.com">
+                                                <i class="mr-1 fas fa-envelope icn"><span
                                                         class="sr-only">icon</span></i>
-                                                president@citygov.com
+                                                example@domain.com
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="tel:+918002359595">
-                                                <i class="fas fa-phone-alt icn mr-1"><span
+                                            <a href="tel:+254xxxxxxxxx">
+                                                <i class="mr-1 fas fa-phone-alt icn"><span
                                                         class="sr-only">icon</span></i>
-                                                (+91) 800 235 9595
+                                                +254xxxxxxxxx
                                             </a>
                                         </li>
                                     </ul>
@@ -198,13 +198,13 @@
                             </article>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mccColumn bg-white shadow mb-6 mx-auto mx-sm-0">
+                            <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
-                                    <img src="{{asset('assets/images/img20.jpg')}}" class="img-fluid d-block w-100"
+                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
                                         alt="image description">
                                     <div class="mcssHolder">
                                         <ul
-                                            class="mcssList list-unstyled rounded-pill bg-white overflow-hidden p-0 m-0 d-flex">
+                                            class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                             <li>
                                                 <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
                                                         class="vssIcn fab fa-twitter"></i></a>
@@ -220,23 +220,23 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="mcCaptionWrap px-5 pt-5 pb-4 position-relative">
-                                    <h3 class="fwMedium h3Small mb-1">Carleno Emo</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">City Auditor</h4>
-                                    <hr class="mccSeprator mx-0 mt-4 mb-3">
+                                <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
+                                    <h3 class="mb-1 fwMedium h3Small">Name: Here</h3>
+                                    <h4 class="fwSemiBold fontBase text-secondary">Position : Here</h4>
+                                    <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                     <ul class="list-unstyled mccInfoList">
                                         <li>
-                                            <a href="mailto:auditor@citygov.com">
-                                                <i class="fas fa-envelope icn mr-1"><span
+                                            <a href="example@domain.com">
+                                                <i class="mr-1 fas fa-envelope icn"><span
                                                         class="sr-only">icon</span></i>
-                                                auditor@citygov.com
+                                                example@domain.com
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="tel:+918002359590">
-                                                <i class="fas fa-phone-alt icn mr-1"><span
+                                            <a href="tel:+254xxxxxxxxx">
+                                                <i class="mr-1 fas fa-phone-alt icn"><span
                                                         class="sr-only">icon</span></i>
-                                                (+91) 800 235 9590
+                                                +254xxxxxxxxx
                                             </a>
                                         </li>
                                     </ul>
@@ -244,13 +244,13 @@
                             </article>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mccColumn bg-white shadow mb-6 mx-auto mx-sm-0">
+                            <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
-                                    <img src="{{asset('assets/images/img21.jpg')}}" class="img-fluid d-block w-100"
+                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
                                         alt="image description">
                                     <div class="mcssHolder">
                                         <ul
-                                            class="mcssList list-unstyled rounded-pill bg-white overflow-hidden p-0 m-0 d-flex">
+                                            class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                             <li>
                                                 <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
                                                         class="vssIcn fab fa-twitter"></i></a>
@@ -266,23 +266,23 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="mcCaptionWrap px-5 pt-5 pb-4 position-relative">
-                                    <h3 class="fwMedium h3Small mb-1">Robert Peterson</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Health Director</h4>
-                                    <hr class="mccSeprator mx-0 mt-4 mb-3">
+                                <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
+                                    <h3 class="mb-1 fwMedium h3Small">Name : Here</h3>
+                                    <h4 class="fwSemiBold fontBase text-secondary">Position : Here</h4>
+                                    <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                     <ul class="list-unstyled mccInfoList">
                                         <li>
-                                            <a href="mailto:director@citygov.com">
-                                                <i class="fas fa-envelope icn mr-1"><span
+                                            <a href="example@domain.com">
+                                                <i class="mr-1 fas fa-envelope icn"><span
                                                         class="sr-only">icon</span></i>
-                                                director@citygov.com
+                                                example@domain.com
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="tel:+918002359591">
-                                                <i class="fas fa-phone-alt icn mr-1"><span
+                                            <a href="tel:+254xxxxxxxxx">
+                                                <i class="mr-1 fas fa-phone-alt icn"><span
                                                         class="sr-only">icon</span></i>
-                                                (+91) 800 235 9591
+                                                +254xxxxxxxxx
                                             </a>
                                         </li>
                                     </ul>
@@ -290,13 +290,13 @@
                             </article>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mccColumn bg-white shadow mb-6 mx-auto mx-sm-0">
+                            <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
-                                    <img src="{{asset('assets/images/img22.jpg')}}" class="img-fluid d-block w-100"
+                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
                                         alt="image description">
                                     <div class="mcssHolder">
                                         <ul
-                                            class="mcssList list-unstyled rounded-pill bg-white overflow-hidden p-0 m-0 d-flex">
+                                            class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                             <li>
                                                 <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
                                                         class="vssIcn fab fa-twitter"></i></a>
@@ -312,298 +312,31 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="mcCaptionWrap px-5 pt-5 pb-4 position-relative">
-                                    <h3 class="fwMedium h3Small mb-1">Donald Trump</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Tax Collector</h4>
-                                    <hr class="mccSeprator mx-0 mt-4 mb-3">
+                                <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
+                                    <h3 class="mb-1 fwMedium h3Small">Name : Here</h3>
+                                    <h4 class="fwSemiBold fontBase text-secondary">Position : Here</h4>
+                                    <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                     <ul class="list-unstyled mccInfoList">
                                         <li>
-                                            <a href="mailto:collector@citygov.com">
+                                            <a href="example@domain.com">
                                                 <i class="fas fa-envelope icn"><span class="sr-only">icon</span></i>
-                                                collector@citygov.com
+                                                example@domain.com
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="tel:+918002359593">
+                                            <a href="tel:+254xxxxxxxxx">
                                                 <i class="fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
-                                                (+91) 800 235 9593
+                                               +254xxxxxxxxx
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mccColumn bg-white shadow mb-6 mb-xl-12 mx-auto mx-sm-0">
-                                <div class="imgHolder position-relative">
-                                    <img src="{{asset('assets/images/img53.jpg')}}" class="img-fluid d-block w-100"
-                                        alt="image description">
-                                    <div class="mcssHolder">
-                                        <ul
-                                            class="mcssList list-unstyled rounded-pill bg-white overflow-hidden p-0 m-0 d-flex">
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
-                                                        class="vssIcn fab fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
-                                                        class="vssIcn fab fa-facebook-square"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
-                                                        class="vssIcn fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="mcCaptionWrap px-5 pt-5 pb-4">
-                                    <h3 class="fwMedium h3Small mb-1">Charlee Mangar</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Town Clerk</h4>
-                                    <hr class="mccSeprator mx-0 mt-4 mb-3">
-                                    <ul class="list-unstyled mccInfoList">
-                                        <li>
-                                            <a href="mailto:townclerk@citygov.com">
-                                                <i class="fas fa-envelope icn" aria-hidden="true"><span
-                                                        class="sr-only">icon</span></i>
-                                                townclerk@citygov.com
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="tel:+918002359585">
-                                                <i class="fas fa-phone-alt icn" aria-hidden="true"><span
-                                                        class="sr-only">icon</span></i>
-                                                (+91) 800 235 9585
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mccColumn bg-white shadow mb-6 mb-xl-12 mx-auto mx-sm-0">
-                                <div class="imgHolder position-relative">
-                                    <img src="{{asset('assets/images/img54.jpg')}}" class="img-fluid d-block w-100"
-                                        alt="image description">
-                                    <div class="mcssHolder">
-                                        <ul
-                                            class="mcssList list-unstyled rounded-pill bg-white overflow-hidden p-0 m-0 d-flex">
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
-                                                        class="vssIcn fab fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
-                                                        class="vssIcn fab fa-facebook-square"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
-                                                        class="vssIcn fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="mcCaptionWrap px-5 pt-5 pb-4">
-                                    <h3 class="fwMedium h3Small mb-1">Dinaval Jall</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Councilor, District 1
-                                    </h4>
-                                    <hr class="mccSeprator mx-0 mt-4 mb-3">
-                                    <ul class="list-unstyled mccInfoList">
-                                        <li>
-                                            <a href="mailto:district1@citygov.com">
-                                                <i class="fas fa-envelope icn" aria-hidden="true"><span
-                                                        class="sr-only">icon</span></i>
-                                                district1@citygov.com
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="tel:+918002352321">
-                                                <i class="fas fa-phone-alt icn" aria-hidden="true"><span
-                                                        class="sr-only">icon</span></i>
-                                                (+91) 800 235 2321
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mccColumn bg-white shadow mb-6 mb-xl-12 mx-auto mx-sm-0">
-                                <div class="imgHolder position-relative">
-                                    <img src="{{asset('assets/images/img55.jpg')}}" class="img-fluid d-block w-100"
-                                        alt="image description">
-                                    <div class="mcssHolder">
-                                        <ul
-                                            class="mcssList list-unstyled rounded-pill bg-white overflow-hidden p-0 m-0 d-flex">
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
-                                                        class="vssIcn fab fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
-                                                        class="vssIcn fab fa-facebook-square"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
-                                                        class="vssIcn fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="mcCaptionWrap px-5 pt-5 pb-4">
-                                    <h3 class="fwMedium h3Small mb-1">Kanaov Marla</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Councilor, District 2
-                                    </h4>
-                                    <hr class="mccSeprator mx-0 mt-4 mb-3">
-                                    <ul class="list-unstyled mccInfoList">
-                                        <li>
-                                            <a href="mailto:district2@citygov.com">
-                                                <i class="fas fa-envelope icn" aria-hidden="true"><span
-                                                        class="sr-only">icon</span></i>
-                                                district2@citygov.com
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="tel:+918002354565">
-                                                <i class="fas fa-phone-alt icn" aria-hidden="true"><span
-                                                        class="sr-only">icon</span></i>
-                                                (+91) 800 235 4565
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mccColumn bg-white shadow mb-6 mb-xl-12 mx-auto mx-sm-0">
-                                <div class="imgHolder position-relative">
-                                    <img src="{{asset('assets/images/img56.jpg')}}" class="img-fluid d-block w-100"
-                                        alt="image description">
-                                    <div class="mcssHolder">
-                                        <ul
-                                            class="mcssList list-unstyled rounded-pill bg-white overflow-hidden p-0 m-0 d-flex">
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
-                                                        class="vssIcn fab fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
-                                                        class="vssIcn fab fa-facebook-square"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
-                                                        class="vssIcn fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="mcCaptionWrap px-5 pt-5 pb-4">
-                                    <h3 class="fwMedium h3Small mb-1">Wenalbooze</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Councilor, District 3
-                                    </h4>
-                                    <hr class="mccSeprator mx-0 mt-4 mb-3">
-                                    <ul class="list-unstyled mccInfoList">
-                                        <li>
-                                            <a href="mailto:district3@citygov.com">
-                                                <i class="fas fa-envelope icn" aria-hidden="true"><span
-                                                        class="sr-only">icon</span></i>
-                                                district3@citygov.com
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="tel:+918002354565">
-                                                <i class="fas fa-phone-alt icn" aria-hidden="true"><span
-                                                        class="sr-only">icon</span></i>
-                                                (+91) 800 235 8798
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
+
                     </div>
                 </div>
-                <div class="accordion ctAccordion" id="ctdepartsAccordion">
-                    <div class="ctaccRow mb-4">
-                        <div class="ctaccOpener">
-                            <a class="fontAlter fwMedium" href="#ctr1" data-toggle="collapse" aria-expanded="false"
-                                aria-controls="ctr1">Eco-Friendly equipments and
-                                materials</a>
-                        </div>
-                        <div class="collapse ctaccSlide" id="ctr1" data-parent="#ctdepartsAccordion">
-                            <div class="overflow-hidden px-5 pb-1">
-                                <p>One of the most common additions people make to their cars in order to keep
-                                    the heat out is a windshield visor. Cars become warm in the summer because
-                                    direct sunlight enters in through the windows. This is why we park in the
-                                    shade whenever we can. Since the largest windshield.In fact, wind is
-                                    becoming cheap enough in many places in the U.S. and around the world to
-                                    compete effectively with fossil fuels.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ctaccRow mb-4">
-                        <div class="ctaccOpener">
-                            <a class="fontAlter fwMedium" href="#ctr2" data-toggle="collapse" aria-expanded="true"
-                                aria-controls="ctr2">Eco-Friendly equipments and
-                                materials</a>
-                        </div>
-                        <div class="collapse show ctaccSlide" id="ctr2" data-parent="#ctdepartsAccordion">
-                            <div class="overflow-hidden px-5 pb-1">
-                                <p>One of the most common additions people make to their cars in order to keep
-                                    the heat out is a windshield visor. Cars become warm in the summer because
-                                    direct sunlight enters in through the windows. This is why we park in the
-                                    shade whenever we can. Since the largest windshield.In fact, wind is
-                                    becoming cheap enough in many places in the U.S. and around the world to
-                                    compete effectively with fossil fuels.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ctaccRow mb-4">
-                        <div class="ctaccOpener">
-                            <a class="fontAlter fwMedium" href="#ctr3" data-toggle="collapse" aria-expanded="false"
-                                aria-controls="ctr3">Award winning design management</a>
-                        </div>
-                        <div class="collapse ctaccSlide" id="ctr3" data-parent="#ctdepartsAccordion">
-                            <div class="overflow-hidden px-5 pb-1">
-                                <p>One of the most common additions people make to their cars in order to keep
-                                    the heat out is a windshield visor. Cars become warm in the summer because
-                                    direct sunlight enters in through the windows. This is why we park in the
-                                    shade whenever we can. Since the largest windshield.In fact, wind is
-                                    becoming cheap enough in many places in the U.S. and around the world to
-                                    compete effectively with fossil fuels.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="mt-12 mb-7">
-                <aside class="saShareAside d-flex justify-content-between text-center align-items-center">
-                    <strong class="d-block text-lDark fwSemiBold fontAlter title mb-2">Share Page</strong>
-                    <ul
-                        class="list-unstyled socialNetworks saSocialNetworks d-flex flex-wrap justify-content-center ml-0 mb-0">
-                        <li>
-                            <a href="javascript:void(0);" class="facebook">
-                                <i class="fab fa-facebook-square" aria-hidden="true"><span
-                                        class="sr-only">facebook</span></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="twitter">
-                                <i class="fab fa-twitter" aria-hidden="true"><span class="sr-only">twitter</span></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="pinterest">
-                                <i class="fab fa-pinterest" aria-hidden="true"><span
-                                        class="sr-only">pinterest</span></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="linkedin">
-                                <i class="fab fa-linkedin-in" aria-hidden="true"><span
-                                        class="sr-only">linkedin-in</span></i>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
+
             </section>
         </div>
     </article>

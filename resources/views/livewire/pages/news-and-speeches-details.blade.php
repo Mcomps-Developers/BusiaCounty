@@ -2,14 +2,14 @@
     @section('title')
     News &amp; Speech Details
     @endsection
-    <header class="pageMainHead d-flex position-relative bgCover w-100 text-white"
-        style="background-image: url({{@asset('assets/images/img86.jpg')}});">
+    <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
+        style="background-image: url(https://placehold.co/1920x300);">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="text-white mb-2">News &amp; Speech Details Page</h1>
+                    <h1 class="mb-2 text-white">News &amp; Speech Details Page</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="{{route('news.speeches')}}">News</a></li>
                             <li class="breadcrumb-item active" aria-current="page">News &amp; Speech Details Page</li>
@@ -19,35 +19,35 @@
             </div>
         </div>
     </header>
-    <article class="newsSingleWrap pt-7 pb-2 pt-md-9 pb-md-4 pt-lg-14 pb-lg-8 pt-xl-22 pb-xl-13">
+    <article class="pb-2 newsSingleWrap pt-7 pt-md-9 pb-md-4 pt-lg-14 pb-lg-8 pt-xl-22 pb-xl-13">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-8 col-xl-9 mb-6">
+                <div class="mb-6 col-12 col-lg-8 col-xl-9">
                     <div class="pr-xl-14">
-                        <div class="imgHolder mb-4 mb-md-8 position-relative">
+                        <div class="mb-4 imgHolder mb-md-8 position-relative">
                             <div class="nrcImageSlider">
                                 <div>
                                     <div class="imgWrap">
-                                        <img src="{{asset('assets/images/img89.jpg')}}" class="img-fluid w-100"
+                                        <img src="https://placehold.co/873x591" class="img-fluid w-100"
                                             alt="image description">
                                     </div>
                                 </div>
                                 <div>
                                     <div class="imgWrap">
-                                        <img src="{{asset('assets/images/img90.jpg')}}" class="img-fluid w-100"
+                                        <img src="https://placehold.co/873x591" class="img-fluid w-100"
                                             alt="image description">
                                     </div>
                                 </div>
                                 <div>
                                     <div class="imgWrap">
-                                        <img src="{{asset('assets/images/img88.jpg')}}" class="img-fluid w-100"
+                                        <img src="https://placehold.co/873x591" class="img-fluid w-100"
                                             alt="image description">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <header class="nrcHead">
-                            <strong class="d-block fwMedium title mb-1">
+                            <strong class="mb-1 d-block fwMedium title">
                                 <i class="icnTheme fwMedium icomoon-clock"><span class="sr-only">icon</span></i>
                                 <time datetime="2011-01-12">Dec 02, 2020</time>
                                 - In
@@ -58,7 +58,7 @@
                                 <i class="icomoon-chat icn"><span class="sr-only">icon</span></i>
                                 3
                             </strong>
-                            <h2 class="h2vii fwSemiBold mb-5">News &amp; Speech Details Page</h2>
+                            <h2 class="mb-5 h2vii fwSemiBold">News &amp; Speech Details Page</h2>
                         </header>
                         <p><span class="dropCap">M</span>Monocle ipsum dolor sit amet elegant bulletin Melbourne sharp,
                             ryokan conversation business class essential Scandinavian Zürich. Bulletin concierge airport
@@ -68,23 +68,23 @@
                         <p>Tote bag Gaggenau bulletin, quality of life Shinkansen Winkreative eclectic Helsinki
                             discerning Airbus A380 value espresso izakaya flat white essential, soft power destination
                             intricate.</p>
-                        <ol class="nwzPostDetailList list-unstyled pt-5 m-0">
+                        <ol class="pt-5 m-0 nwzPostDetailList list-unstyled">
                             <li>
-                                <h4 class="h3 mb-4">1. County Roadmaps and Traffic Details:</h4>
+                                <h4 class="mb-4 h3">1. County Roadmaps and Traffic Details:</h4>
                                 <p>Efficient Zürich Porter Swiss izakaya Ettinger airport iconic. Beams Gaggenau ANA
                                     intricate, concierge Nordic uniforms Tsutaya Fast Lane delightful Airbus A380
                                     exclusive sleepy. Exquisite Baggu finest sharp extraordinary quality of life. Baggu
                                     concierge first-class soft power.</p>
-                                <div class="row my-6">
+                                <div class="my-6 row">
                                     <div class="col-12 col-sm-6">
-                                        <div class="imgWarp mb-3 mb-sm-0">
-                                            <img src="{{asset('assets/images/img192.jpg')}}" class="img-fluid w-100"
+                                        <div class="mb-3 imgWarp mb-sm-0">
+                                            <img src="https://placehold.co/426x296" class="img-fluid w-100"
                                                 alt="image description">
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6">
                                         <div class="imgWarp">
-                                            <img src="{{asset('assets/images/img193.jpg')}}" class="img-fluid w-100"
+                                            <img src="https://placehold.co/426x296" class="img-fluid w-100"
                                                 alt="image description">
                                         </div>
                                     </div>
@@ -94,8 +94,8 @@
                                     charming exclusive the best alluring, iconic Gaggenau hub Airbus A380 Lufthansa
                                     quality of life. Nordic bespoke smart izakaya cosy Airbus A380.</p>
                                 <blockquote
-                                    class="meetQuote fontAlter text-lDark mt-9 mb-7 py-1 pl-4 pl-lg-8 pr-md-12 pr-lg-20 pr-xl-28">
-                                    <q class="d-block mb-4">Mcomps Limited has a feature rich design themes that will make launching
+                                    class="py-1 pl-4 meetQuote fontAlter text-lDark mt-9 mb-7 pl-lg-8 pr-md-12 pr-lg-20 pr-xl-28">
+                                    <q class="mb-4 d-block">Mcomps Limited has a feature rich design themes that will make launching
                                         your website inventions off the ground dead simple.</q>
                                     <cite class="d-block fsNormal">Eng. Manzolo, <span
                                             class="fontBase ctSubtitleText">Group MD</span></cite>
@@ -106,7 +106,7 @@
                                     sophisticated Airbus A380 Singapore Ginza iconic artisanal remarkable.</p>
                             </li>
                             <li>
-                                <h4 class="h3 mb-4">2. Neccessory Things Need Control Traffic:</h4>
+                                <h4 class="mb-4 h3">2. Neccessory Things Need Control Traffic:</h4>
                                 <p>Vibrant remarkable Ettinger concierge carefully curated, exclusive pintxos intricate
                                     conversation Beams Tsutaya global emerging first-class destination. Delightful
                                     charming exclusive the best alluring, iconic Gaggenau hub Airbus A380 Lufthansa
@@ -115,7 +115,7 @@
                                 </p>
                             </li>
                             <li>
-                                <h4 class="h3 mb-4">3. Design and Devlopement Updates:</h4>
+                                <h4 class="mb-4 h3">3. Design and Devlopement Updates:</h4>
                                 <p>Baggu Boeing 787 exquisite, perfect flat white espresso boulevard. Lovely flat white
                                     essential, soft power is all destination intricate St Moritz uniforms sophisticated
                                     cosy Beams remarkable. ANA bespoke sharp ryokan vibrant, Nordic flat white alluring
@@ -128,11 +128,11 @@
                             </li>
                         </ol>
                         <div
-                            class="newsTagWrap text-center text-sm-left d-sm-flex mt-11 mb-10 align-items-sm-center justify-content-sm-between justify-content-center">
+                            class="mb-10 text-center newsTagWrap text-sm-left d-sm-flex mt-11 align-items-sm-center justify-content-sm-between justify-content-center">
                             <div class="widgetTags fontAlter d-sm-flex align-items-center">
-                                <strong class="txtDark mr-2 font-weight-normal ntwTagTitle mb-2">Tags:</strong>
+                                <strong class="mb-2 mr-2 txtDark font-weight-normal ntwTagTitle">Tags:</strong>
                                 <ul
-                                    class="tagList list-unstyled p-0 m-0 d-flex justify-content-center justify-content-sm-start flex-wrap fwMedium">
+                                    class="flex-wrap p-0 m-0 tagList list-unstyled d-flex justify-content-center justify-content-sm-start fwMedium">
                                     <li>
                                         <a href="javascript:void(0);">County</a>
                                     </li>
@@ -145,11 +145,11 @@
                                 </ul>
                             </div>
                             <div
-                                class="saShareAside text-center d-sm-flex align-items-center justify-content-center justify-content-end">
+                                class="text-center saShareAside d-sm-flex align-items-center justify-content-center justify-content-end">
                                 <strong
-                                    class="d-block text-lDark  font-weight-normal fontAlter title mb-2">Share</strong>
+                                    class="mb-2 d-block text-lDark font-weight-normal fontAlter title">Share</strong>
                                 <ul
-                                    class="list-unstyled socialNetworks saSocialNetworks d-flex flex-wrap justify-content-center mb-0">
+                                    class="flex-wrap mb-0 list-unstyled socialNetworks saSocialNetworks d-flex justify-content-center">
                                     <li>
                                         <a href="javascript:void(0);" class="facebook">
                                             <i class="fab fa-facebook-square" aria-hidden="true"><span
@@ -178,33 +178,33 @@
                             </div>
                         </div>
                         <div class="commentFormWrap">
-                            <h2 class="fwSemiBold h2vii mb-6">Leave your Comments</h2>
+                            <h2 class="mb-6 fwSemiBold h2vii">Leave your Comments</h2>
                             <form action="#" class="commentForm">
                                 <div class="row mx-n2">
-                                    <div class="col-12 px-2">
+                                    <div class="px-2 col-12">
                                         <div class="form-group">
                                             <textarea class="form-control w-100 d-block"
                                                 placeholder="Write your comment&hellip;"></textarea>
                                         </div>
                                     </div>
-                                    <div class="col-12 px-2">
+                                    <div class="px-2 col-12">
                                         <div class="form-group">
                                             <input class="form-control w-100 d-block" placeholder="Website">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-6 px-2">
+                                    <div class="px-2 col-12 col-sm-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control d-block w-100" placeholder="Name">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-6 px-2">
+                                    <div class="px-2 col-12 col-sm-6">
                                         <div class="form-group">
                                             <input type="email" class="form-control d-block w-100" placeholder="Email">
                                         </div>
                                     </div>
                                 </div>
                                 <button type="button"
-                                    class="btn btnTheme d-flex font-weight-bold text-capitalize position-relative border-0 p-0 mt-2 btnWidthSmall"
+                                    class="p-0 mt-2 border-0 btn btnTheme d-flex font-weight-bold text-capitalize position-relative btnWidthSmall"
                                     data-hover="Post Now">
                                     <span class="d-block btnText">Post Comment</span>
                                 </button>
@@ -212,10 +212,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-xl-3 mb-6">
-                    <aside class="dscSidebar pt-1 ml-xl-n5">
+                <div class="mb-6 col-12 col-lg-4 col-xl-3">
+                    <aside class="pt-1 dscSidebar ml-xl-n5">
                         <aside class="sidebar">
-                            <section class="widget widgetSearch mb-6 mb-lg-10">
+                            <section class="mb-6 widget widgetSearch mb-lg-10">
                                 <form action="#" class="searchForm">
                                     <div class="input-group">
                                         <input type="search" class="form-control" placeholder="Search Here…">
@@ -229,9 +229,9 @@
                                     </div>
                                 </form>
                             </section>
-                            <nav class="widget widgetArchiveList mb-6 mb-lg-10">
-                                <h3 class="fwMedium mb-5">Categories</h3>
-                                <ul class="list-unstyled pl-0">
+                            <nav class="mb-6 widget widgetArchiveList mb-lg-10">
+                                <h3 class="mb-5 fwMedium">Categories</h3>
+                                <ul class="pl-0 list-unstyled">
                                     <li>
                                         <a href="javascript:void(0);">Conference</a>
                                     </li>
@@ -249,106 +249,106 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <nav class="widget widgetUpcoming mb-6 mb-lg-10">
-                                <h3 class="fwMedium mb-5">Recent News</h3>
-                                <ul class="list-unstyled pl-0 mb-7">
+                            <nav class="mb-6 widget widgetUpcoming mb-lg-10">
+                                <h3 class="mb-5 fwMedium">Recent News</h3>
+                                <ul class="pl-0 list-unstyled mb-7">
                                     <li>
-                                        <div class="imgHolder flex-shrink-0 mr-4 mt-1">
-                                            <img src="{{asset('assets/images/img92.jpg')}}" class="img-fluid"
+                                        <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
+                                            <img src="https://placehold.co/80x80" class="img-fluid"
                                                 alt="image description">
                                         </div>
                                         <div class="descrWrap">
-                                            <h4 class="fwMedium mb-1">
+                                            <h4 class="mb-1 fwMedium">
                                                 <a href="{{route('news.speeches.details')}}">Globol Covid-19 Situation
                                                     Dashboard</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block"><i
-                                                    class="icomoon-clock icn mr-1"><span
+                                                    class="mr-1 icomoon-clock icn"><span
                                                         class="sr-only">icon</span></i>Dec 11, 2020</time>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="imgHolder flex-shrink-0 mr-4 mt-1">
-                                            <img src="{{asset('assets/images/img93.jpg')}}" class="img-fluid"
+                                        <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
+                                            <img src="https://placehold.co/80x80" class="img-fluid"
                                                 alt="image description">
                                         </div>
                                         <div class="descrWrap">
-                                            <h4 class="fwMedium mb-1">
+                                            <h4 class="mb-1 fwMedium">
                                                 <a href="{{route('news.speeches.details')}}">New Australian Economic
                                                     Culture</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block"><i
-                                                    class="icomoon-clock icn mr-1"><span
+                                                    class="mr-1 icomoon-clock icn"><span
                                                         class="sr-only">icon</span></i>Dec 05, 2020</time>
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="imgHolder flex-shrink-0 mr-4 mt-1">
-                                            <img src="{{asset('assets/images/img94.jpg')}}" class="img-fluid"
+                                        <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
+                                            <img src="https://placehold.co/80x80" class="img-fluid"
                                                 alt="image description">
                                         </div>
                                         <div class="descrWrap">
-                                            <h4 class="fwMedium mb-1">
+                                            <h4 class="mb-1 fwMedium">
                                                 <a href="{{route('news.speeches.details')}}">Summer Nights at the
                                                     Library</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block"><i
-                                                    class="icomoon-clock icn mr-1"><span
+                                                    class="mr-1 icomoon-clock icn"><span
                                                         class="sr-only">icon</span></i>Nov 23, 2020</time>
                                         </div>
                                     </li>
                                 </ul>
                             </nav>
-                            <section class="widget widgetGallery mb-6 mb-lg-10">
-                                <h3 class="fwMedium mb-5">Photo Gallery</h3>
-                                <ul class="list-unstyled pl-0 d-flex flex-wrap">
+                            <section class="mb-6 widget widgetGallery mb-lg-10">
+                                <h3 class="mb-5 fwMedium">Photo Gallery</h3>
+                                <ul class="flex-wrap pl-0 list-unstyled d-flex">
                                     <li>
                                         <a href="{{route('news.speeches.details')}}" class="lightbox"
                                             data-fancybox="true">
-                                            <img src="{{asset('assets/images/img194.jpg')}}" class="img-fluid"
+                                            <img src="https://placehold.co/1920x620" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{route('news.speeches.details')}}" class="lightbox"
                                             data-fancybox="true">
-                                            <img src="{{asset('assets/images/img195.jpg')}}" class="img-fluid"
+                                            <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{route('news.speeches.details')}}" class="lightbox"
                                             data-fancybox="true">
-                                            <img src="{{asset('assets/images/img196.jpg')}}" class="img-fluid"
+                                            <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{route('news.speeches.details')}}" class="lightbox"
                                             data-fancybox="true">
-                                            <img src="{{asset('assets/images/img197.jpg')}}" class="img-fluid"
+                                            <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{route('news.speeches.details')}}" class="lightbox"
                                             data-fancybox="true">
-                                            <img src="{{asset('assets/images/img194.jpg')}}" class="img-fluid"
+                                            <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{route('news.speeches.details')}}" class="lightbox"
                                             data-fancybox="true">
-                                            <img src="{{asset('assets/images/img195.jpg')}}" class="img-fluid"
+                                            <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                 </ul>
                             </section>
-                            <section class="widget widgetTags mb-6 mb-lg-10">
-                                <h3 class="fwMedium mb-5">Tags</h3>
-                                <ul class="list-unstyled pl-0 d-flex flex-wrap fontAlter">
+                            <section class="mb-6 widget widgetTags mb-lg-10">
+                                <h3 class="mb-5 fwMedium">Tags</h3>
+                                <ul class="flex-wrap pl-0 list-unstyled d-flex fontAlter">
                                     <li>
                                         <a href="javascript:void(0);">County</a>
                                     </li>
@@ -375,12 +375,12 @@
                                     </li>
                                 </ul>
                             </section>
-                            <article class="widget widgetVote bgCover py-9 px-6"
-                                style="background-image: url({{@asset('assets/images/bg02.png')}});">
+                            <article class="px-6 widget widgetVote bgCover py-9"
+                                style="background-image: url(https://placehold.co/317x508);">
                                 <h3 class="h3Large">Let’s start explore County Government of Busia with travel guide.
                                 </h3>
                                 <a href="javascript:void(0);"
-                                    class="btn btnDarkAlter text-capitalize btn-sm mt-2 position-relative border-0 p-0"
+                                    class="p-0 mt-2 border-0 btn btnDarkAlter text-capitalize btn-sm position-relative"
                                     data-hover="Vote Now">
                                     <span class="d-block btnText">Vote Now</span>
                                 </a>

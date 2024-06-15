@@ -2,14 +2,14 @@
     @section('title')
     Project Details
     @endsection
-    <header class="pageMainHead d-flex position-relative bgCover w-100 text-white"
-        style="background-image: url({{@asset('assets/images/img177.jpg')}});">
+    <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
+        style="background-image: url(https://placehold.co/1920x300);">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="text-white mb-2">Project Details</h1>
+                    <h1 class="mb-2 text-white">Project Details</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="{{route('projects')}}">Projects</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Project Details</li>
@@ -22,49 +22,49 @@
     <article
         class="ItemfullBlock portfolioSingle bodyFontAlter pt-7 pb-7 pt-md-10 pb-md-9 pt-lg-14 pb-lg-13 pt-xl-22 pb-xl-19">
         <div class="container">
-            <div class="row mb-3 mb-md-6">
+            <div class="mb-3 row mb-md-6">
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="{{asset('assets/images/img173.jpg')}}"
-                        class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
-                        <img src="{{asset('assets/images/img173.jpg')}}" class="img-fluid" alt="image description">
+                    <a href="https://placehold.co/403x300"
+                        class="mb-6 overflow-hidden potSingGallery lightbox d-block w-100" data-fancybox="true">
+                        <img src="https://placehold.co/403x300" class="img-fluid" alt="image description">
                     </a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="{{asset('assets/images/img178.jpg')}}"
-                        class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
-                        <img src="{{asset('assets/images/img178.jpg')}}" class="img-fluid" alt="image description">
+                    <a href="https://placehold.co/403x300"
+                        class="mb-6 overflow-hidden potSingGallery lightbox d-block w-100" data-fancybox="true">
+                        <img src="https://placehold.co/403x300" class="img-fluid" alt="image description">
                     </a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="{{asset('assets/images/img179.jpg')}}"
-                        class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
-                        <img src="{{asset('assets/images/img179.jpg')}}" class="img-fluid" alt="image description">
+                    <a href="https://placehold.co/403x300"
+                        class="mb-6 overflow-hidden potSingGallery lightbox d-block w-100" data-fancybox="true">
+                        <img src="https://placehold.co/403x300" class="img-fluid" alt="image description">
                     </a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="{{asset('assets/images/img175.jpg')}}"
-                        class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
-                        <img src="{{asset('assets/images/img175.jpg')}}" class="img-fluid" alt="image description">
+                    <a href="https://placehold.co/403x300"
+                        class="mb-6 overflow-hidden potSingGallery lightbox d-block w-100" data-fancybox="true">
+                        <img src="https://placehold.co/403x300" class="img-fluid" alt="image description">
                     </a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="{{asset('assets/images/img180.jpg')}}"
-                        class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
-                        <img src="{{asset('assets/images/img180.jpg')}}" class="img-fluid" alt="image description">
+                    <a href="https://placehold.co/403x300"
+                        class="mb-6 overflow-hidden potSingGallery lightbox d-block w-100" data-fancybox="true">
+                        <img src="https://placehold.co/403x300" class="img-fluid" alt="image description">
                     </a>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="{{asset('assets/images/img181.jpg')}}"
-                        class="potSingGallery overflow-hidden mb-6 lightbox d-block w-100" data-fancybox="true">
-                        <img src="{{asset('assets/images/img181.jpg')}}" class="img-fluid" alt="image description">
+                    <a href="https://placehold.co/403x300"
+                        class="mb-6 overflow-hidden potSingGallery lightbox d-block w-100" data-fancybox="true">
+                        <img src="https://placehold.co/403x300" class="img-fluid" alt="image description">
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-7 col-lg-8 col-xl-9">
-                    <header class="fzMedium mb-6">
-                        <h2 class="h2vii fwSemiBold mb-3 mb-md-5 mb-xl-8">Description of Project</h2>
-                        <p class="text-lDark mb-6">We help our clients to build their best possible economic We
+                    <header class="mb-6 fzMedium">
+                        <h2 class="mb-3 h2vii fwSemiBold mb-md-5 mb-xl-8">Description of Project</h2>
+                        <p class="mb-6 text-lDark">We help our clients to build their best possible economic We
                             understand you’re saving for all different life events: retirement, a house, simply to build
                             wealth, or all of the above. Your famous investment account should adjust to your life — not
                             the other way around.</p>
@@ -84,27 +84,27 @@
                     </p>
                 </div>
                 <div class="col-12 col-md-5 col-lg-4 col-xl-3">
-                    <div class="widget psShareWidget shadow bg-white mt-5 mt-md-0 px-4 px-lg-6 pt-7 pb-8">
-                        <ul class="psMetaList list-unstyled p-0 m-0">
+                    <div class="px-4 pb-8 mt-5 bg-white shadow widget psShareWidget mt-md-0 px-lg-6 pt-7">
+                        <ul class="p-0 m-0 psMetaList list-unstyled">
                             <li>
-                                <strong class="d-block fwSemiBold text-lDark mb-1 fontAlter">Category:</strong>
+                                <strong class="mb-1 d-block fwSemiBold text-lDark fontAlter">Category:</strong>
                                 <span class="d-block">Goverment</span>
                             </li>
                             <li>
-                                <strong class="d-block fwSemiBold text-lDark mb-1 fontAlter">Date:</strong>
+                                <strong class="mb-1 d-block fwSemiBold text-lDark fontAlter">Date:</strong>
                                 <span class="d-block">12 March 2020</span>
                             </li>
                             <li>
-                                <strong class="d-block fwSemiBold text-lDark mb-1 fontAlter">Location:</strong>
+                                <strong class="mb-1 d-block fwSemiBold text-lDark fontAlter">Location:</strong>
                                 <span class="d-block">Melborne, AUS</span>
                             </li>
                             <li>
-                                <strong class="d-block fwSemiBold text-lDark mb-1 fontAlter">Department:</strong>
+                                <strong class="mb-1 d-block fwSemiBold text-lDark fontAlter">Department:</strong>
                                 <span class="d-block">Service Department</span>
                             </li>
                             <li>
-                                <strong class="d-block fwSemiBold text-lDark mb-1 fontAlter">Share:</strong>
-                                <ul class="list-unstyled socialNetworks saSocialNetworks d-flex flex-wrap p-0 m-0">
+                                <strong class="mb-1 d-block fwSemiBold text-lDark fontAlter">Share:</strong>
+                                <ul class="flex-wrap p-0 m-0 list-unstyled socialNetworks saSocialNetworks d-flex">
                                     <li>
                                         <a href="javascript:void(0);" class="facebook">
                                             <i class="fab fa-facebook-square" aria-hidden="true"><span
@@ -137,22 +137,22 @@
             </div>
         </div>
     </article>
-    <section class="bgLight pt-8 pt-md-12 pt-xl-16 pb-4 pb-md-8 pb-xl-16">
+    <section class="pt-8 pb-4 bgLight pt-md-12 pt-xl-16 pb-md-8 pb-xl-16">
         <div class="container">
-            <h2 class="text-center h2vii fwSemiBold mb-5 mb-md-8">Related Projects</h2>
+            <h2 class="mb-5 text-center h2vii fwSemiBold mb-md-8">Related Projects</h2>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="echColumn echColumnii d-block w-100 bgCover position-relative mb-6"
-                        style="background-image: url({{@asset('assets/images/img18.jpg')}});">
+                    <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
+                        style="background-image: url(https://placehold.co/403x300);">
                         <a href="{{route('project.details')}}"
-                            class="echCountTag position-absolute fwSemiBold text-white px-3 py-1 lightbox"
+                            class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                             data-fancybox="true" tabindex="-1">
                             <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
                             6
                         </a>
-                        <div class="echcCaptionWrap position-absolute w-100 text-white px-3 py-2 px-sm-5 py-sm-4">
+                        <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                             <h3 class="mb-0 text-white">
-                                <strong class="d-block font-weight-normal fontBase echCatTitle mb-1">Public
+                                <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Public
                                     Places</strong>
                                 <span class="d-block">Cinema Teatre</span>
                             </h3>
@@ -163,17 +163,17 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="echColumn echColumnii d-block w-100 bgCover position-relative mb-6"
-                        style="background-image: url({{@asset('assets/images/img173.jpg')}});">
+                    <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
+                        style="background-image: url(https://placehold.co/403x300);">
                         <a href="{{route('project.details')}}"
-                            class="echCountTag position-absolute fwSemiBold text-white px-3 py-1 lightbox"
+                            class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                             data-fancybox="true" tabindex="-1">
                             <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
                             6
                         </a>
-                        <div class="echcCaptionWrap position-absolute w-100 text-white px-3 py-2 px-sm-5 py-sm-4">
+                        <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                             <h3 class="mb-0 text-white">
-                                <strong class="d-block font-weight-normal fontBase echCatTitle mb-1">Business</strong>
+                                <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Business</strong>
                                 <span class="d-block">Business Agencies</span>
                             </h3>
                             <a href="{{route('project.details')}}"><i
@@ -183,17 +183,17 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="echColumn echColumnii d-block w-100 bgCover position-relative mb-6"
-                        style="background-image: url({{@asset('assets/images/img174.jpg')}});">
+                    <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
+                        style="background-image: url(https://placehold.co/403x300);">
                         <a href="{{route('project.details')}}"
-                            class="echCountTag position-absolute fwSemiBold text-white px-3 py-1 lightbox"
+                            class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                             data-fancybox="true" tabindex="-1">
                             <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
                             6
                         </a>
-                        <div class="echcCaptionWrap position-absolute w-100 text-white px-3 py-2 px-sm-5 py-sm-4">
+                        <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                             <h3 class="mb-0 text-white">
-                                <strong class="d-block font-weight-normal fontBase echCatTitle mb-1">Government</strong>
+                                <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Government</strong>
                                 <span class="d-block">Historical Buildings</span>
                             </h3>
                             <a href="{{route('project.details')}}"><i

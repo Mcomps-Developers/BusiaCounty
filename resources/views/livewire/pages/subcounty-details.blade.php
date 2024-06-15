@@ -2,14 +2,14 @@
     @section('title')
     Subcounty Details Page
     @endsection
-    <header class="pageMainHead d-flex position-relative bgCover w-100 text-white"
-        style="background-image: url({{@asset('assets/images/img58.jpg')}});">
+    <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
+        style="background-image: url(https://placehold.co/1920x300);">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="text-white mb-2">Subcounty Details Page</h1>
+                    <h1 class="mb-2 text-white">Subcounty Details Page</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Administration</a></li>
                             <li class="breadcrumb-item"><a href="{{route('subcounties')}}">Subcounties</a></li>
@@ -20,29 +20,22 @@
             </div>
         </div>
     </header>
-    <article class="dsSingleContent pt-7 pb-2 pt-md-10 pb-md-1 pt-lg-16 pb-lg-10 pt-xl-21 pb-xl-16">
+    <article class="pb-2 dsSingleContent pt-7 pt-md-10 pb-md-1 pt-lg-16 pb-lg-10 pt-xl-21 pb-xl-16">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-8 col-xl-9 mb-6">
+                <div class="mb-6 col-12 col-lg-8 col-xl-9">
                     <div class="pr-xl-14">
-                        <header class="fzMedium mb-6">
+                        <header class="mb-6 fzMedium">
                             <h2 class="fwSemiBold h2vii">Subcounty Details Page</h2>
-                        <div class="imgCenter mt-6 mb-7 mt-lg-10 mb-lg-11">
-                            <img src="{{asset('assets/images/img60.jpg')}}" class="img-fluid w-100"
+                        <div class="mt-6 imgCenter mb-7 mt-lg-10 mb-lg-11">
+                            <img src="https://placehold.co/873x426" class="img-fluid w-100"
                                 alt="image description">
                         </div>
-                        <div class="overflow-hidden mt-6 mb-5 mt-md-9 mb-md-7">
-                            <div class="descrWrap overflow-hidden">
+                        <div class="mt-6 mb-5 overflow-hidden mt-md-9 mb-md-7">
+                            <div class="overflow-hidden descrWrap">
                                 <p>One of the most common additions people make to their cars in order to keep the heat
                                     out is a windshield visor. Cars become warm in the summer.</p>
-                                <ul class="list-unstyled coDefaultList text-lDark">
-                                    <li>Asset Purchase Agreement</li>
-                                    <li>Loan and Security Agreements</li>
-                                    <li>Subordination Agreement</li>
-                                    <li>Promissory Note and Financing Statement</li>
-                                    <li>Tourist &amp; Attractions</li>
-                                    <li>Benefits of the Service</li>
-                                </ul>
+                               
                             </div>
                         </div>
                         <p class="mb-6 mb-md-10">In fact, wind is becoming cheap enough in many places in the U.S. and
@@ -77,7 +70,7 @@
                             <div class="tab-content dcsTabContent" id="dcsTabContent">
                                 <div class="tab-pane fade show active" id="identified" role="tabpanel"
                                     aria-labelledby="identified-tab">
-                                    <div class="overflow-hidden px-3 px-md-6 pt-5 pb-1">
+                                    <div class="px-3 pt-5 pb-1 overflow-hidden px-md-6">
                                         <p>To help customers block out even more of the sun, consider offering
                                             window-tinting services. Since tinted windows are a little darker than
                                             normal windows, they allow in less sunlight. They also make it harder to see
@@ -89,7 +82,7 @@
                                 </div>
                                 <div class="tab-pane fade" id="consulting" role="tabpanel"
                                     aria-labelledby="consulting-tab">
-                                    <div class="overflow-hidden px-3 px-md-6 pt-5 pb-1">
+                                    <div class="px-3 pt-5 pb-1 overflow-hidden px-md-6">
                                         <p>To help customers block out even more of the sun, consider offering
                                             window-tinting services. Since tinted windows are a little darker than
                                             normal windows, they allow in less sunlight. They also make it harder to see
@@ -100,7 +93,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="produce" role="tabpanel" aria-labelledby="produce-tab">
-                                    <div class="overflow-hidden px-3 px-md-6 pt-5 pb-1">
+                                    <div class="px-3 pt-5 pb-1 overflow-hidden px-md-6">
                                         <p>To help customers block out even more of the sun, consider offering
                                             window-tinting services. Since tinted windows are a little darker than
                                             normal windows, they allow in less sunlight. They also make it harder to see
@@ -112,15 +105,15 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 class="fwSemiBold mb-5">Download Resources</h3>
+                        <h3 class="mb-5 fwSemiBold">Download Resources</h3>
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <div class="drItemRow position-relative d-flex px-3 px-md-6 py-3 mb-6">
-                                    <span class="icnWrap flex-shrink-0 pt-1 mr-3">
+                                <div class="px-3 py-3 mb-6 drItemRow position-relative d-flex px-md-6">
+                                    <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
                                         <img src="{{asset('assets/images/icopdf.pn')}}g" class="img-fluid" alt="icon">
                                     </span>
                                     <div class="descrWrap">
-                                        <h4 class="fontBase font-weight-normal mb-1">
+                                        <h4 class="mb-1 fontBase font-weight-normal">
                                             <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
                                         </h4>
                                         <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
@@ -128,12 +121,12 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <div class="drItemRow position-relative d-flex px-3 px-md-6 py-3 mb-6">
-                                    <span class="icnWrap flex-shrink-0 pt-1 mr-3">
+                                <div class="px-3 py-3 mb-6 drItemRow position-relative d-flex px-md-6">
+                                    <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
                                         <img src="{{asset('assets/images/icopdf.pn')}}g" class="img-fluid" alt="icon">
                                     </span>
                                     <div class="descrWrap">
-                                        <h4 class="fontBase font-weight-normal mb-1">
+                                        <h4 class="mb-1 fontBase font-weight-normal">
                                             <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
                                         </h4>
                                         <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
@@ -142,10 +135,10 @@
                             </div>
                         </div>
                         <hr class="mt-12 mb-7">
-                        <aside class="saShareAside d-flex justify-content-between text-center align-items-center">
-                            <strong class="d-block text-lDark fwSemiBold fontAlter title mb-2">Share Page</strong>
+                        <aside class="text-center saShareAside d-flex justify-content-between align-items-center">
+                            <strong class="mb-2 d-block text-lDark fwSemiBold fontAlter title">Share Page</strong>
                             <ul
-                                class="list-unstyled socialNetworks saSocialNetworks d-flex flex-wrap justify-content-center ml-0 mb-0">
+                                class="flex-wrap mb-0 ml-0 list-unstyled socialNetworks saSocialNetworks d-flex justify-content-center">
                                 <li>
                                     <a href="javascript:void(0);" class="facebook">
                                         <i class="fab fa-facebook-square" aria-hidden="true"><span
@@ -174,15 +167,15 @@
                         </aside>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 col-xl-3 mb-6">
-                    <aside class="dscSidebar pt-1 ml-xl-n5">
-                        <nav class="widget mb-6 mb-lg-10 widgetDepartsNav widgetBgLight py-5 px-6">
-                            <h3 class="fwSemiBold mb-4">
-                                <a href="javascript:void(0);" class="btnDcsBack align-middle mr-1"><i
+                <div class="mb-6 col-12 col-lg-4 col-xl-3">
+                    <aside class="pt-1 dscSidebar ml-xl-n5">
+                        <nav class="px-6 py-5 mb-6 widget mb-lg-10 widgetDepartsNav widgetBgLight">
+                            <h3 class="mb-4 fwSemiBold">
+                                <a href="javascript:void(0);" class="mr-1 align-middle btnDcsBack"><i
                                         class="fas fa-chevron-left"><span class="sr-only">icon</span></i></a>
                                 All Subcounties
                             </h3>
-                            <ul class="list-unstyled pl-0 mx-n2 mb-0 mb-3">
+                            <ul class="pl-0 mb-0 mb-3 list-unstyled mx-n2">
                                 <li>
                                     <a href="javascript:void(0);">Butula</a>
                                 </li>
@@ -209,13 +202,13 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="widget mb-6 mb-lg-10 widgetHelp bg-lDark pt-5 px-6 pb-8 position-relative">
-                            <i class="icnWrap icomoon-chatq text-white d-block mb-3"><span
+                        <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">
+                            <i class="mb-3 text-white icnWrap icomoon-chatq d-block"><span
                                     class="sr-only">icon</span></i>
-                            <h3 class="h3Medium text-white mb-2">Need any help?</h3>
+                            <h3 class="mb-2 text-white h3Medium">Need any help?</h3>
                             <p>Here you can get your perfect answer for your problem.</p>
                             <a href="{{route('contact')}}"
-                                class="btn btnTheme btn-sm font-weight-bold text-capitalize position-relative border-0 p-0"
+                                class="p-0 border-0 btn btnTheme btn-sm font-weight-bold text-capitalize position-relative"
                                 data-hover="Contact now">
                                 <span class="d-block btnText">Contact now</span>
                             </a>

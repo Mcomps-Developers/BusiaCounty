@@ -2,14 +2,14 @@
     @section('title')
     Events
     @endsection
-    <header class="pageMainHead d-flex position-relative bgCover w-100 text-white"
-        style="background-image: url({{@asset('assets/images/img50.jpg')}});">
+    <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
+        style="background-image: url(https://placehold.co/1920x300);">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="text-white mb-2">Events</h1>
+                    <h1 class="mb-2 text-white">Events</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Resources</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Events</li>
@@ -21,26 +21,26 @@
     </header>
     <section class="ItemfullBlock pt-7 pb-7 pt-md-10 pb-md-9 pt-lg-14 pb-lg-13 pt-xl-22 pb-xl-19">
         <div class="container">
-            <header class="ifbFilterHead bg-light px-4 pt-4 pb-3 px-lg-8 pt-lg-7 pb-lg-6">
+            <header class="px-4 pt-4 pb-3 ifbFilterHead bg-light px-lg-8 pt-lg-7 pb-lg-6">
                 <div class="form-row mx-n3 align-items-end">
-                    <div class="formCol px-3">
+                    <div class="px-3 formCol">
                         <div class="form-group">
-                            <label class="d-block fwMedium fontAlter text-lDark mb-2">Start Date</label>
+                            <label class="mb-2 d-block fwMedium fontAlter text-lDark">Start Date</label>
                             <input type="date"
-                                class="form-control inputHeightMedium inputBdrTransparent d-block w- shadow">
+                                class="shadow form-control inputHeightMedium inputBdrTransparent d-block w-">
                         </div>
                     </div>
-                    <div class="formCol px-3">
+                    <div class="px-3 formCol">
                         <div class="form-group">
-                            <label class="d-block fwMedium fontAlter text-lDark mb-2">End Date</label>
+                            <label class="mb-2 d-block fwMedium fontAlter text-lDark">End Date</label>
                             <input type="date"
-                                class="form-control inputHeightMedium inputBdrTransparent d-block w- shadow">
+                                class="shadow form-control inputHeightMedium inputBdrTransparent d-block w-">
                         </div>
                     </div>
-                    <div class="formCol px-3">
+                    <div class="px-3 formCol">
                         <div class="form-group">
-                            <label class="d-block fwMedium fontAlter text-lDark mb-2">Event Type</label>
-                            <select class="custom-select inputHeightMedium inputBdrTransparent shadow">
+                            <label class="mb-2 d-block fwMedium fontAlter text-lDark">Event Type</label>
+                            <select class="shadow custom-select inputHeightMedium inputBdrTransparent">
                                 <option selected>Event Type</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -49,30 +49,30 @@
                         </div>
                     </div>
                     <button type="button"
-                        class="btn btnTheme ml-lg-3 mt-4 mt-lg-0 ml-auto mr-auto mr-lg-0 font-weight-bold btnMinSm text-capitalize position-relative border-0 p-0"
+                        class="p-0 mt-4 ml-auto mr-auto border-0 btn btnTheme ml-lg-3 mt-lg-0 mr-lg-0 font-weight-bold btnMinSm text-capitalize position-relative"
                         data-hover="Find Events">
                         <span class="d-block btnText">Find Events</span>
                     </button>
                 </div>
             </header>
-            <div class="row justify-content-center pt-8 pt-lg-11 pt-xl-14">
+            <div class="pt-8 row justify-content-center pt-lg-11 pt-xl-14">
                 <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <article class="ueEveColumn position-relative shadow bg-white mb-6 mb-xl-12 w-100">
+                    <article class="mb-6 bg-white shadow ueEveColumn position-relative mb-xl-12 w-100">
                         <div class="imgHolder position-relative">
                             <a href="javascript:void(0);">
-                                <img src="{{asset('assets/images/img09.jpg')}}" class="img-fluid d-block w-100"
+                                <img src="https://placehold.co/403x300" class="img-fluid d-block w-100"
                                     alt="image description">
                             </a>
                             <time
-                                class="ueTimeTag position-absolute text-center d-flex bg-white fontAlter fwSemiBold text-lDark text-uppercase"
+                                class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
                                 datetime="2011-01-12">
-                                <span class="d-block text-white textDay flex-shrink-0 font-weight-bold">01</span>
-                                <span class="d-block py-2 px-3">OCT 2022</span>
+                                <span class="flex-shrink-0 text-white d-block textDay font-weight-bold">01</span>
+                                <span class="px-3 py-2 d-block">OCT 2022</span>
                             </time>
                         </div>
-                        <div class="ueDescriptionWrap pt-5 pb-8 px-5">
-                            <strong class="d-block ueCatTitle fwSemiBold text-secondary mb-2">Entertainement</strong>
-                            <h3 class="h3Small fwMedium mb-3">
+                        <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Entertainement</strong>
+                            <h3 class="mb-3 h3Small fwMedium">
                                 <a href="{{route('event.details')}}">Organizing City Photography Contest-2022</a>
                             </h3>
                             <address>
@@ -90,7 +90,7 @@
                                 </ul>
                             </address>
                             <a href="{{route('event.details')}}"
-                                class="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
+                                class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                 data-hover="More Details">
                                 <span class="d-block btnText">More Details</span>
                             </a>
@@ -98,22 +98,22 @@
                     </article>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <article class="ueEveColumn position-relative shadow bg-white mb-6 mb-xl-12 w-100">
+                    <article class="mb-6 bg-white shadow ueEveColumn position-relative mb-xl-12 w-100">
                         <div class="imgHolder position-relative">
                             <a href="javascript:void(0);">
-                                <img src="{{asset('assets/images/img10.jpg')}}" class="img-fluid d-block w-100"
+                                <img src="https://placehold.co/403x300" class="img-fluid d-block w-100"
                                     alt="image description">
                             </a>
                             <time
-                                class="ueTimeTag position-absolute text-center d-flex bg-white fontAlter fwSemiBold text-lDark text-uppercase"
+                                class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
                                 datetime="2011-01-12">
-                                <span class="d-block text-white textDay flex-shrink-0 font-weight-bold">15</span>
-                                <span class="d-block py-2 px-3">OCT 2022</span>
+                                <span class="flex-shrink-0 text-white d-block textDay font-weight-bold">15</span>
+                                <span class="px-3 py-2 d-block">OCT 2022</span>
                             </time>
                         </div>
-                        <div class="ueDescriptionWrap pt-5 pb-8 px-5">
-                            <strong class="d-block ueCatTitle fwSemiBold text-secondary mb-2">Entertainement</strong>
-                            <h3 class="h3Small fwMedium mb-3">
+                        <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Entertainement</strong>
+                            <h3 class="mb-3 h3Small fwMedium">
                                 <a href="{{route('event.details')}}">Cultural Festival &amp; Concert at domanion</a>
                             </h3>
                             <address>
@@ -131,7 +131,7 @@
                                 </ul>
                             </address>
                             <a href="{{route('event.details')}}"
-                                class="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
+                                class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                 data-hover="More Details">
                                 <span class="d-block btnText">More Details</span>
                             </a>
@@ -139,22 +139,22 @@
                     </article>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <article class="ueEveColumn position-relative shadow bg-white mb-6 mb-xl-12 w-100">
+                    <article class="mb-6 bg-white shadow ueEveColumn position-relative mb-xl-12 w-100">
                         <div class="imgHolder position-relative">
                             <a href="javascript:void(0);">
-                                <img src="{{asset('assets/images/img63.jpg')}}" class="img-fluid d-block w-100"
+                                <img src="https://placehold.co/403x300" class="img-fluid d-block w-100"
                                     alt="image description">
                             </a>
                             <time
-                                class="ueTimeTag position-absolute text-center d-flex bg-white fontAlter fwSemiBold text-lDark text-uppercase"
+                                class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
                                 datetime="2011-01-12">
-                                <span class="d-block text-white textDay flex-shrink-0 font-weight-bold">08</span>
-                                <span class="d-block py-2 px-3">NOV 2022</span>
+                                <span class="flex-shrink-0 text-white d-block textDay font-weight-bold">08</span>
+                                <span class="px-3 py-2 d-block">NOV 2022</span>
                             </time>
                         </div>
-                        <div class="ueDescriptionWrap pt-5 pb-8 px-5">
-                            <strong class="d-block ueCatTitle fwSemiBold text-secondary mb-2">Conference</strong>
-                            <h3 class="h3Small fwMedium mb-3">
+                        <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Conference</strong>
+                            <h3 class="mb-3 h3Small fwMedium">
                                 <a href="{{route('event.details')}}">Annual Cycling Race 2020 for the Covid-19
                                     Donation</a>
                             </h3>
@@ -173,7 +173,7 @@
                                 </ul>
                             </address>
                             <a href="{{route('event.details')}}"
-                                class="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
+                                class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                 data-hover="More Details">
                                 <span class="d-block btnText">More Details</span>
                             </a>
@@ -181,23 +181,23 @@
                     </article>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <article class="ueEveColumn position-relative shadow bg-white mb-6 mb-xl-12 w-100">
+                    <article class="mb-6 bg-white shadow ueEveColumn position-relative mb-xl-12 w-100">
                         <div class="imgHolder position-relative">
                             <a href="javascript:void(0);">
-                                <img src="{{asset('assets/images/img64.jpg')}}" class="img-fluid d-block w-100"
+                                <img src="https://placehold.co/403x300" class="img-fluid d-block w-100"
                                     alt="image description">
                             </a>
                             <time
-                                class="ueTimeTag position-absolute text-center d-flex bg-white fontAlter fwSemiBold text-lDark text-uppercase"
+                                class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
                                 datetime="2011-01-12">
-                                <span class="d-block text-white textDay flex-shrink-0 font-weight-bold">23</span>
-                                <span class="d-block py-2 px-3">NOV 2022</span>
+                                <span class="flex-shrink-0 text-white d-block textDay font-weight-bold">23</span>
+                                <span class="px-3 py-2 d-block">NOV 2022</span>
                             </time>
                         </div>
-                        <div class="ueDescriptionWrap pt-5 pb-8 px-5">
-                            <strong class="d-block ueCatTitle fwSemiBold text-secondary mb-2">Health &amp;
+                        <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Health &amp;
                                 Sports</strong>
-                            <h3 class="h3Small fwMedium mb-3">
+                            <h3 class="mb-3 h3Small fwMedium">
                                 <a href="{{route('event.details')}}">Celebrating World Fiteness Day at White
                                     Corner’20</a>
                             </h3>
@@ -216,7 +216,7 @@
                                 </ul>
                             </address>
                             <a href="{{route('event.details')}}"
-                                class="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
+                                class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                 data-hover="More Details">
                                 <span class="d-block btnText">More Details</span>
                             </a>
@@ -224,22 +224,22 @@
                     </article>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <article class="ueEveColumn position-relative shadow bg-white mb-6 mb-xl-12 w-100">
+                    <article class="mb-6 bg-white shadow ueEveColumn position-relative mb-xl-12 w-100">
                         <div class="imgHolder position-relative">
                             <a href="javascript:void(0);">
-                                <img src="{{asset('assets/images/img65.jpg')}}" class="img-fluid d-block w-100"
+                                <img src="https://placehold.co/403x300" class="img-fluid d-block w-100"
                                     alt="image description">
                             </a>
                             <time
-                                class="ueTimeTag position-absolute text-center d-flex bg-white fontAlter fwSemiBold text-lDark text-uppercase"
+                                class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
                                 datetime="2011-01-12">
-                                <span class="d-block text-white textDay flex-shrink-0 font-weight-bold">03</span>
-                                <span class="d-block py-2 px-3">DEC 2022</span>
+                                <span class="flex-shrink-0 text-white d-block textDay font-weight-bold">03</span>
+                                <span class="px-3 py-2 d-block">DEC 2022</span>
                             </time>
                         </div>
-                        <div class="ueDescriptionWrap pt-5 pb-8 px-5">
-                            <strong class="d-block ueCatTitle fwSemiBold text-secondary mb-2">Meeting</strong>
-                            <h3 class="h3Small fwMedium mb-3">
+                        <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Meeting</strong>
+                            <h3 class="mb-3 h3Small fwMedium">
                                 <a href="{{route('event.details')}}">City Innovation and Technology Committee
                                     Meeting</a>
                             </h3>
@@ -258,7 +258,7 @@
                                 </ul>
                             </address>
                             <a href="{{route('event.details')}}"
-                                class="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
+                                class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                 data-hover="More Details">
                                 <span class="d-block btnText">More Details</span>
                             </a>
@@ -266,22 +266,22 @@
                     </article>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <article class="ueEveColumn position-relative shadow bg-white mb-6 mb-xl-12 w-100">
+                    <article class="mb-6 bg-white shadow ueEveColumn position-relative mb-xl-12 w-100">
                         <div class="imgHolder position-relative">
                             <a href="javascript:void(0);">
-                                <img src="{{asset('assets/images/img66.jpg')}}" class="img-fluid d-block w-100"
+                                <img src="https://placehold.co/403x300" class="img-fluid d-block w-100"
                                     alt="image description">
                             </a>
                             <time
-                                class="ueTimeTag position-absolute text-center d-flex bg-white fontAlter fwSemiBold text-lDark text-uppercase"
+                                class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
                                 datetime="2011-01-12">
-                                <span class="d-block text-white textDay flex-shrink-0 font-weight-bold">16</span>
-                                <span class="d-block py-2 px-3">DEC 2022</span>
+                                <span class="flex-shrink-0 text-white d-block textDay font-weight-bold">16</span>
+                                <span class="px-3 py-2 d-block">DEC 2022</span>
                             </time>
                         </div>
-                        <div class="ueDescriptionWrap pt-5 pb-8 px-5">
-                            <strong class="d-block ueCatTitle fwSemiBold text-secondary mb-2">Workshop</strong>
-                            <h3 class="h3Small fwMedium mb-3">
+                        <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Workshop</strong>
+                            <h3 class="mb-3 h3Small fwMedium">
                                 <a href="{{route('event.details')}}">Faith Forward Future - Social Awareness Seminar</a>
                             </h3>
                             <address>
@@ -299,7 +299,7 @@
                                 </ul>
                             </address>
                             <a href="{{route('event.details')}}"
-                                class="btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative border-0 p-0 mt-3 align-top"
+                                class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                 data-hover="More Details">
                                 <span class="d-block btnText">More Details</span>
                             </a>
@@ -308,7 +308,7 @@
                 </div>
             </div>
             <nav aria-label="Page navigation">
-                <ul class="pagination justify-content-center pt-2">
+                <ul class="pt-2 pagination justify-content-center">
                     <li class="page-item disabled">
                         <a class="page-link" href="javascript:void(0);">Previous</a>
                     </li>
