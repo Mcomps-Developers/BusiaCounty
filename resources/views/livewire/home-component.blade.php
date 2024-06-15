@@ -18,14 +18,14 @@
             .ibColumn {
                 min-height: unset;
                 /* Remove any minimum height set for larger screens */
-                max-height: 80vh;
+                max-height: 90vh;
                 /* Maximum height for mobile devices */
             }
         }
 
         @media (min-width: 601px) and (max-width: 1024px) {
             .ibColumn {
-                min-height: 80vh;
+                min-height: 90vh;
                 /* Example height for tablets */
             }
         }
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://placehold.co/950x500);"></span>
+                    style="background-image: url(https://placehold.co/950x600);"></span>
             </article>
         </div>
         <div>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://placehold.co/950x500);"></span>
+                    style="background-image: url(https://placehold.co/950x600);"></span>
             </article>
         </div>
     </div>
