@@ -59,7 +59,7 @@
                                 cheap enough in many places in the locally also helps to eliminate long-distance.and
                                 around.</p>
                         </div>
-                        
+
                         <div class="mb-6 dcsPatchWrap mb-lg-11">
                             <h3 class="mb-4">Electrical Services With Safety In Mind</h3>
                             <p>To help customers block out even more of the sun, consider offering window-tinting
@@ -95,7 +95,7 @@
                                 </li>
                             </ul>
                         </div>
-                        
+
 
 
                     </div>
@@ -176,7 +176,7 @@
                         <p>Meet the department leadership team.</p>
                     </header>
                     <div class="row justify-content-center">
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 b-flex">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
                                     <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
@@ -223,7 +223,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 b-flex">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
                                     <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
@@ -269,7 +269,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 b-flex">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
                                     <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
@@ -315,7 +315,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 b-flex">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
                                     <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
@@ -362,8 +362,8 @@
 
                     </div>
                 </div>
-                
-                
+
+
             </section>
             <section class="py-8 exploreDepartmentsBlock py-md-10 py-lg-14 py-xl-22">
                 <div class="container">
@@ -371,7 +371,7 @@
                         <h2 class="mb-4 fwSemiBold">Department Projects</h2>
                         <p>Explore Our Projects</p>
                     </header>
-                    
+
                     <div class="mb-8 row justify-content-center isoContentHolder">
                         <div class="col-12 col-md-6 col-lg-4 isoCol business">
                             <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
