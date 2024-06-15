@@ -1,10 +1,55 @@
 <main>
     @section('title')
-    The County Government of Busia
+        The County Government of Busia
     @endsection
     <div class="introBlock ibSlider">
+        <style>
+            .ibSlider .dotsList {
+                position: absolute;
+                left: 15px;
+                bottom: 100px;
+                right: 15px;
+                z-index: 2;
+            }
+
+            .ibColumn {
+                z-index: 1;
+                min-height: 90vh;
+                /* Default for larger screens */
+            }
+
+            @media (max-width: 600px) {
+                .ibColumn {
+                    min-height: unset;
+                    /* Remove any minimum height set for larger screens */
+                    max-height: 60vh;
+                    /* Maximum height for mobile devices */
+                }
+            }
+
+            @media (min-width: 601px) and (max-width: 1024px) {
+                .ibColumn {
+                    min-height: 80vh;
+                    /* Example height for tablets */
+                }
+            }
+
+            @media (min-width: 1025px) and (max-width: 1440px) {
+                .ibColumn {
+                    min-height: 85vh;
+                    /* Example height for small desktops */
+                }
+            }
+
+            @media (min-width: 1441px) {
+                .ibColumn {
+                    min-height: 90vh;
+                    /* Default height for large desktops */
+                }
+            }
+        </style>
         <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="min-height: 70vh";>
+            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
                 <div class="alignHolder d-flex align-items-center w-100">
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
@@ -29,7 +74,7 @@
             </article>
         </div>
         <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="min-height: 70vh";>
+            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
                 <div class="alignHolder d-flex align-items-center w-100">
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
@@ -54,7 +99,7 @@
             </article>
         </div>
         <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="min-height: 70vh";>
+            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
                 <div class="alignHolder d-flex align-items-center w-100">
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
@@ -79,12 +124,12 @@
             </article>
         </div>
     </div>
-    <aside class="text-white featuresAsideBlock position-relative" >
+    <aside class="text-white featuresAsideBlock position-relative">
         <div class="container">
-            <div class="flatpWrap position-relative mt-n8 mt-md-n18" >
+            <div class="flatpWrap position-relative mt-n8 mt-md-n18">
                 <ul class="flex-wrap mb-0 overflow-hidden list-unstyled fabFeaturesList d-flex">
                     <li>
-                        <a href="{{route('executive')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
+                        <a href="{{ route('executive') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
                                 <i class="fa fa-landmark"></i>
@@ -93,7 +138,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('jobs')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
+                        <a href="{{ route('jobs') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
                                 <i class="fa fa-briefcase"></i>
@@ -102,7 +147,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('investor')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
+                        <a href="{{ route('investor') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
                                 <i class="fa fa-dollar-sign"></i>
@@ -111,7 +156,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('tenders')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
+                        <a href="{{ route('tenders') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
                                 <i class="fa fa-folder-open"></i>
@@ -120,7 +165,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('eservices')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
+                        <a href="{{ route('eservices') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
                                 <i class="fa fa-laptop"></i>
@@ -129,7 +174,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('contact')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
+                        <a href="{{ route('contact') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
                                 <i class="fa fa-ambulance"></i>
@@ -143,8 +188,9 @@
         <div class="pt-6 pb-6 text-center fabBtNoteTextWrap fontAlter fzMedium pt-md-10 pb-md-10 pb-lg-14">
             <div class="container">
                 <div class="d-lg-flex justify-content-center align-items-center">
-                    <p class="mb-lg-0">Partner with {{config('app.name')}} and invest in an ocean of opportunities.</p>
-                    <a href="{{route('investor')}}"
+                    <p class="mb-lg-0">Partner with {{ config('app.name') }} and invest in an ocean of opportunities.
+                    </p>
+                    <a href="{{ route('investor') }}"
                         class="p-0 border-0 btn btn-dark btnSwitchDark fwMedium position-relative btnCustomSmall mt-md-1 mt-lg-0 ml-lg-4"
                         data-hover="Let’s explore more"><span class="d-block btnText fwMedium">Let’s explore
                             more</span></a>
@@ -242,7 +288,7 @@
             </div>
         </div>
         <span class="cfbBgWrap bgCover position-absolute h-100 w-100 inaccessible"
-    style="background-image: url({{ @asset('assets/images/bg01.png') }});"></span>
+            style="background-image: url({{ @asset('assets/images/bg01.png') }});"></span>
     </aside>
     <section class="pb-3 upcomeventsBlock position-relative pt-7 pt-md-9 pb-md-6 pt-lg-14 pb-lg-11 pt-xl-20 pb-xl-16">
         <div class="container">
@@ -255,7 +301,7 @@
                                     <h2 class="mb-sm-0 fwSemiBold h2Small">Events</h2>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-5 d-sm-flex justify-content-sm-end">
-                                    <a href="{{route('events')}}" class="btn-link fontAlter">See All Events
+                                    <a href="{{ route('events') }}" class="btn-link fontAlter">See All Events
                                         <i class="fa fa-chevron-right blIcn"></i></a>
                                 </div>
                             </div>
@@ -264,9 +310,9 @@
                             <div class="col-12 col-md-6">
                                 <article class="mb-6 bg-white shadow ueEveColumn position-relative">
                                     <div class="imgHolder position-relative">
-                                        <a href="{{route('event.details')}}">
-                                            <img src="https://placehold.co/383x285"
-                                                class="img-fluid d-block w-100" alt="image description">
+                                        <a href="{{ route('event.details') }}">
+                                            <img src="https://placehold.co/383x285" class="img-fluid d-block w-100"
+                                                alt="image description">
                                         </a>
                                         <time
                                             class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
@@ -282,7 +328,7 @@
                                         <strong
                                             class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                                         <h3 class="mb-3 h3Small fwMedium">
-                                            <a href="{{route('event.details')}}">Event Name</a>
+                                            <a href="{{ route('event.details') }}">Event Name</a>
                                         </h3>
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
@@ -296,7 +342,7 @@
                                                 </li>
                                             </ul>
                                         </address>
-                                        <a href="{{route('event.details')}}"
+                                        <a href="{{ route('event.details') }}"
                                             class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                             data-hover="More Details">
                                             <span class="d-block btnText">More Details</span>
@@ -307,9 +353,9 @@
                             <div class="col-12 col-md-6">
                                 <article class="mb-6 bg-white shadow ueEveColumn position-relative">
                                     <div class="imgHolder position-relative">
-                                        <a href="{{route('event.details')}}">
-                                            <img src="https://placehold.co/383x285"
-                                                class="img-fluid d-block w-100" alt="image description">
+                                        <a href="{{ route('event.details') }}">
+                                            <img src="https://placehold.co/383x285" class="img-fluid d-block w-100"
+                                                alt="image description">
                                         </a>
                                         <time
                                             class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
@@ -323,7 +369,7 @@
                                         <strong
                                             class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                                         <h3 class="mb-3 h3Small fwMedium">
-                                            <a href="{{route('event.details')}}">Event Name</a>
+                                            <a href="{{ route('event.details') }}">Event Name</a>
                                         </h3>
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
@@ -337,7 +383,7 @@
                                                 </li>
                                             </ul>
                                         </address>
-                                        <a href="{{route('event.details')}}"
+                                        <a href="{{ route('event.details') }}"
                                             class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                             data-hover="More Details">
                                             <span class="d-block btnText">More Details</span>
@@ -359,43 +405,49 @@
                             <ul class="mb-0 list-unstyled cdDocsList">
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"> <i
+                                                class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">October 4, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"><i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"><i class="fa fa-file-pdf f-2x"></i>Example
+                                            Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">September 15, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"><i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"><i class="fa fa-file-pdf f-2x"></i>Example
+                                            Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">September 8, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"> <i
+                                                class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"> <i
+                                                class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"> <i
+                                                class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
                             </ul>
                             <footer class="pt-4 mt-2 text-center ccwFoot">
-                                <a href="{{route('downloads')}}" class="btn-link fontAlter">More Documents <i
+                                <a href="{{ route('downloads') }}" class="btn-link fontAlter">More Documents <i
                                         class="fa fa-chevron-right blIcn"></i></a>
                             </footer>
                         </article>
@@ -412,7 +464,7 @@
                     <header class="pt-2 headingHead mb-7 mb-lg-0">
                         <h2 class="mb-2 fwSemiBold">News and Publications</h2>
                         <p>The most recent news, publications and articles.</p>
-                        <a href="{{route('news.speeches')}}"
+                        <a href="{{ route('news.speeches') }}"
                             class="p-0 mt-5 border-0 btn btn-outline-secondary bdrWidthAlter text-capitalize position-relative btnXsMinWidth"
                             data-hover="More News">
                             <span class="d-block btnText">More News</span>
@@ -438,9 +490,9 @@
                                         <i class="fa fa-comments"></i> 0
                                     </strong>
                                     <h3 class="mb-6 fwSemiBold">
-                                        <a href="{{route('news.speeches.details')}}">Example News Name</a>
+                                        <a href="{{ route('news.speeches.details') }}">Example News Name</a>
                                     </h3>
-                                    <a href="{{route('news.speeches.details')}}"
+                                    <a href="{{ route('news.speeches.details') }}"
                                         class="align-top btnCr d-inline-block fontAlter">Continue
                                         Reading <i class="fa fa-arrow-right"></i></a>
                                 </div>
@@ -463,9 +515,9 @@
                                         <i class="fa fa-comments"></i> 2
                                     </strong>
                                     <h3 class="mb-6 fwSemiBold">
-                                        <a href="{{route('news.speeches.details')}}">Publications Name</a>
+                                        <a href="{{ route('news.speeches.details') }}">Publications Name</a>
                                     </h3>
-                                    <a href="{{route('news.speeches.details')}}"
+                                    <a href="{{ route('news.speeches.details') }}"
                                         class="align-top btnCr d-inline-block fontAlter">Continue
                                         Reading <i class="fa fa-arrow-right"></i></a>
                                 </div>
@@ -488,9 +540,9 @@
                                         <i class="fa fa-comments"></i> 3
                                     </strong>
                                     <h3 class="mb-6 fwSemiBold">
-                                        <a href="{{route('news.speeches.details')}}">Article Name</a>
+                                        <a href="{{ route('news.speeches.details') }}">Article Name</a>
                                     </h3>
-                                    <a href="{{route('news.speeches.details')}}"
+                                    <a href="{{ route('news.speeches.details') }}"
                                         class="align-top btnCr d-inline-block fontAlter">Continue
                                         Reading <i class="fa fa-arrow-right"></i></a>
                                 </div>
@@ -501,7 +553,7 @@
             </div>
         </div>
         <span class="npbBgPattern w-100 h-100 bgCover position-absolute inaccessible"
-            style="background-image: url({{@asset('assets/images/bgPattern2.jpg')}});"></span>
+            style="background-image: url({{ @asset('assets/images/bgPattern2.jpg') }});"></span>
     </section>
     <section class="pt-4 pb-6 exploreHeightsBlock pb-md-9 pt-lg-7 pb-lg-14 pt-xl-11 pb-xl-20">
         <div class="container">
@@ -525,10 +577,11 @@
                                 <div
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
+                                            Name</strong>
                                         <span class="d-block">Destination Name</span>
                                     </h3>
-                                    <a href="{{route('destination')}}" class="d-inline-block"><i
+                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
                                             class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
@@ -547,11 +600,11 @@
                                 <div
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong
-                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
+                                            Name</strong>
                                         <span class="d-block">Destination Name</span>
                                     </h3>
-                                    <a href="{{route('destination')}}" class="d-inline-block"><i
+                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
                                             class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
@@ -570,11 +623,11 @@
                                 <div
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong
-                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
+                                            Name</strong>
                                         <span class="d-block">Destination Name</span>
                                     </h3>
-                                    <a href="{{route('destination')}}" class="d-inline-block"><i
+                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
                                             class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
@@ -593,11 +646,11 @@
                                 <div
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong
-                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
+                                            Name</strong>
                                         <span class="d-block">Destination Name</span>
                                     </h3>
-                                    <a href="{{route('destination')}}" class="d-inline-block"><i
+                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
                                             class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
@@ -616,10 +669,11 @@
                                 <div
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
+                                            Name</strong>
                                         <span class="d-block">Destination Name</span>
                                     </h3>
-                                    <a href="{{route('destination')}}" class="d-inline-block"><i
+                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
                                             class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
