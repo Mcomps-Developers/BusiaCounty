@@ -39,11 +39,11 @@
                                         Hospital</h1> --}}
                                     {{-- <p>A transformative and progressive County for sustainable and equitable
                                         development.</p> --}}
-                                    {{-- <a href="javascript:void(0);"
+                                    <a href="javascript:void(0);"
                                         class="p-0 mt-6 border-0 btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative"
-                                        data-hover="More Details">
-                                        <span class="d-block btnText">More Details</span>
-                                    </a> --}}
+                                        data-hover="Swearing in">
+                                        <span class="d-block btnText">Swearing in</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
