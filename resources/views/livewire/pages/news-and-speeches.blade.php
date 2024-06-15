@@ -1,6 +1,6 @@
 <main>
     @section('title')
-    News &amp; Speeches
+        News &amp; Speeches
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
@@ -25,7 +25,7 @@
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
                         <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
+                            <a href="{{ route('news.speeches.details') }}">
                                 <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
                                     alt="image description">
                             </a>
@@ -35,15 +35,15 @@
                         </div>
                         <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                             <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Goverment</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 0
+                                <span class="mr-5">Category</span>
+                                <i class="fa fa-chat"><span class="sr-only">icon</span></i> 0
                             </strong>
                             <h3 class="mb-5 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">List of City Weekend Celebrations</a>
+                                <a href="{{ route('news.speeches.details') }}">Example Title</a>
                             </h3>
-                            <a href="{{route('news.speeches.details')}}"
+                            <a href="{{ route('news.speeches.details') }}"
                                 class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
+                                <i class="ml-2 align-middle fa fa-arrowRight bcIcn"><span
                                         class="sr-only">icon</span></i></a>
                         </div>
                     </article>
@@ -51,137 +51,7 @@
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
                         <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
-                                <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
-                                    alt="image description">
-                            </a>
-                            <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">12
-                                Oct 2020</time>
-                        </div>
-                        <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                            <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Culture</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 2
-                            </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">New Australian Economic Culture</a>
-                            </h3>
-                            <a href="{{route('news.speeches.details')}}"
-                                class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
-                                        class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
-                        <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
-                                <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
-                                    alt="image description">
-                            </a>
-                            <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">08
-                                Oct 2020</time>
-                        </div>
-                        <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                            <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Developement</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 3
-                            </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">Smart City Design Plan 2025</a>
-                            </h3>
-                            <a href="{{route('news.speeches.details')}}"
-                                class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
-                                        class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
-                        <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
-                                <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
-                                    alt="image description">
-                            </a>
-                            <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">23
-                                Nov 2020</time>
-                        </div>
-                        <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                            <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In City News</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 0
-                            </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">Summer Nights at the Library</a>
-                            </h3>
-                            <a href="{{route('news.speeches.details')}}"
-                                class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
-                                        class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
-                        <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
-                                <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
-                                    alt="image description">
-                            </a>
-                            <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">16
-                                Nov 2020</time>
-                        </div>
-                        <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                            <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Community</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 1
-                            </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">Environmental Planning Sustainability</a>
-                            </h3>
-                            <a href="{{route('news.speeches.details')}}"
-                                class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
-                                        class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
-                        <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
-                                <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
-                                    alt="image description">
-                            </a>
-                            <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">04
-                                Nov 2020</time>
-                        </div>
-                        <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                            <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Goverment</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 2
-                            </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">Urban Renewal Loans Available</a>
-                            </h3>
-                            <a href="{{route('news.speeches.details')}}"
-                                class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
-                                        class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
-                        <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
+                            <a href="{{ route('news.speeches.details') }}">
                                 <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
                                     alt="image description">
                             </a>
@@ -191,15 +61,15 @@
                         </div>
                         <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                             <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Tourism, Culture</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 2
+                                <span class="mr-5">Category</span>
+                                <i class="fa fa-chat"><span class="sr-only">icon</span></i> 0
                             </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">Dalvan Museum Street Art View</a>
+                            <h3 class="mb-5 fwSemiBold">
+                                <a href="{{ route('news.speeches.details') }}">Example Title</a>
                             </h3>
-                            <a href="{{route('news.speeches.details')}}"
+                            <a href="{{ route('news.speeches.details') }}"
                                 class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
+                                <i class="ml-2 align-middle fa fa-arrowRight bcIcn"><span
                                         class="sr-only">icon</span></i></a>
                         </div>
                     </article>
@@ -207,25 +77,25 @@
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
                         <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
+                            <a href="{{ route('news.speeches.details') }}">
                                 <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
                                     alt="image description">
                             </a>
                             <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">19
-                                Sep 2020</time>
+                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">15
+                                Oct 2020</time>
                         </div>
                         <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                             <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Goverment</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 1
+                                <span class="mr-5">Category</span>
+                                <i class="fa fa-chat"><span class="sr-only">icon</span></i> 0
                             </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">City Unemployment Dips to 3.9%</a>
+                            <h3 class="mb-5 fwSemiBold">
+                                <a href="{{ route('news.speeches.details') }}">Example Title</a>
                             </h3>
-                            <a href="{{route('news.speeches.details')}}"
+                            <a href="{{ route('news.speeches.details') }}"
                                 class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
+                                <i class="ml-2 align-middle fa fa-arrowRight bcIcn"><span
                                         class="sr-only">icon</span></i></a>
                         </div>
                     </article>
@@ -233,108 +103,30 @@
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
                         <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
+                            <a href="{{ route('news.speeches.details') }}">
                                 <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
                                     alt="image description">
                             </a>
                             <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">14
-                                Sep 2020</time>
+                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">15
+                                Oct 2020</time>
                         </div>
                         <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                             <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Tourism</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 4
+                                <span class="mr-5">Category</span>
+                                <i class="fa fa-chat"><span class="sr-only">icon</span></i> 0
                             </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">City Unemployment Dips to 3.9%</a>
+                            <h3 class="mb-5 fwSemiBold">
+                                <a href="{{ route('news.speeches.details') }}">Example Title</a>
                             </h3>
-                            <a href="{{route('news.speeches.details')}}"
+                            <a href="{{ route('news.speeches.details') }}"
                                 class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
+                                <i class="ml-2 align-middle fa fa-arrowRight bcIcn"><span
                                         class="sr-only">icon</span></i></a>
                         </div>
                     </article>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
-                        <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
-                                <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
-                                    alt="image description">
-                            </a>
-                            <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">16
-                                Sep 2020</time>
-                        </div>
-                        <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                            <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In City news</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 0
-                            </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">New Goverment Rules Enforced in
-                                    Tourisum</a>
-                            </h3>
-                            <a href="{{route('news.speeches.details')}}"
-                                class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
-                                        class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
-                        <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
-                                <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
-                                    alt="image description">
-                            </a>
-                            <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">29
-                                Aug 2020</time>
-                        </div>
-                        <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                            <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Culture</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 2
-                            </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">Europeon Freedom Fighters Statue</a>
-                            </h3>
-                            <a href="{{route('news.speeches.details')}}"
-                                class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
-                                        class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-                    <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
-                        <div class="imgHolder position-relative">
-                            <a href="{{route('news.speeches.details')}}">
-                                <img src="https://placehold.co/403x300" class="img-fluid w-100 d-block"
-                                    alt="image description">
-                            </a>
-                            <time datetime="2011-01-12"
-                                class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">29
-                                Aug 2020</time>
-                        </div>
-                        <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                            <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                <span class="mr-5">In Culture</span>
-                                <i class="icomoon-chat"><span class="sr-only">icon</span></i> 2
-                            </strong>
-                            <h3 class="mb-6 fwSemiBold">
-                                <a href="{{route('news.speeches.details')}}">Europeon Freedom Fighters Statue</a>
-                            </h3>
-                            <a href="{{route('news.speeches.details')}}"
-                                class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle icomoon-arrowRight bcIcn"><span
-                                        class="sr-only">icon</span></i></a>
-                        </div>
-                    </article>
-                </div>
+                
             </div>
             <nav aria-label="Page navigation">
                 <ul class="pt-2 pagination justify-content-center">
@@ -348,8 +140,8 @@
                         <a class="page-link" href="javascript:void(0);">2</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link" href="javascript:void(0);">Next <i class="fas fa-chevron-right icn"><span
-                                    class="sr-only">icon</span></i></a>
+                        <a class="page-link" href="javascript:void(0);">Next <i
+                                class="fas fa-chevron-right icn"><span class="sr-only">icon</span></i></a>
                     </li>
                 </ul>
             </nav>
