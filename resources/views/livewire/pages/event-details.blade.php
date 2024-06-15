@@ -38,19 +38,19 @@
                                         <span class="d-block">
                                             <time datetime="2011-01-12">January 14, 2020</time>
                                         </span>
-                                        <i class="icomoon-calendar icnWatermark"><span class="sr-only">icon</span></i>
+                                        <i class="fa fa-calendar icnWatermark"><span class="sr-only">icon</span></i>
                                     </div>
                                     <div class="px-4 pt-6 pb-12 col-12 col-sm-4 px-md-7">
                                         <strong class="mb-2 d-block title fwSemiBold">Time</strong>
                                         <span class="d-block">
                                             <time datetime="2011-01-12">7:00 am - 8:45 am</time>
                                         </span>
-                                        <i class="icomoon-clocko icnWatermark"><span class="sr-only">icon</span></i>
+                                        <i class="fa fa-clock icnWatermark"><span class="sr-only">icon</span></i>
                                     </div>
                                     <div class="px-4 pt-6 pb-12 col-12 col-sm-4 px-md-7">
                                         <strong class="mb-2 d-block title fwSemiBold">Location</strong>
                                         <span class="d-block">Mayor Office, Norway County</span>
-                                        <i class="icomoon-locationpin icnWatermark"><span
+                                        <i class="fa fa-map-marker icnWatermark"><span
                                                 class="sr-only">icon</span></i>
                                     </div>
                                 </div>
@@ -115,8 +115,8 @@
                                             <img src="https://placehold.co/150x150"
                                                 class="img-fluid rounded-circle" alt="image description">
                                         </div>
-                                        <h3 class="mb-1 fwMedium">Anna Roselaw</h3>
-                                        <h4 class="fontBase font-weight-normal">County Council</h4>
+                                        <h3 class="mb-1 fwMedium">Name Here</h3>
+                                        <h4 class="fontBase font-weight-normal">Destination</h4>
                                     </article>
                                 </div>
                                 <div class="col-12">
@@ -125,8 +125,8 @@
                                             <img src="https://placehold.co/150x150"
                                                 class="img-fluid rounded-circle" alt="image description">
                                         </div>
-                                        <h3 class="mb-1 fwMedium">Robert Davis</h3>
-                                        <h4 class="fontBase font-weight-normal">County Council</h4>
+                                        <h3 class="mb-1 fwMedium">Name Here</h3>
+                                        <h4 class="fontBase font-weight-normal">Destination</h4>
                                     </article>
                                 </div>
                                 <div class="col-12">
@@ -135,8 +135,8 @@
                                             <img src="https://placehold.co/150x150"
                                                 class="img-fluid rounded-circle" alt="image description">
                                         </div>
-                                        <h3 class="mb-1 fwMedium">San Mangrow</h3>
-                                        <h4 class="fontBase font-weight-normal">President</h4>
+                                        <h3 class="mb-1 fwMedium">Name Here</h3>
+                                        <h4 class="fontBase font-weight-normal">Destination</h4>
                                     </article>
                                 </div>
                                 <div class="col-12">
@@ -145,8 +145,8 @@
                                             <img src="https://placehold.co/150x150"
                                                 class="img-fluid rounded-circle" alt="image description">
                                         </div>
-                                        <h3 class="mb-1 fwMedium">Anna Roselaw</h3>
-                                        <h4 class="fontBase font-weight-normal">County Council</h4>
+                                        <h3 class="mb-1 fwMedium">Name Here</h3>
+                                        <h4 class="fontBase font-weight-normal">Destination</h4>
                                     </article>
                                 </div>
                                 <div class="col-12">
@@ -155,8 +155,8 @@
                                             <img src="https://placehold.co/150x150"
                                                 class="img-fluid rounded-circle" alt="image description">
                                         </div>
-                                        <h3 class="mb-1 fwMedium">Robert Davis</h3>
-                                        <h4 class="fontBase font-weight-normal">County Council</h4>
+                                        <h3 class="mb-1 fwMedium">Name Here</h3>
+                                        <h4 class="fontBase font-weight-normal">Destination</h4>
                                     </article>
                                 </div>
                                 <div class="col-12">
@@ -165,8 +165,8 @@
                                             <img src="https://placehold.co/150x150"
                                                 class="img-fluid rounded-circle" alt="image description">
                                         </div>
-                                        <h3 class="mb-1 fwMedium">San Mangrow</h3>
-                                        <h4 class="fontBase font-weight-normal">President</h4>
+                                        <h3 class="mb-1 fwMedium">Name Here</h3>
+                                        <h4 class="fontBase font-weight-normal">Destination</h4>
                                     </article>
                                 </div>
                             </div>
@@ -302,23 +302,22 @@
                                     </div>
                                     <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
                                         <strong
-                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Entertainement</strong>
+                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                                         <h3 class="mb-3 h3Small fwMedium">
-                                            <a href="{{route('event.details')}}">Cultural Festival &amp; Concert at
-                                                Domanion
+                                            <a href="{{route('event.details')}}">Event Name
                                                 Valer</a>
                                         </h3>
                                         <address>
                                             <ul class="pl-0 list-unstyled ueScheduleList">
                                                 <li>
-                                                    <i class="icomoon-clock icn position-absolute"><span
+                                                    <i class="fa fa-clock icn position-absolute"><span
                                                             class="sr-only">icon</span></i>
                                                     1:00pm - 5:00pm
                                                 </li>
                                                 <li>
-                                                    <i class="icomoon-location icn position-absolute"><span
+                                                    <i class="fa fa-map-marker icn position-absolute"><span
                                                             class="sr-only">icon</span></i>
-                                                    32 Quincy Street, Cambridge, MA
+                                                    Location Name
                                                 </li>
                                             </ul>
                                         </address>
