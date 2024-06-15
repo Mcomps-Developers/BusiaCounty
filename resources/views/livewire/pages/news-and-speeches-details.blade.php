@@ -48,14 +48,14 @@
                         </div>
                         <header class="nrcHead">
                             <strong class="mb-1 d-block fwMedium title">
-                                <i class="icnTheme fwMedium icomoon-clock"><span class="sr-only">icon</span></i>
+                                <i class=Theme fwMedium fa fa-calendar"><span class="sr-only">icon</span></i>
                                 <time datetime="2011-01-12">Dec 02, 2020</time>
                                 - In
-                                <a href="javascript:void(0);" class="text-lDark">Development</a>
+                                <a href="javascript:void(0);" class="text-lDark">Category</a>
                                 By
-                                <a href="javascript:void(0);" class="text-lDark">Jackman</a>
+                                <a href="javascript:void(0);" class="text-lDark">Author Name</a>
                                 &nbsp;&nbsp;
-                                <i class="icomoon-chat icn"><span class="sr-only">icon</span></i>
+                                <i class="fa fa-eye"><span class="sr-only">icon</span></i>
                                 3
                             </strong>
                             <h2 class="mb-5 h2vii fwSemiBold">News &amp; Speech Details Page</h2>
@@ -263,7 +263,7 @@
                                                     Dashboard</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block"><i
-                                                    class="mr-1 icomoon-clock icn"><span
+                                                    class="mr-1 fa fa-calendar"><span
                                                         class="sr-only">icon</span></i>Dec 11, 2020</time>
                                         </div>
                                     </li>
@@ -278,7 +278,7 @@
                                                     Culture</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block"><i
-                                                    class="mr-1 icomoon-clock icn"><span
+                                                    class="mr-1 fa fa-calendar"><span
                                                         class="sr-only">icon</span></i>Dec 05, 2020</time>
                                         </div>
                                     </li>
@@ -293,7 +293,7 @@
                                                     Library</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block"><i
-                                                    class="mr-1 icomoon-clock icn"><span
+                                                    class="mr-1 fa fa-calendar"><span
                                                         class="sr-only">icon</span></i>Nov 23, 2020</time>
                                         </div>
                                     </li>
@@ -377,12 +377,12 @@
                             </section>
                             <article class="px-6 widget widgetVote bgCover py-9"
                                 style="background-image: url(https://placehold.co/317x508);">
-                                <h3 class="h3Large">Let’s start explore County Government of Busia with travel guide.
+                                <h3 class="h3Large">Advertise Here
                                 </h3>
                                 <a href="javascript:void(0);"
                                     class="p-0 mt-2 border-0 btn btnDarkAlter text-capitalize btn-sm position-relative"
-                                    data-hover="Vote Now">
-                                    <span class="d-block btnText">Vote Now</span>
+                                    data-hover="Action Button">
+                                    <span class="d-block btnText">Action Button</span>
                                 </a>
                             </article>
                         </aside>
