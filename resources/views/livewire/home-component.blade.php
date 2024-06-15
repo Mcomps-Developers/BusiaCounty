@@ -18,7 +18,7 @@
             .ibColumn {
                 min-height: unset;
                 /* Remove any minimum height set for larger screens */
-                max-height: 75vh;
+                max-height: 80vh;
                 /* Maximum height for mobile devices */
             }
         }
