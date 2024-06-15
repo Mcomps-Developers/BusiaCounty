@@ -305,7 +305,7 @@
                                             class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                                         <h3 class="mb-3 h3Small fwMedium">
                                             <a href="{{route('event.details')}}">Event Name
-                                                Valer</a>
+                                                </a>
                                         </h3>
                                         <address>
                                             <ul class="pl-0 list-unstyled ueScheduleList">
