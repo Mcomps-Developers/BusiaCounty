@@ -156,7 +156,7 @@
         <div class="container">
             <div class="row">
                 <div class="pt-4 col-12 col-md-6">
-                    <h2 class="mb-6 lh44">Word from the Governor</h2>
+                    <h2 class="mb-6 lh44">Word from H.E the Governor</h2>
                     <p>It is a great honour to welcome you to the Gateway to East and Central Africa, renowned for its
                         optimal climatic
                         conditions for agriculture and its hospitable citizens. My foremost commitment is to safeguard

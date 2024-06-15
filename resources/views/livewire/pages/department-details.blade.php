@@ -176,7 +176,7 @@
                         <p>Meet the department leadership team.</p>
                     </header>
                     <div class="row justify-content-center">
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 b-flex">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
                                     <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
@@ -223,7 +223,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 b-flex">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
                                     <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
@@ -269,7 +269,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 b-flex">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
                                     <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
@@ -315,7 +315,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3 b-flex">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
                                     <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
@@ -375,182 +375,180 @@
                     <div class="mb-8 row justify-content-center isoContentHolder">
                         <div class="col-12 col-md-6 col-lg-4 isoCol business">
                             <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                style="background-image: url({{@asset('assets/images/img14.jpg')}});">
-                                <a href="{{asset('assets/images/img14.jpg')}}"
+                                style="background-image: url(https://placehold.co/403x300);">
+                                <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
                                     6
                                 </a>
                                 <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Business</strong>
-                                        <span class="d-block">Mayor of Arsonia</span>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 isoCol government">
-                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                style="background-image: url({{@asset('assets/images/img15.jpg')}});">
-                                <a href="{{asset('assets/images/img15.jpg')}}"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true" tabindex="-1">
-                                    <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
-                                    6
-                                </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Goverment</strong>
-                                        <span class="d-block">Town of Maximonia</span>
-                                    </h3>
-                                    <a href="{{route('project.details')}}"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 isoCol culture">
-                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                style="background-image: url({{@asset('assets/images/img16.jpg')}});">
-                                <a href="{{asset('assets/images/img16.jpg')}}"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true" tabindex="-1">
-                                    <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
-                                    6
-                                </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Culture</strong>
-                                        <span class="d-block">Melton Art Museum</span>
-                                    </h3>
-                                    <a href="{{route('project.details')}}"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 isoCol pubpla">
-                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                style="background-image: url({{@asset('assets/images/img18.jpg')}});">
-                                <a href="{{asset('assets/images/img18.jpg')}}"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true" tabindex="-1">
-                                    <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
-                                    6
-                                </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Public
-                                            Places</strong>
-                                        <span class="d-block">Cinema Teatre</span>
-                                    </h3>
-                                    <a href="{{route('project.details')}}"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
+                                            class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 isoCol business">
                             <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                style="background-image: url({{@asset('assets/images/img173.jpg')}});">
-                                <a href="{{asset('assets/images/img173.jpg')}}"
+                                style="background-image: url(https://placehold.co/403x300);">
+                                <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
                                     6
                                 </a>
                                 <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Business</strong>
-                                        <span class="d-block">Business Agencies</span>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 isoCol government">
-                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                style="background-image: url({{@asset('assets/images/img174.jpg')}});">
-                                <a href="{{asset('assets/images/img174.jpg')}}"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true" tabindex="-1">
-                                    <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
-                                    6
-                                </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Government</strong>
-                                        <span class="d-block">Historical Buildings</span>
-                                    </h3>
-                                    <a href="{{route('project.details')}}"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 isoCol events">
-                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                style="background-image: url({{@asset('assets/images/img175.jpg')}});">
-                                <a href="{{asset('assets/images/img175.jpg')}}"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true" tabindex="-1">
-                                    <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
-                                    6
-                                </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Events</strong>
-                                        <span class="d-block">Summer Conference</span>
-                                    </h3>
-                                    <a href="{{route('project.details')}}"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
-                                                class="sr-only">icon</span></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 isoCol pubpla">
-                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                style="background-image: url({{@asset('assets/images/img176.jpg')}});">
-                                <a href="{{asset('assets/images/img176.jpg')}}"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true" tabindex="-1">
-                                    <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
-                                    6
-                                </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Public
-                                            Places</strong>
-                                        <span class="d-block">Metro Train Station</span>
-                                    </h3>
-                                    <a href="{{route('project.details')}}"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
+                                            class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4 isoCol business">
                             <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                style="background-image: url({{@asset('assets/images/img17.jpg')}});">
-                                <a href="{{asset('assets/images/img17.jpg')}}"
+                                style="background-image: url(https://placehold.co/403x300);">
+                                <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
                                     6
                                 </a>
                                 <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Business</strong>
-                                        <span class="d-block">Modern Buildings</span>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
-                                            class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
+                                            class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
+                                                class="sr-only">icon</span></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 isoCol business">
+                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
+                                style="background-image: url(https://placehold.co/403x300);">
+                                <a href="https://placehold.co/403x300"
+                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
+                                    data-fancybox="true" tabindex="-1">
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    6
+                                </a>
+                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                    <h3 class="mb-0 text-white">
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <span class="d-block">Project Title</span>
+                                    </h3>
+                                    <a href="{{route('project.details')}}"><i
+                                            class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
+                                                class="sr-only">icon</span></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 isoCol business">
+                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
+                                style="background-image: url(https://placehold.co/403x300);">
+                                <a href="https://placehold.co/403x300"
+                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
+                                    data-fancybox="true" tabindex="-1">
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    6
+                                </a>
+                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                    <h3 class="mb-0 text-white">
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <span class="d-block">Project Title</span>
+                                    </h3>
+                                    <a href="{{route('project.details')}}"><i
+                                            class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
+                                                class="sr-only">icon</span></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 isoCol business">
+                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
+                                style="background-image: url(https://placehold.co/403x300);">
+                                <a href="https://placehold.co/403x300"
+                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
+                                    data-fancybox="true" tabindex="-1">
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    6
+                                </a>
+                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                    <h3 class="mb-0 text-white">
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <span class="d-block">Project Title</span>
+                                    </h3>
+                                    <a href="{{route('project.details')}}"><i
+                                            class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
+                                                class="sr-only">icon</span></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 isoCol business">
+                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
+                                style="background-image: url(https://placehold.co/403x300);">
+                                <a href="https://placehold.co/403x300"
+                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
+                                    data-fancybox="true" tabindex="-1">
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    6
+                                </a>
+                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                    <h3 class="mb-0 text-white">
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <span class="d-block">Project Title</span>
+                                    </h3>
+                                    <a href="{{route('project.details')}}"><i
+                                            class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
+                                                class="sr-only">icon</span></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 isoCol business">
+                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
+                                style="background-image: url(https://placehold.co/403x300);">
+                                <a href="https://placehold.co/403x300"
+                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
+                                    data-fancybox="true" tabindex="-1">
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    6
+                                </a>
+                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                    <h3 class="mb-0 text-white">
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <span class="d-block">Project Title</span>
+                                    </h3>
+                                    <a href="{{route('project.details')}}"><i
+                                            class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
+                                                class="sr-only">icon</span></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 isoCol business">
+                            <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
+                                style="background-image: url(https://placehold.co/403x300);">
+                                <a href="https://placehold.co/403x300"
+                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
+                                    data-fancybox="true" tabindex="-1">
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    6
+                                </a>
+                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                    <h3 class="mb-0 text-white">
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <span class="d-block">Project Title</span>
+                                    </h3>
+                                    <a href="{{route('project.details')}}"><i
+                                            class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
                                                 class="sr-only">icon</span></i></a>
                                 </div>
                             </div>
