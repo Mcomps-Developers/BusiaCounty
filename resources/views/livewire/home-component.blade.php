@@ -4,7 +4,7 @@
     @endsection
     <div class="introBlock ibSlider">
         <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="min-height: 60vh";>
+            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="min-height: 70vh";>
                 <div class="alignHolder d-flex align-items-center w-100">
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
@@ -29,7 +29,7 @@
             </article>
         </div>
         <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="min-height: 60vh";>
+            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="min-height: 70vh";>
                 <div class="alignHolder d-flex align-items-center w-100">
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
@@ -54,7 +54,7 @@
             </article>
         </div>
         <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="min-height: 60vh";>
+            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="min-height: 70vh";>
                 <div class="alignHolder d-flex align-items-center w-100">
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
