@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://placehold.co/950x600);"></span>
+                    style="background-image: url(https://placehold.co/1920x1080);"></span>
             </article>
         </div>
         <div>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://placehold.co/950x600);"></span>
+                    style="background-image: url(https://placehold.co/1920x1080);"></span>
             </article>
         </div>
     </div>
