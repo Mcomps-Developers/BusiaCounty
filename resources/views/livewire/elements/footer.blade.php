@@ -93,23 +93,18 @@
                     <h3 class="mb-4 text-white ftHeading">Quick Links</h3>
                     <ul class="mb-0 list-unstyled ftsrLinksList">
                         <li>
-                            <a href="javascript:void(0);">Report a crime</a>
+                            <a href="{{ route('departments') }}">Departments</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">Contact Centre</a>
+                            <a href="{{ route('governors.note') }}">Governorship</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">County Jobs</a>
+                            <a href="{{ route('executive') }}">The Executive</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0);">ICT</a>
+                            <a href="{{ route('public.service') }}">Public Service</a>
                         </li>
-                        <li>
-                            <a href="javascript:void(0);">KEBS</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);">Immigration</a>
-                        </li>
+                        
                     </ul>
                 </div>
                 <div class="mb-6 col-12 col-sm-4 col-md-3 col-xl-2 col-xlwd-3">
