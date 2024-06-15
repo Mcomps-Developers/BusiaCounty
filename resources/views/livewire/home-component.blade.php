@@ -1,53 +1,53 @@
 <main>
+    <style>
+        .ibSlider .dotsList {
+            position: absolute;
+            left: 15px;
+            bottom: 100px;
+            right: 15px;
+            z-index: 2;
+        }
+
+        .ibColumn {
+            z-index: 1;
+            min-height: 90vh;
+            /* Default for larger screens */
+        }
+
+        @media (max-width: 600px) {
+            .ibColumn {
+                min-height: unset;
+                /* Remove any minimum height set for larger screens */
+                max-height: 60vh;
+                /* Maximum height for mobile devices */
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .ibColumn {
+                min-height: 80vh;
+                /* Example height for tablets */
+            }
+        }
+
+        @media (min-width: 1025px) and (max-width: 1440px) {
+            .ibColumn {
+                min-height: 85vh;
+                /* Example height for small desktops */
+            }
+        }
+
+        @media (min-width: 1441px) {
+            .ibColumn {
+                min-height: 90vh;
+                /* Default height for large desktops */
+            }
+        }
+    </style>
     @section('title')
         The County Government of Busia
     @endsection
     <div class="introBlock ibSlider">
-        <style>
-            .ibSlider .dotsList {
-                position: absolute;
-                left: 15px;
-                bottom: 100px;
-                right: 15px;
-                z-index: 2;
-            }
-
-            .ibColumn {
-                z-index: 1;
-                min-height: 90vh;
-                /* Default for larger screens */
-            }
-
-            @media (max-width: 600px) {
-                .ibColumn {
-                    min-height: unset;
-                    /* Remove any minimum height set for larger screens */
-                    max-height: 60vh;
-                    /* Maximum height for mobile devices */
-                }
-            }
-
-            @media (min-width: 601px) and (max-width: 1024px) {
-                .ibColumn {
-                    min-height: 80vh;
-                    /* Example height for tablets */
-                }
-            }
-
-            @media (min-width: 1025px) and (max-width: 1440px) {
-                .ibColumn {
-                    min-height: 85vh;
-                    /* Example height for small desktops */
-                }
-            }
-
-            @media (min-width: 1441px) {
-                .ibColumn {
-                    min-height: 90vh;
-                    /* Default height for large desktops */
-                }
-            }
-        </style>
         <div>
             <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
                 <div class="alignHolder d-flex align-items-center w-100">
