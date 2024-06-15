@@ -25,8 +25,8 @@
                 <div class="mb-6 col-12 col-lg-9">
                     <div class="pr-lg-5 pr-xl-15 bodyFontAlter">
                         <header class="mb-10 dtlItemHeader mt-n1">
-                            <strong class="dtlihTitle d-block">In <a href="javascript:void(0);">Conference</a></strong>
-                            <h2 class="mb-9">Organizing County Photography Contest-2022</h2>
+                            <strong class="dtlihTitle d-block">In <a href="javascript:void(0);">Category</a></strong>
+                            <h2 class="mb-9">Event Name</h2>
                             <div class="imgHolder">
                                 <img src="https://placehold.co/873x648" class="img-fluid w-100"
                                     alt="image description">
@@ -359,8 +359,7 @@
                                         </div>
                                         <div class="descrWrap">
                                             <h4 class="mb-1 fwMedium">
-                                                <a href="{{route('event.details')}}">Annual Cycling Race 2020 for the
-                                                    Covid-19</a>
+                                                <a href="{{route('event.details')}}">Example Upcoming Events</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block">Oct 16, 2020 <br>@ 1:00 pm -
                                                 6:00 pm</time>
@@ -373,9 +372,7 @@
                                         </div>
                                         <div class="descrWrap">
                                             <h4 class="mb-1 fwMedium">
-                                                <a href="{{route('event.details')}}">Celebrating World Fiteness Day at
-                                                    White
-                                                    Corner’20</a>
+                                                <a href="{{route('event.details')}}">Example Upcoming Events</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block">Nov 16, 2020 <br>@ 9:00 am -
                                                 6:00 pm</time>
@@ -388,8 +385,7 @@
                                         </div>
                                         <div class="descrWrap">
                                             <h4 class="mb-1 fwMedium">
-                                                <a href="{{route('event.details')}}">County Innovation and Technology
-                                                    Committee&hellip;</a>
+                                                <a href="{{route('event.details')}}">Example Upcoming Events</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block">Dec 16, 2020 <br>@ 8:00 am -
                                                 5:00 pm</time>
