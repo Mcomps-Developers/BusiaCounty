@@ -3,7 +3,7 @@
         .ibSlider .dotsList {
             position: absolute;
             left: 15px;
-            bottom: 100px;
+            bottom: 70px;
             right: 15px;
             z-index: 2;
         }
@@ -18,7 +18,7 @@
             .ibColumn {
                 min-height: unset;
                 /* Remove any minimum height set for larger screens */
-                max-height: 60vh;
+                max-height: 75vh;
                 /* Maximum height for mobile devices */
             }
         }
