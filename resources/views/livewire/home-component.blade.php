@@ -252,7 +252,7 @@
                         <header class="mb-6 headingHead mb-lg-8 mb-xl-12">
                             <div class="row align-items-end">
                                 <div class="col-12 col-sm-6 col-md-7">
-                                    <h2 class="mb-sm-0 fwSemiBold h2Small">County Events</h2>
+                                    <h2 class="mb-sm-0 fwSemiBold h2Small">Events</h2>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-5 d-sm-flex justify-content-sm-end">
                                     <a href="{{route('events')}}" class="btn-link fontAlter">See All Events
@@ -280,10 +280,9 @@
                                     </div>
                                     <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
                                         <strong
-                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Entertainement</strong>
+                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                                         <h3 class="mb-3 h3Small fwMedium">
-                                            <a href="{{route('event.details')}}">Organizing County Photography
-                                                Contest-2022</a>
+                                            <a href="{{route('event.details')}}">Event Name</a>
                                         </h3>
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
@@ -293,7 +292,7 @@
                                                 </li>
                                                 <li>
                                                     <i class="fa fa-map-marker"></i>
-                                                    Mayor Office, Texas County
+                                                    Example Location
                                                 </li>
                                             </ul>
                                         </address>
@@ -322,10 +321,9 @@
                                     </div>
                                     <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
                                         <strong
-                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Entertainement</strong>
+                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                                         <h3 class="mb-3 h3Small fwMedium">
-                                            <a href="{{route('event.details')}}">Cultural Festival & Concert at
-                                                domanion</a>
+                                            <a href="{{route('event.details')}}">Event Name</a>
                                         </h3>
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
@@ -335,7 +333,7 @@
                                                 </li>
                                                 <li>
                                                     <i class="fa fa-map-marker"></i>
-                                                    32 Quincy Street, Cambridge, MA
+                                                    Example Location
                                                 </li>
                                             </ul>
                                         </address>
@@ -361,37 +359,37 @@
                             <ul class="mb-0 list-unstyled cdDocsList">
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Town Board Applications</a>
+                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">October 4, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"><i class="fa fa-file-pdf f-2x"></i> Temporary Road Permit Application</a>
+                                        <a href="{{route('downloads')}}"><i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">September 15, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"><i class="fa fa-file-pdf f-2x"></i> Commercial Business Permit</a>
+                                        <a href="{{route('downloads')}}"><i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">September 8, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i> Housing Strategic Plan</a>
+                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i> Housing Strategic Plan</a>
+                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i> Housing Strategic Plan</a>
+                                        <a href="{{route('downloads')}}"> <i class="fa fa-file-pdf f-2x"></i>Example Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
@@ -413,7 +411,7 @@
                 <div class="col-12 col-lg-3">
                     <header class="pt-2 headingHead mb-7 mb-lg-0">
                         <h2 class="mb-2 fwSemiBold">News and Publications</h2>
-                        <p>The news about recent activities for needed peoples.</p>
+                        <p>The most recent news, publications and articles.</p>
                         <a href="{{route('news.speeches')}}"
                             class="p-0 mt-5 border-0 btn btn-outline-secondary bdrWidthAlter text-capitalize position-relative btnXsMinWidth"
                             data-hover="More News">
@@ -436,12 +434,11 @@
                                 </div>
                                 <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                                     <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                        <span class="mr-5">In Goverment</span>
+                                        <span class="mr-5">Category</span>
                                         <i class="fas fa-comments"></i> 0
                                     </strong>
                                     <h3 class="mb-6 fwSemiBold">
-                                        <a href="{{route('news.speeches.details')}}">List of County Weekend
-                                            Celebrations</a>
+                                        <a href="{{route('news.speeches.details')}}">Example News Name</a>
                                     </h3>
                                     <a href="{{route('news.speeches.details')}}"
                                         class="align-top btnCr d-inline-block fontAlter">Continue
@@ -462,11 +459,11 @@
                                 </div>
                                 <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                                     <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                        <span class="mr-5">In Culture</span>
+                                        <span class="mr-5">Category</span>
                                         <i class="fas fa-comments"></i> 2
                                     </strong>
                                     <h3 class="mb-6 fwSemiBold">
-                                        <a href="{{route('news.speeches.details')}}">New Australian Economic Culture</a>
+                                        <a href="{{route('news.speeches.details')}}">Publications Name</a>
                                     </h3>
                                     <a href="{{route('news.speeches.details')}}"
                                         class="align-top btnCr d-inline-block fontAlter">Continue
@@ -487,11 +484,11 @@
                                 </div>
                                 <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                                     <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                        <span class="mr-5">In Developement</span>
+                                        <span class="mr-5">Category</span>
                                         <i class="fas fa-comments"></i> 3
                                     </strong>
                                     <h3 class="mb-6 fwSemiBold">
-                                        <a href="{{route('news.speeches.details')}}">Smart County Design Plan 2025</a>
+                                        <a href="{{route('news.speeches.details')}}">Article Name</a>
                                     </h3>
                                     <a href="{{route('news.speeches.details')}}"
                                         class="align-top btnCr d-inline-block fontAlter">Continue
@@ -509,7 +506,7 @@
     <section class="pt-4 pb-6 exploreHeightsBlock pb-md-9 pt-lg-7 pb-lg-14 pt-xl-11 pb-xl-20">
         <div class="container">
             <header class="mb-12 text-center headingHead">
-                <h2 class="fwSemiBold">Tourism Destinations</h2>
+                <h2 class="fwSemiBold">Category</h2>
             </header>
         </div>
         <div class="row">
@@ -528,9 +525,8 @@
                                 <div
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Teso
-                                            North</strong>
-                                        <span class="d-block">Kakapel</span>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
@@ -552,8 +548,8 @@
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
                                         <strong
-                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Samia</strong>
-                                        <span class="d-block">Sio Port</span>
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
@@ -575,8 +571,8 @@
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
                                         <strong
-                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Business</strong>
-                                        <span class="d-block">Mayor of Arsonia</span>
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
@@ -598,8 +594,8 @@
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
                                         <strong
-                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Culture</strong>
-                                        <span class="d-block">Melton Art Museum</span>
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
@@ -620,9 +616,8 @@
                                 <div
                                     class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Public
-                                            Places</strong>
-                                        <span class="d-block">Cinema Teatre</span>
+                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location Name</strong>
+                                        <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
                                             class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
