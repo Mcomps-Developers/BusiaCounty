@@ -105,7 +105,7 @@
                         <a href="{{route('investor')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="fas fa-dollar-sign"></i>
+                                <i class="fa fa-dollar-sign"></i>
                             </span>
                             <h2 class="mb-0">Invest</h2>
                         </a>
@@ -114,7 +114,7 @@
                         <a href="{{route('tenders')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="fas fa-folder-open"></i>
+                                <i class="fa fa-folder-open"></i>
                             </span>
                             <h2 class="mb-0">Tenders</h2>
                         </a>
@@ -123,7 +123,7 @@
                         <a href="{{route('eservices')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="fas fa-laptop"></i>
+                                <i class="fa fa-laptop"></i>
                             </span>
                             <h2 class="mb-0">E-Services</h2>
                         </a>
@@ -132,7 +132,7 @@
                         <a href="{{route('contact')}}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
                                 class="mx-auto mb-4 icnWrap d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="fas fa-ambulance"></i>
+                                <i class="fa fa-ambulance"></i>
                             </span>
                             <h2 class="mb-0">Emergency</h2>
                         </a>
@@ -176,7 +176,7 @@
                         class="mt-4 align-top btnPlayLink fontAlter position-relative d-inline-block mt-lg-7 lightbox"
                         data-fancybox="true">
                         <i
-                            class="icnPlay d-flex align-items-center justify-content-center position-absolute fas fa-play rounded-circle"><span
+                            class="icnPlay d-flex align-items-center justify-content-center position-absolute fa fa-play rounded-circle"><span
                                 class="sr-only">icon</span></i>
                         <div class="bplTextWrap">
                             <em class="d-block fsNormal">
@@ -256,7 +256,7 @@
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-5 d-sm-flex justify-content-sm-end">
                                     <a href="{{route('events')}}" class="btn-link fontAlter">See All Events
-                                        <i class="fas fa-chevron-right blIcn"></i></a>
+                                        <i class="fa fa-chevron-right blIcn"></i></a>
                                 </div>
                             </div>
                         </header>
@@ -396,7 +396,7 @@
                             </ul>
                             <footer class="pt-4 mt-2 text-center ccwFoot">
                                 <a href="{{route('downloads')}}" class="btn-link fontAlter">More Documents <i
-                                        class="fas fa-chevron-right blIcn"></i></a>
+                                        class="fa fa-chevron-right blIcn"></i></a>
                             </footer>
                         </article>
                     </div>
@@ -435,7 +435,7 @@
                                 <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                                     <strong class="mb-1 d-block npbcmWrap font-weight-normal">
                                         <span class="mr-5">Category</span>
-                                        <i class="fas fa-comments"></i> 0
+                                        <i class="fa fa-comments"></i> 0
                                     </strong>
                                     <h3 class="mb-6 fwSemiBold">
                                         <a href="{{route('news.speeches.details')}}">Example News Name</a>
@@ -460,7 +460,7 @@
                                 <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                                     <strong class="mb-1 d-block npbcmWrap font-weight-normal">
                                         <span class="mr-5">Category</span>
-                                        <i class="fas fa-comments"></i> 2
+                                        <i class="fa fa-comments"></i> 2
                                     </strong>
                                     <h3 class="mb-6 fwSemiBold">
                                         <a href="{{route('news.speeches.details')}}">Publications Name</a>
@@ -485,7 +485,7 @@
                                 <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                                     <strong class="mb-1 d-block npbcmWrap font-weight-normal">
                                         <span class="mr-5">Category</span>
-                                        <i class="fas fa-comments"></i> 3
+                                        <i class="fa fa-comments"></i> 3
                                     </strong>
                                     <h3 class="mb-6 fwSemiBold">
                                         <a href="{{route('news.speeches.details')}}">Article Name</a>

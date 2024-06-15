@@ -36,14 +36,14 @@
                         <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                             <strong class="mb-1 d-block npbcmWrap font-weight-normal">
                                 <span class="mr-5">Category</span>
-                                <i class="fa fa-chat"><span class="sr-only">icon</span></i> 0
+                                <i class="fa fa-comments"><span class="sr-only">icon</span></i> 0
                             </strong>
                             <h3 class="mb-5 fwSemiBold">
                                 <a href="{{ route('news.speeches.details') }}">Example Title</a>
                             </h3>
                             <a href="{{ route('news.speeches.details') }}"
                                 class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle fa fa-arrowRight bcIcn"><span
+                                <i class="ml-2 align-middle fa fa-arrow-right bcIcn"><span
                                         class="sr-only">icon</span></i></a>
                         </div>
                     </article>
@@ -62,14 +62,14 @@
                         <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                             <strong class="mb-1 d-block npbcmWrap font-weight-normal">
                                 <span class="mr-5">Category</span>
-                                <i class="fa fa-chat"><span class="sr-only">icon</span></i> 0
+                                <i class="fa fa-comments"><span class="sr-only">icon</span></i> 0
                             </strong>
                             <h3 class="mb-5 fwSemiBold">
                                 <a href="{{ route('news.speeches.details') }}">Example Title</a>
                             </h3>
                             <a href="{{ route('news.speeches.details') }}"
                                 class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle fa fa-arrowRight bcIcn"><span
+                                <i class="ml-2 align-middle fa fa-arrow-right bcIcn"><span
                                         class="sr-only">icon</span></i></a>
                         </div>
                     </article>
@@ -88,14 +88,14 @@
                         <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                             <strong class="mb-1 d-block npbcmWrap font-weight-normal">
                                 <span class="mr-5">Category</span>
-                                <i class="fa fa-chat"><span class="sr-only">icon</span></i> 0
+                                <i class="fa fa-comments"><span class="sr-only">icon</span></i> 0
                             </strong>
                             <h3 class="mb-5 fwSemiBold">
                                 <a href="{{ route('news.speeches.details') }}">Example Title</a>
                             </h3>
                             <a href="{{ route('news.speeches.details') }}"
                                 class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle fa fa-arrowRight bcIcn"><span
+                                <i class="ml-2 align-middle fa fa-arrow-right bcIcn"><span
                                         class="sr-only">icon</span></i></a>
                         </div>
                     </article>
@@ -114,14 +114,14 @@
                         <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                             <strong class="mb-1 d-block npbcmWrap font-weight-normal">
                                 <span class="mr-5">Category</span>
-                                <i class="fa fa-chat"><span class="sr-only">icon</span></i> 0
+                                <i class="fa fa-comments"><span class="sr-only">icon</span></i> 0
                             </strong>
                             <h3 class="mb-5 fwSemiBold">
                                 <a href="{{ route('news.speeches.details') }}">Example Title</a>
                             </h3>
                             <a href="{{ route('news.speeches.details') }}"
                                 class="align-top btnCr d-inline-block fontAlter">Continue Reading
-                                <i class="ml-2 align-middle fa fa-arrowRight bcIcn"><span
+                                <i class="ml-2 align-middle fa fa-arrow-right bcIcn"><span
                                         class="sr-only">icon</span></i></a>
                         </div>
                     </article>
