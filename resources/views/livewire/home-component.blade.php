@@ -37,20 +37,20 @@
                                 <div class="col-12 col-md-9 col-xl-7 fzMedium">
                                     {{-- <h1 class="mb-4 text-white h1Large">Governor's Inspection at Busia County Referral
                                         Hospital</h1> --}}
-                                    <p>A transformative and progressive County for sustainable and equitable
-                                        development.</p>
-                                    <a href="javascript:void(0);"
+                                    {{-- <p>A transformative and progressive County for sustainable and equitable
+                                        development.</p> --}}
+                                    {{-- <a href="javascript:void(0);"
                                         class="p-0 mt-6 border-0 btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative"
                                         data-hover="More Details">
                                         <span class="d-block btnText">More Details</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://placehold.co/950x400);"></span>
+                    style="background-image: url({{ @asset('assets/images/img01.jpg') }});"></span>
             </article>
         </div>
         <div>
@@ -80,7 +80,7 @@
         </div>
     </div>
     <aside class="text-white featuresAsideBlock position-relative" >
-        <div class="container" style="margin-top: 15px">
+        <div class="container">
             <div class="flatpWrap position-relative mt-n8 mt-md-n18" >
                 <ul class="flex-wrap mb-0 overflow-hidden list-unstyled fabFeaturesList d-flex">
                     <li>

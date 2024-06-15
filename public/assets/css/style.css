@@ -4993,7 +4993,7 @@ hdFixerWrap /.stickyWrap-sSticky
 .ibSlider .dotsList {
     position: absolute;
     left: 15px;
-    bottom: 30px;
+    bottom: 100px;
     right: 15px;
     z-index: 2;
 }
@@ -5090,7 +5090,7 @@ hdFixerWrap /.stickyWrap-sSticky
 
 .ibColumn {
     z-index: 1;
-    min-height: 84vh;
+    min-height: 60vh;
 }
 .ibColumn .sbTitle {
     font-size: 16px;
