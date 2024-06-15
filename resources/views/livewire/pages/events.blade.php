@@ -71,21 +71,21 @@
                             </time>
                         </div>
                         <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
-                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Entertainement</strong>
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                             <h3 class="mb-3 h3Small fwMedium">
-                                <a href="{{route('event.details')}}">Organizing City Photography Contest-2022</a>
+                                <a href="{{route('event.details')}}">Example Event Name</a>
                             </h3>
                             <address>
                                 <ul class="list-unstyled ueScheduleList">
                                     <li>
-                                        <i class="icomoon-clock icn position-absolute"><span
+                                        <i class="fa fa-clock icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
                                         9:30am - 1:00pm
                                     </li>
                                     <li>
-                                        <i class="icomoon-location icn position-absolute"><span
+                                        <i class="fa fa-location icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
-                                        Mayor Office, Texas city
+                                        Example location
                                     </li>
                                 </ul>
                             </address>
@@ -112,21 +112,21 @@
                             </time>
                         </div>
                         <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
-                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Entertainement</strong>
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                             <h3 class="mb-3 h3Small fwMedium">
-                                <a href="{{route('event.details')}}">Cultural Festival &amp; Concert at domanion</a>
+                                <a href="{{route('event.details')}}">Example Event Name</a>
                             </h3>
                             <address>
                                 <ul class="list-unstyled ueScheduleList">
                                     <li>
-                                        <i class="icomoon-clock icn position-absolute"><span
+                                        <i class="fa fa-clock icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
                                         1:00pm - 5:00pm
                                     </li>
                                     <li>
-                                        <i class="icomoon-location icn position-absolute"><span
+                                        <i class="fa fa-location icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
-                                        32 Quincy Street, Cambridge, MA
+                                                Example location
                                     </li>
                                 </ul>
                             </address>
@@ -153,22 +153,21 @@
                             </time>
                         </div>
                         <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
-                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Conference</strong>
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                             <h3 class="mb-3 h3Small fwMedium">
-                                <a href="{{route('event.details')}}">Annual Cycling Race 2020 for the Covid-19
-                                    Donation</a>
+                                <a href="{{route('event.details')}}">Example Event Name</a>
                             </h3>
                             <address>
                                 <ul class="list-unstyled ueScheduleList">
                                     <li>
-                                        <i class="icomoon-clock icn position-absolute"><span
+                                        <i class="fa fa-clock icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
                                         3:00pm - 7:00pm
                                     </li>
                                     <li>
-                                        <i class="icomoon-location icn position-absolute"><span
+                                        <i class="fa fa-location icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
-                                        32 Quincy Street, Cambridge, MA
+                                                Example location
                                     </li>
                                 </ul>
                             </address>
@@ -195,23 +194,21 @@
                             </time>
                         </div>
                         <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
-                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Health &amp;
-                                Sports</strong>
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                             <h3 class="mb-3 h3Small fwMedium">
-                                <a href="{{route('event.details')}}">Celebrating World Fiteness Day at White
-                                    Corner’20</a>
+                                <a href="{{route('event.details')}}">Example Event Name</a>
                             </h3>
                             <address>
                                 <ul class="list-unstyled ueScheduleList">
                                     <li>
-                                        <i class="icomoon-clock icn position-absolute"><span
+                                        <i class="fa fa-clock icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
                                         3:00pm - 7:00pm
                                     </li>
                                     <li>
-                                        <i class="icomoon-location icn position-absolute"><span
+                                        <i class="fa fa-location icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
-                                        Millenia Orlando, USA
+                                                Example location
                                     </li>
                                 </ul>
                             </address>
@@ -238,22 +235,21 @@
                             </time>
                         </div>
                         <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
-                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Meeting</strong>
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                             <h3 class="mb-3 h3Small fwMedium">
-                                <a href="{{route('event.details')}}">City Innovation and Technology Committee
-                                    Meeting</a>
+                                <a href="{{route('event.details')}}">Example Event Name</a>
                             </h3>
                             <address>
                                 <ul class="list-unstyled ueScheduleList">
                                     <li>
-                                        <i class="icomoon-clock icn position-absolute"><span
+                                        <i class="fa fa-clock icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
                                         1:00pm - 5:00pm
                                     </li>
                                     <li>
-                                        <i class="icomoon-location icn position-absolute"><span
+                                        <i class="fa fa-location icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
-                                        Mastanow City Council
+                                                Example location
                                     </li>
                                 </ul>
                             </address>
@@ -280,21 +276,21 @@
                             </time>
                         </div>
                         <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
-                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Workshop</strong>
+                            <strong class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
                             <h3 class="mb-3 h3Small fwMedium">
-                                <a href="{{route('event.details')}}">Faith Forward Future - Social Awareness Seminar</a>
+                                <a href="{{route('event.details')}}">Example Event Name</a>
                             </h3>
                             <address>
                                 <ul class="list-unstyled ueScheduleList">
                                     <li>
-                                        <i class="icomoon-clock icn position-absolute"><span
+                                        <i class="fa fa-clock icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
                                         9:30am - 1:00pm
                                     </li>
                                     <li>
-                                        <i class="icomoon-location icn position-absolute"><span
+                                        <i class="fa fa-location icn position-absolute"><span
                                                 class="sr-only">icon</span></i>
-                                        15 Champions Center, Crewey
+                                                Example location
                                     </li>
                                 </ul>
                             </address>
