@@ -5088,10 +5088,6 @@ hdFixerWrap /.stickyWrap-sSticky
             transform: scale(1);
 }
 
-.ibColumn {
-    z-index: 1;
-    min-height: 90vh;
-}
 @media (max-width: 600px) {
     .ibColumn {
         min-height: unset; /* Remove any minimum height set for larger screens */
