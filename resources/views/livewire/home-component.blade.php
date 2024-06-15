@@ -13,7 +13,14 @@
             min-height: 90vh;
             /* Default for larger screens */
         }
-
+        @media (max-width: 480px) {
+            .ibColumn {
+                min-height: unset;
+                /* Remove any minimum height set for larger screens */
+                max-height: 90vh;
+                /* Maximum height for mobile devices */
+            }
+        }
         @media (max-width: 600px) {
             .ibColumn {
                 min-height: unset;
