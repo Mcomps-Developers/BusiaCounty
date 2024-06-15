@@ -4993,7 +4993,7 @@ hdFixerWrap /.stickyWrap-sSticky
 .ibSlider .dotsList {
     position: absolute;
     left: 15px;
-    bottom: 90px;
+    bottom: 100px;
     right: 15px;
     z-index: 2;
 }
@@ -5088,29 +5088,11 @@ hdFixerWrap /.stickyWrap-sSticky
             transform: scale(1);
 }
 
-@media (max-width: 600px) {
-    .ibColumn {
-        min-height: unset; /* Remove any minimum height set for larger screens */
-        max-height: 60vh;   /* Maximum height for mobile devices */
-    }
+.ibColumn {
+    z-index: 1;
+    min-height: 84vh;
+    max-height: 96vh;
 }
-
-@media (min-width: 601px) and (max-width: 1024px) {
-    .ibColumn {
-        min-height: 80vh; /* Example height for tablets */
-    }
-}
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .ibColumn {
-        min-height: 85vh; /* Example height for small desktops */
-    }
-}
-@media (min-width: 1441px) {
-    .ibColumn {
-        min-height: 90vh; /* Default height for large desktops */
-    }
-}
-
 .ibColumn .sbTitle {
     font-size: 16px;
     font-weight: 500;
