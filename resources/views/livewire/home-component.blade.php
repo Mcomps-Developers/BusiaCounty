@@ -204,35 +204,35 @@
                     <ul class="flex-wrap mb-0 list-unstyled cfbFeatList d-flex justify-content-center">
                         <li>
                             <span class="mb-4 icnWrap d-flex align-items-center justify-content-center w-100">
-                                <i class="icomoon-ico7"></i>
+                                <i class="fa fa-users"></i>
                             </span>
-                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="dataCount">62</span>K
+                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">62</span>K
                             </h3>
                             <h4 class="mb-0 subtitle font-weight-normal">Population</h4>
                         </li>
                         <li>
                             <span class="mb-4 icnWrap d-flex align-items-center justify-content-center w-100">
-                                <i class="icomoon-ico8"></i>
+                                <i class="fa fa-map"></i>
                             </span>
-                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="dataCount">150</span>KM
+                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">150</span>KM
                             </h3>
                             <h4 class="mb-0 subtitle font-weight-normal">Coverrage
                             </h4>
                         </li>
                         <li>
                             <span class="mb-4 icnWrap d-flex align-items-center justify-content-center w-100">
-                                <i class="icomoon-ico9"></i>
+                                <i class="fa fa-map-marker"></i>
                             </span>
-                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="dataCount">7</span>
+                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">7</span>
                             </h3>
                             <h4 class="mb-0 subtitle font-weight-normal">Sub-Counties
                             </h4>
                         </li>
                         <li>
                             <span class="mb-4 icnWrap d-flex align-items-center justify-content-center w-100">
-                                <i class="icomoon-ico10"></i>
+                                <i class="fa fa-location"></i>
                             </span>
-                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="dataCount">35
+                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">35
                             </h3>
                             <h4 class="mb-0 subtitle font-weight-normal">Wards
                             </h4>
@@ -506,7 +506,7 @@
     <section class="pt-4 pb-6 exploreHeightsBlock pb-md-9 pt-lg-7 pb-lg-14 pt-xl-11 pb-xl-20">
         <div class="container">
             <header class="mb-12 text-center headingHead">
-                <h2 class="fwSemiBold">Category</h2>
+                <h2 class="fwSemiBold">Tourism Destinations</h2>
             </header>
         </div>
         <div class="row">
@@ -529,7 +529,7 @@
                                         <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
+                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -552,7 +552,7 @@
                                         <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
+                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -575,7 +575,7 @@
                                         <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
+                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -598,7 +598,7 @@
                                         <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
+                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -620,7 +620,7 @@
                                         <span class="d-block">Destination Name</span>
                                     </h3>
                                     <a href="{{route('destination')}}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
+                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                 </div>
                             </div>
                         </div>
