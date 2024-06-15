@@ -2,14 +2,14 @@
     @section('title')
     Investors Guide
     @endsection
-    <header class="pageMainHead d-flex position-relative bgCover w-100 text-white"
-        style="background-image: url({{@asset('assets/images/img126.jpg')}});">
+    <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
+        style="background-image: url(https://placehold.co/1920x300);">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="text-white mb-2">Invest in {{config('app.name')}}</h1>
+                    <h1 class="mb-2 text-white">Invest in {{config('app.name')}}</h1>
                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
+                        <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Business</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Invest in {{config('app.name')}}</li>
@@ -20,24 +20,24 @@
         </div>
     </header>
     <!-- contentWrapper -->
-    <section class="contentWrapper py-8 py-sm-14 py-md-18 py-lg-22">
+    <section class="py-8 contentWrapper py-sm-14 py-md-18 py-lg-22">
         <div class="container">
             <div class="row mx-lg-n5">
                 <div class="col-12 col-md-6 px-lg-5">
                     <!-- extraWrap -->
-                    <div class="extraWrap mb-10 mb-md-0">
+                    <div class="mb-10 extraWrap mb-md-0">
                         <!-- titleWrap -->
-                        <header class="fzMedium mb-6">
-                            <h2 class="fwSemiBold h2vii mb-6">Partner with Us! Invest in a pool of opportunities!</h2>
-                            <p class="text-lDark mb-6">We are working with partners and investors to grow the economy of
+                        <header class="mb-6 fzMedium">
+                            <h2 class="mb-6 fwSemiBold h2vii">Partner with Us! Invest in a pool of opportunities!</h2>
+                            <p class="mb-6 text-lDark">We are working with partners and investors to grow the economy of
                                 {{config('app.name')}}. This is your opportunity to invest and be part or our story.</p>
                         </header>
                         <p>Border to border investments. Join us to explore our full potential. Help narture talents in
                             our young and youthful generation.
                         </p>
                         <!-- imgWarp -->
-                        <div class="imgWarp my-6 my-md-8 mt-xl-12 mb-xl-10">
-                            <img src="{{asset('assets/images/img127.jpg')}}" class="img-fluid" alt="image description">
+                        <div class="my-6 imgWarp my-md-8 mt-xl-12 mb-xl-10">
+                            <img src="https://placehold.co/608x260" class="img-fluid" alt="image description">
                         </div>
                         <h5 class="mb-3 mb-md-6 h3Small fwSemibold">Membership Requirements:</h5>
                         <!-- flItemsList -->
@@ -51,10 +51,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 px-lg-5">
-                    <aside class="widget widgetForm mb-0 fontCabin mt-0 bg-white shadow overflow-hidden">
-                        <form action="#" class="pt-10 px-4 px-sm-7 pb-8 becomeVolunteerForm">
-                            <header class="widgetFormtHead mb-4 mb-md-8">
-                                <h2 class="fwSemiBold h2vii mb-3">Joining us?</h2>
+                    <aside class="mt-0 mb-0 overflow-hidden bg-white shadow widget widgetForm fontCabin">
+                        <form action="#" class="px-4 pt-10 pb-8 px-sm-7 becomeVolunteerForm">
+                            <header class="mb-4 widgetFormtHead mb-md-8">
+                                <h2 class="mb-3 fwSemiBold h2vii">Joining us?</h2>
                                 <p>THE FOLLOWING INFO IS REQUIRED</p>
                             </header>
                             <div class="form-row">
@@ -91,7 +91,7 @@
                             </div>
                             <div class="form-row">
                                 <!-- form-group  -->
-                                <div class="form-group col-12 col-xl-6 mt-1 mt-sm-0">
+                                <div class="mt-1 form-group col-12 col-xl-6 mt-sm-0">
                                     <label class="fLabel fontAlter fwMedium d-block">Country<span
                                             class="text-danger fsSmall">*</span></label>
                                     <div class="coolSelectWrapper">
@@ -117,9 +117,9 @@
                             </div>
                             <div class="form-row">
                                 <!-- form-group  -->
-                                <div class="form-group col-12 mb-0">
+                                <div class="mb-0 form-group col-12">
                                     <button type="submit"
-                                        class="btn btnTheme text-capitalize position-relative border-0 p-0 minWidthMedium btnxLarge w-100"
+                                        class="p-0 border-0 btn btnTheme text-capitalize position-relative minWidthMedium btnxLarge w-100"
                                         data-hover="Send Inquiry">
                                         <span class="d-block btnText">Send Inquiry</span>
                                     </button>
@@ -133,7 +133,7 @@
     </section>
     <!-- vibrantAsideBlock  -->
     <aside
-        class="vibrantAsideBlock noFixHeight noOverLay position-relative text-center text-white overflow-hidden d-flex pt-8 pb-4 pb-md-10 pb-lg-15 py-xl-21">
+        class="pt-8 pb-4 overflow-hidden text-center text-white vibrantAsideBlock noFixHeight noOverLay position-relative d-flex pb-md-10 pb-lg-15 py-xl-21">
         <div class="alignHolder w-100 d-flex align-items-center">
             <div class="container align">
                 <header class="mb-7 mb-md-10">
@@ -143,33 +143,33 @@
                     <div class="col-12 col-md-4">
                         <!-- gbfColumn  -->
                         <article
-                            class="gbfColumn gbfcVII bg-white shadow text-center pt-5 pb-7 px-3 px-sm-6 px-md-5 px-lg-9 px-xl-14 mb-6">
+                            class="px-3 pt-5 mb-6 text-center bg-white shadow gbfColumn gbfcVII pb-7 px-sm-6 px-md-5 px-lg-9 px-xl-14">
                             <i
-                                class="icnWrap icomoon-ico29 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"><span
+                                class="mx-auto mb-3 icnWrap fa fa-users rounded-circle d-flex align-items-center justify-content-center"><span
                                     class="sr-only"></span></i>
-                            <h3 class="mb-0 fwMedium h3Small position-relative pb-4">We want to help to as many as we
+                            <h3 class="pb-4 mb-0 fwMedium h3Small position-relative">We want to help to as many as we
                                 can</h3>
                         </article>
                     </div>
                     <div class="col-12 col-md-4">
                         <!-- gbfColumn  -->
                         <article
-                            class="gbfColumn gbfcVII bg-white shadow text-center pt-5 pb-7 px-3 px-sm-6 px-md-5 px-lg-9 px-xl-14 mb-6">
+                            class="px-3 pt-5 mb-6 text-center bg-white shadow gbfColumn gbfcVII pb-7 px-sm-6 px-md-5 px-lg-9 px-xl-14">
                             <i
-                                class="icnWrap icomoon-ico30 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"><span
+                                class="mx-auto mb-3 icnWrap fa fa-users rounded-circle d-flex align-items-center justify-content-center"><span
                                     class="sr-only"></span></i>
-                            <h3 class="mb-0 fwMedium h3Small position-relative pb-4">Your support will bring more energy
+                            <h3 class="pb-4 mb-0 fwMedium h3Small position-relative">Your support will bring more energy
                             </h3>
                         </article>
                     </div>
                     <div class="col-12 col-md-4">
                         <!-- gbfColumn  -->
                         <article
-                            class="gbfColumn gbfcVII bg-white shadow text-center pt-5 pb-7 px-3 px-sm-6 px-md-5 px-lg-9 px-xl-14 mb-6">
+                            class="px-3 pt-5 mb-6 text-center bg-white shadow gbfColumn gbfcVII pb-7 px-sm-6 px-md-5 px-lg-9 px-xl-14">
                             <i
-                                class="icnWrap icomoon-ico31 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3"><span
+                                class="mx-auto mb-3 icnWrap fa fa-users rounded-circle d-flex align-items-center justify-content-center"><span
                                     class="sr-only"></span></i>
-                            <h3 class="mb-0 fwMedium h3Small position-relative pb-4">We always have believe in team work
+                            <h3 class="pb-4 mb-0 fwMedium h3Small position-relative">We always have believe in team work
                             </h3>
                         </article>
                     </div>
@@ -177,7 +177,7 @@
             </div>
         </div>
         <div class="parallaxWindow w-100 position-absolute" data-parallax="scroll"
-            data-image-src="{{asset('assets/images/img128.jpg')}}">
+            data-image-src="https://placehold.co/1920x568">
         </div>
     </aside>
 </main>
