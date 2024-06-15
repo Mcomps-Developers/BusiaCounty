@@ -48,7 +48,7 @@
                         </div>
                         <header class="nrcHead">
                             <strong class="mb-1 d-block fwMedium title">
-                                <i class=Theme fwMedium fa fa-calendar"><span class="sr-only">icon</span></i>
+                                <i class="Theme fwMedium fa fa-calendar"><span class="sr-only">icon</span></i>
                                 <time datetime="2011-01-12">Dec 02, 2020</time>
                                 - In
                                 <a href="javascript:void(0);" class="text-lDark">Category</a>
