@@ -29,8 +29,8 @@
                             <div class="nrcImageSlider">
                                 <div>
                                     <div class="imgWrap">
-                                        <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $blog->image }}" class="img-fluid w-100"
-                                            alt="image description">
+                                        <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $blog->image }}"
+                                            class="img-fluid w-100" alt="image description">
                                     </div>
                                 </div>
                             </div>
@@ -38,85 +38,18 @@
                         <header class="nrcHead">
                             <strong class="mb-1 d-block fwMedium title">
                                 <i class="Theme fwMedium fa fa-calendar"><span class="sr-only">icon</span></i>
-                                <time datetime="2011-01-12">Dec 02, 2020</time>
+                                <time datetime="2011-01-12">{{ date('M d, Y', strtotime($blog->created_at)) }}</time>
                                 - In
-                                <a href="javascript:void(0);" class="text-lDark">Category</a>
+                                <a href="javascript:void(0);" class="text-lDark">{{ $blog->category->name }}</a>
                                 By
-                                <a href="javascript:void(0);" class="text-lDark">Author Name</a>
+                                <a href="javascript:void(0);" class="text-lDark">{{ $blog->author->name }}</a>
                                 &nbsp;&nbsp;
-                                <i class="fa fa-eye"><span class="sr-only">icon</span></i>
-                                3
+                                <i class="fa fa-eye"></i>
+                                {{$blog->views}}
                             </strong>
-                            <h2 class="mb-5 h2vii fwSemiBold">{{ $blog->title }} Page</h2>
+                            <h2 class="mb-5 h2vii fwSemiBold">{{ $blog->title }}</h2>
                         </header>
-                        <p><span class="dropCap">M</span>Monocle ipsum dolor sit amet elegant bulletin Melbourne sharp,
-                            ryokan conversation business class essential Scandinavian Zürich. Bulletin concierge airport
-                            classic. Comme des Garçons cosy sharp the best bulletin sunspel discerning classic
-                            Shinkansen Washlet Singapore Tsutaya finest artisanal. Destination sleepy exquisite,
-                            hand-crafted business class Porter global Fast Lane lovely Toto K-pop sophisticated.</p>
-                        <p>Tote bag Gaggenau bulletin, quality of life Shinkansen Winkreative eclectic Helsinki
-                            discerning Airbus A380 value espresso izakaya flat white essential, soft power destination
-                            intricate.</p>
-                        <ol class="pt-5 m-0 nwzPostDetailList list-unstyled">
-                            <li>
-                                <h4 class="mb-4 h3">1. County Roadmaps and Traffic Details:</h4>
-                                <p>Efficient Zürich Porter Swiss izakaya Ettinger airport iconic. Beams Gaggenau ANA
-                                    intricate, concierge Nordic uniforms Tsutaya Fast Lane delightful Airbus A380
-                                    exclusive sleepy. Exquisite Baggu finest sharp extraordinary quality of life. Baggu
-                                    concierge first-class soft power.</p>
-                                <div class="my-6 row">
-                                    <div class="col-12 col-sm-6">
-                                        <div class="mb-3 imgWarp mb-sm-0">
-                                            <img src="https://placehold.co/426x296" class="img-fluid w-100"
-                                                alt="image description">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <div class="imgWarp">
-                                            <img src="https://placehold.co/426x296" class="img-fluid w-100"
-                                                alt="image description">
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>Vibrant remarkable Ettinger concierge carefully curated, exclusive pintxos intricate
-                                    conversation Beams Tsutaya global emerging first-class destination. Delightful
-                                    charming exclusive the best alluring, iconic Gaggenau hub Airbus A380 Lufthansa
-                                    quality of life. Nordic bespoke smart izakaya cosy Airbus A380.</p>
-                                <blockquote
-                                    class="py-1 pl-4 meetQuote fontAlter text-lDark mt-9 mb-7 pl-lg-8 pr-md-12 pr-lg-20 pr-xl-28">
-                                    <q class="mb-4 d-block">Mcomps Limited has a feature rich design themes that will
-                                        make launching
-                                        your website inventions off the ground dead simple.</q>
-                                    <cite class="d-block fsNormal">Eng. Manzolo, <span
-                                            class="fontBase ctSubtitleText">Group MD</span></cite>
-                                </blockquote>
-                                <p>Intricate Scandinavian remarkable Ettinger, Airbus A380 discerning sharp.
-                                    Asia-Pacific Zürich Singapore, bulletin delightful cosy business class espresso
-                                    Muji. Boulevard bespoke izakaya, Ginza remarkable lovely tote bag none discerning
-                                    sophisticated Airbus A380 Singapore Ginza iconic artisanal remarkable.</p>
-                            </li>
-                            <li>
-                                <h4 class="mb-4 h3">2. Neccessory Things Need Control Traffic:</h4>
-                                <p>Vibrant remarkable Ettinger concierge carefully curated, exclusive pintxos intricate
-                                    conversation Beams Tsutaya global emerging first-class destination. Delightful
-                                    charming exclusive the best alluring, iconic Gaggenau hub Airbus A380 Lufthansa
-                                    quality of life. Nordic bespoke smart izakaya cosy Airbus A380, airport flat white
-                                    espresso roar premium Melbourne cutting-edge classic. Boulevard cosy ryokan sharp.
-                                </p>
-                            </li>
-                            <li>
-                                <h4 class="mb-4 h3">3. Design and Devlopement Updates:</h4>
-                                <p>Baggu Boeing 787 exquisite, perfect flat white espresso boulevard. Lovely flat white
-                                    essential, soft power is all destination intricate St Moritz uniforms sophisticated
-                                    cosy Beams remarkable. ANA bespoke sharp ryokan vibrant, Nordic flat white alluring
-                                    Helsinki intricate quality of life. Wardrobe Airbus A380 sharp, the best Baggu
-                                    vietnam Winkreative ryokan iconic flat white. Efficient Singapore the best.</p>
-                                <p>Premium elegant Boeing 787 flat white Muji espresso iconic. Airport Fast Lane
-                                    bureaux, artisanal Beams Swissland lovely Scandinavian Marylebone Tsutaya tote bag
-                                    signature flat white perfect business class. Exquisite page finest sharp
-                                    extraordinary quality of life. Baggu concierge first-class soft power.</p>
-                            </li>
-                        </ol>
+                        {!! $blog->content !!}
                         <div
                             class="mb-10 text-center newsTagWrap text-sm-left d-sm-flex mt-11 align-items-sm-center justify-content-sm-between justify-content-center">
                             <div class="widgetTags fontAlter d-sm-flex align-items-center">
@@ -183,8 +116,7 @@
                                     </div>
                                     <div class="px-2 col-12 col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control d-block w-100"
-                                                placeholder="Name">
+                                            <input type="text" class="form-control d-block w-100" placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="px-2 col-12 col-sm-6">
@@ -223,121 +155,36 @@
                             <nav class="mb-6 widget widgetArchiveList mb-lg-10">
                                 <h3 class="mb-5 fwMedium">Categories</h3>
                                 <ul class="pl-0 list-unstyled">
-                                    <li>
-                                        <a href="javascript:void(0);">Conference</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Entertainment</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Health &amp; Sports</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Meeting</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Workshop</a>
-                                    </li>
+                                    @foreach ($categories as $item)
+                                        <li>
+                                            <a href="javascript:void(0);">{{ $item->name }}</a>
+                                        </li>
+                                    @endforeach
+
                                 </ul>
                             </nav>
                             <nav class="mb-6 widget widgetUpcoming mb-lg-10">
-                                <h3 class="mb-5 fwMedium">Recent News</h3>
+                                <h3 class="mb-5 fwMedium">Related News</h3>
                                 <ul class="pl-0 list-unstyled mb-7">
-                                    <li>
-                                        <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                            <img src="https://placehold.co/80x80" class="img-fluid"
-                                                alt="image description">
-                                        </div>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fwMedium">
-                                                <a href="{{ route('news.speeches.details') }}">Globol Covid-19
-                                                    Situation
-                                                    Dashboard</a>
-                                            </h4>
-                                            <time datetime="2011-01-12" class="d-block"><i
-                                                    class="mr-1 fa fa-calendar"><span
-                                                        class="sr-only">icon</span></i>Dec 11, 2020</time>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                            <img src="https://placehold.co/80x80" class="img-fluid"
-                                                alt="image description">
-                                        </div>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fwMedium">
-                                                <a href="{{ route('news.speeches.details') }}">New Australian Economic
-                                                    Culture</a>
-                                            </h4>
-                                            <time datetime="2011-01-12" class="d-block"><i
-                                                    class="mr-1 fa fa-calendar"><span
-                                                        class="sr-only">icon</span></i>Dec 05, 2020</time>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                            <img src="https://placehold.co/80x80" class="img-fluid"
-                                                alt="image description">
-                                        </div>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fwMedium">
-                                                <a href="{{ route('news.speeches.details') }}">Summer Nights at the
-                                                    Library</a>
-                                            </h4>
-                                            <time datetime="2011-01-12" class="d-block"><i
-                                                    class="mr-1 fa fa-calendar"><span
-                                                        class="sr-only">icon</span></i>Nov 23, 2020</time>
-                                        </div>
-                                    </li>
+                                    @foreach ($relatedBlogs as $item)
+                                        <li>
+                                            <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
+                                                <img src="https://busia.mcomps/assets/img/blogs/{{ $item->image }}"
+                                                    class="img-fluid" alt="image description">
+                                            </div>
+                                            <div class="descrWrap">
+                                                <h4 class="mb-1 fwMedium">
+                                                    <a
+                                                        href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">{{ $item->title }}</a>
+                                                </h4>
+                                                <time datetime="2011-01-12" class="d-block"><i
+                                                        class="mr-1 fa fa-calendar"></i>{{ date('M d, Y', strtotime($item->created_at)) }}</time>
+                                            </div>
+                                        </li>
+                                    @endforeach
+
                                 </ul>
                             </nav>
-                            <section class="mb-6 widget widgetGallery mb-lg-10">
-                                <h3 class="mb-5 fwMedium">Photo Gallery</h3>
-                                <ul class="flex-wrap pl-0 list-unstyled d-flex">
-                                    <li>
-                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
-                                            data-fancybox="true">
-                                            <img src="https://placehold.co/1920x620" class="img-fluid"
-                                                alt="image description">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
-                                            data-fancybox="true">
-                                            <img src="https://placehold.co/1920x800" class="img-fluid"
-                                                alt="image description">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
-                                            data-fancybox="true">
-                                            <img src="https://placehold.co/1920x800" class="img-fluid"
-                                                alt="image description">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
-                                            data-fancybox="true">
-                                            <img src="https://placehold.co/1920x800" class="img-fluid"
-                                                alt="image description">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
-                                            data-fancybox="true">
-                                            <img src="https://placehold.co/1920x800" class="img-fluid"
-                                                alt="image description">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
-                                            data-fancybox="true">
-                                            <img src="https://placehold.co/1920x800" class="img-fluid"
-                                                alt="image description">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
                             <section class="mb-6 widget widgetTags mb-lg-10">
                                 <h3 class="mb-5 fwMedium">Tags</h3>
                                 <ul class="flex-wrap pl-0 list-unstyled d-flex fontAlter">
