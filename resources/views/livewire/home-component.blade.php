@@ -13,6 +13,7 @@
             min-height: 90vh;
             /* Default for larger screens */
         }
+
         @media (max-width: 480px) {
             .ibColumn {
                 min-height: unset;
@@ -21,6 +22,7 @@
                 /* Maximum height for mobile devices */
             }
         }
+
         @media (max-width: 600px) {
             .ibColumn {
                 min-height: unset;
@@ -134,7 +136,7 @@
     <aside class="text-white featuresAsideBlock position-relative">
         <div class="container">
             <div class="flatpWrap position-relative mt-n8 mt-md-n18" style="transform: scale(0.75)">
-                <ul class="flex-wrap mb-0 overflow-hidden list-unstyled fabFeaturesList d-flex" >
+                <ul class="flex-wrap mb-0 overflow-hidden list-unstyled fabFeaturesList d-flex">
                     <li>
                         <a href="{{ route('executive') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
@@ -480,81 +482,33 @@
                 </div>
                 <div class="col-12 col-lg-9">
                     <div class="row">
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <article class="mb-6 bg-white shadow npbColumn">
-                                <div class="imgHolder position-relative">
-                                    <a href="javascript:void(0);">
-                                        <img src="https://placehold.co/295x200" class="img-fluid w-100 d-block"
-                                            alt="image description">
-                                    </a>
-                                    <time datetime="2011-01-12"
-                                        class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">15
-                                        Oct 2020</time>
-                                </div>
-                                <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                                    <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                        <span class="mr-5">Category</span>
-                                        <i class="fa fa-comments"></i> 0
-                                    </strong>
-                                    <h3 class="mb-6 fwSemiBold">
-                                        <a href="{{ route('news.speeches.details') }}">Example News Name</a>
-                                    </h3>
-                                    <a href="{{ route('news.speeches.details') }}"
-                                        class="align-top btnCr d-inline-block fontAlter">Continue
-                                        Reading <i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <article class="mb-6 bg-white shadow npbColumn">
-                                <div class="imgHolder position-relative">
-                                    <a href="javascript:void(0);">
-                                        <img src="https://placehold.co/295x200" class="img-fluid w-100 d-block"
-                                            alt="image description">
-                                    </a>
-                                    <time datetime="2011-01-12"
-                                        class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">12
-                                        Oct 2020</time>
-                                </div>
-                                <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                                    <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                        <span class="mr-5">Category</span>
-                                        <i class="fa fa-comments"></i> 2
-                                    </strong>
-                                    <h3 class="mb-6 fwSemiBold">
-                                        <a href="{{ route('news.speeches.details') }}">Publications Name</a>
-                                    </h3>
-                                    <a href="{{ route('news.speeches.details') }}"
-                                        class="align-top btnCr d-inline-block fontAlter">Continue
-                                        Reading <i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl-4">
-                            <article class="mb-6 bg-white shadow npbColumn">
-                                <div class="imgHolder position-relative">
-                                    <a href="javascript:void(0);">
-                                        <img src="https://placehold.co/295x200" class="img-fluid w-100 d-block"
-                                            alt="image description">
-                                    </a>
-                                    <time datetime="2011-01-12"
-                                        class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">08
-                                        Oct 2020</time>
-                                </div>
-                                <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                                    <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                        <span class="mr-5">Category</span>
-                                        <i class="fa fa-comments"></i> 3
-                                    </strong>
-                                    <h3 class="mb-6 fwSemiBold">
-                                        <a href="{{ route('news.speeches.details') }}">Article Name</a>
-                                    </h3>
-                                    <a href="{{ route('news.speeches.details') }}"
-                                        class="align-top btnCr d-inline-block fontAlter">Continue
-                                        Reading <i class="fa fa-arrow-right"></i></a>
-                                </div>
-                            </article>
-                        </div>
+                        @foreach ($recentBlogs as $item)
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <article class="mb-6 bg-white shadow npbColumn">
+                                    <div class="imgHolder position-relative">
+                                        <a href="javascript:void(0);">
+                                            <img src="https://busia.mcomps.africa/assets/img/{{ $item->image }}"
+                                                class="img-fluid w-100 d-block" alt="https://placehold.co/295x200">
+                                        </a>
+                                        <time datetime="2011-01-12"
+                                            class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">{{ date('d M Y') }}</time>
+                                    </div>
+                                    <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
+                                        <strong class="mb-1 d-block npbcmWrap font-weight-normal">
+                                            <span class="mr-5">{{ $item->category->name }}</span>
+                                            <i class="fa fa-comments"></i> 0
+                                        </strong>
+                                        <h3 class="mb-6 fwSemiBold">
+                                            <a href="{{ route('news.speeches.details') }}">{{ $item->title }}</a>
+                                        </h3>
+                                        <a href="{{ route('news.speeches.details') }}"
+                                            class="align-top btnCr d-inline-block fontAlter">Continue
+                                            Reading <i class="fa fa-arrow-right"></i></a>
+                                    </div>
+                                </article>
+                            </div>
+                        @endforeach
+
                     </div>
                 </div>
             </div>
