@@ -166,7 +166,7 @@
                             <nav class="mb-6 widget widgetUpcoming mb-lg-10">
                                 <h3 class="mb-5 fwMedium">Related News</h3>
                                 <ul class="pl-0 list-unstyled mb-7">
-                                    @foreach ($relatedBlogs as $item)
+                                    @foreach ($relatedBlogs->where('id','!=',$blog->id) as $item)
                                         <li>
                                             <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
                                                 <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $item->image }}"
@@ -193,24 +193,6 @@
                                     </li>
                                     <li>
                                         <a href="javascript:void(0);">Developement</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Road</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Design</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Smart County</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Goverment</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Announcement</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Meeting</a>
                                     </li>
                                 </ul>
                             </section>
