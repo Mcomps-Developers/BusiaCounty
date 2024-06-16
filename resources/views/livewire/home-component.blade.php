@@ -3,7 +3,7 @@
         .ibSlider .dotsList {
             position: absolute;
             left: 15px;
-            bottom: 70px;
+            bottom: 40px;
             right: 15px;
             z-index: 2;
         }
