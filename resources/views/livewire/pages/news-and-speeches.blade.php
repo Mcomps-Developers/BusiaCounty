@@ -1,6 +1,6 @@
 <main>
     @section('title')
-        News, Speeches &amp; Speeches
+        News, Speeches &amp; Publications
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
@@ -12,7 +12,7 @@
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Resources</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">News, Speeches &amp; Speeches</li>
+                            <li class="breadcrumb-item active" aria-current="page">News, Speeches &amp; Publications</li>
                         </ol>
                     </nav>
                 </div>
@@ -40,7 +40,7 @@
                                     <i class="fa fa-comments"></i> 0
                                 </strong>
                                 <h3 class="mb-5 fwSemiBold">
-                                    <a
+                                    <a style="text-transform: capitalize;"
                                         href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">{{ $item->title }}</a>
                                 </h3>
                                 <a href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}"
