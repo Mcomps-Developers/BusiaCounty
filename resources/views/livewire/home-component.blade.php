@@ -487,8 +487,8 @@
                                 <article class="mb-6 bg-white shadow npbColumn">
                                     <div class="imgHolder position-relative">
                                         <a href="javascript:void(0);">
-                                            <img src="https://busia.mcomps.africa/assets/img/{{ $item->image }}"
-                                                class="img-fluid w-100 d-block" alt="https://placehold.co/295x200">
+                                            <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $item->image }}"
+                                                class="img-fluid w-100 d-block">
                                         </a>
                                         <time datetime="2011-01-12"
                                             class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">{{ date('d M Y') }}</time>
