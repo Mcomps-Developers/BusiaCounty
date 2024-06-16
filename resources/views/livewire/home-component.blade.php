@@ -66,11 +66,11 @@
                                     </h1> --}}
                                     <p>A transformative and progressive County for sustainable and equitable
                                         development.</p>
-                                    <a href="javascript:void(0);"
+                                    {{-- <a href="javascript:void(0);"
                                         class="p-0 mt-6 border-0 btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative"
                                         data-hover="Read More">
                                         <span class="d-block btnText">Read More</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
                         </div>
