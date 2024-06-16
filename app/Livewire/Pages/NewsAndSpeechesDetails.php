@@ -2,12 +2,15 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\Blog;
 use Livewire\Component;
 
 class NewsAndSpeechesDetails extends Component
 {
+    public $reference;
     public function render()
     {
-        return view('livewire.pages.news-and-speeches-details')->layout('layouts.base');
+        $blog = Blog::where('reference', $this->reference)->first();
+        return view('livewire.pages.news-and-speeches-details',['blog'=>$blog])->layout('layouts.base');
     }
 }

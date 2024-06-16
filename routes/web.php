@@ -76,7 +76,7 @@ Route::prefix('/about')->group(function () {
 Route::prefix('resources')->group(function () {
     Route::get('/downloads', Downloads::class)->name('downloads');
     Route::get('/news-and-spechees', NewsAndSpeeches::class)->name('news.speeches');
-    Route::get('/news/details', NewsAndSpeechesDetails::class)->name('news.speeches.details');
+    Route::get('/details/{slug}/{reference}', NewsAndSpeechesDetails::class)->name('news.speeches.details');
     Route::get('/events', Events::class)->name('events');
     Route::get('/event/details', EventDetails::class)->name('event.details');
     Route::get('/tenders', Tenders::class)->name('tenders');
@@ -88,9 +88,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/add-business', AddBusiness::class)->name('business.add');
     Route::get('/transactions', Transactions::class)->name('transactions');
     Route::get('/manage/{reference}', ManageBusiness::class)->name('business.manage');
-    Route::get('/my/parking',AllParking::class)->name('parking');
+    Route::get('/my/parking', AllParking::class)->name('parking');
     Route::get('/parking/daily', Parking::class)->name('daily.parking');
-    Route::get('/daily-parking/{sticker}/payment',PayDailyParking::class)->name('daily.parking.pay');
+    Route::get('/daily-parking/{sticker}/payment', PayDailyParking::class)->name('daily.parking.pay');
 });
 
 Route::post('/verify-id', [IDVerificationController::class, 'verify'])->name('verify-id');

@@ -499,9 +499,10 @@
                                             <i class="fa fa-comments"></i> 0
                                         </strong>
                                         <h3 class="mb-6 fwSemiBold">
-                                            <a href="{{ route('news.speeches.details') }}">{{ $item->title }}</a>
+                                            <a
+                                                href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">{{ $item->title }}</a>
                                         </h3>
-                                        <a href="{{ route('news.speeches.details') }}"
+                                        <a href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}"
                                             class="align-top btnCr d-inline-block fontAlter">Continue
                                             Reading <i class="fa fa-arrow-right"></i></a>
                                     </div>

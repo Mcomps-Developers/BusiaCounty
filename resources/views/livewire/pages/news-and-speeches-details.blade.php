@@ -1,18 +1,19 @@
 <main>
     @section('title')
-    News &amp; Speech Details
+        {{ $blog->title }}
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="mb-2 text-white">News &amp; Speech Details Page</h1>
+                    <h1 class="mb-2 text-white">{{ $blog->title }}</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item"><a href="{{route('news.speeches')}}">News</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">News &amp; Speech Details Page</li>
+                            <li class="breadcrumb-item"><a
+                                    href="{{ route('news.speeches') }}">{{ $blog->category->name }}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{ $blog->title }} Page</li>
                         </ol>
                     </nav>
                 </div>
@@ -28,19 +29,7 @@
                             <div class="nrcImageSlider">
                                 <div>
                                     <div class="imgWrap">
-                                        <img src="https://placehold.co/873x591" class="img-fluid w-100"
-                                            alt="image description">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="imgWrap">
-                                        <img src="https://placehold.co/873x591" class="img-fluid w-100"
-                                            alt="image description">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="imgWrap">
-                                        <img src="https://placehold.co/873x591" class="img-fluid w-100"
+                                        <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $blog->image }}" class="img-fluid w-100"
                                             alt="image description">
                                     </div>
                                 </div>
@@ -58,7 +47,7 @@
                                 <i class="fa fa-eye"><span class="sr-only">icon</span></i>
                                 3
                             </strong>
-                            <h2 class="mb-5 h2vii fwSemiBold">News &amp; Speech Details Page</h2>
+                            <h2 class="mb-5 h2vii fwSemiBold">{{ $blog->title }} Page</h2>
                         </header>
                         <p><span class="dropCap">M</span>Monocle ipsum dolor sit amet elegant bulletin Melbourne sharp,
                             ryokan conversation business class essential Scandinavian Zürich. Bulletin concierge airport
@@ -95,7 +84,8 @@
                                     quality of life. Nordic bespoke smart izakaya cosy Airbus A380.</p>
                                 <blockquote
                                     class="py-1 pl-4 meetQuote fontAlter text-lDark mt-9 mb-7 pl-lg-8 pr-md-12 pr-lg-20 pr-xl-28">
-                                    <q class="mb-4 d-block">Mcomps Limited has a feature rich design themes that will make launching
+                                    <q class="mb-4 d-block">Mcomps Limited has a feature rich design themes that will
+                                        make launching
                                         your website inventions off the ground dead simple.</q>
                                     <cite class="d-block fsNormal">Eng. Manzolo, <span
                                             class="fontBase ctSubtitleText">Group MD</span></cite>
@@ -183,8 +173,7 @@
                                 <div class="row mx-n2">
                                     <div class="px-2 col-12">
                                         <div class="form-group">
-                                            <textarea class="form-control w-100 d-block"
-                                                placeholder="Write your comment&hellip;"></textarea>
+                                            <textarea class="form-control w-100 d-block" placeholder="Write your comment&hellip;"></textarea>
                                         </div>
                                     </div>
                                     <div class="px-2 col-12">
@@ -194,12 +183,14 @@
                                     </div>
                                     <div class="px-2 col-12 col-sm-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control d-block w-100" placeholder="Name">
+                                            <input type="text" class="form-control d-block w-100"
+                                                placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="px-2 col-12 col-sm-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control d-block w-100" placeholder="Email">
+                                            <input type="email" class="form-control d-block w-100"
+                                                placeholder="Email">
                                         </div>
                                     </div>
                                 </div>
@@ -259,7 +250,8 @@
                                         </div>
                                         <div class="descrWrap">
                                             <h4 class="mb-1 fwMedium">
-                                                <a href="{{route('news.speeches.details')}}">Globol Covid-19 Situation
+                                                <a href="{{ route('news.speeches.details') }}">Globol Covid-19
+                                                    Situation
                                                     Dashboard</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block"><i
@@ -274,7 +266,7 @@
                                         </div>
                                         <div class="descrWrap">
                                             <h4 class="mb-1 fwMedium">
-                                                <a href="{{route('news.speeches.details')}}">New Australian Economic
+                                                <a href="{{ route('news.speeches.details') }}">New Australian Economic
                                                     Culture</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block"><i
@@ -289,7 +281,7 @@
                                         </div>
                                         <div class="descrWrap">
                                             <h4 class="mb-1 fwMedium">
-                                                <a href="{{route('news.speeches.details')}}">Summer Nights at the
+                                                <a href="{{ route('news.speeches.details') }}">Summer Nights at the
                                                     Library</a>
                                             </h4>
                                             <time datetime="2011-01-12" class="d-block"><i
@@ -303,42 +295,42 @@
                                 <h3 class="mb-5 fwMedium">Photo Gallery</h3>
                                 <ul class="flex-wrap pl-0 list-unstyled d-flex">
                                     <li>
-                                        <a href="{{route('news.speeches.details')}}" class="lightbox"
+                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
                                             data-fancybox="true">
                                             <img src="https://placehold.co/1920x620" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{route('news.speeches.details')}}" class="lightbox"
+                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
                                             data-fancybox="true">
                                             <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{route('news.speeches.details')}}" class="lightbox"
+                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
                                             data-fancybox="true">
                                             <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{route('news.speeches.details')}}" class="lightbox"
+                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
                                             data-fancybox="true">
                                             <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{route('news.speeches.details')}}" class="lightbox"
+                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
                                             data-fancybox="true">
                                             <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{route('news.speeches.details')}}" class="lightbox"
+                                        <a href="{{ route('news.speeches.details') }}" class="lightbox"
                                             data-fancybox="true">
                                             <img src="https://placehold.co/1920x800" class="img-fluid"
                                                 alt="image description">
