@@ -12,8 +12,8 @@
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a
-                                    href="{{ route('news.speeches') }}">{{ $blog->category->name }}</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">{{ $blog->title }} Page</li>
+                                    href="{{ route('news.speeches') }}" style="text-transform: capitalize">{{ $blog->category->name }}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Details</li>
                         </ol>
                     </nav>
                 </div>
@@ -169,8 +169,8 @@
                                     @foreach ($relatedBlogs as $item)
                                         <li>
                                             <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                                <img src="https://busia.mcomps/assets/img/blogs/{{ $item->image }}"
-                                                    class="img-fluid" alt="image description">
+                                                <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $item->image }}"
+                                                    class="img-fluid">
                                             </div>
                                             <div class="descrWrap">
                                                 <h4 class="mb-1 fwMedium">
