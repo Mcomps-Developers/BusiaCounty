@@ -61,7 +61,7 @@
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
                             <div class="row">
-                                <div class="col-12 col-md-9 col-xl-7 fzMedium" style="top: 40px">
+                                <div class="col-12 col-md-9 col-xl-7 fzMedium" style="top: 60px">
                                     {{-- <h1 class="mb-4 text-white h1Large">Swearing In of H.E Governor Dr Paul Otuoma
                                     </h1> --}}
                                     <p>A transformative and progressive County for sustainable and equitable
@@ -86,7 +86,7 @@
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
                             <div class="row">
-                                <div class="col-12 col-md-9 col-xl-7 fzMedium">
+                                <div class="col-12 col-md-9 col-xl-7 fzMedium" style="top: 60px">
                                     {{-- <h1 class="mb-4 text-white h1Large">Governor's Inspection at Busia County Referral
                                         Hospital</h1> --}}
                                     {{-- <p>A transformative and progressive County for sustainable and equitable
@@ -111,7 +111,7 @@
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
                             <div class="row">
-                                <div class="col-12 col-md-9 col-xl-7 fzMedium">
+                                <div class="col-12 col-md-9 col-xl-7 fzMedium" style="top: 60px">
                                     {{-- <h1 class="mb-4 text-white h1Large">Fully Equipped Health facilities</h1> --}}
                                     <p>A transformative and progressive County for sustainable and equitable
                                         development.
