@@ -35,18 +35,18 @@
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
                                 <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">County Headquarters</strong>
-                                    <address class="my-3">250 Main Street, Newton Hall, NY 52143</address>
+                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
+                                    <address class="my-3">Location : Here</address>
                                     <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            president@example.com
+                                            example@domain.com
                                         </li>
                                         <li>
                                             <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            (+91) 800 235 9595
+                                            +254xxxxxxxxx
                                         </li>
                                     </ul>
                                     <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
@@ -57,18 +57,18 @@
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
                                 <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Police Department</strong>
-                                    <address class="my-3">576 South Street, Police station, NY 13245</address>
+                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
+                                    <address class="my-3">Location : Here</address>
                                     <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            Police@example.com
+                                                    example@domain.com
                                         </li>
                                         <li>
                                             <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            Emergency: 911
+                                                    +254xxxxxxxxx
                                         </li>
                                     </ul>
                                     <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
@@ -79,18 +79,18 @@
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
                                 <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Medical Center</strong>
-                                    <address class="my-3">65 Town hall Road, Benshall, Westhorn, NY 5623</address>
+                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
+                                    <address class="my-3">Location : Here</address>
                                     <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            Health@example.com
+                                                    example@domain.com
                                         </li>
                                         <li>
                                             <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            Emergency: 108
+                                                    +254xxxxxxxxx
                                         </li>
                                     </ul>
                                     <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
@@ -101,18 +101,18 @@
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
                                 <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Police Department</strong>
-                                    <address class="my-3">576 South Street, Police station, NY 13245</address>
+                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
+                                    <address class="my-3">Location : Here</address>
                                     <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            Police@example.com
+                                                    example@domain.com
                                         </li>
                                         <li>
                                             <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            Emergency: 911
+                                                    +254xxxxxxxxx
                                         </li>
                                     </ul>
                                     <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
@@ -123,18 +123,18 @@
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
                                 <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">City Hall</strong>
-                                    <address class="my-3">250 Main Street, Newton Hall, NY 52143</address>
+                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
+                                    <address class="my-3">Location : Here</address>
                                     <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            president@example.com
+                                                    example@domain.com
                                         </li>
                                         <li>
                                             <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            (+91) 800 235 9595
+                                                    +254xxxxxxxxx
                                         </li>
                                     </ul>
                                     <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
@@ -145,18 +145,18 @@
                             <!-- getDirColumn -->
                             <div class="getDirColumn d-flex w-100">
                                 <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Medical Center</strong>
-                                    <address class="my-3">65 Town hall Road, Benshall, Westhorn, NY 5623</address>
+                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
+                                    <address class="my-3">Location : Here</address>
                                     <ul class="mb-6 list-unstyled contactInfoList">
                                         <li>
                                             <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            Health@example.com
+                                                    example@domain.com
                                         </li>
                                         <li>
                                             <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
-                                            Emergency: 108
+                                                    +254xxxxxxxxx
                                         </li>
                                     </ul>
                                     <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
