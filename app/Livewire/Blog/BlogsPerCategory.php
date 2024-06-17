@@ -15,6 +15,6 @@ class BlogsPerCategory extends Component
     {
         $category = BlogCategory::where('slug', $this->slug)->first();
         $blogs = Blog::where('category_id', $category->id)->paginate(12);
-        return view('livewire.blog.blogs-per-category', ['blogs' => $blogs, 'category' => $category]);
+        return view('livewire.blog.blogs-per-category', ['blogs' => $blogs, 'category' => $category])->layout('layouts.base');
     }
 }
