@@ -59,7 +59,7 @@
                                     @foreach (explode(',', $blog->tags) as $item)
                                     <li>
                                         <a href="{{ route('blogs.per.tag', ['tag' => $item]) }}"
-                                            class="{{ $activeTag === $item ? 'text-success' : '' }}"
+                                            class="{{ $tag === $item ? 'text-success' : '' }}"
                                             style="text-transform: capitalize">
                                             {{ $item }}
                                         </a>
