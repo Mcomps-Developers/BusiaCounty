@@ -1,6 +1,6 @@
 <main>
     @section('title')
-        {{ $blog->title }}
+    {{ $blog->title }}
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
@@ -11,8 +11,8 @@
                     <nav aria-label="breadcrumb">
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item"><a
-                                    href="{{ route('news.speeches') }}" style="text-transform: capitalize">{{ $blog->category->name }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('news.speeches') }}"
+                                    style="text-transform: capitalize">{{ $blog->category->name }}</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Details</li>
                         </ol>
                     </nav>
@@ -56,15 +56,11 @@
                                 <strong class="mb-2 mr-2 txtDark font-weight-normal ntwTagTitle">Tags:</strong>
                                 <ul
                                     class="flex-wrap p-0 m-0 tagList list-unstyled d-flex justify-content-center justify-content-sm-start fwMedium">
+                                    @foreach (explode(',',$blog->tags) as $item)
                                     <li>
-                                        <a href="javascript:void(0);">County</a>
+                                        <a href="javascript:void(0);">{{$item}}</a>
                                     </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="active">Development</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Road</a>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
                             <div
@@ -106,7 +102,8 @@
                                 <div class="row mx-n2">
                                     <div class="px-2 col-12">
                                         <div class="form-group">
-                                            <textarea class="form-control w-100 d-block" placeholder="Write your comment&hellip;"></textarea>
+                                            <textarea class="form-control w-100 d-block"
+                                                placeholder="Write your comment&hellip;"></textarea>
                                         </div>
                                     </div>
                                     <div class="px-2 col-12">
@@ -121,8 +118,7 @@
                                     </div>
                                     <div class="px-2 col-12 col-sm-6">
                                         <div class="form-group">
-                                            <input type="email" class="form-control d-block w-100"
-                                                placeholder="Email">
+                                            <input type="email" class="form-control d-block w-100" placeholder="Email">
                                         </div>
                                     </div>
                                 </div>
@@ -156,9 +152,9 @@
                                 <h3 class="mb-5 fwMedium">Categories</h3>
                                 <ul class="pl-0 list-unstyled">
                                     @foreach ($categories as $item)
-                                        <li>
-                                            <a href="javascript:void(0);">{{ $item->name }}</a>
-                                        </li>
+                                    <li>
+                                        <a href="javascript:void(0);">{{ $item->name }}</a>
+                                    </li>
                                     @endforeach
 
                                 </ul>
@@ -167,35 +163,26 @@
                                 <h3 class="mb-5 fwMedium">Related News</h3>
                                 <ul class="pl-0 list-unstyled mb-7">
                                     @foreach ($relatedBlogs->where('id','!=',$blog->id) as $item)
-                                        <li>
-                                            <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                                <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $item->image }}"
-                                                    class="img-fluid">
-                                            </div>
-                                            <div class="descrWrap">
-                                                <h4 class="mb-1 fwMedium">
-                                                    <a
-                                                        href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">{{ $item->title }}</a>
-                                                </h4>
-                                                <time datetime="2011-01-12" class="d-block"><i
-                                                        class="mr-1 fa fa-calendar"></i>{{ date('M d, Y', strtotime($item->created_at)) }}</time>
-                                            </div>
-                                        </li>
+                                    <li>
+                                        <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
+                                            <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $item->image }}"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="descrWrap">
+                                            <h4 class="mb-1 fwMedium">
+                                                <a
+                                                    href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">{{
+                                                    $item->title }}</a>
+                                            </h4>
+                                            <time datetime="2011-01-12" class="d-block"><i
+                                                    class="mr-1 fa fa-calendar"></i>{{ date('M d, Y',
+                                                strtotime($item->created_at)) }}</time>
+                                        </div>
+                                    </li>
                                     @endforeach
 
                                 </ul>
                             </nav>
-                            <section class="mb-6 widget widgetTags mb-lg-10">
-                                <h3 class="mb-5 fwMedium">Tags</h3>
-                                <ul class="flex-wrap pl-0 list-unstyled d-flex fontAlter">
-                                    <li>
-                                        <a href="javascript:void(0);">County</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Developement</a>
-                                    </li>
-                                </ul>
-                            </section>
                             <article class="px-6 widget widgetVote bgCover py-9"
                                 style="background-image: url(https://placehold.co/317x508);">
                                 <h3 class="h3Large">Advertise Here

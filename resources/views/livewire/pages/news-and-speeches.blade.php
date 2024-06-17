@@ -32,12 +32,12 @@
                                         class="img-fluid w-100 d-block">
                                 </a>
                                 <time datetime="2011-01-12"
-                                    class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">{{ date('M d, Y') }}</time>
+                                    class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">{{ date('M d, Y',strtotime($item->created_at)) }}</time>
                             </div>
                             <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
                                 <strong class="mb-1 d-block npbcmWrap font-weight-normal">
                                     <span class="mr-5">{{ $item->category->name }}</span>
-                                    <i class="fa fa-comments"></i> 0
+                                    <i class="fa fa-eye"></i> {{$item->views}}
                                 </strong>
                                 <h3 class="mb-5 fwSemiBold">
                                     <a style="text-transform: capitalize;"
