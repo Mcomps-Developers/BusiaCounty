@@ -56,11 +56,16 @@
                                 <strong class="mb-2 mr-2 txtDark font-weight-normal ntwTagTitle">Tags:</strong>
                                 <ul
                                     class="flex-wrap p-0 m-0 tagList list-unstyled d-flex justify-content-center justify-content-sm-start fwMedium">
-                                    @foreach (explode(',',$blog->tags) as $item)
+                                    @foreach (explode(',', $blog->tags) as $item)
                                     <li>
-                                        <a href="javascript:void(0);" style="text-transform: capitalize">{{$item}}</a>
+                                        <a href="{{ route('blogs.per.tag', ['tag' => $item]) }}"
+                                            class="{{ $activeTag === $item ? 'text-success' : '' }}"
+                                            style="text-transform: capitalize">
+                                            {{ $item }}
+                                        </a>
                                     </li>
                                     @endforeach
+
                                 </ul>
                             </div>
                             <div
