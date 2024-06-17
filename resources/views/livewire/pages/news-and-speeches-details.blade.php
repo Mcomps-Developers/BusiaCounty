@@ -58,7 +58,7 @@
                                     class="flex-wrap p-0 m-0 tagList list-unstyled d-flex justify-content-center justify-content-sm-start fwMedium">
                                     @foreach (explode(',',$blog->tags) as $item)
                                     <li>
-                                        <a href="javascript:void(0);">{{$item}}</a>
+                                        <a href="javascript:void(0);" style="text-transform: capitalize">{{$item}}</a>
                                     </li>
                                     @endforeach
                                 </ul>
@@ -153,7 +153,8 @@
                                 <ul class="pl-0 list-unstyled">
                                     @foreach ($categories as $item)
                                     <li>
-                                        <a href="javascript:void(0);">{{ $item->name }}</a>
+                                        <a href="{{route('blogs.per.category',['slug'=>$item->slug])}}">{{ $item->name
+                                            }}</a>
                                     </li>
                                     @endforeach
 

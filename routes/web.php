@@ -11,6 +11,7 @@ use App\Livewire\Account\Parking;
 use App\Livewire\Account\ParkingDetails;
 use App\Livewire\Account\PayDailyParking;
 use App\Livewire\Account\Transactions;
+use App\Livewire\Blog\BlogsPerCategory;
 use App\Livewire\HomeComponent;
 use App\Livewire\Pages\AboutCounty;
 use App\Livewire\Pages\Budget;
@@ -76,6 +77,7 @@ Route::prefix('/about')->group(function () {
 Route::prefix('resources')->group(function () {
     Route::get('/downloads', Downloads::class)->name('downloads');
     Route::get('/news-and-spechees', NewsAndSpeeches::class)->name('news.speeches');
+    Route::get('/category/{slug}', BlogsPerCategory::class)->name('blogs.per.category');
     Route::get('/details/{slug}/{reference}', NewsAndSpeechesDetails::class)->name('news.speeches.details');
     Route::get('/events', Events::class)->name('events');
     Route::get('/event/details', EventDetails::class)->name('event.details');
