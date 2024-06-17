@@ -56,6 +56,7 @@
                                 <strong class="mb-2 mr-2 txtDark font-weight-normal ntwTagTitle">Tags:</strong>
                                 <ul
                                     class="flex-wrap p-0 m-0 tagList list-unstyled d-flex justify-content-center justify-content-sm-start fwMedium">
+                                    @if ($blog->tags)
                                     @foreach (explode(',', $blog->tags) as $item)
                                     <li>
                                         <a href="{{ route('blogs.per.tag', ['tag' => $item]) }}"
@@ -64,6 +65,7 @@
                                         </a>
                                     </li>
                                     @endforeach
+                                    @endif
 
                                 </ul>
                             </div>
