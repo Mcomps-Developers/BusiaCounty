@@ -30,7 +30,7 @@
                     <article class="mb-6 bg-white shadow npbColumn mb-xl-12">
                         <div class="imgHolder position-relative">
                             <a
-                                href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">
+                                href="{{ route('blog.tag.details', ['tag'=>$tag, 'slug' => $item->slug, 'reference' => $item->reference]) }}">
                                 <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $item->image }}"
                                     class="img-fluid w-100 d-block">
                             </a>
@@ -45,10 +45,10 @@
                             </strong>
                             <h3 class="mb-5 fwSemiBold">
                                 <a style="text-transform: capitalize;"
-                                    href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">{{
+                                    href="{{ route('blog.tag.details', ['tag'=>$tag, 'slug' => $item->slug, 'reference' => $item->reference]) }}">{{
                                     $item->title }}</a>
                             </h3>
-                            <a href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}"
+                            <a href="{{ route('blog.tag.details', ['tag'=>$tag, 'slug' => $item->slug, 'reference' => $item->reference]) }}"
                                 class="align-top btnCr d-inline-block fontAlter">Continue Reading
                                 <i class="ml-2 align-middle fa fa-arrow-right bcIcn"><span
                                         class="sr-only">icon</span></i></a>
