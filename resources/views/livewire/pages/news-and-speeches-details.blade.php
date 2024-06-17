@@ -52,11 +52,12 @@
                         {!! $blog->content !!}
                         <div
                             class="mb-10 text-center newsTagWrap text-sm-left d-sm-flex mt-11 align-items-sm-center justify-content-sm-between justify-content-center">
+                            @if ($blog->tags)
                             <div class="widgetTags fontAlter d-sm-flex align-items-center">
                                 <strong class="mb-2 mr-2 txtDark font-weight-normal ntwTagTitle">Tags:</strong>
                                 <ul
                                     class="flex-wrap p-0 m-0 tagList list-unstyled d-flex justify-content-center justify-content-sm-start fwMedium">
-                                    @if ($blog->tags)
+
                                     @foreach (explode(',', $blog->tags) as $item)
                                     <li>
                                         <a href="{{ route('blogs.per.tag', ['tag' => $item]) }}"
@@ -65,10 +66,9 @@
                                         </a>
                                     </li>
                                     @endforeach
-                                    @endif
-
                                 </ul>
                             </div>
+                            @endif
                             <div
                                 class="text-center saShareAside d-sm-flex align-items-center justify-content-center justify-content-end">
                                 <strong
