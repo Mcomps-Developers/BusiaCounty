@@ -54,7 +54,7 @@
         }
     </style>
     @section('title')
-        The County Government of Busia
+    The County Government of Busia
     @endsection
     <div class="introBlock ibSlider">
         <div>
@@ -89,7 +89,8 @@
                         <div class="container position-relative">
                             <div class="row">
                                 <div class="col-12 col-md-9 col-xl-7 fzMedium" style="top: 60px">
-                                    {{-- <h1 class="mb-4 text-white h1Large">Governor's Inspection at Busia County Referral
+                                    {{-- <h1 class="mb-4 text-white h1Large">Governor's Inspection at Busia County
+                                        Referral
                                         Hospital</h1> --}}
                                     {{-- <p>A transformative and progressive County for sustainable and equitable
                                         development.</p> --}}
@@ -414,8 +415,8 @@
                             <ul class="mb-0 list-unstyled cdDocsList">
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{ route('downloads') }}"> <i
-                                                class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"> <i class="fa fa-file-pdf f-2x"></i>Example
+                                            Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">October 4, 2020</time>
                                 </li>
@@ -435,22 +436,22 @@
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{ route('downloads') }}"> <i
-                                                class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"> <i class="fa fa-file-pdf f-2x"></i>Example
+                                            Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{ route('downloads') }}"> <i
-                                                class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"> <i class="fa fa-file-pdf f-2x"></i>Example
+                                            Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
                                 <li>
                                     <h3 class="mb-1 font-weight-normal cdTitle">
-                                        <a href="{{ route('downloads') }}"> <i
-                                                class="fa fa-file-pdf f-2x"></i>Example Documents</a>
+                                        <a href="{{ route('downloads') }}"> <i class="fa fa-file-pdf f-2x"></i>Example
+                                            Documents</a>
                                     </h3>
                                     <time datetime="2011-01-12" class="d-block">August 9, 2020</time>
                                 </li>
@@ -472,7 +473,7 @@
                 <div class="col-12 col-lg-3">
                     <header class="pt-2 headingHead mb-7 mb-lg-0">
                         <h2 class="mb-2 fwSemiBold">News and Publications</h2>
-                        <p>The most recent news, publications and articles.</p>
+                        <p>The most recent news, publications and speeches.</p>
                         <a href="{{ route('news.speeches') }}"
                             class="p-0 mt-5 border-0 btn btn-outline-secondary bdrWidthAlter text-capitalize position-relative btnXsMinWidth"
                             data-hover="More News">
@@ -483,31 +484,33 @@
                 <div class="col-12 col-lg-9">
                     <div class="row">
                         @foreach ($recentBlogs as $item)
-                            <div class="col-12 col-md-6 col-xl-4">
-                                <article class="mb-6 bg-white shadow npbColumn">
-                                    <div class="imgHolder position-relative">
-                                        <a href="javascript:void(0);">
-                                            <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $item->image }}"
-                                                class="img-fluid w-100 d-block">
-                                        </a>
-                                        <time datetime="2011-01-12"
-                                            class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">{{ date('d M Y',strtotime($item->created_at)) }}</time>
-                                    </div>
-                                    <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
-                                        <strong class="mb-1 d-block npbcmWrap font-weight-normal">
-                                            <span class="mr-5">{{ $item->category->name }}</span>
-                                            <i class="fa fa-eye"></i> 0
-                                        </strong>
-                                        <h3 class="mb-6 fwSemiBold">
-                                            <a
-                                                href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">{{ $item->title }}</a>
-                                        </h3>
-                                        <a href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}"
-                                            class="align-top btnCr d-inline-block fontAlter">Continue
-                                            Reading <i class="fa fa-arrow-right"></i></a>
-                                    </div>
-                                </article>
-                            </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="mb-6 bg-white shadow npbColumn">
+                                <div class="imgHolder position-relative">
+                                    <a href="javascript:void(0);">
+                                        <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $item->image }}"
+                                            class="img-fluid w-100 d-block">
+                                    </a>
+                                    <time datetime="2011-01-12"
+                                        class="px-2 py-1 text-white npbTimeTag font-weight-bold fontAlter position-absolute">{{
+                                        date('d M Y',strtotime($item->created_at)) }}</time>
+                                </div>
+                                <div class="px-5 pt-8 pb-5 npbDescriptionWrap">
+                                    <strong class="mb-1 d-block npbcmWrap font-weight-normal">
+                                        <span class="mr-5">{{ $item->category->name }}</span>
+                                        <i class="fa fa-eye"></i> {{$item->views}}
+                                    </strong>
+                                    <h3 class="mb-6 fwSemiBold">
+                                        <a
+                                            href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">{{
+                                            $item->title }}</a>
+                                    </h3>
+                                    <a href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}"
+                                        class="align-top btnCr d-inline-block fontAlter">Continue
+                                        Reading <i class="fa fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
                         @endforeach
 
                     </div>
