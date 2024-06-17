@@ -4,6 +4,7 @@ namespace App\Livewire\Blog;
 
 use App\Models\Blog;
 use App\Models\BlogCategory;
+use Carbon\Carbon;
 use Livewire\Component;
 
 class BlogPerTagDetails extends Component
@@ -17,7 +18,7 @@ class BlogPerTagDetails extends Component
         $blog->views = $blog->views + 1;
         $blog->save();
         $categories = BlogCategory::orderBy('name')->get();
-        $relatedBlogs = Blog::orderByDesc('created_at')->where('category_id', $blog->category_id)->limit(3)->get();
+        $relatedBlogs = Blog::orderByDesc('created_at')->where('created_at', '<=', Carbon::now())->where('category_id', $blog->category_id)->limit(3)->get();
         return view('livewire.blog.blog-per-tag-details', ['blog' => $blog, 'categories' => $categories, 'relatedBlogs' => $relatedBlogs])->layout('layouts.base');
     }
 }
