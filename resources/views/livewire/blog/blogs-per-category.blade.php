@@ -1,6 +1,6 @@
 <main>
     @section('title')
-    <span style="text-transform: capitalize">{{$category->name}}</span>
+    {{$category->name}}
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
