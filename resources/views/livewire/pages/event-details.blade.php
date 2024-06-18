@@ -75,48 +75,15 @@
                                 aria-labelledby="gallery-tab">
                                 <div class="overflow-hidden">
                                     <ul class="flex-wrap list-unstyled d-flex scgGalleryList">
+                                        @foreach (explode(',', $event->gallery) as $item)
                                         <li>
-                                            <a href="https://placehold.co/403x220" class="lightbox"
-                                                data-fancybox="true">
-                                                <img src="https://placehold.co/403x220" class="img-fluid"
-                                                    alt="image description">
+                                            <a href="https://busia.mcomps.africa/assets/img/events/gallery{{ $item }}"
+                                                class="lightbox" data-fancybox="true">
+                                                <img src="https://busia.mcomps.africa/assets/img/events/gallery{{ $item }}"
+                                                    class="img-fluid" alt="image description">
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="https://placehold.co/403x220" class="lightbox"
-                                                data-fancybox="true">
-                                                <img src="https://placehold.co/403x220" class="img-fluid"
-                                                    alt="image description">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://placehold.co/403x220" class="lightbox"
-                                                data-fancybox="true">
-                                                <img src="https://placehold.co/403x220" class="img-fluid"
-                                                    alt="image description">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://placehold.co/403x220" class="lightbox"
-                                                data-fancybox="true">
-                                                <img src="https://placehold.co/403x220" class="img-fluid"
-                                                    alt="image description">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://placehold.co/403x220" class="lightbox"
-                                                data-fancybox="true">
-                                                <img src="https://placehold.co/403x220" class="img-fluid"
-                                                    alt="image description">
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://placehold.co/403x220" class="lightbox"
-                                                data-fancybox="true">
-                                                <img src="https://placehold.co/403x220" class="img-fluid"
-                                                    alt="image description">
-                                            </a>
-                                        </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
@@ -127,7 +94,7 @@
                                 aria-labelledby="gallery-tab">
                                 <div class="overflow-hidden">
                                     <ul class="flex-wrap list-unstyled d-flex scgGalleryList">
-                                        <p class="text-dager">No images have been added</p>
+                                        <p class="text-dager" style="margin-left: 30px">No images have been added</p>
                                     </ul>
                                 </div>
                             </div>
