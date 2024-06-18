@@ -29,7 +29,7 @@
                                     href="javascript:void(0);">{{$event->category->name}}</a></strong>
                             <h2 class="mb-9">{{$event->title}}</h2>
                             <div class="imgHolder">
-                                <img src="https://placehold.co/873x648" class="img-fluid w-100" alt="image description">
+                                <img src="https://busia.mcomps.africa/assets/img/events/{{ $event->image }}" class="img-fluid w-100">
                             </div>
                             <address class="mb-0 dtlhDress fontAlter">
                                 <div class="row no-gutters">
@@ -154,24 +154,10 @@
                 <div class="mb-6 col-12 col-lg-3">
                     <div class="ml-lg-n5">
                         <aside class="sidebar">
-                            {{-- <section class="mb-6 widget widgetSearch mb-lg-10">
-                                <form action="#" class="searchForm">
-                                    <div class="input-group">
-                                        <input type="search" class="form-control" placeholder="Search Here&hellip;">
-                                        <div class="input-group-append">
-                                            <button
-                                                class="btn btnTheme btnNoOver d-flex align-items-center justify-content-center"
-                                                type="button">
-                                                <i class="icomoon-search"><span class="sr-only">search</span></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </section> --}}
                             @if ($featuredEvent->count()>0)
                             <section class="mb-6 widget widgetFeaturEvent mb-lg-10">
                                 <h3 class="mb-5 fwMedium">Featured Event</h3>
-                                @foreach ($featuredEvent->where('id','!=',$event->id) as $item)
+                                @foreach ($featuredEvent as $item)
                                 <article class="bg-white shadow ueEveColumn position-relative w-100">
                                     <div class="imgHolder position-relative">
                                         <a
