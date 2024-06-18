@@ -10,6 +10,11 @@ class EventDetails extends Component
     public $slug;
     public $reference;
 
+    public function mount($reference)
+    {
+        $this->reference = $reference;
+    }
+
     public function render()
     {
         $event = Event::where('reference', $this->reference)->first();
