@@ -30,7 +30,7 @@
                                 <div>
                                     <div class="imgWrap">
                                         <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $blog->image }}"
-                                            class="img-fluid w-100" alt="image description">
+                                            class="img-fluid w-100" height="426" width="873">
                                     </div>
                                 </div>
                             </div>
