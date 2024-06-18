@@ -29,7 +29,8 @@
                                     href="javascript:void(0);">{{$event->category->name}}</a></strong>
                             <h2 class="mb-9">{{$event->title}}</h2>
                             <div class="imgHolder">
-                                <img src="https://busia.mcomps.africa/assets/img/events/{{ $event->image }}" class="img-fluid w-100">
+                                <img src="https://busia.mcomps.africa/assets/img/events/{{ $event->image }}"
+                                    class="img-fluid w-100">
                             </div>
                             <address class="mb-0 dtlhDress fontAlter">
                                 <div class="row no-gutters">
@@ -68,6 +69,7 @@
                                     aria-controls="gallery" aria-selected="false">Gallery</a>
                             </li>
                         </ul>
+                        @if ($event->gallery)
                         <div class="mb-10 tab-content scgTabContent" id="scgTabsContent">
                             <div class="tab-pane fade show active" id="gallery" role="tabpanel"
                                 aria-labelledby="gallery-tab">
@@ -119,6 +121,18 @@
                                 </div>
                             </div>
                         </div>
+                        @else
+                        <div class="mb-10 tab-content scgTabContent" id="scgTabsContent">
+                            <div class="tab-pane fade show active" id="gallery" role="tabpanel"
+                                aria-labelledby="gallery-tab">
+                                <div class="overflow-hidden">
+                                    <ul class="flex-wrap list-unstyled d-flex scgGalleryList">
+                                        <p class="text-dager">No images have been added</p>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
                         <aside class="text-center saShareAside d-flex justify-content-between align-items-center">
                             <strong class="mb-2 d-block text-lDark fwSemiBold fontAlter title">Share Event</strong>
                             <ul
