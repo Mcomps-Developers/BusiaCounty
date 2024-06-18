@@ -21,33 +21,6 @@
     </header>
     <section class="ItemfullBlock pt-7 pb-7 pt-md-10 pb-md-9 pt-lg-14 pb-lg-13 pt-xl-22 pb-xl-19">
         <div class="container">
-            <header class="px-4 pt-4 pb-3 ifbFilterHead bg-light px-lg-8 pt-lg-7 pb-lg-6">
-                <div class="form-row mx-n3 align-items-end">
-                    <div class="px-3 formCol">
-                        <div class="form-group">
-                            <label class="mb-2 d-block fwMedium fontAlter text-lDark">Start Date</label>
-                            <input type="date"
-                                class="shadow form-control inputHeightMedium inputBdrTransparent d-block w-">
-                        </div>
-                    </div>
-                    <div class="px-3 formCol">
-                        <div class="form-group">
-                            <label class="mb-2 d-block fwMedium fontAlter text-lDark">Event Type</label>
-                            <select class="shadow custom-select inputHeightMedium inputBdrTransparent">
-                                <option selected>Event Type</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="button"
-                        class="p-0 mt-4 ml-auto mr-auto border-0 btn btnTheme ml-lg-3 mt-lg-0 mr-lg-0 font-weight-bold btnMinSm text-capitalize position-relative"
-                        data-hover="Find Events">
-                        <span class="d-block btnText">Find Events</span>
-                    </button>
-                </div>
-            </header>
             <div class="pt-8 row justify-content-center pt-lg-11 pt-xl-14">
                 @foreach ($events as $item)
                 <div class="col-12 col-md-3">
