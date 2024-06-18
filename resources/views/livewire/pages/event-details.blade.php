@@ -12,7 +12,7 @@
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="{{route('events')}}">Event</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Event Details Page</li>
+                            <li class="breadcrumb-item active" aria-current="page">{{$event->title}}</li>
                         </ol>
                     </nav>
                 </div>
@@ -171,7 +171,7 @@
                             @if ($featuredEvent->count()>0)
                             <section class="mb-6 widget widgetFeaturEvent mb-lg-10">
                                 <h3 class="mb-5 fwMedium">Featured Event</h3>
-                                @foreach ($featuredEvent as $item)
+                                @foreach ($featuredEvent->where('id','!=',$event->id) as $item)
                                 <article class="bg-white shadow ueEveColumn position-relative w-100">
                                     <div class="imgHolder position-relative">
                                         <a
@@ -181,10 +181,11 @@
                                         </a>
                                         <time
                                             class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
-                                            datetime="2011-01-12">
+                                            datetime="{{date('Y-m-d',strtotime($item->start_date_and_time))}}">
                                             <span
-                                                class="flex-shrink-0 text-white d-block textDay font-weight-bold">15</span>
-                                            <span class="px-3 py-2 d-block">OCT 2022</span>
+                                                class="flex-shrink-0 text-white d-block textDay font-weight-bold">{{date('d',strtotime($item->start_date_and_time))}}</span>
+                                            <span class="px-3 py-2 d-block">{{date('M
+                                                Y',strtotime($item->start_date_and_time))}}</span>
                                         </time>
                                     </div>
                                     <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
@@ -247,7 +248,8 @@
                                                 <a
                                                     href="{{ route('event.details',['slug'=>$item->slug,'reference'=>$item->reference]) }}">{{$item->title}}</a>
                                             </h4>
-                                            <time datetime="2011-01-12" class="d-block">{{date('M d,
+                                            <time datetime="{{date('Y-m-d',strtotime($item->start_date_and_time))}}"
+                                                class="d-block">{{date('M d,
                                                 Y',strtotime($item->start_date_and_time))}} <br>@
                                                 {{date('h:iA',strtotime($item->start_date_and_time))}}
                                                 - {{date('h:iA',strtotime($item->end_date_and_time))}}</time>
