@@ -343,19 +343,20 @@
                                     </div>
                                     <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
                                         <strong
-                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
+                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">{{$item->category->name}}</strong>
                                         <h3 class="mb-3 h3Small fwMedium">
-                                            <a href="{{ route('event.details') }}">Event Name</a>
+                                            <a href="{{ route('event.details') }}">{{$item->title}}</a>
                                         </h3>
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
                                                 <li>
                                                     <i class="fa fa-clock"></i>
-                                                    9:30am - 1:00pm
+                                                    {{date('h:iA',strtotime($item->start_date_and_time))}} -
+                                                    {{date('h:iA',strtotime($item->end_date_and_time))}}
                                                 </li>
                                                 <li>
                                                     <i class="fa fa-map-marker"></i>
-                                                    Example Location
+                                                    {{$item->location}}
                                                 </li>
                                             </ul>
                                         </address>
