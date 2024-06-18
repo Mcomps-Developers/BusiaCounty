@@ -36,7 +36,9 @@
                                     <div class="px-4 pt-6 pb-12 col-12 col-sm-4 px-md-7">
                                         <strong class="mb-2 d-block title fwSemiBold">Date</strong>
                                         <span class="d-block">
-                                            <time datetime="2011-01-12">{{date('M d,
+                                            <time datetime="{{date('Y-m-d',strtotime($event->start_date_and_time))}}">
+                                                {{date('M
+                                                d,
                                                 Y',strtotime($event->start_date_and_time))}}</time>
                                         </span>
                                         <i class="fa fa-calendar icnWatermark"><span class="sr-only">icon</span></i>
@@ -44,8 +46,8 @@
                                     <div class="px-4 pt-6 pb-12 col-12 col-sm-4 px-md-7">
                                         <strong class="mb-2 d-block title fwSemiBold">Time</strong>
                                         <span class="d-block">
-                                            <time
-                                                datetime="2011-01-12">{{date('h:iA',strtotime($event->start_date_and_time))}}
+                                            <time datetime="{{date('Y-m-d',strtotime($event->start_date_and_time))}}">
+                                                {{date('h:iA',strtotime($event->start_date_and_time))}}
                                                 - {{date('h:iA',strtotime($event->end_date_and_time))}}</time>
                                         </span>
                                         <i class="fa fa-clock icnWatermark"><span class="sr-only">icon</span></i>
@@ -60,37 +62,7 @@
                             </address>
                         </header>
                         {!! $event->description !!}
-                        <aside class="px-4 pt-5 pb-6 mb-8 countdownAside d-md-flex align-items-md-center mt-9">
-                            <ul
-                                class="flex-wrap mb-4 list-unstyled cdScheduleList fontAlter mb-md-0 flex-grow-1 d-flex">
-                                <li>
-                                    <strong class="text-white title d-block font-weight-normal dataCount">98</strong>
-                                    <strong class="d-block fwMedium">Days</strong>
-                                </li>
-                                <li>
-                                    <strong class="text-white title d-block font-weight-normal dataCount">10</strong>
-                                    <strong class="d-block fwMedium">Hours</strong>
-                                </li>
-                                <li>
-                                    <strong class="text-white title d-block font-weight-normal dataCount">56</strong>
-                                    <strong class="d-block fwMedium">Minutes</strong>
-                                </li>
-                                <li>
-                                    <strong class="text-white title d-block font-weight-normal dataCount">24</strong>
-                                    <strong class="d-block fwMedium">Seconds</strong>
-                                </li>
-                            </ul>
-                            <a href="javascript:void(0);"
-                                class="flex-shrink-0 p-0 ml-4 border-0 btn btnGaryWhite fwMedium text-capitalize position-relative"
-                                data-hover="Participate Now">
-                                <span class="d-block btnText">Participate Now</span>
-                            </a>
-                        </aside>
                         <ul class="mb-8 nav nav-tabs scgTabList fontAlter" id="scgTabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="location-tab" data-toggle="tab" href="#location"
-                                    role="tab" aria-controls="location" aria-selected="true">Location</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link active" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab"
                                     aria-controls="gallery" aria-selected="false">Gallery</a>
@@ -176,7 +148,7 @@
                 <div class="mb-6 col-12 col-lg-3">
                     <div class="ml-lg-n5">
                         <aside class="sidebar">
-                            <section class="mb-6 widget widgetSearch mb-lg-10">
+                            {{-- <section class="mb-6 widget widgetSearch mb-lg-10">
                                 <form action="#" class="searchForm">
                                     <div class="input-group">
                                         <input type="search" class="form-control" placeholder="Search Here&hellip;">
@@ -189,12 +161,15 @@
                                         </div>
                                     </div>
                                 </form>
-                            </section>
+                            </section> --}}
+                            @if ($featuredEvent->count()>0)
                             <section class="mb-6 widget widgetFeaturEvent mb-lg-10">
                                 <h3 class="mb-5 fwMedium">Featured Event</h3>
+                                @foreach ($featuredEvent as $item)
                                 <article class="bg-white shadow ueEveColumn position-relative w-100">
                                     <div class="imgHolder position-relative">
-                                        <a href="{{route('event.details')}}">
+                                        <a
+                                            href="{{route('event.details',['slug'=>$item->slug,'reference'=>$item->reference])}}">
                                             <img src="https://placehold.co/383x285" class="img-fluid d-block w-100"
                                                 alt="image description">
                                         </a>
@@ -208,9 +183,10 @@
                                     </div>
                                     <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
                                         <strong
-                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
+                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">{{$item->category->name}}</strong>
                                         <h3 class="mb-3 h3Small fwMedium">
-                                            <a href="{{route('event.details')}}">Event Name
+                                            <a
+                                                href="{{route('event.details',['slug'=>$item->slug,'reference'=>$item->reference])}}">{{$item->title}}
                                             </a>
                                         </h3>
                                         <address>
@@ -218,87 +194,63 @@
                                                 <li>
                                                     <i class="fa fa-clock icn position-absolute"><span
                                                             class="sr-only">icon</span></i>
-                                                    1:00pm - 5:00pm
+                                                    {{date('h:iA',strtotime($item->start_date_and_time))}}
+                                                    - {{date('h:iA',strtotime($item->end_date_and_time))}}
                                                 </li>
                                                 <li>
                                                     <i class="fa fa-map-marker icn position-absolute"><span
                                                             class="sr-only">icon</span></i>
-                                                    Location Name
+                                                    {{$item->location}}
                                                 </li>
                                             </ul>
                                         </address>
-                                        <a href="{{route('event.details')}}"
+                                        <a href="{{route('event.details',['slug'=>$item->slug,'reference'=>$item->reference])}}"
                                             class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                             data-hover="More Details">
                                             <span class="d-block btnText">More Details</span>
                                         </a>
                                     </div>
                                 </article>
+                                @endforeach
+
                             </section>
+                            @endif
+
                             <nav class="mb-6 widget widgetArchiveList mb-lg-10">
                                 <h3 class="mb-5 fwMedium">Categories</h3>
                                 <ul class="pl-0 list-unstyled">
+                                    @foreach ($eventCategories as $item)
                                     <li>
-                                        <a href="javascript:void(0);">Conference</a>
+                                        <a href="javascript:void(0);">{{$item->name}}</a>
                                     </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Entertainment</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Health &amp; Sports</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Meeting</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">Workshop</a>
-                                    </li>
+                                    @endforeach
+
                                 </ul>
                             </nav>
                             <nav class="mb-6 widget widgetUpcoming mb-lg-10">
-                                <h3 class="mb-5 fwMedium">Upcoming Events</h3>
+                                <h3 class="mb-5 fwMedium">Related Events</h3>
                                 <ul class="pl-0 list-unstyled mb-7">
+                                    @foreach ($relatedEvents as $item)
                                     <li>
                                         <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                            <img src="https://placehold.co/80x80" class="img-fluid"
-                                                alt="image description">
+                                            <img src="https://busia.mcomps.africa/assets/img/events/{{ $item->image }}"
+                                                class="img-fluid">
                                         </div>
                                         <div class="descrWrap">
                                             <h4 class="mb-1 fwMedium">
-                                                <a href="{{route('event.details')}}">Example Upcoming Events</a>
+                                                <a
+                                                    href="{{ route('event.details',['slug'=>$item->slug,'reference'=>$item->reference]) }}">{{$item->title}}</a>
                                             </h4>
-                                            <time datetime="2011-01-12" class="d-block">Oct 16, 2020 <br>@ 1:00 pm -
-                                                6:00 pm</time>
+                                            <time datetime="2011-01-12" class="d-block">{{date('M d,
+                                                Y',strtotime($item->start_date_and_time))}} <br>@
+                                                {{date('h:iA',strtotime($item->start_date_and_time))}}
+                                                - {{date('h:iA',strtotime($item->end_date_and_time))}}</time>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                            <img src="https://placehold.co/80x80" class="img-fluid"
-                                                alt="image description">
-                                        </div>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fwMedium">
-                                                <a href="{{route('event.details')}}">Example Upcoming Events</a>
-                                            </h4>
-                                            <time datetime="2011-01-12" class="d-block">Nov 16, 2020 <br>@ 9:00 am -
-                                                6:00 pm</time>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                            <img src="https://placehold.co/80x80" class="img-fluid"
-                                                alt="image description">
-                                        </div>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fwMedium">
-                                                <a href="{{route('event.details')}}">Example Upcoming Events</a>
-                                            </h4>
-                                            <time datetime="2011-01-12" class="d-block">Dec 16, 2020 <br>@ 8:00 am -
-                                                5:00 pm</time>
-                                        </div>
-                                    </li>
+                                    @endforeach
+
                                 </ul>
-                                <a href="javascript:void(0);" class="readMoreLink fontAlter fwMedium">View All Events <i
+                                <a href="{{route('events')}}" class="readMoreLink fontAlter fwMedium">View All Events <i
                                         class="fas fa-chevron-right btnRmlIcn" aria-hidden="true"><span
                                             class="sr-only">icon</span></i></a>
                             </nav>
