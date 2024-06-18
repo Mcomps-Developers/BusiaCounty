@@ -309,6 +309,7 @@
                             <div class="row align-items-end">
                                 <div class="col-12 col-sm-6 col-md-7">
                                     <h2 class="mb-sm-0 fwSemiBold h2Small">Events</h2>
+                                    <p>Take a look at our most recent events.</p>
                                 </div>
                                 <div class="col-12 col-sm-6 col-md-5 d-sm-flex justify-content-sm-end">
                                     <a href="{{ route('events') }}" class="btn-link fontAlter">See All Events
@@ -317,21 +318,27 @@
                             </div>
                         </header>
                         <div class="row">
+                            @foreach ($recentEvents as $item)
                             <div class="col-12 col-md-6">
                                 <article class="mb-6 bg-white shadow ueEveColumn position-relative">
                                     <div class="imgHolder position-relative">
                                         <a href="{{ route('event.details') }}">
-                                            <img src="https://placehold.co/383x285" class="img-fluid d-block w-100"
-                                                alt="image description">
+                                            <img src="https://busia.mcomps.africa/assets/img/events/{{ $item->image }}"
+                                                class="img-fluid d-block w-100">
                                         </a>
                                         <time
                                             class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
-                                            datetime="2011-01-12">
+                                            datetime="{{date('Y-m-d',strtotime($item->start_date_and_time))}}">
                                             <span
-                                                class="flex-shrink-0 text-white d-block textDay font-weight-bold">01</span>
-                                            <span class="px-3 py-2 d-block">OCT 2022</span>
-                                            <span
-                                                class="flex-shrink-0 text-white d-block textDay font-weight-bold">Ended</span>
+                                                class="flex-shrink-0 text-white d-block textDay font-weight-bold">{{date('d',strtotime($item->start_date_and_time))}}</span>
+                                            <span class="px-3 py-2 d-block">{{date('M
+                                                Y',strtotime($item->start_date_and_time))}}</span>
+                                            <span class="flex-shrink-0 text-white d-block textDay font-weight-bold">
+                                                @if (\Carbon\Carbon::parse($item->start_date_and_time)>
+                                                \Carbon\Carbon::now())
+                                                Upcoming
+                                                @elseif (\Carbon\Carbon::parse($item->end_date_and_time)<
+                                                    \Carbon\Carbon::now() ) Ended @else Ongoing @endif </span>
                                         </time>
                                     </div>
                                     <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
@@ -360,47 +367,8 @@
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-12 col-md-6">
-                                <article class="mb-6 bg-white shadow ueEveColumn position-relative">
-                                    <div class="imgHolder position-relative">
-                                        <a href="{{ route('event.details') }}">
-                                            <img src="https://placehold.co/383x285" class="img-fluid d-block w-100"
-                                                alt="image description">
-                                        </a>
-                                        <time
-                                            class="text-center bg-white ueTimeTag position-absolute d-flex fontAlter fwSemiBold text-lDark text-uppercase"
-                                            datetime="2011-01-12">
-                                            <span
-                                                class="flex-shrink-0 text-white d-block textDay font-weight-bold">15</span>
-                                            <span class="px-3 py-2 d-block">OCT 2022</span>
-                                        </time>
-                                    </div>
-                                    <div class="px-5 pt-5 pb-8 ueDescriptionWrap">
-                                        <strong
-                                            class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">Category</strong>
-                                        <h3 class="mb-3 h3Small fwMedium">
-                                            <a href="{{ route('event.details') }}">Event Name</a>
-                                        </h3>
-                                        <address>
-                                            <ul class="list-unstyled ueScheduleList">
-                                                <li>
-                                                    <i class="fa fa-clock"></i>
-                                                    1:00pm - 5:00pm
-                                                </li>
-                                                <li>
-                                                    <i class="fa fa-map-marker"></i>
-                                                    Example Location
-                                                </li>
-                                            </ul>
-                                        </address>
-                                        <a href="{{ route('event.details') }}"
-                                            class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
-                                            data-hover="More Details">
-                                            <span class="d-block btnText">More Details</span>
-                                        </a>
-                                    </div>
-                                </article>
-                            </div>
+                            @endforeach
+
                         </div>
                     </div>
                 </div>
