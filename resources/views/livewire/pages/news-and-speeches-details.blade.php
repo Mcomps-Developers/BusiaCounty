@@ -42,7 +42,8 @@
                                 - In
                                 <a href="javascript:void(0);" class="text-lDark">{{ $blog->category->name }}</a>
                                 By
-                                <a href="javascript:void(0);" class="text-lDark">{{ $blog->author->name }}</a>
+                                <a href="javascript:void(0);" class="text-lDark" style="text-transform: capitalize">{{
+                                    $blog->author->first_name }} {{ $blog->author->last_name }}</a>
                                 &nbsp;&nbsp;
                                 <i class="fa fa-eye"></i>
                                 {{$blog->views}}
