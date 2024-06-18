@@ -262,7 +262,15 @@
                             <span class="mb-4 icnWrap d-flex align-items-center justify-content-center w-100">
                                 <i class="fa fa-users"></i>
                             </span>
-                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">62</span>K
+                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">
+                                    @if ($homeStats->population>999999)
+                                    {{number_format($homeStats->population/1000000,2)}}
+                                    @elseif ($homeStats->population>999)
+                                    {{number_format($homeStats->population/1000,2)}}
+                                    @else
+                                    {{$homeStats->population}}
+                                    @endif
+                                </span>
                             </h3>
                             <h4 class="mb-0 subtitle font-weight-normal">Population</h4>
                         </li>
@@ -270,7 +278,8 @@
                             <span class="mb-4 icnWrap d-flex align-items-center justify-content-center w-100">
                                 <i class="fa fa-map"></i>
                             </span>
-                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">150</span>KM
+                            <h3 class="mb-3 text-white fwSemiBold textCount"><span
+                                    class="">{{$homeStats->land_coverage}}</span><small>Sq Km</small>
                             </h3>
                             <h4 class="mb-0 subtitle font-weight-normal">Coverrage
                             </h4>
