@@ -84,7 +84,7 @@ Route::prefix('resources')->group(function () {
     Route::get('/details/{slug}/{reference}', NewsAndSpeechesDetails::class)->name('news.speeches.details');
     Route::get('/tags/{tag}/{slug}/{reference}', BlogPerTagDetails::class)->name('blog.tag.details');
     Route::get('/events', Events::class)->name('events');
-    Route::get('/event/details', EventDetails::class)->name('event.details');
+    Route::get('/event/{slug}/{reference}', EventDetails::class)->name('event.details');
     Route::get('/tenders', Tenders::class)->name('tenders');
     Route::get('/budgets', Budget::class)->name('budget');
 });
