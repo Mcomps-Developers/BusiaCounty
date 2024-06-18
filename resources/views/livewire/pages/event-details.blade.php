@@ -74,37 +74,43 @@
                                 <div class="overflow-hidden">
                                     <ul class="flex-wrap list-unstyled d-flex scgGalleryList">
                                         <li>
-                                            <a href="{{route('event.details')}}" class="lightbox" data-fancybox="true">
+                                            <a href="https://placehold.co/403x220" class="lightbox"
+                                                data-fancybox="true">
                                                 <img src="https://placehold.co/403x220" class="img-fluid"
                                                     alt="image description">
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="{{route('event.details')}}" class="lightbox" data-fancybox="true">
+                                            <a href="https://placehold.co/403x220" class="lightbox"
+                                                data-fancybox="true">
                                                 <img src="https://placehold.co/403x220" class="img-fluid"
                                                     alt="image description">
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="{{route('event.details')}}" class="lightbox" data-fancybox="true">
+                                            <a href="https://placehold.co/403x220" class="lightbox"
+                                                data-fancybox="true">
                                                 <img src="https://placehold.co/403x220" class="img-fluid"
                                                     alt="image description">
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="{{route('event.details')}}" class="lightbox" data-fancybox="true">
+                                            <a href="https://placehold.co/403x220" class="lightbox"
+                                                data-fancybox="true">
                                                 <img src="https://placehold.co/403x220" class="img-fluid"
                                                     alt="image description">
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="{{route('event.details')}}" class="lightbox" data-fancybox="true">
+                                            <a href="https://placehold.co/403x220" class="lightbox"
+                                                data-fancybox="true">
                                                 <img src="https://placehold.co/403x220" class="img-fluid"
                                                     alt="image description">
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="{{route('event.details')}}" class="lightbox" data-fancybox="true">
+                                            <a href="https://placehold.co/403x220" class="lightbox"
+                                                data-fancybox="true">
                                                 <img src="https://placehold.co/403x220" class="img-fluid"
                                                     alt="image description">
                                             </a>
