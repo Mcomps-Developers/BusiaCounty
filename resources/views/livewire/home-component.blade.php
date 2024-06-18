@@ -323,7 +323,7 @@
                                 <article class="mb-6 bg-white shadow ueEveColumn position-relative">
                                     <div class="imgHolder position-relative">
                                         <a
-                                            href="{{ route('event.details,['slug'=>$item->slug,'reference'=>$item->reference]') }}">
+                                            href="{{ route('event.details',['slug'=>$item->slug,'reference'=>$item->reference]) }}">
                                             <img src="https://busia.mcomps.africa/assets/img/events/{{ $item->image }}"
                                                 class="img-fluid d-block w-100">
                                         </a>
@@ -347,7 +347,7 @@
                                             class="mb-2 d-block ueCatTitle fwSemiBold text-secondary">{{$item->category->name}}</strong>
                                         <h3 class="mb-3 h3Small fwMedium">
                                             <a
-                                                href="{{ route('event.details,['slug'=>$item->slug,'reference'=>$item->reference]') }}">{{$item->title}}</a>
+                                                href="{{ route('event.details',['slug'=>$item->slug,'reference'=>$item->reference]) }}">{{$item->title}}</a>
                                         </h3>
                                         <address>
                                             <ul class="list-unstyled ueScheduleList">
@@ -362,7 +362,7 @@
                                                 </li>
                                             </ul>
                                         </address>
-                                        <a href="{{ route('event.details,['slug'=>$item->slug,'reference'=>$item->reference]') }}"
+                                        <a href="{{ route('event.details',['slug'=>$item->slug,'reference'=>$item->reference]) }}"
                                             class="p-0 mt-3 align-top border-0 btn btnCustomLightOutline bdrWidthAlter btn-sm text-capitalize position-relative"
                                             data-hover="More Details">
                                             <span class="d-block btnText">More Details</span>
