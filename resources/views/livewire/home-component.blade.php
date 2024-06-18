@@ -264,9 +264,9 @@
                             </span>
                             <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">
                                     @if ($homeStats->population>999999)
-                                    {{number_format($homeStats->population/1000000,2)}}
+                                    {{number_format($homeStats->population/1000000)}}M
                                     @elseif ($homeStats->population>999)
-                                    {{number_format($homeStats->population/1000,2)}}
+                                    {{number_format($homeStats->population/1000)}}K
                                     @else
                                     {{$homeStats->population}}
                                     @endif
@@ -279,7 +279,7 @@
                                 <i class="fa fa-map"></i>
                             </span>
                             <h3 class="mb-3 text-white fwSemiBold textCount"><span
-                                    class="">{{$homeStats->land_coverage}}</span><small>Sq Km</small>
+                                    class="">{{$homeStats->land_coverage}}</span><small> (Sq Km)</small>
                             </h3>
                             <h4 class="mb-0 subtitle font-weight-normal">Coverrage
                             </h4>
