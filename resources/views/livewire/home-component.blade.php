@@ -354,7 +354,7 @@
                                                     {{date('h:iA',strtotime($item->start_date_and_time))}} -
                                                     {{date('h:iA',strtotime($item->end_date_and_time))}}
                                                 </li>
-                                                <li>
+                                                <li style="text-transform: capitalize">
                                                     <i class="fa fa-map-marker"></i>
                                                     {{$item->location}}
                                                 </li>
