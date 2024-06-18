@@ -50,7 +50,7 @@
             </header>
             <div class="pt-8 row justify-content-center pt-lg-11 pt-xl-14">
                 @foreach ($events as $item)
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-3">
                     <article class="mb-6 bg-white shadow ueEveColumn position-relative">
                         <div class="imgHolder position-relative">
                             <a href="{{ route('event.details') }}">
