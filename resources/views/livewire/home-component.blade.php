@@ -58,6 +58,7 @@
     @endsection
     <div class="introBlock ibSlider">
         @if ($sliders->count()>0)
+        @foreach ($collection as $item)
         <div>
             <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
                 <div class="alignHolder d-flex align-items-center w-100">
@@ -81,35 +82,10 @@
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url({{ @asset('assets/images/img01.jpg') }});"></span>
+                    style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }});"></span>
             </article>
         </div>
-        <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
-                <div class="alignHolder d-flex align-items-center w-100">
-                    <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
-                        <div class="container position-relative">
-                            <div class="row">
-                                <div class="col-12 col-md-9 col-xl-7 fzMedium" style="top: 60px">
-                                    {{-- <h1 class="mb-4 text-white h1Large">Governor's Inspection at Busia County
-                                        Referral
-                                        Hospital</h1> --}}
-                                    {{-- <p>A transformative and progressive County for sustainable and equitable
-                                        development.</p> --}}
-                                    <a href="javascript:void(0);"
-                                        class="p-0 mt-6 border-0 btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative"
-                                        data-hover="Swearing in">
-                                        <span class="d-block btnText">Swearing in</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url({{ @asset('assets/images/img01.jpg') }});"></span>
-            </article>
-        </div>
+        @endforeach
         @else
         <div>
             <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
