@@ -68,7 +68,7 @@
                                 <div
                                     class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 fzMedium px-xlwd-10">
                                     {{-- <h1 class="text-white mb-4 h1Large">{{$item->heading}}</h1> --}}
-                                    <p style="margin-top: 120px;">{{$item->heading}}</p>
+                                    <p>{{$item->heading}}</p>
                                     @if ($item->button_text)
                                     <a href="{{$item->button_url}}"
                                         class="btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative border-0 p-0 mt-6"
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }});"></span>
+                    style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }}); width:1080; height:1920;"></span>
             </article>
         </div>
         @endforeach
