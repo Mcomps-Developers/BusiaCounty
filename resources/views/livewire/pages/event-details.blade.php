@@ -30,7 +30,7 @@
                             <h2 class="mb-9">{{$event->title}}</h2>
                             <div class="imgHolder">
                                 <img src="https://busia.mcomps.africa/assets/img/events/{{ $event->image }}"
-                                    class="img-fluid w-100" style="transform: scale(0.9)">
+                                    class="img-fluid w-100">
                             </div>
                             <address class="mb-0 dtlhDress fontAlter">
                                 <div class="row no-gutters">
