@@ -56,28 +56,24 @@
     @section('title')
     The County Government of Busia
     @endsection
+
     <div class="introBlock ibSlider">
-        @if ($sliders->count()>0)
         @foreach ($sliders as $item)
         <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="height: relative; width:100%;">
+            <article class="d-flex w-100 position-relative ibColumn text-white text-center overflow-hidden">
                 <div class="alignHolder d-flex align-items-center w-100">
-                    <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
+                    <div class="align w-100 pt-20 pb-20 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
                             <div class="row">
-                                <div class="col-12 col-md-9 col-xl-7 fzMedium">
-                                    {{-- <h1 class="mb-4 text-white h1Large">Governor's Inspection at Busia County
-                                        Referral
-                                        Hospital</h1> --}}
-                                    {{-- <p>A transformative and progressive County for sustainable and equitable
-                                        development.</p> --}}
-                                    @if ($item->button_text)
+                                <div
+                                    class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 fzMedium px-xlwd-10">
+                                    <h1 class="text-white mb-4 h1Large">{{$item->heading}}</h1>
+                                    <p>{{$item->paragraph_text}}</p>
                                     <a href="{{$item->button_url}}"
-                                        class="p-0 mt-6 border-0 btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative"
-                                        data-hover="Swearing in">
+                                        class="btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative border-0 p-0 mt-6"
+                                        data-hover="Discover More">
                                         <span class="d-block btnText">{{$item->button_text}}</span>
                                     </a>
-                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -88,84 +84,6 @@
             </article>
         </div>
         @endforeach
-        @else
-        <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
-                <div class="alignHolder d-flex align-items-center w-100">
-                    <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
-                        <div class="container position-relative">
-                            <div class="row">
-                                <div class="col-12 col-md-9 col-xl-7 fzMedium" style="top: 60px">
-                                    {{-- <h1 class="mb-4 text-white h1Large">Swearing In of H.E Governor Dr Paul Otuoma
-                                    </h1> --}}
-                                    <p>A transformative and progressive County for sustainable and equitable
-                                        development.</p>
-                                    {{-- <a href="javascript:void(0);"
-                                        class="p-0 mt-6 border-0 btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative"
-                                        data-hover="Read More">
-                                        <span class="d-block btnText">Read More</span>
-                                    </a> --}}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://placehold.co/1920x1080);"></span>
-            </article>
-        </div>
-        <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
-                <div class="alignHolder d-flex align-items-center w-100">
-                    <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
-                        <div class="container position-relative">
-                            <div class="row">
-                                <div class="col-12 col-md-9 col-xl-7 fzMedium" style="top: 60px">
-                                    {{-- <h1 class="mb-4 text-white h1Large">Governor's Inspection at Busia County
-                                        Referral
-                                        Hospital</h1> --}}
-                                    {{-- <p>A transformative and progressive County for sustainable and equitable
-                                        development.</p> --}}
-                                    <a href="javascript:void(0);"
-                                        class="p-0 mt-6 border-0 btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative"
-                                        data-hover="Swearing in">
-                                        <span class="d-block btnText">Swearing in</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url({{ @asset('assets/images/img01.jpg') }});"></span>
-            </article>
-        </div>
-        <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
-                <div class="alignHolder d-flex align-items-center w-100">
-                    <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
-                        <div class="container position-relative">
-                            <div class="row">
-                                <div class="col-12 col-md-9 col-xl-7 fzMedium" style="top: 60px">
-                                    {{-- <h1 class="mb-4 text-white h1Large">Fully Equipped Health facilities</h1> --}}
-                                    <p>A transformative and progressive County for sustainable and equitable
-                                        development.
-                                    </p>
-                                    <a href="javascript:void(0);"
-                                        class="p-0 mt-6 border-0 btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative"
-                                        data-hover="Discover More">
-                                        <span class="d-block btnText">Discover More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://placehold.co/1920x1080);"></span>
-            </article>
-        </div>
-        @endif
 
     </div>
     <aside class="text-white featuresAsideBlock position-relative">
