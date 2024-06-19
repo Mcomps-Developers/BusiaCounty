@@ -212,23 +212,15 @@
         <div class="container">
             <div class="row">
                 <div class="pt-4 col-12 col-md-6">
-                    <h2 class="mb-6 lh44">Word from H.E the Governor</h2>
-                    <p>It is a great honour to welcome you to the Gateway to East and Central Africa, renowned for its
-                        optimal climatic
-                        conditions for agriculture and its hospitable citizens. My foremost commitment is to safeguard
-                        the autonomy of the great people of Busia County who elected me to office.</p>
-                    <p>In pursuit of a results-oriented approach, my focus is on ensuring fairness and justice for every
-                        citizen and my manifesto, derived from the collective aspirations of our community, are a
-                        guide to my vision for transformative governance.</p>
+                    <h2 class="mb-6 lh44">{{$note->title}}</h2>
+                    {!! $note->message !!}
                     <blockquote
                         class="py-1 pl-4 mt-6 meetQuote fontAlter text-lDark pl-lg-8 pr-md-12 pr-lg-20 pr-xl-28">
-                        <q class="mb-4 d-block">Let us all unite in our efforts to shape a future marked by inclusivity,
-                            equality, and prosperity for all residents while offering opportunities in Kenya and
-                            beyond.</q>
-                        <cite class="d-block fsNormal">H.E. Dr. Paul Otuoma, <span
-                                class="fontBase ctSubtitleText">Governor</span></cite>
+                        <q class="mb-4 d-block">{{$note->quoted_text}}</q>
+                        <cite class="d-block fsNormal">{{$note->name}}, <span
+                                class="fontBase ctSubtitleText">{{$note->designation}}</span></cite>
                     </blockquote>
-                    <a href="https://www.youtube.com/watch7eaa.html?v=_sI_Ps7JSEk"
+                    {{-- <a href="https://www.youtube.com/watch7eaa.html?v=_sI_Ps7JSEk"
                         class="mt-4 align-top btnPlayLink fontAlter position-relative d-inline-block mt-lg-7 lightbox"
                         data-fancybox="true">
                         <i
@@ -240,12 +232,18 @@
                                 <span class="d-block">Video Formart</span>
                             </em>
                         </div>
-                    </a>
+                    </a> --}}
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="mb-20 imgTwoImageHolder position-relative mt-7 mt-md-0 mb-md-0">
                         <span class="img img1 position-relative d-block">
-                            <img src="https://placehold.co/600x650" class="img-fluid" alt="image description">
+                            @if ()
+                            <img src="https:busia.mcomps.africa/assets/img/governors/{{$note->photo}}"
+                                class="img-fluid">
+                            @else
+                            <img src="https://placehold.co/600x650" class="img-fluid">
+                            @endif
+
                         </span>
 
                     </div>
