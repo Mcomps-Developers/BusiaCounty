@@ -60,7 +60,7 @@
         @if ($sliders->count()>0)
         @foreach ($sliders as $item)
         <div>
-            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="height: 100px; width:100%;">
+            <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn" style="height: relative; width:100%;">
                 <div class="alignHolder d-flex align-items-center w-100">
                     <div class="pt-20 pb-20 align w-100 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
