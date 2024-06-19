@@ -239,7 +239,7 @@
                         <span class="img img1 position-relative d-block">
                             @if ($note->photo)
                             <img src="https://busia.mcomps.africa/assets/img/governors/{{$note->photo}}"
-                                class="img-fluid" height="650" width="600">
+                                class="img-fluid" height="500" width="400">
                             @else
                             <img src="https://placehold.co/600x650" class="img-fluid">
                             @endif
