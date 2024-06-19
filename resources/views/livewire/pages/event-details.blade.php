@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="px-4 pt-6 pb-12 col-12 col-sm-4 px-md-7">
                                         <strong class="mb-2 d-block title fwSemiBold">Time</strong>
-                                        <span class="d-block">
+                                        <span class="d-block">php a
                                             <time datetime="{{date('Y-m-d',strtotime($event->start_date_and_time))}}">
                                                 {{date('h:iA',strtotime($event->start_date_and_time))}}
                                                 - {{date('h:iA',strtotime($event->end_date_and_time))}}</time>

@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Blog;
 use App\Models\Event;
 use App\Models\HomeStats;
+use App\Models\Slider;
 use App\Models\WelcomeNote;
 use Carbon\Carbon;
 use Livewire\Component;
@@ -17,6 +18,7 @@ class HomeComponent extends Component
         $recentEvents = Event::orderByDesc('created_at')->limit(2)->get();
         $homeStats = HomeStats::first();
         $note = WelcomeNote::first();
-        return view('livewire.home-component', ['recentBlogs' => $recentBlogs, 'recentEvents' => $recentEvents, 'homeStats' => $homeStats,'note'=>$note])->layout('layouts.base');
+        $sliders = Slider::where('status', 'active')->where('start_date', '<=', Carbon::now())->where('end_date', '>=', Carbon::now())->get();
+        return view('livewire.home-component', ['sliders' => $sliders, 'recentBlogs' => $recentBlogs, 'recentEvents' => $recentEvents, 'homeStats' => $homeStats, 'note' => $note])->layout('layouts.base');
     }
 }
