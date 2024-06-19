@@ -58,7 +58,7 @@
     @endsection
     <div class="introBlock ibSlider">
         @if ($sliders->count()>0)
-        @foreach ($collection as $item)
+        @foreach ($sliders as $item)
         <div>
             <article class="overflow-hidden text-white d-flex w-100 position-relative ibColumn">
                 <div class="alignHolder d-flex align-items-center w-100">
