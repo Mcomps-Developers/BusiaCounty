@@ -18,7 +18,7 @@ class HomeComponent extends Component
         $recentEvents = Event::orderByDesc('created_at')->limit(2)->get();
         $homeStats = HomeStats::first();
         $note = WelcomeNote::first();
-        $sliders = Slider::where('status', 'active')->where('start_date', '<=', Carbon::now())->where('end_date', '>=', Carbon::now())->get();
+        $sliders = Slider::where('status', 'active')->get();
         return view('livewire.home-component', ['sliders' => $sliders, 'recentBlogs' => $recentBlogs, 'recentEvents' => $recentEvents, 'homeStats' => $homeStats, 'note' => $note])->layout('layouts.base');
     }
 }
