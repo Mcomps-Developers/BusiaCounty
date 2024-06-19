@@ -238,7 +238,7 @@
                     <div class="mb-20 imgTwoImageHolder position-relative mt-7 mt-md-0 mb-md-0">
                         <span class="img img1 position-relative d-block">
                             @if ($note->photo)
-                            <img src="https:busia.mcomps.africa/assets/img/governors/{{$note->photo}}"
+                            <img src="https://busia.mcomps.africa/assets/img/governors/{{$note->photo}}"
                                 class="img-fluid">
                             @else
                             <img src="https://placehold.co/600x650" class="img-fluid">
