@@ -67,13 +67,16 @@
                             <div class="row">
                                 <div
                                     class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 fzMedium px-xlwd-10">
-                                    <h1 class="text-white mb-4 h1Large">{{$item->heading}}</h1>
-                                    <p>{{$item->paragraph_text}}</p>
+                                    {{-- <h1 class="text-white mb-4 h1Large">{{$item->heading}}</h1> --}}
+                                    <p>{{$item->heading}}</p>
+                                    @if ($item->button_text)
                                     <a href="{{$item->button_url}}"
                                         class="btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative border-0 p-0 mt-6"
                                         data-hover="Discover More">
                                         <span class="d-block btnText">{{$item->button_text}}</span>
                                     </a>
+                                    @endif
+
                                 </div>
                             </div>
                         </div>
