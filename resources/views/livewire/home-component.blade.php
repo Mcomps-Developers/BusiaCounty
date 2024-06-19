@@ -58,6 +58,26 @@
     @endsection
 
     <div class="introBlock ibSlider">
+        <style>
+            .ibBgImage {
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            .ibColumn {
+                height: 810px;
+                /* Fixed height for the aspect ratio */
+            }
+
+            @media (max-width: 1920px) {
+                .ibColumn {
+                    height: auto;
+                    /* Adjust the height on smaller screens */
+                }
+            }
+        </style>
         @foreach ($sliders as $item)
         <div>
             <article class="d-flex w-100 position-relative ibColumn text-white text-center overflow-hidden">
@@ -67,7 +87,6 @@
                             <div class="row">
                                 <div
                                     class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 fzMedium px-xlwd-10">
-                                    {{-- <h1 class="text-white mb-4 h1Large">{{$item->heading}}</h1> --}}
                                     <p>{{$item->heading}}</p>
                                     @if ($item->button_text)
                                     <a href="{{$item->button_url}}"
@@ -76,18 +95,16 @@
                                         <span class="d-block btnText">{{$item->button_text}}</span>
                                     </a>
                                     @endif
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }}); width:540; height:960;"></span>
+                    style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }});"></span>
             </article>
         </div>
         @endforeach
-
     </div>
     <aside class="text-white featuresAsideBlock position-relative">
         <div class="container">
