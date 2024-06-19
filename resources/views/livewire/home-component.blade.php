@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }});"></span>
+                    style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }}); height:1080; width:1920"></span>
             </article>
         </div>
         @endforeach
