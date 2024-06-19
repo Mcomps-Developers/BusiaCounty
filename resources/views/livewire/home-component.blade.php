@@ -56,28 +56,27 @@
     @section('title')
     The County Government of Busia
     @endsection
+    <style>
+        .ibBgImage {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
 
-    <div class="introBlock ibSlider">
-        <style>
-            .ibBgImage {
-                background-size: cover;
-                background-position: center;
-                width: 100%;
-                height: 100%;
-            }
+        .ibColumn {
+            height: 810px;
+            /* Fixed height for the aspect ratio */
+        }
 
+        @media (max-width: 1920px) {
             .ibColumn {
-                height: 810px;
-                /* Fixed height for the aspect ratio */
+                height: auto;
+                /* Adjust the height on smaller screens */
             }
-
-            @media (max-width: 1920px) {
-                .ibColumn {
-                    height: auto;
-                    /* Adjust the height on smaller screens */
-                }
-            }
-        </style>
+        }
+    </style>
+    <div class="introBlock ibSlider">
         @foreach ($sliders as $item)
         <div>
             <article class="d-flex w-100 position-relative ibColumn text-white text-center overflow-hidden">
