@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <span class="ibBgImage bgCover position-absolute"
-                    style="background-image: url(https://placehold.co/1920x1080);"></span>
+                    style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }});"></span>
             </article>
         </div>
         @endforeach
