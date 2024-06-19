@@ -68,7 +68,7 @@
                                 <div
                                     class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 fzMedium px-xlwd-10">
                                     {{-- <h1 class="text-white mb-4 h1Large">{{$item->heading}}</h1> --}}
-                                    <p>{{$item->heading}}</p>
+                                    <p style="margin-top: 120px;">{{$item->heading}}</p>
                                     @if ($item->button_text)
                                     <a href="{{$item->button_url}}"
                                         class="btn btnTheme font-weight-bold btnMinSm text-capitalize position-relative border-0 p-0 mt-6"
