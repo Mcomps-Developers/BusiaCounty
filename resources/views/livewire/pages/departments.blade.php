@@ -21,7 +21,7 @@
     <section class="pt-8 pb-4 exploreDepartmentsBlock pt-md-10 pb-md-7 pb-lg-10 pt-lg-14 pt-xl-20">
         <div class="container">
             <header class="mb-8 text-center headingHead mb-lg-13">
-                <h2 class="mb-2">Explore <br>Departments</h2>
+                <h2 class="mb-2">Explore Departments</h2>
                 <p>Get to know each department</p>
             </header>
             <div class="row justify-content-center">
