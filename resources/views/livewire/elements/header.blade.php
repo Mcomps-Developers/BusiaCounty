@@ -10,13 +10,13 @@
                             <li>
                                 <a href="javascript:void(0);">
                                     <i class="text-white fa fa-phone"></span></i>
-                                     +254xxxxxxxxx
+                                    +254xxxxxxxxx
                                 </a>
                             </li>
                             <li>
                                 <time datetime="2011-01-12">
                                     <i class="text-white fa fa-calendar"></span></i>
-                                     Mon - Fri 8.00 am - 5.00 pm
+                                    Mon - Fri 8.00 am - 5.00 pm
                                 </time>
                             </li>
                         </ul>
@@ -76,19 +76,41 @@
                                                     </ul>
                                                 </div>
                                             </li>
-                                            <li><a class="dropdown-item" href="{{route('about')}}">About Busia
-                                                    County</a></li>
-                                            <li><a class="dropdown-item" href="{{route('governors.note')}}">Governor's
-                                                    Note</a></li>
-                                            <li><a class="dropdown-item" href="{{route('executive')}}">The Executive</a>
+                                            <li class="dropdown-submenu">
+                                                <a href="javascript:void(0);"
+                                                    class="dropdown-item dropdown-toggle dropIcn" role="button"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">County Structure</a>
+                                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                                    <ul class="mb-0 list-unstyled hdDropdownList">
+                                                        <li><a class="dropdown-item" href="{{route('about')}}">About
+                                                                Busia
+                                                                County</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{route('governors.note')}}">The
+                                                                Governor</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{route('governors.note')}}">Deputy
+                                                                Governor</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{route('governors.note')}}">Office of
+                                                                The County Secreaty</a></li>
+                                                        <li><a class="dropdown-item" href="{{route('executive')}}">The
+                                                                Executive</a>
+                                                        </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{route('chief.officers')}}">Chief
+                                                                Officers</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{route('public.service')}}">Public
+                                                                Service</a></li>
+                                                        <li><a class="dropdown-item" target="_/blank"
+                                                                href="https://busiaassembly.go.ke/">County Assembly</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </li>
-                                            <li><a class="dropdown-item" href="{{route('chief.officers')}}">Chief
-                                                    Officers</a></li>
-                                            <li><a class="dropdown-item" href="{{route('public.service')}}">Public
-                                                    Service</a></li>
-                                            <li><a class="dropdown-item" target="_/blank"
-                                                    href="https://busiaassembly.go.ke/">County Assembly</a>
-                                            </li>
+
                                             <li><a class="dropdown-item"
                                                     href="{{route('subcounties')}}">Sub-Counties</a>
                                             </li>
@@ -131,8 +153,8 @@
                                         </ul>
                                     </div>
                                 </li>
-                                
-                                
+
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('contact')}}"
                                         onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Contact</a>
@@ -180,7 +202,7 @@
                                 aria-labelledby="hdLanguagedropdown">
                                 <a class="text-center dropdown-item active" href="javascript:void(0);">Eng</a>
                                 <a class="text-center dropdown-item" href="javascript:void(0);">Swa</a>
-                                
+
                             </div>
                         </div>
                         <a href="{{route('eservices')}}"

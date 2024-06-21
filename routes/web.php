@@ -63,7 +63,7 @@ Route::prefix('e-services')->group(function () {
 
 Route::prefix('/about')->group(function () {
     Route::get('/busia-county', AboutCounty::class)->name('about');
-    Route::get('/governors-note', GovernorNote::class)->name('governors.note');
+    Route::get('/the-governor', GovernorNote::class)->name('governors.note');
     Route::get('/county-executive', TheExecutive::class)->name('executive');
     Route::get('/chief-officers', ChiefOfficers::class)->name('chief.officers');
     Route::get('public-service', PublicServiceBoard::class)->name('public.service');
