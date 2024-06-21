@@ -28,7 +28,7 @@
                             <h2 class="fwSemiBold h2vii" style="text-transform: capitalize">Department of
                                 {{$department->title}}</h2>
                             <img class="alignHolder d-flex w-100 align-items-center"
-                                src="https://busia.mcomps.africa/assets/img/departments'/{{$department->cover_image}}">
+                                src="https://busia.mcomps.africa/assets/img/departments/{{$department->cover_image}}">
                         </header>
 
                         <div class="mb-6 dcsPatchWrap mb-lg-11">
