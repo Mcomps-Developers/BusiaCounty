@@ -79,7 +79,7 @@
             </header>
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
-                <div class="pl-xl-10 pt-7 pt-md-0" style="margin: 20px;">
+                <div class="pl-xl-10 pt-7 pt-md-0" style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px;">
                     {!! $Governor->about !!}
                 </div>
             </header>
