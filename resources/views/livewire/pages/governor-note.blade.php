@@ -71,15 +71,11 @@
                         <div class="col-12 col-md-7">
                             <div class="pl-xl-10 pt-7 pt-md-0">
                                 {!! $Governor->welcome_message !!}
-                                <span class="mt-4 signIcn d-block">
-                                    <img src="{{asset('assets/images/signature1.png')}}" class="img-fluid"
-                                        alt="signature">
-                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <i class="fa fa-map"></i>
+                <i class="fa fa-map"><span class="sr-only"></span></i>
             </header>
             {!! $Governor->about !!}
         </div>
