@@ -108,7 +108,7 @@
                                 <li>
                                     <a href="mailto:{{$deputyGovernor->email}}">
                                         <i class="mr-1 fas fa-envelope icn"><span class="sr-only">icon</span></i>
-                                        {{$deputyGovernor->email}}
+                                        {{$deputyGovernor->office_email}}
                                     </a>
                                 </li>
                                 <li>
