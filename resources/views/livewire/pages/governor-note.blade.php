@@ -38,11 +38,11 @@
                                 <dd>Born {{date('D d M, Y')}}</dd>
                                 <dt>Phone:</dt>
                                 <dd>
-                                    <a href="tel:+{{$Governor->phone}}">+{{$Governor->phone}}</a>
+                                    <a href="tel:+{{$Governor->office_phone}}">+{{$Governor->office_phone}}</a>
                                 </dd>
                                 <dt>Email:</dt>
                                 <dd>
-                                    <a href="mailto:{{$Governor->email}}">{{$Governor->email}}</a>
+                                    <a href="mailto:{{$Governor->office_email}}">{{$Governor->office_email}}</a>
                                 </dd>
                             </dl>
                             <ul class="flex-wrap mb-0 list-unstyled socialNetworks tmcbSocialNetworks d-flex mt-xl-6">
