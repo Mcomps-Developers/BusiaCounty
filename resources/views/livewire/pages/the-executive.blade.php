@@ -29,44 +29,45 @@
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
-                            <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
-                                alt="image description">
+                            <img src="https://busia.mcomps.africa/assets/img/about/governor/{{$governor->photo}}"
+                                class="img-fluid d-block w-100" alt="image description">
                             <div class="mcssHolder">
-                                <ul
-                                    class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
+                                <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                     <li>
-                                        <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
+                                        <a href="{{$governor->twitter}}" class="mcssLink" title="Twitter"><i
                                                 class="vssIcn fab fa-twitter"></i></a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
+                                        <a href="{{$governor->facebook}}" class="mcssLink" title="Facebook"><i
                                                 class="vssIcn fab fa-facebook-square"></i></a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
+                                        <a href="{{$governor->linkedin}}" class="mcssLink" title="Linkedin"><i
                                                 class="vssIcn fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="{{$governor->instagram}}" class="mcssLink" title="Instagram"><i
+                                                class="vssIcn fab fa-instagram"></i></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                            <h3 class="mb-1 fwMedium h3Small">Name Here</h3>
-                            <h4 class="fwSemiBold fontBase text-secondary">Position Here
+                            <h3 class="mb-1 fwMedium h3Small">{{$governor->name}}</h3>
+                            <h4 class="fwSemiBold fontBase text-secondary">Governor
                             </h4>
                             <hr class="mx-0 mt-4 mb-3 mccSeprator">
                             <ul class="list-unstyled mccInfoList">
                                 <li>
-                                    <a href="mailto:example@domain.com">
-                                        <i class="mr-1 fas fa-envelope icn"><span
-                                                class="sr-only">icon</span></i>
-                                        example@domain.com
+                                    <a href="mailto:{{$governor->office_email}}">
+                                        <i class="mr-1 fas fa-envelope icn"><span class="sr-only">icon</span></i>
+                                        {{$governor->office_email}}
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="tel:+254xxxxxxxxx">
-                                        <i class="mr-1 fas fa-phone-alt icn"><span
-                                                class="sr-only">icon</span></i>
-                                        +254xxxxxxxxx
+                                    <a href="tel:+{{$governor->office_phone}}">
+                                        <i class="mr-1 fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
+                                        +{{$governor->office_phone}}
                                     </a>
                                 </li>
                             </ul>
@@ -76,43 +77,44 @@
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
-                            <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
-                                alt="image description">
+                            <img src="https://busia.mcomps.africa/assets/img/about/deputy-governor/{{$deputyGovernor->photo}}"
+                                class="img-fluid d-block w-100" alt="image description">
                             <div class="mcssHolder">
-                                <ul
-                                    class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
+                                <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                     <li>
-                                        <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
+                                        <a href="{{$deputyGovernor->twitter}}" class="mcssLink" title="Twitter"><i
                                                 class="vssIcn fab fa-twitter"></i></a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
+                                        <a href="{{$deputyGovernor->facebook}}" class="mcssLink" title="Facebook"><i
                                                 class="vssIcn fab fa-facebook-square"></i></a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
+                                        <a href="{{$deputyGovernor->linkedin}}" class="mcssLink" title="Linkedin"><i
                                                 class="vssIcn fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="{{$deputyGovernor->instagram}}" class="mcssLink" title="Instagram"><i
+                                                class="vssIcn fab fa-instagram"></i></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                            <h3 class="mb-1 fwMedium h3Small">Name: Here</h3>
-                            <h4 class="fwSemiBold fontBase text-secondary">Position : Here</h4>
+                            <h3 class="mb-1 fwMedium h3Small">{{$deputyGovernor->name}}</h3>
+                            <h4 class="fwSemiBold fontBase text-secondary">Deputy Governor</h4>
                             <hr class="mx-0 mt-4 mb-3 mccSeprator">
                             <ul class="list-unstyled mccInfoList">
                                 <li>
-                                    <a href="example@domain.com">
-                                        <i class="mr-1 fas fa-envelope icn"><span
-                                                class="sr-only">icon</span></i>
-                                        example@domain.com
+                                    <a href="mailto:{{$deputyGovernor->email}}">
+                                        <i class="mr-1 fas fa-envelope icn"><span class="sr-only">icon</span></i>
+                                        {{$deputyGovernor->email}}
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="tel:+254xxxxxxxxx">
-                                        <i class="mr-1 fas fa-phone-alt icn"><span
-                                                class="sr-only">icon</span></i>
-                                        +254xxxxxxxxx
+                                    <a href="tel:+{{$deputyGovernor->office_phone}}">
+                                        <i class="mr-1 fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
+                                        +{{$deputyGovernor->office_phone}}
                                     </a>
                                 </li>
                             </ul>
@@ -125,8 +127,7 @@
                             <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
                                 alt="image description">
                             <div class="mcssHolder">
-                                <ul
-                                    class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
+                                <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                     <li>
                                         <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
                                                 class="vssIcn fab fa-twitter"></i></a>
@@ -149,15 +150,13 @@
                             <ul class="list-unstyled mccInfoList">
                                 <li>
                                     <a href="example@domain.com">
-                                        <i class="mr-1 fas fa-envelope icn"><span
-                                                class="sr-only">icon</span></i>
+                                        <i class="mr-1 fas fa-envelope icn"><span class="sr-only">icon</span></i>
                                         example@domain.com
                                     </a>
                                 </li>
                                 <li>
                                     <a href="tel:+254xxxxxxxxx">
-                                        <i class="mr-1 fas fa-phone-alt icn"><span
-                                                class="sr-only">icon</span></i>
+                                        <i class="mr-1 fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
                                         +254xxxxxxxxx
                                     </a>
                                 </li>
@@ -171,8 +170,7 @@
                             <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
                                 alt="image description">
                             <div class="mcssHolder">
-                                <ul
-                                    class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
+                                <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                     <li>
                                         <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
                                                 class="vssIcn fab fa-twitter"></i></a>
@@ -202,7 +200,7 @@
                                 <li>
                                     <a href="tel:+254xxxxxxxxx">
                                         <i class="fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
-                                       +254xxxxxxxxx
+                                        +254xxxxxxxxx
                                     </a>
                                 </li>
                             </ul>
