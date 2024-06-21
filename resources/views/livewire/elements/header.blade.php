@@ -74,8 +74,8 @@
                                                         <li><a class="dropdown-item"
                                                                 href="{{route('deputy.governor')}}">Deputy
                                                                 Governor</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="{{route('governor')}}">Office of
+                                                        <li><a class="dropdown-item" href="{{route('governor')}}">Office
+                                                                of
                                                                 The County Secreaty</a></li>
                                                         <li><a class="dropdown-item" href="{{route('executive')}}">The
                                                                 Executive</a>
