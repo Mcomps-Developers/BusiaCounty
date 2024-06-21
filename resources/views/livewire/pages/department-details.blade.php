@@ -65,7 +65,7 @@
                     <aside class="pt-1 dscSidebar mr-xl-n5">
                         <nav class="px-6 py-5 mb-6 widget mb-lg-10 widgetDepartsNav widgetBgLight">
                             <h3 class="mb-4 fwSemiBold">
-                                <a href="javascript:void(0);" class="mr-1 align-middle btnDcsBack"><i
+                                <a href="{{route('departments')}}" class="mr-1 align-middle btnDcsBack"><i
                                         class="fas fa-chevron-left"><span class="sr-only">icon</span></i></a>
                                 All Departments
                             </h3>

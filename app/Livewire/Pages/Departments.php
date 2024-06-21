@@ -2,12 +2,14 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\Department;
 use Livewire\Component;
 
 class Departments extends Component
 {
     public function render()
     {
-        return view('livewire.pages.departments')->layout('layouts.base');
+        $departments = Department::orderBy('title')->get();
+        return view('livewire.pages.departments', ['departments' => $departments])->layout('layouts.base');
     }
 }
