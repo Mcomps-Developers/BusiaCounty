@@ -58,24 +58,7 @@
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
-                                            <li class="dropdown-submenu">
-                                                <a href="javascript:void(0);"
-                                                    class="dropdown-item dropdown-toggle dropIcn" role="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Municipalities</a>
-                                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
-                                                    <ul class="mb-0 list-unstyled hdDropdownList">
-                                                        <li><a class="dropdown-item"
-                                                                href="{{route('municipality')}}">Busia
-                                                                Municipality</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                                href="{{route('municipality')}}">Malaba
-                                                                Municipality</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
+
                                             <li class="dropdown-submenu">
                                                 <a href="javascript:void(0);"
                                                     class="dropdown-item dropdown-toggle dropIcn" role="button"
@@ -86,11 +69,10 @@
                                                         <li><a class="dropdown-item" href="{{route('about')}}">About
                                                                 Busia
                                                                 County</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="{{route('governors.note')}}">The
+                                                        <li><a class="dropdown-item" href="{{route('governor')}}">The
                                                                 Governor</a></li>
                                                         <li><a class="dropdown-item"
-                                                                href="{{route('governors.note')}}">Deputy
+                                                                href="{{route('deputy.governor')}}">Deputy
                                                                 Governor</a></li>
                                                         <li><a class="dropdown-item"
                                                                 href="{{route('governors.note')}}">Office of
@@ -104,6 +86,29 @@
                                                         <li><a class="dropdown-item"
                                                                 href="{{route('public.service')}}">Public
                                                                 Service</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{route('public.service')}}">County Revenue
+                                                                Board</a></li>
+                                                        <li class="dropdown-submenu">
+                                                            <a href="javascript:void(0);"
+                                                                class="dropdown-item dropdown-toggle dropIcn"
+                                                                role="button" data-toggle="dropdown"
+                                                                aria-haspopup="true"
+                                                                aria-expanded="false">Municipalities</a>
+                                                            <div
+                                                                class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                                                <ul class="mb-0 list-unstyled hdDropdownList">
+                                                                    <li><a class="dropdown-item"
+                                                                            href="{{route('municipality')}}">Busia
+                                                                            Municipality</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item"
+                                                                            href="{{route('municipality')}}">Malaba
+                                                                            Municipality</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
                                                         <li><a class="dropdown-item" target="_/blank"
                                                                 href="https://busiaassembly.go.ke/">County Assembly</a>
                                                         </li>

@@ -21,6 +21,7 @@ use App\Livewire\Pages\ChiefOfficers;
 use App\Livewire\Pages\Contact;
 use App\Livewire\Pages\DepartmentDetails;
 use App\Livewire\Pages\Departments;
+use App\Livewire\Pages\DeputyGovernor;
 use App\Livewire\Pages\Destination;
 use App\Livewire\Pages\Downloads;
 use App\Livewire\Pages\EServices;
@@ -63,7 +64,8 @@ Route::prefix('e-services')->group(function () {
 
 Route::prefix('/about')->group(function () {
     Route::get('/busia-county', AboutCounty::class)->name('about');
-    Route::get('/the-governor', GovernorNote::class)->name('governors.note');
+    Route::get('/the-governor', GovernorNote::class)->name('governor');
+    Route::get('/deputy-governor', DeputyGovernor::class)->name('deputy.governor');
     Route::get('/county-executive', TheExecutive::class)->name('executive');
     Route::get('/chief-officers', ChiefOfficers::class)->name('chief.officers');
     Route::get('public-service', PublicServiceBoard::class)->name('public.service');
