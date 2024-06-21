@@ -35,7 +35,7 @@
                                 <dt>Agenda:</dt>
                                 <dd>{{$Governor->main_manifesto}}</dd>
                                 <dt>Born:</dt>
-                                <dd>{{date('D d M, Y')}}</dd>
+                                <dd>{{date('D d M, Y',strtotime($Governor->date_of_birth))}}</dd>
                                 <dt>Phone:</dt>
                                 <dd>
                                     <a href="tel:+{{$Governor->office_phone}}">+{{$Governor->office_phone}}</a>
