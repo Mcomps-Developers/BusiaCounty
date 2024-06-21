@@ -80,7 +80,9 @@
             </header>
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
-                {!! $deputyGovernor->about !!}
+                <div class="pl-xl-10 pt-7 pt-md-0">
+                    {!! $deputyGovernor->about !!}
+                </div>
             </header>
         </div>
     </article>
