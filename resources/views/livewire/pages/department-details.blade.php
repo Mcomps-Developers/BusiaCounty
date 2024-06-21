@@ -1,6 +1,6 @@
 <main>
     @section('title')
-    Department Details
+    {{$department->title}}
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
@@ -12,7 +12,7 @@
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="{{route('departments')}}">Departments</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Department details page</li>
+                            <li class="breadcrumb-item active" aria-current="page">Department details</li>
                         </ol>
                     </nav>
                 </div>
@@ -25,54 +25,14 @@
                 <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
                     <div class="pl-xl-14">
                         <header class="fzMedium mb-9">
-                            <h2 class="fwSemiBold h2vii">Department details page</h2>
-                            <p>We help our clients to build their best possible economic We understand you’re saving for
-                                all different life events: retirement, a house, simply to build wealth, or all of the
-                                above. Your investment account should adjust to your life — not the other way around.
-                            </p>
+                            <h2 class="fwSemiBold h2vii" style="text-transform: capitalize">Department of
+                                {{$department->title}}</h2>
+                            <img class="alignHolder d-flex w-100 align-items-center"
+                                src="https://busia.mcomps.africa/assets/img/departments'/{{$department->cover_image}}">
                         </header>
-                        <div class="mb-3 overflow-hidden mb-lg-7">
-                            <div
-                                class="ml-auto mr-auto dscInnerSliderWrap float-sm-right mb-7 mb-sm-0 mt-sm-2 mr-sm-0 ml-sm-6">
-                                <div class="dcsInnSlider">
-                                    <div>
-                                        <div class="dcsisImageHolder">
-                                            <img src="https://placehold.co/436x356" class="img-fluid w-100"
-                                                alt="image description">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="dcsisImageHolder">
-                                            <img src="https://placehold.co/436x356" class="img-fluid w-100"
-                                                alt="image description">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>He was installed globally, an annual market growth of 22 percent. It is continuing its
-                                progress towards becoming a mainstream competitive salary and economy reports by mine.
-                                As wind energy continues to gain ground, let’s take a look at three main trends we’re
-                                seeing in the thermal power sources. the world to compete effectively with fossil fuels.
-                                Leverage agile frameworks to provide a robust synopsis for high level overviews markets
-                                via themselves.</p>
-                            <p>And natural gasindustry moving forward: and mature markets. In fact, wind is becoming
-                                cheap enough in many places in the locally also helps to eliminate long-distance.and
-                                around.</p>
-                        </div>
 
                         <div class="mb-6 dcsPatchWrap mb-lg-11">
-                            <h3 class="mb-4">Electrical Services With Safety In Mind</h3>
-                            <p>To help customers block out even more of the sun, consider offering window-tinting
-                                services. Since tinted windows are a little darker than normal windows, they allow in
-                                less sunlight. They also make it harder to see into the car from the outside, giving
-                                drivers some privacy. Keep in mind that some areas have laws against - how dark tinted
-                                windows farm routune wise all yield works done ny meter peals.</p>
-                            <ul class="list-unstyled coDefaultList text-lDark">
-                                <li>Use a past defeat as a motivator. Remind yourself you have nowhere to go except</li>
-                                <li>Give yourself the power of responsibility. </li>
-                                <li>Remind yourself the only thing stopping you is yourself.</li>
-                                <li>goal and remind yourself that intentions don’t count, only actions.</li>
-                            </ul>
+                            {!! {{$department->description}} !!}
                         </div>
                         <div class="mb-12 dcsPatchWrap">
                             <h3 class="mb-5 fwSemiBold">Download Resources</h3>
@@ -109,30 +69,12 @@
                                 All Departments
                             </h3>
                             <ul class="pl-0 mb-0 mb-3 list-unstyled mx-n2">
-                                <li>
-                                    <a href="javascript:void(0);">Business &amp; Administration</a>
+                                @foreach ($departments as $item)
+                                <li class="{{ request()->route('slug') === $item->slug ? 'active' : '' }}">
+                                    <a href="{{ route('department.details', ['slug' => $item->slug]) }}">{{ $item->title
+                                        }}</a>
                                 </li>
-                                <li>
-                                    <a href="javascript:void(0);">Finance and Economy</a>
-                                </li>
-                                <li class="active">
-                                    <a href="javascript:void(0);">Art and Culture</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Constution and Law</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Roads and Transport</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Housing and Land</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Park &amp; Recreation</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);">Agriculture and Food</a>
-                                </li>
+                                @endforeach
                             </ul>
                         </nav>
                         <section class="mb-6 widget mb-lg-10 widgetDocs">
@@ -352,7 +294,7 @@
                                         <li>
                                             <a href="tel:+254xxxxxxxxx">
                                                 <i class="fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
-                                               +254xxxxxxxxx
+                                                +254xxxxxxxxx
                                             </a>
                                         </li>
                                     </ul>
@@ -379,12 +321,15 @@
                                 <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span
+                                            class="sr-only">icon</span></i>
                                     6
                                 </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                <div
+                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <strong
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
                                         <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
@@ -399,12 +344,15 @@
                                 <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span
+                                            class="sr-only">icon</span></i>
                                     6
                                 </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                <div
+                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <strong
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
                                         <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
@@ -419,12 +367,15 @@
                                 <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span
+                                            class="sr-only">icon</span></i>
                                     6
                                 </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                <div
+                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <strong
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
                                         <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
@@ -439,12 +390,15 @@
                                 <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span
+                                            class="sr-only">icon</span></i>
                                     6
                                 </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                <div
+                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <strong
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
                                         <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
@@ -459,12 +413,15 @@
                                 <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span
+                                            class="sr-only">icon</span></i>
                                     6
                                 </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                <div
+                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <strong
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
                                         <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
@@ -479,12 +436,15 @@
                                 <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span
+                                            class="sr-only">icon</span></i>
                                     6
                                 </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                <div
+                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <strong
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
                                         <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
@@ -499,12 +459,15 @@
                                 <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span
+                                            class="sr-only">icon</span></i>
                                     6
                                 </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                <div
+                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <strong
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
                                         <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
@@ -519,12 +482,15 @@
                                 <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span
+                                            class="sr-only">icon</span></i>
                                     6
                                 </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                <div
+                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <strong
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
                                         <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
@@ -539,12 +505,15 @@
                                 <a href="https://placehold.co/403x300"
                                     class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                     data-fancybox="true" tabindex="-1">
-                                    <i class="fa fa-arrow-right " aria-hidden="true"><span class="sr-only">icon</span></i>
+                                    <i class="fa fa-arrow-right " aria-hidden="true"><span
+                                            class="sr-only">icon</span></i>
                                     6
                                 </a>
-                                <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                <div
+                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                     <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
+                                        <strong
+                                            class="mb-1 d-block font-weight-normal fontBase echCatTitle">Category</strong>
                                         <span class="d-block">Project Title</span>
                                     </h3>
                                     <a href="{{route('project.details')}}"><i
@@ -564,36 +533,34 @@
                 </div>
             </section>
             <hr class="mt-12 mb-7">
-                <aside class="text-center saShareAside d-flex justify-content-between align-items-center">
-                    <strong class="mb-2 d-block text-lDark fwSemiBold fontAlter title">Share Page</strong>
-                    <ul
-                        class="flex-wrap mb-0 ml-0 list-unstyled socialNetworks saSocialNetworks d-flex justify-content-center">
-                        <li>
-                            <a href="javascript:void(0);" class="facebook">
-                                <i class="fab fa-facebook-square" aria-hidden="true"><span
-                                        class="sr-only">facebook</span></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="twitter">
-                                <i class="fab fa-twitter" aria-hidden="true"><span
-                                        class="sr-only">twitter</span></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="pinterest">
-                                <i class="fab fa-pinterest" aria-hidden="true"><span
-                                        class="sr-only">pinterest</span></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="linkedin">
-                                <i class="fab fa-linkedin-in" aria-hidden="true"><span
-                                        class="sr-only">linkedin-in</span></i>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
+            <aside class="text-center saShareAside d-flex justify-content-between align-items-center">
+                <strong class="mb-2 d-block text-lDark fwSemiBold fontAlter title">Share Page</strong>
+                <ul
+                    class="flex-wrap mb-0 ml-0 list-unstyled socialNetworks saSocialNetworks d-flex justify-content-center">
+                    <li>
+                        <a href="javascript:void(0);" class="facebook">
+                            <i class="fab fa-facebook-square" aria-hidden="true"><span
+                                    class="sr-only">facebook</span></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"><span class="sr-only">twitter</span></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="pinterest">
+                            <i class="fab fa-pinterest" aria-hidden="true"><span class="sr-only">pinterest</span></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="linkedin">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"><span
+                                    class="sr-only">linkedin-in</span></i>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
         </div>
     </article>
 </main>

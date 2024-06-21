@@ -49,8 +49,11 @@ Route::get('/', HomeComponent::class);
 Route::get('/contact', Contact::class)->name('contact');
 Route::get('/projects', Projects::class)->name('projects');
 Route::get('/project/details', ProjectDetails::class)->name('project.details');
-Route::get('/departments', Departments::class)->name('departments');
-Route::get('/department/details', DepartmentDetails::class)->name('department.details');
+
+Route::prefix('/departments')->group(function () {
+    Route::get('/departments', Departments::class)->name('departments');
+    Route::get('/department/{slug}', DepartmentDetails::class)->name('department.details');
+});
 Route::get('/investors-guide', InvestorGuide::class)->name('investor');
 Route::get('/tourism/destination', Destination::class)->name('destination');
 Route::get('/career-center', Jobs::class)->name('jobs');

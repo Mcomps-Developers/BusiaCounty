@@ -126,17 +126,12 @@
                                         aria-expanded="false">Departments</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
-                                            <li><a class="dropdown-item" href="{{route('departments')}}">All
-                                                    Departments</a>
+                                            @foreach ($departments as $item)
+                                            <li><a class="dropdown-item"
+                                                    href="{{ route('department.details', ['slug' => $item->slug]) }}"
+                                                    style="text-transform:capitalize">{{$item->title}}</a>
                                             </li>
-                                            <li><a class="dropdown-item"
-                                                    href="{{route('department.details')}}">Labour</a></li>
-                                            <li><a class="dropdown-item"
-                                                    href="{{route('department.details')}}">Health</a></li>
-                                            <li><a class="dropdown-item"
-                                                    href="{{route('department.details')}}">Education</a></li>
-                                            <li><a class="dropdown-item"
-                                                    href="{{route('department.details')}}">Lands</a></li>
+                                            @endforeach
                                         </ul>
                                     </div>
                                 </li>

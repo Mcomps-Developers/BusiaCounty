@@ -6034,7 +6034,7 @@ hdFixerWrap /.stickyWrap-sSticky
 }
 @media (min-width: 576px) {
     .mccColumn {
-        max-width: none;
+        max-width: nonw;
     }
 }
 .mccColumn h4, .mccColumn .h4 {
