@@ -32,7 +32,7 @@
                         </header>
 
                         <div class="mb-6 dcsPatchWrap mb-lg-11">
-                            {!! {{$department->description}} !!}
+                            {!! $department->description !!}
                         </div>
                         <div class="mb-12 dcsPatchWrap">
                             <h3 class="mb-5 fwSemiBold">Download Resources</h3>
