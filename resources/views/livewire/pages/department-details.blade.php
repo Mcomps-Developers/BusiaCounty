@@ -27,9 +27,13 @@
                         <header class="fzMedium mb-9">
                             <h2 class="fwSemiBold h2vii" style="text-transform: capitalize">Department of
                                 {{$department->title}}</h2>
+
+                            @if ($department->cover_image)
                             <img class="alignHolder d-flex w-100 align-items-center"
                                 src="https://busia.mcomps.africa/assets/img/departments/{{$department->cover_image}}">
-
+                            @else
+                            <img src="https://placehold.co/403x220" class="img-fluid w-100">
+                            @endif
                         </header>
 
                         <div class="mb-6 dcsPatchWrap mb-lg-11">
