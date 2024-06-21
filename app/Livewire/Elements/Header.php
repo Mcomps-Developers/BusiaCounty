@@ -9,7 +9,7 @@ class Header extends Component
 {
     public function render()
     {
-        $departments = Department::orderBy('name')->get();
+        $departments = Department::orderBy('title')->get();
         return view('livewire.elements.header', ['departments' => $departments]);
     }
 }
