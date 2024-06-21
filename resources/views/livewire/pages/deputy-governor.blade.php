@@ -24,8 +24,7 @@
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
                 <img class="flex-shrink-0 mx-auto imgHolder bgCover mx-lg-0 d-block"
-                    src="https://busia.mcomps.africa/assets/img/about/deputy-governor/{{$deputyGovernor->photo}}"
-                    style="background-position: relative relative;" height="relative" width="relative"></img>
+                    src="https://busia.mcomps.africa/assets/img/about/deputy-governor/{{$deputyGovernor->photo}}" height="relative" width="relative"></img>
                 <div class="px-5 pt-6 pb-6 descrWrap flex-grow-1 px-xl-12 pt-xl-9 pb-xl-12">
                     <div class="row">
                         <div class="col-12 col-md-5">
@@ -80,7 +79,7 @@
             </header>
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
-                <div class="pl-xl-10 pt-7 pt-md-0" style="margin: 10px;">
+                <div class="pl-xl-10 pt-7 pt-md-0" style="margin: 15px;">
                     {!! $deputyGovernor->about !!}
                 </div>
             </header>
