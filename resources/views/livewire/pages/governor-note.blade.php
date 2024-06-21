@@ -34,8 +34,8 @@
                             <dl class="overflow-hidden tmcbInfosList">
                                 <dt>Agenda:</dt>
                                 <dd>{{$Governor->main_manifesto}}</dd>
-                                <dt>Age:</dt>
-                                <dd>Born {{date('D d M, Y')}}</dd>
+                                <dt>Born:</dt>
+                                <dd>{{date('D d M, Y')}}</dd>
                                 <dt>Phone:</dt>
                                 <dd>
                                     <a href="tel:+{{$Governor->office_phone}}">+{{$Governor->office_phone}}</a>
@@ -75,7 +75,6 @@
                         </div>
                     </div>
                 </div>
-                <i class="fa fa-map"><span class="sr-only"></span></i>
             </header>
             {!! $Governor->about !!}
         </div>
