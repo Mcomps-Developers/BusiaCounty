@@ -71,7 +71,7 @@
                             </ul>
                         </div>
                         <div class="col-12 col-md-7">
-                            <div class="pl-xl-10 pt-7 pt-md-0">
+                            <div class="pl-xl-10 pt-7 pt-md-0" style="margin: 20px;">
                                 {!! $deputyGovernor->welcome_message !!}
                             </div>
                         </div>
