@@ -20,7 +20,7 @@
                             <li>
                                 <a href="{{route('contact')}}">Contact</a>
                             </li>
-                            
+
                         </ul>
                     </nav>
                 </div>
@@ -96,7 +96,7 @@
                             <a href="{{ route('departments') }}">Departments</a>
                         </li>
                         <li>
-                            <a href="{{ route('governors.note') }}">Governorship</a>
+                            <a href="{{ route('governor') }}">Governorship</a>
                         </li>
                         <li>
                             <a href="{{ route('executive') }}">The Executive</a>
@@ -104,7 +104,7 @@
                         <li>
                             <a href="{{ route('public.service') }}">Public Service</a>
                         </li>
-                        
+
                     </ul>
                 </div>
                 <div class="mb-6 col-12 col-sm-4 col-md-3 col-xl-2 col-xlwd-3">
