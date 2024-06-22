@@ -126,8 +126,13 @@
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
+                                    @if ($department->cecm_photo)
                                     <img src="https://busia.mcomps.africa/assets/img/departments/cecm/{{$department->cecm_photo}}"
                                         class="img-fluid d-block w-100" alt="image description">
+                                    @else
+                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
+                                    @endif
+
                                     <div class="mcssHolder">
                                         <ul
                                             class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
@@ -148,7 +153,7 @@
                                 </div>
                                 <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
                                     <h3 class="mb-1 fwMedium h3Small">{{$department->cecm_name}}</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">CECM
+                                    <h4 class="fwSemiBold fontBase text-secondary">CECM, {{$department->title}}
                                     </h4>
                                     <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                     <ul class="list-unstyled mccInfoList">
@@ -177,8 +182,12 @@
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
+                                    @if ($department->chief_officer_photo)
                                     <img src="https://busia.mcomps.africa/assets/img/departments/chief_officer/{{$department->chief_officer_photo}}"
-                                        class="img-fluid d-block w-100" alt="image description">
+                                        class="img-fluid d-block w-100">
+                                    @else
+                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
+                                    @endif
                                     <div class="mcssHolder">
                                         <ul
                                             class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
@@ -199,7 +208,7 @@
                                 </div>
                                 <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
                                     <h3 class="mb-1 fwMedium h3Small">{{$department->chief_officer_name}}</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Chief Officer
+                                    <h4 class="fwSemiBold fontBase text-secondary">Chief Officer, {{$department->title}}
                                     </h4>
                                     <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                     <ul class="list-unstyled mccInfoList">
@@ -283,8 +292,6 @@
                         @endforeach
                     </div>
                 </div>
-
-
             </section>
             <section class="py-8 exploreDepartmentsBlock py-md-10 py-lg-14 py-xl-22">
                 <div class="container">
