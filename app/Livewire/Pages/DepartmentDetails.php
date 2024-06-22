@@ -13,7 +13,7 @@ class DepartmentDetails extends Component
     {
         $department = Department::where('slug', $this->slug)->first();
         $departments = Department::orderBy('title')->get();
-        $directors = Directorate::orderBy('title')->get();
+        $directors = Directorate::orderBy('title')->where('department_id', $department->id)->get();
         return view('livewire.pages.department-details', ['department' => $department, 'departments' => $departments, 'directors' => $directors])->layout('layouts.base');
     }
 }
