@@ -75,6 +75,12 @@
                 /* Adjust the height on smaller screens */
             }
         }
+
+        @media (max-width: 767px) {
+            .featuresAsideBlock {
+                display: none;
+            }
+        }
     </style>
     <div class="introBlock ibSlider">
         @foreach ($sliders as $item)
