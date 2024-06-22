@@ -185,6 +185,16 @@
             </div>
         </div>
     </aside>
+    <aside class="text-center text-white counterftAsideBlock position-relative d-flex bg-dark">
+        <div class="alignHolder d-flex align-items-center w-100 position-relative">
+            <div class="pb-5 align w-100 pt-9">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+        <span class="cfbBgWrap bgCover position-absolute h-100 w-100 inaccessible"
+            style="background-image: url({{ @asset('assets/images/bg01.png') }});"></span>
+    </aside>
     <article class="aboutMayorBlock pt-md-7 pt-xl-11 pb-7 pb-md-13 pb-lg-20 pb-xl-28">
         <div class="container">
             <div class="row">
