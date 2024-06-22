@@ -85,7 +85,7 @@
     <div class="introBlock ibSlider">
         @foreach ($sliders as $item)
         <div>
-            <article class="d-flex w-100 position-relative ibColumn text-white text-center overflow-hidden">
+            <article class="card d-flex w-100 position-relative ibColumn text-white text-center overflow-hidden">
                 <div class="alignHolder d-flex align-items-center w-100">
                     <div class="align w-100 pt-20 pb-20 pt-md-40 pb-md-30 px-md-17">
                         <div class="container position-relative">
