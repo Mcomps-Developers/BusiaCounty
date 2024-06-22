@@ -185,6 +185,32 @@
             </div>
         </div>
     </aside>
+    <div class="supportWidgetSection position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="spwWrap d-flex flex-column flex-md-row hasShadow rounded mt-n10 mt-lg-n15">
+                        <div class="spwCol d-flex w-100 text-white text-center align-items-center position-relative">
+                            <div class="spwInerWrap px-3 px-lg-5 py-6 py-sm-10 py-md-6 py-lgwd-8 w-100">
+                                <h2 class="h2 text-white mb-1 fwSemiBold">Vision</h2>
+                                <p class="mb-4">Today is the day to reach out and lend a helping hand</p>
+                            </div>
+                            <span class="spwIcn position-absolute"><img src="{{asset('assets/images/img198.png')}}"
+                                    class="img-fluid" alt="image description"></span>
+                        </div>
+                        <div class="spwCol d-flex w-100 text-white text-center align-items-center position-relative">
+                            <div class="spwInerWrap px-3 px-lg-5 py-6 py-sm-10 py-md-6 py-lgwd-8 w-100">
+                                <h2 class="h2 text-white mb-1 fwSemiBold">Mission</h2>
+                                <p class="mb-4">Become a volunteer. You’ll feel the benefits instantly</p>
+                            </div>
+                            <span class="spwIcn position-absolute"><img src="{{asset('assets/images/img199.png')}}"
+                                    class="img-fluid" alt="image description"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <article class="aboutMayorBlock pt-md-7 pt-xl-11 pb-7 pb-md-13 pb-lg-20 pb-xl-28">
         <div class="container">
             <div class="row">
