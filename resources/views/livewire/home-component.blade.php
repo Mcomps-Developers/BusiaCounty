@@ -193,7 +193,8 @@
                         <div class="spwCol d-flex w-100 text-white text-center align-items-center position-relative">
                             <div class="spwInerWrap px-3 px-lg-5 py-6 py-sm-10 py-md-6 py-lgwd-8 w-100">
                                 <h2 class="h2 text-white mb-1 fwSemiBold">Vision</h2>
-                                <p class="mb-4">Today is the day to reach out and lend a helping hand</p>
+                                <p class="mb-4">To be a prosperous County where residents enjoy high quality of life in
+                                    a sustainable environment.</p>
                             </div>
                             <span class="spwIcn position-absolute"><img src="{{asset('assets/images/img198.png')}}"
                                     class="img-fluid" alt="image description"></span>
@@ -201,7 +202,8 @@
                         <div class="spwCol d-flex w-100 text-white text-center align-items-center position-relative">
                             <div class="spwInerWrap px-3 px-lg-5 py-6 py-sm-10 py-md-6 py-lgwd-8 w-100">
                                 <h2 class="h2 text-white mb-1 fwSemiBold">Mission</h2>
-                                <p class="mb-4">Become a volunteer. You’ll feel the benefits instantly</p>
+                                <p class="mb-4">To foster equitable and sustainable economic development through
+                                    effective and efficient mobilization and utilization of available resources.</p>
                             </div>
                             <span class="spwIcn position-absolute"><img src="{{asset('assets/images/img199.png')}}"
                                     class="img-fluid" alt="image description"></span>
