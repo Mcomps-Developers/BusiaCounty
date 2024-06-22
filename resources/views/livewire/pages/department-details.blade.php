@@ -31,8 +31,6 @@
                             @if ($department->cover_image)
                             <img class="alignHolder d-flex w-100 align-items-center"
                                 src="https://busia.mcomps.africa/assets/img/departments/{{$department->cover_image}}">
-                            @else
-                            <img src="https://placehold.co/403x220" class="img-fluid w-100">
                             @endif
                         </header>
 
