@@ -55,23 +55,27 @@
                             </div>
                         </div>
                         <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                            <h3 class="mb-1 fwMedium h3Small">{{$item->chief_office_name}}</h3>
-                            <h4 class="fwSemiBold fontBase text-secondary">Chief Officer, {{$item->title}}
+                            <h3 class="mb-1 fwMedium h3Small">{{$item->chief_officer_name}}</h3>
+                            <h4 class="fwSemiBold fontBase text-secondary">{{$item->title}}
                             </h4>
                             <hr class="mx-0 mt-4 mb-3 mccSeprator">
                             <ul class="list-unstyled mccInfoList">
+                                @if ($item->officer_email)
                                 <li>
-                                    <a href="mailto:{{$item->office_email}}">
+                                    <a href="mailto:{{$item->officer_email}}">
                                         <i class="mr-1 fas fa-envelope icn"><span class="sr-only">icon</span></i>
-                                        {{$item->office_email}}
+                                        {{$item->officer_email}}
                                     </a>
                                 </li>
+                                @endif
+                                @if ($item->officer_phone)
                                 <li>
-                                    <a href="tel:+{{$item->office_phone}}">
+                                    <a href="tel:+{{$item->officer_phone}}">
                                         <i class="mr-1 fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
-                                        +{{$item->office_phone}}
+                                        +{{$item->officer_phone}}
                                     </a>
                                 </li>
+                                @endif
                             </ul>
                         </div>
                     </article>
