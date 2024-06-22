@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\Department;
 use App\Models\DeputyGovernor;
 use App\Models\Governor;
 use Livewire\Component;
@@ -12,6 +13,7 @@ class TheExecutive extends Component
     {
         $deputyGovernor = DeputyGovernor::first();
         $governor = Governor::first();
-        return view('livewire.pages.the-executive', ['deputyGovernor' => $deputyGovernor, 'governor' => $governor])->layout('layouts.base');
+        $departments = Department::orderBy('title')->get();
+        return view('livewire.pages.the-executive', ['deputyGovernor' => $deputyGovernor, 'governor' => $governor, 'departments' => $departments])->layout('layouts.base');
     }
 }

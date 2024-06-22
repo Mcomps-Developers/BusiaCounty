@@ -58,9 +58,6 @@
                                 </li>
                             </ul>
                         </div>
-
-
-
                     </div>
                 </div>
                 <div class="mb-6 col-12 col-lg-4 col-xl-3 order-lg-1">

@@ -121,10 +121,16 @@
                         </div>
                     </article>
                 </div>
+                @foreach ($departments as $item)
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
+                            @if ($item->cecm_photo)
+                            <img src="https://busia.mcomps.africa/assets/img/departments/cecm/{{$item->cecm_photo}}"
+                                class="img-fluid d-block w-100" alt="image description">
+                            @else
                             <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
+                            @endif
                             <div class="mcssHolder">
                                 <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                     <li>
@@ -143,68 +149,32 @@
                             </div>
                         </div>
                         <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                            <h3 class="mb-1 fwMedium h3Small">Name : Here</h3>
-                            <h4 class="fwSemiBold fontBase text-secondary">Position : Here</h4>
+                            <h3 class="mb-1 fwMedium h3Small">{{$item->cecm_name}}</h3>
+                            <h4 class="fwSemiBold fontBase text-secondary">CECM {{$item->title}}
+                            </h4>
                             <hr class="mx-0 mt-4 mb-3 mccSeprator">
                             <ul class="list-unstyled mccInfoList">
+                                @if ($item->cecm_department_email)
                                 <li>
-                                    <a href="example@domain.com">
+                                    <a href="mailto:{{$item->cecm_department_email}}">
                                         <i class="mr-1 fas fa-envelope icn"><span class="sr-only">icon</span></i>
-                                        example@domain.com
+                                        {{$item->cecm_department_email}}
                                     </a>
                                 </li>
+                                @endif
+                                @if ($item->cecm_department_phone)
                                 <li>
-                                    <a href="tel:+254xxxxxxxxx">
+                                    <a href="tel:+{{$item->cecm_department_phone}}">
                                         <i class="mr-1 fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
-                                        +254xxxxxxxxx
+                                        +{{$item->cecm_department_phone}}
                                     </a>
                                 </li>
+                                @endif
                             </ul>
                         </div>
                     </article>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                    <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
-                        <div class="imgHolder position-relative">
-                            <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
-                            <div class="mcssHolder">
-                                <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
-                                    <li>
-                                        <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
-                                                class="vssIcn fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
-                                                class="vssIcn fab fa-facebook-square"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
-                                                class="vssIcn fab fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                            <h3 class="mb-1 fwMedium h3Small">Name : Here</h3>
-                            <h4 class="fwSemiBold fontBase text-secondary">Position : Here</h4>
-                            <hr class="mx-0 mt-4 mb-3 mccSeprator">
-                            <ul class="list-unstyled mccInfoList">
-                                <li>
-                                    <a href="example@domain.com">
-                                        <i class="fas fa-envelope icn"><span class="sr-only">icon</span></i>
-                                        example@domain.com
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:+254xxxxxxxxx">
-                                        <i class="fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
-                                        +254xxxxxxxxx
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
+                @endforeach
 
             </div>
         </div>
