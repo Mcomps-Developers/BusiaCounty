@@ -185,7 +185,7 @@
             </div>
         </div>
     </aside>
-    <div class="supportWidgetSection position-relative">
+    <div class="supportWidgetSection position-relative" style="margin-top: 60px;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
