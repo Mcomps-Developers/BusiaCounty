@@ -58,18 +58,22 @@
                             </h4>
                             <hr class="mx-0 mt-4 mb-3 mccSeprator">
                             <ul class="list-unstyled mccInfoList">
+                                @if ($governor->email)
                                 <li>
-                                    <a href="mailto:{{$governor->office_email}}">
+                                    <a href="mailto:{{$governor->email}}">
                                         <i class="mr-1 fas fa-envelope icn"><span class="sr-only">icon</span></i>
                                         {{$governor->office_email}}
                                     </a>
                                 </li>
+                                @endif
+                                @if ($governor->office_phone)
                                 <li>
                                     <a href="tel:+{{$governor->office_phone}}">
                                         <i class="mr-1 fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
                                         +{{$governor->office_phone}}
                                     </a>
                                 </li>
+                                @endif
                             </ul>
                         </div>
                     </article>
@@ -105,18 +109,22 @@
                             <h4 class="fwSemiBold fontBase text-secondary">Deputy Governor</h4>
                             <hr class="mx-0 mt-4 mb-3 mccSeprator">
                             <ul class="list-unstyled mccInfoList">
+                                @if ($deputyGovernor->email)
                                 <li>
                                     <a href="mailto:{{$deputyGovernor->email}}">
                                         <i class="mr-1 fas fa-envelope icn"><span class="sr-only">icon</span></i>
                                         {{$deputyGovernor->office_email}}
                                     </a>
                                 </li>
+                                @endif
+                                @if ($deputyGovernor->office_phone)
                                 <li>
                                     <a href="tel:+{{$deputyGovernor->office_phone}}">
                                         <i class="mr-1 fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
                                         +{{$deputyGovernor->office_phone}}
                                     </a>
                                 </li>
+                                @endif
                             </ul>
                         </div>
                     </article>
