@@ -189,7 +189,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="spwWrap d-flex flex-column flex-md-row hasShadow rounded mt-n10 mt-lg-n15">
+                    <div class="spwWrap d-flex flex-column flex-md-row hasShadow rounded mt-n10 mt-lg-n15 bg-dark">
                         <div class="spwCol d-flex w-100 text-white text-center align-items-center position-relative">
                             <div class="spwInerWrap px-3 px-lg-5 py-6 py-sm-10 py-md-6 py-lgwd-8 w-100">
                                 <h2 class="h2 text-white mb-1 fwSemiBold">Vision</h2>
