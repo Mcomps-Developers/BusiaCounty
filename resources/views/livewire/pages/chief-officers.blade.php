@@ -30,7 +30,7 @@
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
-                            @if ($item->chief_office_photo)
+                            @if ($item->chief_officer_photo)
                             <img src="https://busia.mcomps.africa/assets/img/departments/chief_officer/{{$item->chief_officer_photo}}"
                                 class="img-fluid d-block w-100">
                             @else
