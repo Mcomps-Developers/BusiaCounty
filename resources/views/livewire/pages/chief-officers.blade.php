@@ -22,7 +22,7 @@
     <section class="pt-3 pb-6 meetCouncilBlock noOverlay position-relative pt-md-4 pt-lg-6 pt-xl-11 pb-lg-10">
         <div class="container">
             <header class="text-center headingHead cdTitle mb-7 mb-md-13">
-                <h2 class="mb-4 fwSemiBold">County Chief Officers Committee Members</h2>
+                <h2 class="mb-4 fwSemiBold">County Chief Officers</h2>
                 <p>These are the very able individuals who are the accounting officers of the various departments.</p>
             </header>
             <div class="row justify-content-center">
@@ -30,12 +30,12 @@
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
-                            @if ($item->chief_office_photo)
+                            {{-- @if ($item->chief_office_photo) --}}
                             <img src="https://busia.mcomps.africa/assets/img/departments/chief_officer/{{$item->chief_officer_photo}}"
                                 class="img-fluid d-block w-100">
-                            @else
+                            {{-- @else
                             <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
-                            @endif
+                            @endif --}}
 
                             <div class="mcssHolder">
                                 <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
