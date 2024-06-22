@@ -119,15 +119,15 @@
             <section class="pt-3 pb-6 meetCouncilBlock noOverlay position-relative pt-md-4 pt-lg-6 pt-xl-11 pb-lg-10">
                 <div class="container">
                     <header class="text-center headingHead cdTitle mb-7 mb-md-13">
-                        <h2 class="mb-4 fwSemiBold">Leadership Board</h2>
+                        <h2 class="mb-4 fwSemiBold">Administation</h2>
                         <p>Meet the department leadership team.</p>
                     </header>
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
-                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
-                                        alt="image description">
+                                    <img src="https://busia.mcomps.africa/assets/img/departments/cecm/{{$department->cecm_photo}}"
+                                        class="img-fluid d-block w-100" alt="image description">
                                     <div class="mcssHolder">
                                         <ul
                                             class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
@@ -147,25 +147,29 @@
                                     </div>
                                 </div>
                                 <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                                    <h3 class="mb-1 fwMedium h3Small">Name Here</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Position Here
+                                    <h3 class="mb-1 fwMedium h3Small">{{$department->cecm_name}}</h3>
+                                    <h4 class="fwSemiBold fontBase text-secondary">CECM
                                     </h4>
                                     <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                     <ul class="list-unstyled mccInfoList">
+                                        @if ($department->cecm_department_email)
                                         <li>
-                                            <a href="mailto:example@domain.com">
+                                            <a href="mailto:{{$department->cecm_department_email}}">
                                                 <i class="mr-1 fas fa-envelope icn"><span
                                                         class="sr-only">icon</span></i>
-                                                example@domain.com
+                                                {{$department->cecm_department_email}}
                                             </a>
                                         </li>
+                                        @endif
+                                        @if ($department->cecm_department_phone)
                                         <li>
-                                            <a href="tel:+254xxxxxxxxx">
+                                            <a href="tel:+{{$department->cecm_department_phone}}">
                                                 <i class="mr-1 fas fa-phone-alt icn"><span
                                                         class="sr-only">icon</span></i>
-                                                +254xxxxxxxxx
+                                                +{{$department->cecm_department_phone}}
                                             </a>
                                         </li>
+                                        @endif
                                     </ul>
                                 </div>
                             </article>
@@ -173,8 +177,8 @@
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
-                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
-                                        alt="image description">
+                                    <img src="https://busia.mcomps.africa/assets/img/departments/chief_officer/{{$department->chief_officer_photo}}"
+                                        class="img-fluid d-block w-100" alt="image description">
                                     <div class="mcssHolder">
                                         <ul
                                             class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
@@ -194,33 +198,43 @@
                                     </div>
                                 </div>
                                 <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                                    <h3 class="mb-1 fwMedium h3Small">Name: Here</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Position : Here</h4>
+                                    <h3 class="mb-1 fwMedium h3Small">{{$department->chief_officer_name}}</h3>
+                                    <h4 class="fwSemiBold fontBase text-secondary">Chief Officer
+                                    </h4>
                                     <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                     <ul class="list-unstyled mccInfoList">
+                                        @if ($department->officer_email)
                                         <li>
-                                            <a href="example@domain.com">
+                                            <a href="mailto:{{$department->officer_email}}">
                                                 <i class="mr-1 fas fa-envelope icn"><span
                                                         class="sr-only">icon</span></i>
-                                                example@domain.com
+                                                {{$department->officer_email}}
                                             </a>
                                         </li>
+                                        @endif
+                                        @if ($department->officer_phone)
                                         <li>
-                                            <a href="tel:+254xxxxxxxxx">
+                                            <a href="tel:+{{$department->officer_phone}}">
                                                 <i class="mr-1 fas fa-phone-alt icn"><span
                                                         class="sr-only">icon</span></i>
-                                                +254xxxxxxxxx
+                                                +{{$department->officer_phone}}
                                             </a>
                                         </li>
+                                        @endif
                                     </ul>
                                 </div>
                             </article>
                         </div>
+                        @foreach ($directors as $item)
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
-                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
-                                        alt="image description">
+                                    @if ($item->leader_photo)
+                                    <img src="https://busia.mcomps.africa/assets/img/directors/{{$item->leader_photo}}"
+                                        class="img-fluid d-block w-100">
+                                    @else
+                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
+                                    @endif
                                     <div class="mcssHolder">
                                         <ul
                                             class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
@@ -240,73 +254,33 @@
                                     </div>
                                 </div>
                                 <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                                    <h3 class="mb-1 fwMedium h3Small">Name : Here</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Position : Here</h4>
+                                    <h3 class="mb-1 fwMedium h3Small">{{$item->leader_name}}</h3>
+                                    <h4 class="fwSemiBold fontBase text-secondary">Director {{$item->title}}</h4>
                                     <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                     <ul class="list-unstyled mccInfoList">
+                                        @if ($item->office_email)
                                         <li>
-                                            <a href="example@domain.com">
+                                            <a href="mailto:{{$item->office_email}}">
                                                 <i class="mr-1 fas fa-envelope icn"><span
                                                         class="sr-only">icon</span></i>
-                                                example@domain.com
+                                                {{$item->office_email}}
                                             </a>
                                         </li>
+                                        @endif
+                                        @if ($item->office_phone)
                                         <li>
-                                            <a href="tel:+254xxxxxxxxx">
+                                            <a href="tel:+{{$item->office_phone}}">
                                                 <i class="mr-1 fas fa-phone-alt icn"><span
                                                         class="sr-only">icon</span></i>
-                                                +254xxxxxxxxx
+                                                +{{$item->office_phone}}
                                             </a>
                                         </li>
+                                        @endif
                                     </ul>
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
-                                <div class="imgHolder position-relative">
-                                    <img src="https://placehold.co/295x295" class="img-fluid d-block w-100"
-                                        alt="image description">
-                                    <div class="mcssHolder">
-                                        <ul
-                                            class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
-                                                        class="vssIcn fab fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
-                                                        class="vssIcn fab fa-facebook-square"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
-                                                        class="vssIcn fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                                    <h3 class="mb-1 fwMedium h3Small">Name : Here</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Position : Here</h4>
-                                    <hr class="mx-0 mt-4 mb-3 mccSeprator">
-                                    <ul class="list-unstyled mccInfoList">
-                                        <li>
-                                            <a href="example@domain.com">
-                                                <i class="fas fa-envelope icn"><span class="sr-only">icon</span></i>
-                                                example@domain.com
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="tel:+254xxxxxxxxx">
-                                                <i class="fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
-                                                +254xxxxxxxxx
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-
+                        @endforeach
                     </div>
                 </div>
 
