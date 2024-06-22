@@ -199,7 +199,7 @@
                             <span class="spwIcn position-absolute"><img src="{{asset('assets/images/img198.png')}}"
                                     class="img-fluid" alt="image description"></span>
                         </div>
-                        <div class="spwCol d-flex w-100 text-white text-center align-items-center position-relative">
+                        <div class="spwCol d-flex w-100 text-white text-center align-items-center position-relative bg-success">
                             <div class="spwInerWrap px-3 px-lg-5 py-6 py-sm-10 py-md-6 py-lgwd-8 w-100">
                                 <h2 class="h2 text-white mb-1 fwSemiBold">Mission</h2>
                                 <p class="mb-4">To foster equitable and sustainable economic development through
