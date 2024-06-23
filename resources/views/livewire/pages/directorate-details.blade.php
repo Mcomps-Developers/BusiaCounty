@@ -85,16 +85,16 @@
                                 @if ($directorate->about_rector)
                                 {!! $directorate->about_rector !!}
                                 @else
-                                <p>Erick Ojiambo holds a Master’s degree in Engineering from Moi University and a
-                                    Bachelor’s degree in Civil and Structural Engineering from the same university.
+                                <p>
+                                    The text below acts as a placeholder when the director profile has not been added.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+                                    libero. Sed cursus ante dapibus diam.
 
-                                    He is a member of the Engineering Board of Kenya and Institution of Engineers of
-                                    Kenya.
+                                    Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam
+                                    ultrices. Suspendisse in justo eu magna luctus suscipit.
 
-                                    Ojiambo has wide experience water sector in Eastern and Southern Africa including
-                                    the Government, NGO world (Care International, Aga Khan Foundation, and Sana
-                                    International; Served in Lesotho on Millennium Challenge Corporation Projects and
-                                    Kwale Water Sewerage Company.</p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
+                                    libero. Sed cursus ante dapibus diam.</p>
                                 @endif
                             </div>
                         </div>
