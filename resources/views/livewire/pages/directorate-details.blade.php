@@ -91,7 +91,7 @@
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
                 <div class="col-12 col-md-7">
-                    <div class="pl-xl-10 pt-7 pt-md-0 about-section">
+                    <div class="pl-xl-10 pt-7 pt-md-0 about-section" style="margin: 12px;">
                         {!! $directorate->about !!}
                     </div>
                 </div>
