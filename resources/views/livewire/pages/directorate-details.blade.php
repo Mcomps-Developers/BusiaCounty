@@ -81,6 +81,7 @@
                         </div>
                         <div class="col-12 col-md-7">
                             <div class="pl-xl-10 pt-7 pt-md-0 about-section">
+                                <h2 class="mb-1 fwMedium h3Small">Director Profile</h2>
                                 {!! $directorate->about_leader !!}
                             </div>
                         </div>
