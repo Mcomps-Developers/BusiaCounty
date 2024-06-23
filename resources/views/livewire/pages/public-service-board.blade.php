@@ -1,18 +1,18 @@
 <main>
     @section('title')
-    County Public Service
+    County Public Service Board
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="mb-2 text-white">Departments</h1>
+                    <h1 class="mb-2 text-white">CPSB</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
-                            <li class="breadcrumb-item"><a href="javascript:void(0);">Leadership</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">County Public Service</li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">About</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">County Public Service Board</li>
                         </ol>
                     </nav>
                 </div>
@@ -25,7 +25,7 @@
                 <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
                     <div class="pl-xl-14">
                         <header class="fzMedium mb-9">
-                            <h2 class="fwSemiBold h2vii">{{config('app.name')}} Public Service</h2>
+                            <h2 class="fwSemiBold h2vii">{{config('app.name')}} Public Service Board</h2>
                             <p>We help our clients to build their best possible economic We understand you’re saving for
                                 all different life events: retirement, a house, simply to build wealth, or all of the
                                 above. Your investment account should adjust to your life — not the other way around.
@@ -326,7 +326,7 @@
                                         <li>
                                             <a href="tel:+254xxxxxxxxx">
                                                 <i class="fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
-                                               +254xxxxxxxxx
+                                                +254xxxxxxxxx
                                             </a>
                                         </li>
                                     </ul>
