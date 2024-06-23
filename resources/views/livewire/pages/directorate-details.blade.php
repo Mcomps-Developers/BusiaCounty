@@ -82,14 +82,17 @@
                         <div class="col-12 col-md-7">
                             <div class="pl-xl-10 pt-7 pt-md-0">
                                 <h2 class="mb-1 fwMedium h3Small">Director Profile</h2>
+                                @if ($directorate->about_rector)
                                 {!! $directorate->about_rector !!}
+                                @else
+                                <p>Profile not added</p>
+                                @endif
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
-            <header
-                class="card d-flex col-12 bg-white shadow" style="margin: 12px">
+            <header class="card d-flex col-12 bg-white shadow" style="margin: 12px">
                 {!! $directorate->about !!}
             </header>
         </div>
