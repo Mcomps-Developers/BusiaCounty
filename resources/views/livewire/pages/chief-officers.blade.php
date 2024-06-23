@@ -55,7 +55,9 @@
                         </div>
                         <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
                             <h3 class="mb-1 fwMedium h3Small">{{$item->chief_officer_name}}</h3>
-                            <h4 class="fwSemiBold fontBase text-secondary">{{$item->title}}
+                            <h4 class="fwSemiBold fontBase text-secondary"><a
+                                    href="{{ route('department.details', ['slug' => $item->slug]) }}">
+                                    {{$item->title}}</a>
                             </h4>
                             <hr class="mx-0 mt-4 mb-3 mccSeprator">
                             <ul class="list-unstyled mccInfoList">
