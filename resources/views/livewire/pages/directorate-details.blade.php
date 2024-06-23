@@ -92,9 +92,7 @@
 
                                     Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam
                                     ultrices. Suspendisse in justo eu magna luctus suscipit.
-
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
-                                    libero. Sed cursus ante dapibus diam.</p>
+                                    </p>
                                 @endif
                             </div>
                         </div>
