@@ -82,6 +82,8 @@
                                                                 href="{{route('chief.officers')}}">Chief
                                                                 Officers</a></li>
                                                         <li><a class="dropdown-item"
+                                                                href="{{route('directors')}}">Directors</a></li>
+                                                        <li><a class="dropdown-item"
                                                                 href="{{route('public.service')}}">Public
                                                                 Service</a></li>
                                                         <li><a class="dropdown-item"
