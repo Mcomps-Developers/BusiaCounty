@@ -89,7 +89,7 @@
                 </div>
             </header>
             <header
-                class="card d-flex col-12 bg-white">
+                class="card d-flex col-12 bg-white shadow" style="margin: 12px">
                 {!! $directorate->about !!}
             </header>
         </div>
