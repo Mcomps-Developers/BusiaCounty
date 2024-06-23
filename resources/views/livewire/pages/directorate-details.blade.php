@@ -38,7 +38,12 @@
                             <hr class="mx-0 mt-2 mb-3 mccSeprator">
                             <dl class="overflow-hidden tmcbInfosList">
                                 <dt>Born:</dt>
+                                @if ($directorate->date_of_birth)
                                 <dd>{{date('D d M, Y',strtotime($directorate->date_of_birth))}}</dd>
+                                @else
+                                <dd>Not Added</dd>
+                                @endif
+
                                 <dt>Phone:</dt>
                                 <dd>
                                     @if ($directorate->office_phone)
