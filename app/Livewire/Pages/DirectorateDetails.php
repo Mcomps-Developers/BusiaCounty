@@ -11,6 +11,6 @@ class DirectorateDetails extends Component
     public function render()
     {
         $directorate = Directorate::findOrFail($this->dir_id)->first();
-        return view('livewire.pages.directorate-details', ['directorate' => $directorate]);
+        return view('livewire.pages.directorate-details', ['directorate' => $directorate])->layout('layouts.app');
     }
 }
