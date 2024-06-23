@@ -81,11 +81,16 @@
                         </div>
                         <div class="col-12 col-md-7">
                             <div class="pl-xl-10 pt-7 pt-md-0">
-                                {!! $directorate->about !!}
+                                <h2 class="mb-1 fwMedium h3Small">Director Profile</h2>
+                                {!! $directorate->about_rector !!}
                             </div>
                         </div>
                     </div>
                 </div>
+            </header>
+            <header
+                class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
+                {!! $directorate->about !!}
             </header>
         </div>
     </article>
