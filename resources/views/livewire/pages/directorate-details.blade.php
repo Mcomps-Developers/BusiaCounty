@@ -89,7 +89,7 @@
                 </div>
             </header>
             <header
-                class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
+                class="pt-4 overflow-hidden bg-white shadow d-lg-flex pt-lg-0 position-relative mb-12 mb-md-12 mb-lg-15">
                 {!! $directorate->about !!}
             </header>
         </div>
