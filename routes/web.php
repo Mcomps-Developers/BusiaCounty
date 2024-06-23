@@ -23,6 +23,7 @@ use App\Livewire\Pages\DepartmentDetails;
 use App\Livewire\Pages\Departments;
 use App\Livewire\Pages\DeputyGovernor;
 use App\Livewire\Pages\Destination;
+use App\Livewire\Pages\Directors;
 use App\Livewire\Pages\Downloads;
 use App\Livewire\Pages\EServices;
 use App\Livewire\Pages\EventDetails;
@@ -71,6 +72,7 @@ Route::prefix('/about')->group(function () {
     Route::get('/deputy-governor', DeputyGovernor::class)->name('deputy.governor');
     Route::get('/county-executive', TheExecutive::class)->name('executive');
     Route::get('/chief-officers', ChiefOfficers::class)->name('chief.officers');
+    Route::get('/directors', Directors::class)->name('directors');
     Route::get('public-service', PublicServiceBoard::class)->name('public.service');
     Route::get('/sub-counties', Subcounties::class)->name('subcounties');
     Route::get('/subcounty/details', SubcountyDetails::class)->name('subcounty.details');
