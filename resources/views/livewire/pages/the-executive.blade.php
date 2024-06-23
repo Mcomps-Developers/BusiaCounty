@@ -132,9 +132,9 @@
                     </article>
                 </div>
                 @foreach ($departments as $item)
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-block w-100">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
-                        <div class="imgHolder position-relative">
+                        <div class="img-fluid d-block w-100">
                             @if ($item->cecm_photo)
                             <img src="https://busia.mcomps.africa/assets/img/departments/cecm/{{$item->cecm_photo}}"
                                 class="img-fluid d-block w-100" alt="image description">
