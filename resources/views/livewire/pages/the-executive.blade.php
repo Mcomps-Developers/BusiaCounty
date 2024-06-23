@@ -145,7 +145,7 @@
                                 <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                     <li>
                                         <a href="{{ route('department.details', ['slug' => $item->slug]) }}"
-                                            class="mcssLink" title="Twitter"><i class="vssIcn fab fa-eye"></i></a>
+                                            class="mcssLink" title="Twitter"><i class="vssIcn fa fa-eye"></i></a>
                                     </li>
                                 </ul>
                             </div>
