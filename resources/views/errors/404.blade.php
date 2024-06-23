@@ -62,9 +62,11 @@ info@mcomps.co.ke--}}
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-9 col-lg-6 col-xlwd-4 text-center">
-                            <strong class="header-404 fontAlter d-flex align-items-center justify-content-center">4 <img
-                                    class="px-3" src="{{asset('assets/images/ico-stop.png')}}" alt="image description">
-                                4</strong>
+                            <strong class="header-404 fontAlter d-flex align-items-center justify-content-center">
+                                <h1>4</h1><img class="px-3" src="{{asset('assets/images/ico-stop.png')}}"
+                                    alt="image description">
+                                <h1>4</h1>
+                            </strong>
                             <h2>Ohh! Page Not Found</h2>
                             <p>It looks like nothing was found at this location. Click the button below to return home.
                             </p>
