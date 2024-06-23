@@ -135,14 +135,6 @@
                                                 <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
                                                         class="vssIcn fab fa-twitter"></i></a>
                                             </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
-                                                        class="vssIcn fab fa-facebook-square"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
-                                                        class="vssIcn fab fa-linkedin-in"></i></a>
-                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -243,16 +235,9 @@
                                         <ul
                                             class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                             <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
-                                                        class="vssIcn fab fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
-                                                        class="vssIcn fab fa-facebook-square"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
-                                                        class="vssIcn fab fa-linkedin-in"></i></a>
+                                                <a href="{{route('directorate.details',['dir_id'=>$item->id])}}"
+                                                    class="mcssLink" title="Details"><i
+                                                        class="vssIcn fa fa-eye"></i></a>
                                             </li>
                                         </ul>
                                     </div>
