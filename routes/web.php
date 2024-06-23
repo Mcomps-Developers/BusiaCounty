@@ -75,7 +75,7 @@ Route::prefix('/about')->group(function () {
     Route::get('/chief-officers', ChiefOfficers::class)->name('chief.officers');
     // Directors
     Route::get('/directors', Directors::class)->name('directors');
-    Route::get('/directorate/page-id2123{dir_id}8723', DirectorateDetails::class)->name('directorate.details');
+    Route::get('/directorate/page/2123{dir_id}8723', DirectorateDetails::class)->name('directorate.details');
     Route::get('public-service', PublicServiceBoard::class)->name('public.service');
     Route::get('/sub-counties', Subcounties::class)->name('subcounties');
     Route::get('/subcounty/details', SubcountyDetails::class)->name('subcounty.details');

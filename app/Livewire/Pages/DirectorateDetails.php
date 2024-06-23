@@ -10,7 +10,7 @@ class DirectorateDetails extends Component
     public $dir_id;
     public function render()
     {
-        $directorate = Directorate::findOrFail($this->dir_id)->first();
+        $directorate = Directorate::findOrFail($this->dir_id);
         return view('livewire.pages.directorate-details', ['directorate' => $directorate])->layout('layouts.base');
     }
 }
