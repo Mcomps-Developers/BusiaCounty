@@ -21,25 +21,14 @@
     </header>
     <article class="tmContentBlock pt-7 pb-7 pt-md-10 pb-md-10 pt-lg-16 pb-lg-16 pt-xl-22 pb-xl-22">
         <div class="container">
-            <style>
-                .header-image {
-                    max-height: 600px;
-                    float: left;
-                    margin-right: 20px;
-                }
-
-                .about-section {
-                    overflow: hidden;
-                }
-            </style>
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
                 @if ($directorate->leader_photo)
                 <img src="https://busia.mcomps.africa/assets/img/directors/{{$directorate->leader_photo}}"
-                    class="img-fluid d-block w-100 header-image" style="max-height: 600px;">
+                    class="img-fluid d-block w-100 header-image" style="max-height: 500px;">
                 @else
                 <img src="https://placehold.co/295x295" class="img-fluid d-block w-100 header-image"
-                    style="max-height: 600px;">
+                    style="max-height: 500px;">
                 @endif
                 <div class="px-5 pt-6 pb-6 descrWrap flex-grow-1 px-xl-12 pt-xl-9 pb-xl-12">
                     <div class="row">
