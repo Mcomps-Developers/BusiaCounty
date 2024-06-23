@@ -87,9 +87,11 @@
                                 @else
                                 <p>
                                     The text below acts as a placeholder when the director profile has not been added.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent
-                                    libero. Sed cursus ante dapibus diam.
-                                    </p>
+                                    <br>
+                                    The text below acts as a placeholder when the director profile has not been added.
+                                    <br>
+                                    The text below acts as a placeholder when the director profile has not been added.
+                                </p>
                                 @endif
                             </div>
                         </div>
