@@ -131,10 +131,37 @@
                         </div>
                     </article>
                 </div>
+                <style>
+                    .mccColumn {
+                        width: 100%;
+                        margin: 0 auto;
+                        padding: 0 15px;
+                    }
+
+                    .imgHolder img {
+                        max-height: 300px;
+                        /* Adjust this value as needed */
+                        object-fit: cover;
+                    }
+
+                    .mcCaptionWrap {
+                        padding: 15px;
+                    }
+
+                    @media (max-width: 576px) {
+                        .mccColumn {
+                            padding: 0;
+                        }
+
+                        .imgHolder img {
+                            max-height: none;
+                        }
+                    }
+                </style>
                 @foreach ($departments as $item)
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3 d-block w-100">
+                <div class="col-12 col-sm-12 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
-                        <div class="img-fluid d-block w-100">
+                        <div class="imgHolder position-relative">
                             @if ($item->cecm_photo)
                             <img src="https://busia.mcomps.africa/assets/img/departments/cecm/{{$item->cecm_photo}}"
                                 class="img-fluid d-block w-100" alt="image description">
