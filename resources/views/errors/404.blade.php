@@ -13,7 +13,7 @@ info@mcomps.co.ke--}}
     <meta name="keywords" content="busia, busia county, county, county government, " />
     <meta name="author" content="Mcomps Limited! - Software Development Company in Kenya" />
     <!-- set the page title -->
-    <title>@yield('title')</title>
+    <title>Page Not Found</title>
     <link href="{{asset('favicon.ico')}}" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <!-- inlcude google nunito sans font cdn link -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
