@@ -13,7 +13,7 @@ info@mcomps.co.ke--}}
     <meta name="keywords" content="busia, busia county, county, county government, " />
     <meta name="author" content="Mcomps Limited! - Software Development Company in Kenya" />
     <!-- set the page title -->
-    <title>Page Not Found</title>
+    <title>Internal Server Error</title>
     <link href="{{asset('favicon.ico')}}" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <!-- inlcude google nunito sans font cdn link -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -46,12 +46,12 @@ info@mcomps.co.ke--}}
                 <div class="alignHolder d-flex w-100 align-items-center">
                     <div class="align w-100 position-relative">
                         <div class="container">
-                            <h1 class="text-white mb-2">Page Not Found</h1>
+                            <h1 class="text-white mb-2">Internal Server Error</h1>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb breadcrWhite rounded-0 border-0 p-0 fontAlter mb-0">
                                     <li class="breadcrumb-item"><a href="/">Home</a></li>
                                     <li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">404 Error</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Internal Server Error</li>
                                 </ol>
                             </nav>
                         </div>
@@ -63,12 +63,13 @@ info@mcomps.co.ke--}}
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-9 col-lg-6 col-xlwd-4 text-center">
                             <strong class="header-404 fontAlter d-flex align-items-center justify-content-center">
-                                <h1>4</h1><img class="px-3" src="{{asset('assets/images/ico-stop.png')}}"
+                                <h1>5</h1><img class="px-3" src="{{asset('assets/images/ico-stop.png')}}"
                                     alt="image description">
-                                <h1>4</h1>
+                                <h1>0</h1>
                             </strong>
-                            <h2>Ohh! Page Not Found</h2>
-                            <p>It looks like nothing was found at this location. Click the button below to return home.
+                            <h2>Internal Server Error</h2>
+                            <p>Internal server error occurred and our technical team has received it. Try going home and
+                                come back. Our technical team will have fixed it.
                             </p>
                             <a href="/" class="btn btn-dark fwSemiBold position-relative border-0 p-0 minWidthMedium"
                                 data-hover="Back to Home">
