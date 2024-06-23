@@ -41,11 +41,19 @@
                                 <dd>{{date('D d M, Y',strtotime($directorate->date_of_birth))}}</dd>
                                 <dt>Phone:</dt>
                                 <dd>
+                                    @if ($directorate->office_phone)
                                     <a href="tel:+{{$directorate->office_phone}}">+{{$directorate->office_phone}}</a>
+                                    @else
+                                    Not Added
+                                    @endif
                                 </dd>
                                 <dt>Email:</dt>
                                 <dd>
+                                    @if ($directorate->office_email)
                                     <a href="mailto:{{$directorate->office_email}}">{{$directorate->office_email}}</a>
+                                    @else
+                                    Not Added
+                                    @endif
                                 </dd>
                             </dl>
                             <ul class="flex-wrap mb-0 list-unstyled socialNetworks tmcbSocialNetworks d-flex mt-xl-6">
