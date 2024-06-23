@@ -87,9 +87,12 @@
                                 @else
                                 <p>
                                     The text below acts as a placeholder when the director profile has not been added.
-                                    <br>
                                     The text below acts as a placeholder when the director profile has not been added.
                                     <br>
+                                    The text below acts as a placeholder when the director profile has not been added.
+                                    The text below acts as a placeholder when the director profile has not been added.
+                                    <br>
+                                    The text below acts as a placeholder when the director profile has not been added.
                                     The text below acts as a placeholder when the director profile has not been added.
                                 </p>
                                 @endif
