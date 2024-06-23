@@ -25,16 +25,16 @@
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
                 @if ($directorate->leader_photo)
                 <img src="https://busia.mcomps.africa/assets/img/directors/{{$directorate->leader_photo}}"
-                    class="img-fluid d-block w-100 header-image" style="max-height: 500px;">
+                    class="img-fluid d-block w-100">
                 @else
-                <img src="https://placehold.co/295x295" class="img-fluid d-block w-100 header-image"
-                    style="max-height: 500px;">
+                <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
                 @endif
                 <div class="px-5 pt-6 pb-6 descrWrap flex-grow-1 px-xl-12 pt-xl-9 pb-xl-12">
                     <div class="row">
                         <div class="col-12 col-md-5">
                             <h2 class="mb-1 fwMedium h3Small">{{$directorate->leader_name}}</h2>
-                            <h3 class="text-secondary fwSemiBold fontBase">Director, {{$directorate->title}}</h3>
+                            <h3 class="text-secondary fwSemiBold fontBase">Director, {{$directorate->title}}
+                            </h3>
                             <hr class="mx-0 mt-2 mb-3 mccSeprator">
                             <dl class="overflow-hidden tmcbInfosList">
                                 <dt>Born:</dt>
@@ -80,19 +80,10 @@
                             </ul>
                         </div>
                         <div class="col-12 col-md-7">
-                            <div class="pl-xl-10 pt-7 pt-md-0 about-section">
-                                <h2 class="mb-1 fwMedium h3Small">Director Profile</h2>
-                                {!! $directorate->about_leader !!}
+                            <div class="pl-xl-10 pt-7 pt-md-0">
+                                {!! $directorate->about !!}
                             </div>
                         </div>
-                    </div>
-                </div>
-            </header>
-            <header
-                class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
-                <div class="col-12 col-md-7">
-                    <div class="pl-xl-10 pt-7 pt-md-0 about-section" style="margin: 12px;">
-                        {!! $directorate->about !!}
                     </div>
                 </div>
             </header>
