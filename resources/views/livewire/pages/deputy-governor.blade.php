@@ -23,7 +23,7 @@
         <div class="container">
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
-                <img class="flex-shrink-0 mx-auto imgHolder bgCover mx-lg-0 d-block"
+                <img class="img-fluid d-block w-100"
                     src="https://busia.mcomps.africa/assets/img/about/deputy-governor/{{$deputyGovernor->photo}}" height="relative" width="relative"></img>
                 <div class="px-5 pt-6 pb-6 descrWrap flex-grow-1 px-xl-12 pt-xl-9 pb-xl-12">
                     <div class="row">
