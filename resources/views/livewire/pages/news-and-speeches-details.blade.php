@@ -103,7 +103,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="commentFormWrap">
+                        {{-- <div class="commentFormWrap">
                             <h2 class="mb-6 fwSemiBold h2vii">Leave your Comments</h2>
                             <form action="#" class="commentForm">
                                 <div class="row mx-n2">
@@ -135,7 +135,7 @@
                                     <span class="d-block btnText">Post Comment</span>
                                 </button>
                             </form>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="mb-6 col-12 col-lg-4 col-xl-3">

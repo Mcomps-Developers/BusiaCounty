@@ -140,13 +140,23 @@
                                 </li>
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media</a>
+                                    <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                        <ul class="mb-0 list-unstyled hdDropdownList">
+                                            @foreach ($categories as $item)
+                                            <li><a class="dropdown-item"
+                                                    href="{{route('blogs.per.category',['slug'=>$item->slug])}}">{{$item->name}}</a>
+                                            </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown ddohOpener">
+                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
                                             <li><a class="dropdown-item" href="{{route('downloads')}}">Downloads</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="{{route('news.speeches')}}">News &amp;
-                                                    Speeches</a>
                                             </li>
                                             <li><a class="dropdown-item" href="{{route('events')}}">Events</a></li>
                                             <li><a class="dropdown-item" href="{{route('tenders')}}">Tenders</a></li>
