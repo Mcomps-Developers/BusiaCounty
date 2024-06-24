@@ -35,7 +35,6 @@
                                         class="sr-only">icon</span></i>
                                 <h3 class="fwMedium">{{$item->name}} &nbsp; &nbsp; &nbsp;<i
                                         class="fas fa-chevron-down"></i>
-                                    <i class="fas fa-chevron-down"></i>
                                 </h3>
                                 <div class="dcscCaptionWrap">
                                     <div class="description">
