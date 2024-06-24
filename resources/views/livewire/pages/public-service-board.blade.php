@@ -26,43 +26,8 @@
                     <div class="pl-xl-14">
                         <header class="fzMedium mb-9">
                             <h2 class="fwSemiBold h2vii">{{config('app.name')}} Public Service Board</h2>
-                            <p>We help our clients to build their best possible economic We understand you’re saving for
-                                all different life events: retirement, a house, simply to build wealth, or all of the
-                                above. Your investment account should adjust to your life — not the other way around.
-                            </p>
                         </header>
-                        <div class="mb-3 overflow-hidden mb-lg-7">
-                            <p>He was installed globally, an annual market growth of 22 percent. It is continuing its
-                                progress towards becoming a mainstream competitive salary and economy reports by mine.
-                                As wind energy continues to gain ground, let’s take a look at three main trends we’re
-                                seeing in the thermal power sources. the world to compete effectively with fossil fuels.
-                                Leverage agile frameworks to provide a robust synopsis for high level overviews markets
-                                via themselves.</p>
-                            <p>And natural gasindustry moving forward: and mature markets. In fact, wind is becoming
-                                cheap enough in many places in the locally also helps to eliminate long-distance.and
-                                around.</p>
-                        </div>
-                        <div class="mb-5 dcsPatchWrap">
-                            <h3 class="mb-4">Mandate</h3>
-                            <p>One of the most common additions people make to their cars in order to keep the heat out
-                                is a windshield visor. Cars become warm in the summer because direct sunlight enters in
-                                through the windows. This is why we park in the shade whenever we can. Since the largest
-                                windshield.</p>
-                        </div>
-                        <div class="mb-6 dcsPatchWrap mb-lg-11">
-                            <h3 class="mb-4">Strategic Direction</h3>
-                            <p>To help customers block out even more of the sun, consider offering window-tinting
-                                services. Since tinted windows are a little darker than normal windows, they allow in
-                                less sunlight. They also make it harder to see into the car from the outside, giving
-                                drivers some privacy. Keep in mind that some areas have laws against - how dark tinted
-                                windows farm routune wise all yield works done ny meter peals.</p>
-                            <ul class="list-unstyled coDefaultList text-lDark">
-                                <li>Use a past defeat as a motivator. Remind yourself you have nowhere to go except</li>
-                                <li>Give yourself the power of responsibility. </li>
-                                <li>Remind yourself the only thing stopping you is yourself.</li>
-                                <li>goal and remind yourself that intentions don’t count, only actions.</li>
-                            </ul>
-                        </div>
+                        {!! $content->content !!}
                     </div>
                 </div>
                 <div class="mb-6 col-12 col-lg-4 col-xl-3 order-lg-1">
