@@ -34,7 +34,7 @@
                                 <i class="mb-4 fa fa-map-marker d-flex align-items-center icnWrap"><span
                                         class="sr-only">icon</span></i>
                                 <h3 class="fwMedium">{{$item->name}}</h3>
-                                <div class="dcscCaptionWrap">
+                                <div class="dcscCaptionWrap" style="height: relative">
                                     {!! $item->short_description !!}
 
                                     <style>
