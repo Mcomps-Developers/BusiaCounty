@@ -33,7 +33,8 @@
                             <div class="px-3 py-2 align w-100 px-xl-6">
                                 <i class="mb-4 fa fa-map-marker d-flex align-items-center icnWrap"><span
                                         class="sr-only">icon</span></i>
-                                <h3 class="fwMedium">{{$item->name}}</h3>
+                                <h3 class="fwMedium">{{$item->name}} &nbsp; &nbsp; &nbsp; <i
+                                        class="fa fa-chevron-down"></i></h3>
                                 <div class="dcscCaptionWrap">
                                     <div class="description">
                                         {!! $item->short_description !!}
