@@ -68,6 +68,37 @@
                                             color: #fff;
                                             /* Change color as needed */
                                         }
+
+                                        .icon-circle {
+                                            display: inline-block;
+                                            width: 40px;
+                                            /* Adjust size as needed */
+                                            height: 40px;
+                                            /* Adjust size as needed */
+                                            border: 2px solid #000;
+                                            /* Change color as needed */
+                                            border-radius: 50%;
+                                            text-align: center;
+                                            line-height: 36px;
+                                            /* Adjust for vertical alignment */
+                                            position: relative;
+                                        }
+
+                                        .fa-chevron-down {
+                                            position: absolute;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                        }
+
+                                        .fa-chevron-down:first-of-type {
+                                            top: 8px;
+                                            /* Adjust spacing between chevrons */
+                                        }
+
+                                        .fa-chevron-down:last-of-type {
+                                            top: 18px;
+                                            /* Adjust spacing between chevrons */
+                                        }
                                     </style>
 
                                     @if ($item->mp_name)
@@ -85,7 +116,13 @@
                                         <span class="sr-only">icon</span>
                                     </i>
                                     @endif
+
+                                    <span class="icon-circle">
+                                        <i class="fas fa-chevron-down"></i>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </span>
                                 </div>
+
 
                             </div>
                         </div>
