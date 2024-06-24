@@ -36,13 +36,18 @@
                                 <h3 class="fwMedium">{{$item->name}}</h3>
                                 <div class="dcscCaptionWrap">
                                     {!! $item->short_description !!}
+                                    @if ($item->mp_name)
                                     <a class="readMoreLink fontAlter"><i class="fas fa-user btnRmlIcn"
                                             aria-hidden="true"><span class="sr-only">icon</span></i> {{
                                         $item->mp_name}}</a>
-                                    <a class="readMoreLink fontAlter"><i class="fas fa-external-link btnRmlIcn"
-                                            aria-hidden="true"><span class="sr-only">icon</span></i> Website</a>
+                                    @endif
+                                    @if ($item->website_url)
+                                    <a href="{{$item->website_url}}" class="readMoreLink fontAlter" target="_/blank"><i
+                                            class="fas fa-external-link btnRmlIcn" aria-hidden="true"><span
+                                                class="sr-only">icon</span></i> Website</a>
                                     <i class="ml-1 fa fa-map-marker icnWatermark position-absolute"><span
                                             class="sr-only">icon</span></i>
+                                    @endif
                                 </div>
                             </div>
                         </div>
