@@ -36,18 +36,44 @@
                                 <h3 class="fwMedium">{{$item->name}}</h3>
                                 <div class="dcscCaptionWrap">
                                     {!! $item->short_description !!}
+
+                                    <style>
+                                        .button-outline {
+                                            display: inline-block;
+                                            padding: 10px 20px;
+                                            margin: 5px;
+                                            border: 2px solid #000;
+                                            /* Change color as needed */
+                                            background-color: transparent;
+                                            color: #000;
+                                            /* Change color as needed */
+                                            text-decoration: none;
+                                            text-transform: uppercase;
+                                            font-weight: bold;
+                                            transition: background-color 0.3s, color 0.3s;
+                                        }
+
+                                        .button-outline:hover {
+                                            background-color: #000;
+                                            /* Change color as needed */
+                                            color: #fff;
+                                            /* Change color as needed */
+                                        }
+                                    </style>
                                     @if ($item->mp_name)
-                                    <a class="readMoreLink fontAlter" style="text-transform: uppercase"><i
-                                            class="fas fa-user btnRmlIcn" aria-hidden="true"><span
-                                                class="sr-only">icon</span></i><strong>MP:</strong> {{
-                                        $item->mp_name}}</a>
+                                    <a class="readMoreLink fontAlter button-outline" style="text-transform: uppercase">
+                                        <strong>MP:</strong> {{ $item->mp_name}}
+                                    </a>
                                     @endif
                                     @if ($item->website_url)
-                                    <a href="{{$item->website_url}}" class="readMoreLink fontAlter" target="_/blank"><i
-                                            class="fas fa-external-link btnRmlIcn" aria-hidden="true"><span
-                                                class="sr-only">icon</span></i> Website</a>
-                                    <i class="ml-1 fa fa-map-marker icnWatermark position-absolute"><span
-                                            class="sr-only">icon</span></i>
+                                    <a href="{{$item->website_url}}" class="readMoreLink fontAlter button-outline"
+                                        target="_/blank">
+                                        Website <i class="fas fa-external-link" aria-hidden="true"><span
+                                                class="sr-only">icon</span></i>
+                                    </a>
+                                    <i class="ml-1 fa fa-map-marker icnWatermark position-absolute">
+                                        <span class="sr-only">icon</span>
+                                    </i>
                                     @endif
                                 </div>
                             </div>
