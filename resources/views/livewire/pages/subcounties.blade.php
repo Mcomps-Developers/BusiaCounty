@@ -37,8 +37,9 @@
                                 <div class="dcscCaptionWrap">
                                     {!! $item->short_description !!}
                                     @if ($item->mp_name)
-                                    <a class="readMoreLink fontAlter"><i class="fas fa-user btnRmlIcn"
-                                            aria-hidden="true"><span class="sr-only">icon</span></i> {{
+                                    <a class="readMoreLink fontAlter" style="text-transform: uppercase"><i
+                                            class="fas fa-user btnRmlIcn" aria-hidden="true"><span
+                                                class="sr-only">icon</span></i><strong>MP:</strong> {{
                                         $item->mp_name}}</a>
                                     @endif
                                     @if ($item->website_url)
