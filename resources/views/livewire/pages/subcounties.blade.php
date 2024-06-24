@@ -41,7 +41,7 @@
 
                                     <style>
                                         .description {
-                                            max-height: 150px;
+                                            max-height: 300px;
                                             /* Adjust height as needed */
                                             overflow-y: auto;
                                         }
