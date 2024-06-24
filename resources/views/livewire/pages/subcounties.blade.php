@@ -38,6 +38,10 @@
                                 <div class="dcscCaptionWrap">
                                     <div class="description">
                                         {!! $item->short_description !!}
+                                        <span class="icon-circle">
+                                            <i class="fas fa-chevron-down"></i>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
                                     </div>
 
                                     <style>
@@ -116,11 +120,6 @@
                                         <span class="sr-only">icon</span>
                                     </i>
                                     @endif
-
-                                    <span class="icon-circle">
-                                        <i class="fas fa-chevron-down"></i>
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
                                 </div>
 
 
