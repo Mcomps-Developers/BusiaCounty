@@ -27,7 +27,7 @@
             </header>
             <div class="row justify-content-center">
                 @foreach ($subcounties as $item)
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-6">
                     <article class="mb-6 overflow-hidden bg-white dcsColumn d-flex position-relative">
                         <div class="alignHolder w-100 d-flex align-items-center">
                             <div class="px-3 py-2 align w-100 px-xl-6">
