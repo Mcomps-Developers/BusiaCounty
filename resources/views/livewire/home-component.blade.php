@@ -291,7 +291,7 @@
                             <span class="mb-4 icnWrap d-flex align-items-center justify-content-center w-100">
                                 <i class="fa fa-map-marker"></i>
                             </span>
-                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">7</span>
+                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">{{number_format($subcounties)}}</span>
                             </h3>
                             <h4 class="mb-0 subtitle font-weight-normal">Sub-Counties
                             </h4>
@@ -300,7 +300,7 @@
                             <span class="mb-4 icnWrap d-flex align-items-center justify-content-center w-100">
                                 <i class="fa fa-location"></i>
                             </span>
-                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">35
+                            <h3 class="mb-3 text-white fwSemiBold textCount"><span class="">{{number_format($wards)}}
                             </h3>
                             <h4 class="mb-0 subtitle font-weight-normal">Wards
                             </h4>

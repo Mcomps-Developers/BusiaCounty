@@ -6,6 +6,8 @@ use App\Models\Blog;
 use App\Models\Event;
 use App\Models\HomeStats;
 use App\Models\Slider;
+use App\Models\Subcounty;
+use App\Models\Ward;
 use App\Models\WelcomeNote;
 use Carbon\Carbon;
 use Livewire\Component;
@@ -19,6 +21,8 @@ class HomeComponent extends Component
         $homeStats = HomeStats::first();
         $note = WelcomeNote::first();
         $sliders = Slider::where('status', 'active')->get();
-        return view('livewire.home-component', ['sliders' => $sliders, 'recentBlogs' => $recentBlogs, 'recentEvents' => $recentEvents, 'homeStats' => $homeStats, 'note' => $note])->layout('layouts.base');
+        $subcounties = Subcounty::count();
+        $wards = Ward::count();
+        return view('livewire.home-component', ['wards' => $wards, 'subcounties' => $subcounties, 'sliders' => $sliders, 'recentBlogs' => $recentBlogs, 'recentEvents' => $recentEvents, 'homeStats' => $homeStats, 'note' => $note])->layout('layouts.base');
     }
 }
