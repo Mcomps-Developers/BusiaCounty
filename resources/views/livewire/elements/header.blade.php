@@ -84,10 +84,9 @@
                                                         <li><a class="dropdown-item"
                                                                 href="{{route('directors')}}">Directors</a></li>
                                                         <li><a class="dropdown-item"
-                                                                href="{{route('public.service')}}">Public
-                                                                Service</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="{{route('public.service')}}">County Revenue
+                                                                href="{{route('public.service')}}">County Public
+                                                                Service Board</a></li>
+                                                        <li><a class="dropdown-item" href="">County Revenue
                                                                 Board</a></li>
                                                         <li class="dropdown-submenu">
                                                             <a href="javascript:void(0);"
@@ -109,15 +108,16 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li><a class="dropdown-item" target="_/blank"
-                                                                href="https://busiaassembly.go.ke/">County Assembly</a>
-                                                        </li>
                                                     </ul>
                                                 </div>
                                             </li>
-
                                             <li><a class="dropdown-item"
                                                     href="{{route('subcounties')}}">Sub-Counties</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="">Wards</a>
+                                            </li>
+                                            <li><a class="dropdown-item" target="_/blank"
+                                                    href="https://busiaassembly.go.ke/">County Assembly</a>
                                             </li>
                                         </ul>
                                     </div>
