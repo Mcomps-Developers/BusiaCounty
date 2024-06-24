@@ -38,10 +38,8 @@
                                 <div class="dcscCaptionWrap">
                                     <div class="description">
                                         {!! $item->short_description !!}
-                                        <span class="icon-circle">
-                                            <i class="fas fa-chevron-down"></i>
-                                            <i class="fas fa-chevron-down"></i>
-                                        </span>
+                                        <i class="fas fa-chevron-down"></i>
+                                        <i class="fas fa-chevron-down"></i>
                                     </div>
 
                                     <style>
@@ -74,22 +72,6 @@
                                             /* Change color as needed */
                                         }
 
-                                        .icon-circle {
-                                            display: inline-block;
-                                            width: 40px;
-                                            /* Adjust size as needed */
-                                            height: 40px;
-                                            /* Adjust size as needed */
-                                            border: 2px solid #000;
-                                            /* Change color as needed */
-                                            border-radius: 50%;
-                                            text-align: center;
-                                            line-height: 36px;
-                                            /* Adjust for vertical alignment */
-                                            margin-left: 10px;
-                                            /* Adjust spacing as needed */
-                                        }
-
                                         .fa-chevron-down {
                                             position: relative;
                                             display: block;
@@ -109,14 +91,10 @@
                                     @if ($item->mp_name)
                                     <a class="readMoreLink fontAlter button-outline" style="text-transform: uppercase">
                                         <strong>MP:</strong> {{ $item->mp_name}}
-                                        <span class="icon-circle">
-                                            <i class="fas fa-chevron-down"></i>
-                                            <i class="fas fa-chevron-down"></i>
-                                        </span>
                                     </a>
                                     @endif
                                     @if ($item->website_url)
-                                    <a href="{{$item->website_url}}" class="readMoreLink fontAlter button-outline"
+                                    <a href="{{$item->website_url}}" class="btn btn-secondary button-outline btn-sm"
                                         target="_/blank">
                                         Website <i class="fas fa-external-link" aria-hidden="true"><span
                                                 class="sr-only">icon</span></i>
