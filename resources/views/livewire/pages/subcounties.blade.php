@@ -49,6 +49,7 @@
                                             max-height: 450px;
                                             /* Adjust height as needed */
                                             overflow-y: auto;
+                                            position: relative;
                                         }
 
                                         .button-outline {
@@ -85,13 +86,13 @@
                                             text-align: center;
                                             line-height: 36px;
                                             /* Adjust for vertical alignment */
-                                            position: absolute;
+                                            margin-left: 10px;
+                                            /* Adjust spacing as needed */
                                         }
 
                                         .fa-chevron-down {
-                                            position: absolute;
-                                            left: 50%;
-                                            transform: translateX(-50%);
+                                            position: relative;
+                                            display: block;
                                         }
 
                                         .fa-chevron-down:first-of-type {
@@ -100,7 +101,7 @@
                                         }
 
                                         .fa-chevron-down:last-of-type {
-                                            top: 18px;
+                                            top: -4px;
                                             /* Adjust spacing between chevrons */
                                         }
                                     </style>
@@ -108,6 +109,10 @@
                                     @if ($item->mp_name)
                                     <a class="readMoreLink fontAlter button-outline" style="text-transform: uppercase">
                                         <strong>MP:</strong> {{ $item->mp_name}}
+                                        <span class="icon-circle">
+                                            <i class="fas fa-chevron-down"></i>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </span>
                                     </a>
                                     @endif
                                     @if ($item->website_url)
@@ -119,10 +124,6 @@
                                     <i class="ml-1 fa fa-map-marker icnWatermark position-absolute">
                                         <span class="sr-only">icon</span>
                                     </i>
-                                    <span class="icon-circle">
-                                        <i class="fas fa-chevron-up"></i>
-                                        <i class="fas fa-chevron-up"></i>
-                                    </span>
                                     @endif
                                 </div>
                             </div>
