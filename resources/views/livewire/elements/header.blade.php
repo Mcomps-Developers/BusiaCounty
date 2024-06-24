@@ -114,7 +114,7 @@
                                             <li><a class="dropdown-item"
                                                     href="{{route('subcounties')}}">Constituencies</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="">Wards</a>
+                                            <li><a class="dropdown-item" href="{{route('wards')}}">Wards</a>
                                             </li>
                                             <li><a class="dropdown-item" target="_/blank"
                                                     href="https://busiaassembly.go.ke/">County Assembly</a>
