@@ -85,7 +85,7 @@
                                             text-align: center;
                                             line-height: 36px;
                                             /* Adjust for vertical alignment */
-                                            position: relative;
+                                            position: absolute;
                                         }
 
                                         .fa-chevron-down {
@@ -119,10 +119,12 @@
                                     <i class="ml-1 fa fa-map-marker icnWatermark position-absolute">
                                         <span class="sr-only">icon</span>
                                     </i>
+                                    <span class="icon-circle">
+                                        <i class="fas fa-chevron-up"></i>
+                                        <i class="fas fa-chevron-up"></i>
+                                    </span>
                                     @endif
                                 </div>
-
-
                             </div>
                         </div>
                     </article>
