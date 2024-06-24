@@ -34,10 +34,18 @@
                                 <i class="mb-4 fa fa-map-marker d-flex align-items-center icnWrap"><span
                                         class="sr-only">icon</span></i>
                                 <h3 class="fwMedium">{{$item->name}}</h3>
-                                <div class="dcscCaptionWrap" style="height: relative">
-                                    {!! $item->short_description !!}
+                                <div class="dcscCaptionWrap">
+                                    <div class="description">
+                                        {!! $item->short_description !!}
+                                    </div>
 
                                     <style>
+                                        .description {
+                                            max-height: 150px;
+                                            /* Adjust height as needed */
+                                            overflow-y: auto;
+                                        }
+
                                         .button-outline {
                                             display: inline-block;
                                             padding: 10px 20px;
@@ -60,6 +68,7 @@
                                             /* Change color as needed */
                                         }
                                     </style>
+
                                     @if ($item->mp_name)
                                     <a class="readMoreLink fontAlter button-outline" style="text-transform: uppercase">
                                         <strong>MP:</strong> {{ $item->mp_name}}
@@ -76,6 +85,7 @@
                                     </i>
                                     @endif
                                 </div>
+
                             </div>
                         </div>
                     </article>
