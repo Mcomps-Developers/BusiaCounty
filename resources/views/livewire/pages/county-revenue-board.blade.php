@@ -7,7 +7,7 @@
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
-                    <h1 class="mb-2 text-white">CPSB</h1>
+                    <h1 class="mb-2 text-white">County Revenue Board</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
