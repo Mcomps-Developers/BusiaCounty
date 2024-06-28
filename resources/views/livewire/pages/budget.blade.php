@@ -59,17 +59,6 @@
                 </div>
                 <div class="mb-6 col-12 col-lg-4 col-xl-3 order-lg-1 position-static">
                     <aside class="pt-1 dscSidebar mr-xl-n5">
-                        <nav class="px-6 py-3 mb-6 widget mb-lg-10 widgetFiltersNav widgetBgLight py-lg-5">
-                            <h3 class="mb-4 fwSemiBold position-relative">Job Filter</h3>
-                            <ul class="pl-0 mb-0 mb-3 list-unstyled mx-n2 isoFiltersList">
-                                <li class="active">
-                                    <a href="javascript:void(0);">All Jobs</a>
-                                </li>
-                                {{-- <li>
-                                    <a href="javascript:void(0);" data-filter=".busrep">Business Reports</a>
-                                </li> --}}
-                            </ul>
-                        </nav>
                         <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">
                             <i class="mb-3 text-white icnWrap icomoon-chatq d-block"><span
                                     class="sr-only">icon</span></i>
