@@ -22,8 +22,8 @@
     <article
         class="ItemfullBlock portfolioSingle bodyFontAlter pt-7 pb-7 pt-md-10 pb-md-9 pt-lg-14 pb-lg-13 pt-xl-22 pb-xl-19">
         <div class="container">
-            <div class="mb-3 row mb-md-6">
-                <div class="col-12 col-sm-6 col-lg-4">
+            <div class="mb-3 row mb-md-12">
+                <div class="col-12 col-sm-12 col-lg-12">
                     <a href="https://busia.mcomps.africa/assets/img/projects/covers/{{ $project->cover_image }}"
                         class="mb-6 overflow-hidden potSingGallery lightbox d-block w-100" data-fancybox="true">
                         <img src="https://busia.mcomps.africa/assets/img/projects/covers/{{ $project->cover_image }}"
