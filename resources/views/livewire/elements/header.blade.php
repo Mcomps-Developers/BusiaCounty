@@ -175,7 +175,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="{{ route('projects') }}">Projects</a>
+                                    <a class="nav-link" href="{{ route('projects') }}">Projects</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('contact') }}"
