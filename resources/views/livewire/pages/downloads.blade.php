@@ -1,6 +1,6 @@
 <main>
     @section('title')
-    Downloads
+        Downloads
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
@@ -25,287 +25,39 @@
                 <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
                     <div class="pl-xl-14">
                         <div class="row isoContentHolder">
-                            <div class="col-12 col-xl-6 cirep isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Dec 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">City
-                                                    Reports</a></strong>
+                            @foreach ($collection as $item)
+                                <div class="col-12 col-xl-6 {{ $item->type }} isoCol">
+                                    <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
+                                        <div class="mb-3 d-flex">
+                                            <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
+                                                <img src="{{ asset('assets/images/icodoc.png') }}" class="img-fluid"
+                                                    alt="icon">
+                                            </span>
+                                            <div class="descrWrap">
+                                                <h2 class="fwSemiBold">
+                                                    <a href="javascript:void(0);"
+                                                        style="text-transform: capitalize">{{ $item->title }}</a>
+                                                </h2>
+                                                <strong
+                                                    class="d-block fileSize font-weight-normal">{{ date('M d, Y', strtotime($item->created_at)) }}
+                                                    - In <a href="javascript:void(0);" class="text-lDark"
+                                                        style="text-transform: capitalize">
+                                                        @if ($item->department_id)
+                                                            {{ $item->department->title }}
+                                                        @else
+                                                            {{ $item->categoryy_name }}
+                                                        @endif
+                                                    </a></strong>
+                                            </div>
                                         </div>
+                                        <a href="javascript:void(0);"
+                                            class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i
+                                                class="fa fa-cloud-download"></i> Download</a>
                                     </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
                                 </div>
-                            </div>
-                            <div class="col-12 col-xl-6 roatra isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Oct 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Roads &amp;
-                                                    Transport</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 roatra isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Sep 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Roads &amp;
-                                                    Transport</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 fineco isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Aug 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Finance &amp;
-                                                    Economy</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 roatra isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Sep 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Roads &amp;
-                                                    Transport</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 roatra isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Aug 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Public
-                                                    Works</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 cirep isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Dec 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Public
-                                                    Works</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 fineco isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Oct 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Finance &amp;
-                                                    Economy</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 busrep isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Sep 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Finance &amp;
-                                                    Economy</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 busrep isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Aug 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Finance &amp;
-                                                    Economy</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 cirep isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Dec 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">City
-                                                    Reports</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 cirep isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Oct 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Public
-                                                    Works</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 busrep isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Dec 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">City
-                                                    Reports</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xl-6 busrep isoCol">
-                                <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
-                                    <div class="mb-3 d-flex">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icodoc.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h2 class="fwSemiBold">
-                                                <a href="javascript:void(0);">Example Document</a>
-                                            </h2>
-                                            <strong class="d-block fileSize font-weight-normal">Oct 11, 2020 - In <a
-                                                    href="javascript:void(0);" class="text-lDark">Business
-                                                    Reports</a></strong>
-                                        </div>
-                                    </div>
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i class="fa fa-cloud-download"></i> Download</a>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
+                        {{ $collection->links('pagination::bootstrap-5') }}
                     </div>
                 </div>
                 <div class="mb-6 col-12 col-lg-4 col-xl-3 order-lg-1 position-static">
@@ -316,17 +68,15 @@
                                 <li class="active">
                                     <a href="javascript:void(0);">All Documents</a>
                                 </li>
+
                                 <li>
-                                    <a href="javascript:void(0);" data-filter=".busrep">Business Reports</a>
+                                    <a href="javascript:void(0);" data-filter=".budget">Budget</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" data-filter=".fineco">Finance &amp; Economy</a>
+                                    <a href="javascript:void(0);" data-filter=".tender">Tender</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" data-filter=".cirep">City Reports</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);" data-filter=".roatra">Roads &amp; Transport</a>
+                                    <a href="javascript:void(0);" data-filter=".vacancy">Vacancies</a>
                                 </li>
                             </ul>
                         </nav>
@@ -335,7 +85,7 @@
                                     class="sr-only">icon</span></i>
                             <h3 class="mb-2 text-white h3Medium">Need any help?</h3>
                             <p>Here you can get your perfect answer for your problem.</p>
-                            <a href="{{route('contact')}}"
+                            <a href="{{ route('contact') }}"
                                 class="p-0 border-0 btn btnTheme btn-sm font-weight-bold text-capitalize position-relative"
                                 data-hover="Contact now">
                                 <span class="d-block btnText">Contact now</span>
