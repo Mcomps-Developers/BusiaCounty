@@ -263,9 +263,9 @@
                                                 </strong>
                                                 <span class="d-block" style="">{{ $item->title }}</span>
                                             </h3>
-                                            <a href="{{ route('project.details',['slug'=>$item->slug,'reference'=>$item->reference]) }}"><i
-                                                    class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
-                                                        class="sr-only">icon</span></i></a>
+                                            <a href="{{ route('project.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}"
+                                                class="d-inline-block"><i
+                                                    class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                         </div>
                                     </div>
                                 </div>
