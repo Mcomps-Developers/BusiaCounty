@@ -20,27 +20,6 @@
     </header>
     <section class="py-8 exploreDepartmentsBlock py-md-10 py-lg-14 py-xl-22">
         <div class="container">
-            <ul
-                class="flex-wrap list-unstyled ifbFiltersList d-flex isoFiltersList mb-lg-12 fontAlter justify-content-center">
-                <li class="active">
-                    <a href="javascript:void(0);">All</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" data-filter=".government">Government</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" data-filter=".business">Business</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" data-filter=".culture">Culture</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" data-filter=".pubpla">Public Places</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" data-filter=".events">Events</a>
-                </li>
-            </ul>
             <div class="mb-8 row justify-content-center isoContentHolder">
                 @foreach ($projects as $item)
                     <div class="col-12 col-md-6 col-lg-4 isoCol business">
