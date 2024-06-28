@@ -1,6 +1,6 @@
 <main>
     @section('title')
-    Municipality Details
+    {{ $municipality->name }} Municipality
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
@@ -12,7 +12,7 @@
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Municipalities</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Municipality Details page</li>
+                            <li class="breadcrumb-item active" aria-current="page" style="text-transform: capitalize">{{ $municipality->name }} Municipality</li>
                         </ol>
                     </nav>
                 </div>
@@ -25,47 +25,9 @@
                 <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
                     <div class="pl-xl-14">
                         <header class="fzMedium mb-9">
-                            <h2 class="fwSemiBold h2vii">Municipality Details page</h2>
-                            <p>We help our clients to build their best possible economic We understand you’re saving for
-                                all different life events: retirement, a house, simply to build wealth, or all of the
-                                above. Your investment account should adjust to your life — not the other way around.
-                            </p>
+                            <h2 class="fwSemiBold h2vii">{{ $municipality->name }} Municipality</h2>
+                            {!! $municipality->content !!}
                         </header>
-                        <div class="mb-3 overflow-hidden mb-lg-7">
-                            <div
-                                class="ml-auto mr-auto dscInnerSliderWrap float-sm-right mb-7 mb-sm-0 mt-sm-2 mr-sm-0 ml-sm-6">
-                                <div class="dcsInnSlider">
-                                    <div>
-                                        <div class="dcsisImageHolder">
-                                            <img src="https://placehold.co/436x356" class="img-fluid w-100"
-                                                alt="image description">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="dcsisImageHolder">
-                                            <img src="https://placehold.co/436x356" class="img-fluid w-100"
-                                                alt="image description">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>He was installed globally, an annual market growth of 22 percent. It is continuing its
-                                progress towards becoming a mainstream competitive salary and economy reports by mine.
-                                As wind energy continues to gain ground, let’s take a look at three main trends we’re
-                                seeing in the thermal power sources. the world to compete effectively with fossil fuels.
-                                Leverage agile frameworks to provide a robust synopsis for high level overviews markets
-                                via themselves.</p>
-                            <p>And natural gasindustry moving forward: and mature markets. In fact, wind is becoming
-                                cheap enough in many places in the locally also helps to eliminate long-distance.and
-                                around.</p>
-                        </div>
-                        <div class="mb-5 dcsPatchWrap">
-                            <h3 class="mb-4">Busia Style Cultural Statue:</h3>
-                            <p>One of the most common additions people make to their cars in order to keep the heat out
-                                is a windshield visor. Cars become warm in the summer because direct sunlight enters in
-                                through the windows. This is why we park in the shade whenever we can. Since the largest
-                                windshield.</p>
-                        </div>
                     </div>
                 </div>
                 <div class="mb-6 col-12 col-lg-4 col-xl-3 order-lg-1">
@@ -77,12 +39,12 @@
                                 Municipalities
                             </h3>
                             <ul class="pl-0 mb-0 mb-3 list-unstyled mx-n2">
-                                <li>
-                                    <a href="javascript:void(0);">Busia Municipality</a>
-                                </li>
-                                <li class="active">
-                                    <a href="javascript:void(0);">Malaba Municipality</a>
-                                </li>
+                                @foreach ($municipalities as $item)
+                                    <li class="{{ request()->route('municipality_name') === $item->name ? 'active' : '' }}">
+                                        <a
+                                            href="{{ route('municipality', ['municipality_name' => $item->name]) }}" style="text-transform: capitalize">{{$item->name}} Municipality</a>
+                                    </li>
+                                @endforeach
                             </ul>
                         </nav>
                         <section class="mb-6 widget mb-lg-10 widgetDocs">

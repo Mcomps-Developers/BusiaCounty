@@ -103,7 +103,7 @@
                                                     <ul class="mb-0 list-unstyled hdDropdownList">
                                                         @foreach ($mucipality as $item)
                                                             <li><a class="dropdown-item"
-                                                                    href="{{ route('municipality') }}">{{ $item->name }}</a>
+                                                                    href="{{ route('municipality', ['municipality_name' => $item->name]) }}">{{ $item->name }}</a>
                                                             </li>
                                                         @endforeach
                                                     </ul>
