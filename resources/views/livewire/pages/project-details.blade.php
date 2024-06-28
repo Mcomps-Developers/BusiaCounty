@@ -22,8 +22,8 @@
     <article
         class="ItemfullBlock portfolioSingle bodyFontAlter pt-7 pb-7 pt-md-10 pb-md-9 pt-lg-14 pb-lg-13 pt-xl-22 pb-xl-19">
         <div class="container">
-            <div class="mb-3 row mb-md-12">
-                <div class="col-12 col-sm-12 col-lg-12">
+            <div class="mb-3 row mb-md-8">
+                <div class="col-12 col-sm-8 col-lg-8">
                     <img src="https://busia.mcomps.africa/assets/img/projects/covers/{{ $project->cover_image }}"
                         class="img-fluid">
                 </div>
