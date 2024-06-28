@@ -91,23 +91,21 @@
                                                         <li><a class="dropdown-item" href="{{ route('crb') }}">County
                                                                 Revenue
                                                                 Board</a></li>
-                                                        <li class="dropdown-submenu">
-                                                            <a href="javascript:void(0);"
-                                                                class="dropdown-item dropdown-toggle dropIcn"
-                                                                role="button" data-toggle="dropdown"
-                                                                aria-haspopup="true"
-                                                                aria-expanded="false">Municipalities</a>
-                                                            <div
-                                                                class="dropdown-menu hdMainDropdown desktopDropOnHover">
-                                                                <ul class="mb-0 list-unstyled hdDropdownList">
-                                                                    @foreach ($mucipality as $item)
-                                                                        <li><a class="dropdown-item"
-                                                                                href="{{ route('municipality') }}">{{ $item->name }}</a>
-                                                                        </li>
-                                                                    @endforeach
-                                                                </ul>
-                                                            </div>
-                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="javascript:void(0);"
+                                                    class="dropdown-item dropdown-toggle dropIcn" role="button"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Municipalities</a>
+                                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                                    <ul class="mb-0 list-unstyled hdDropdownList">
+                                                        @foreach ($mucipality as $item)
+                                                            <li><a class="dropdown-item"
+                                                                    href="{{ route('municipality') }}">{{ $item->name }}</a>
+                                                            </li>
+                                                        @endforeach
                                                     </ul>
                                                 </div>
                                             </li>
