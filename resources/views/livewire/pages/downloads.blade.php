@@ -26,7 +26,7 @@
                     <div class="pl-xl-14">
                         <div class="row isoContentHolder">
                             @foreach ($collection as $item)
-                                <div class="col-12 col-xl-6 {{ $item->type }} isoCol">
+                                <div class="col-12 col-xl-6 {{ $item->folder_id }} isoCol">
                                     <div class="pb-6 mb-6 bg-white shadow drDocColumn position-relative px-7 pt-7">
                                         <div class="mb-3 d-flex">
                                             <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
@@ -43,10 +43,8 @@
                                                     class="d-block fileSize font-weight-normal">{{ date('M d, Y', strtotime($item->created_at)) }}
                                                     - In <a href="javascript:void(0);" class="text-lDark"
                                                         style="text-transform: capitalize">
-                                                        @if ($item->department_id)
-                                                            {{ $item->department->title }}
-                                                        @else
-                                                            {{ $item->categoryy_name }}
+                                                        @if ($item->folder_id)
+                                                            {{ $item->folder->name }}
                                                         @endif
                                                     </a></strong>
                                             </div>
@@ -69,19 +67,13 @@
                                 <li class="active">
                                     <a href="javascript:void(0);">All Documents</a>
                                 </li>
+                                @foreach ($folders as $item)
+                                    <li>
+                                        <a href="javascript:void(0);" data-filter=".{{ $item->id }}"
+                                            style="text-transform: capitalize">{{ $item->name }}</a>
+                                    </li>
+                                @endforeach
 
-                                <li>
-                                    <a href="javascript:void(0);" data-filter=".budget">Budget</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);" data-filter=".tender">Tender</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);" data-filter=".vacancy">Vacancies</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);" data-filter=".other">Others</a>
-                                </li>
                             </ul>
                         </nav>
                         <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">

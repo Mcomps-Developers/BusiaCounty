@@ -37,27 +37,6 @@
                         <div class="mb-6 dcsPatchWrap mb-lg-11">
                             {!! $department->description !!}
                         </div>
-                        <div class="mb-12 dcsPatchWrap">
-                            <h3 class="mb-5 fwSemiBold">Download Resources</h3>
-                            <ul class="list-unstyled drItemsList">
-                                <li>
-                                    <div
-                                        class="py-3 pl-3 pr-3 drItemRow position-relative d-flex pl-md-6 pr-sm-27 pr-md-30">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{ asset('assets/images/icopdf.png') }}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fontBase font-weight-normal">
-                                                Company_Briefing_Update_for_the_Year.pdf</h4>
-                                            <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
-                                            <a href="javascript:void(0);" class="btnDownload fwSemiBold">[ Download
-                                                ]</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <div class="mb-6 col-12 col-lg-4 col-xl-3 order-lg-1">
@@ -77,24 +56,6 @@
                                 @endforeach
                             </ul>
                         </nav>
-                        <section class="mb-6 widget mb-lg-10 widgetDocs">
-                            <ul class="pl-0 list-unstyled drItemsList">
-                                <li>
-                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{ asset('assets/images/icopdf.png') }}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fontBase font-weight-normal">
-                                                <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
-                                            </h4>
-                                            <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
                         <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">
                             <i class="mb-3 text-white icnWrap icomoon-chatq d-block"><span
                                     class="sr-only">icon</span></i>

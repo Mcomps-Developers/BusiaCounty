@@ -3,6 +3,7 @@
 namespace App\Livewire\Pages;
 
 use App\Models\Document;
+use App\Models\Folder;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -12,6 +13,7 @@ class Downloads extends Component
     public function render()
     {
         $collection = Document::orderByDesc('created_at')->paginate(24);
-        return view('livewire.pages.downloads', ['collection' => $collection])->layout('layouts.base');
+        $folders = Folder::orderBy('name')->get();
+        return view('livewire.pages.downloads', ['folders'=>$folders,'collection' => $collection])->layout('layouts.base');
     }
 }
