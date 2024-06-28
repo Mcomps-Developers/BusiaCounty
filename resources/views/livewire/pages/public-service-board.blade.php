@@ -34,7 +34,8 @@
                     <aside class="pt-1 dscSidebar mr-xl-n5">
                         <section class="mb-6 widget mb-lg-10 widgetDocs">
                             <ul class="pl-0 list-unstyled drItemsList">
-                                <li style="margin-bottom:10px;">
+                                @foreach ($tenders as $item)
+                                    <li style="margin-bottom:10px;">
                                     <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
                                         <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
                                             <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
@@ -42,54 +43,14 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h4 class="mb-1 fontBase font-weight-normal">
-                                                <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
+                                                <a href="https://busia.mcomps.africa/assets/documents/uploads/{{ $item->document }}" style="text-transform: capitalize;">{{$item->title}}</a>
                                             </h4>
-                                            <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
+                                            <strong class="d-block fileSize font-weight-normal">{{ date('M d, Y', strtotime($item->created_at)) }}</strong>
                                         </div>
                                     </div>
                                 </li>
-                                <li style="margin-bottom:10px;">
-                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fontBase font-weight-normal">
-                                                <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
-                                            </h4>
-                                            <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li style="margin-bottom:10px;">
-                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fontBase font-weight-normal">
-                                                <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
-                                            </h4>
-                                            <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li style="margin-bottom:10px;">
-                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fontBase font-weight-normal">
-                                                <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
-                                            </h4>
-                                            <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
-                                        </div>
-                                    </div>
-                                </li>
+                                @endforeach
+                                
                             </ul>
                         </section>
                         <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">
