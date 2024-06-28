@@ -11,7 +11,7 @@ class Budget extends Component
     use WithPagination;
     public function render()
     {
-        $budgets = Document::orderByDesc('created_at')->where('type', 'tender')->paginate(24);
+        $budgets = Document::orderByDesc('created_at')->where('type', 'budget')->paginate(24);
         return view('livewire.pages.budget',['budgets'=>$budgets])->layout('layouts.base');
     }
 }
