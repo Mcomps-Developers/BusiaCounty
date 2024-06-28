@@ -155,7 +155,8 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('projects') }}">Projects</a>
+                                    <a class="nav-link" href="{{ route('projects') }}"
+                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Projects</a>
                                 </li>
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
