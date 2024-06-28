@@ -36,7 +36,8 @@
                                             <div class="descrWrap">
                                                 <h2 class="fwSemiBold">
                                                     <a href="https://busia.mcomps.africa/assets/documents/uploads/{{ $item->document }}"
-                                                        style="text-transform: capitalize" target="_/blank">{{ $item->title }}</a>
+                                                        style="text-transform: capitalize"
+                                                        target="_/blank">{{ $item->title }}</a>
                                                 </h2>
                                                 <strong
                                                     class="d-block fileSize font-weight-normal">{{ date('M d, Y', strtotime($item->created_at)) }}
@@ -77,6 +78,9 @@
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" data-filter=".vacancy">Vacancies</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" data-filter=".other">Others</a>
                                 </li>
                             </ul>
                         </nav>
