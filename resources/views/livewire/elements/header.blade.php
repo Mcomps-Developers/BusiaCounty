@@ -88,7 +88,8 @@
                                                         <li><a class="dropdown-item"
                                                                 href="{{ route('public.service') }}">County Public
                                                                 Service Board</a></li>
-                                                        <li><a class="dropdown-item" href="">County Revenue
+                                                        <li><a class="dropdown-item" href="{{ route('crb') }}">County
+                                                                Revenue
                                                                 Board</a></li>
                                                         <li class="dropdown-submenu">
                                                             <a href="javascript:void(0);"

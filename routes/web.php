@@ -19,6 +19,7 @@ use App\Livewire\Pages\AboutCounty;
 use App\Livewire\Pages\Budget;
 use App\Livewire\Pages\ChiefOfficers;
 use App\Livewire\Pages\Contact;
+use App\Livewire\Pages\CountyRevenueBoard;
 use App\Livewire\Pages\DepartmentDetails;
 use App\Livewire\Pages\Departments;
 use App\Livewire\Pages\DeputyGovernor;
@@ -76,7 +77,10 @@ Route::prefix('/about')->group(function () {
     // Directors
     Route::get('/directors', Directors::class)->name('directors');
     Route::get('/directorate/page/2123{dir_id}8723', DirectorateDetails::class)->name('directorate.details');
+
     Route::get('public-service', PublicServiceBoard::class)->name('public.service');
+Route::get('county-revenue-board',CountyRevenueBoard::class)->name('crb');
+
     Route::get('/constituencies', Subcounties::class)->name('subcounties');
     Route::get('/wards', SubcountyDetails::class)->name('wards');
 
