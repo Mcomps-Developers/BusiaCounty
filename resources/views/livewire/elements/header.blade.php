@@ -156,6 +156,9 @@
                                         </ul>
                                     </div>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('projects') }}">Projects</a>
+                                </li>
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
                                         role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -172,10 +175,6 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('projects') }}">Projects</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('contact') }}"
