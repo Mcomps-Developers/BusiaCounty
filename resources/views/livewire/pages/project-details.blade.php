@@ -27,7 +27,7 @@
                     <a href="https://busia.mcomps.africa/assets/img/projects/covers/{{ $project->cover_image }}"
                         class="mb-6 overflow-hidden potSingGallery lightbox d-block w-100" data-fancybox="true">
                         <img src="https://busia.mcomps.africa/assets/img/projects/covers/{{ $project->cover_image }}"
-                            class="img-fluid" alt="image description">
+                            class="img-fluid">
                     </a>
                 </div>
             </div>
