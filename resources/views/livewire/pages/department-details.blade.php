@@ -309,7 +309,7 @@
                                                 </strong>
                                                 <span class="d-block" style="">{{ $item->title }}</span>
                                             </h3>
-                                            <a href="{{ route('project.details') }}"><i
+                                            <a href="{{ route('project.details',['slug'=>$item->slug,'reference'=>$item->reference]) }}"><i
                                                     class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
                                                         class="sr-only">icon</span></i></a>
                                         </div>

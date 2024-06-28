@@ -100,14 +100,11 @@
                                                             <div
                                                                 class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                                                 <ul class="mb-0 list-unstyled hdDropdownList">
-                                                                    <li><a class="dropdown-item"
-                                                                            href="{{ route('municipality') }}">Busia
-                                                                            Municipality</a>
-                                                                    </li>
-                                                                    <li><a class="dropdown-item"
-                                                                            href="{{ route('municipality') }}">Malaba
-                                                                            Municipality</a>
-                                                                    </li>
+                                                                    @foreach ($mucipality as $item)
+                                                                        <li><a class="dropdown-item"
+                                                                                href="{{ route('municipality') }}">{{ $item->name }}</a>
+                                                                        </li>
+                                                                    @endforeach
                                                                 </ul>
                                                             </div>
                                                         </li>

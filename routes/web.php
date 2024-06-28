@@ -51,7 +51,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', HomeComponent::class);
 Route::get('/contact', Contact::class)->name('contact');
 Route::get('/projects', Projects::class)->name('projects');
-Route::get('/project/details', ProjectDetails::class)->name('project.details');
+Route::get('/project/{slug}/{reference}', ProjectDetails::class)->name('project.details');
 
 Route::prefix('/departments')->group(function () {
     Route::get('/departments', Departments::class)->name('departments');
@@ -79,7 +79,7 @@ Route::prefix('/about')->group(function () {
     Route::get('/directorate/page/2123{dir_id}8723', DirectorateDetails::class)->name('directorate.details');
 
     Route::get('public-service', PublicServiceBoard::class)->name('public.service');
-Route::get('county-revenue-board',CountyRevenueBoard::class)->name('crb');
+    Route::get('county-revenue-board', CountyRevenueBoard::class)->name('crb');
 
     Route::get('/constituencies', Subcounties::class)->name('subcounties');
     Route::get('/wards', SubcountyDetails::class)->name('wards');
