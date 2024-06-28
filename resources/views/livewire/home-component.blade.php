@@ -351,7 +351,7 @@
                                                 <span
                                                     class="px-3 py-2 d-block">{{ date(
                                                         'M
-                                                                                                                                                                                                            Y',
+                                                                                                                                                                                                                                                                Y',
                                                         strtotime($item->start_date_and_time),
                                                     ) }}</span>
                                                 <span
@@ -486,127 +486,33 @@
     <section class="pt-4 pb-6 exploreHeightsBlock pb-md-9 pt-lg-7 pb-lg-14 pt-xl-11 pb-xl-20">
         <div class="container">
             <header class="mb-12 text-center headingHead">
-                <h2 class="fwSemiBold">Tourism Destinations</h2>
+                <h2 class="fwSemiBold">Recent Projects</h2>
             </header>
         </div>
         <div class="row">
             <div class="overflow-hidden echSliderWrap w-100">
                 <div class="mx-auto echSlider w-100">
-                    <div>
-                        <div class="col-12">
-                            <div class="echColumn d-block w-100 bgCover position-relative"
-                                style="background-image: url(https://placehold.co/403x300);">
-                                <a href="https://placehold.co/403x300"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true">
-                                    <i class="far fa-image icn"></i>
-                                    6
-                                </a>
-                                <div
-                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
-                                            Name</strong>
-                                        <span class="d-block">Destination Name</span>
-                                    </h3>
-                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
+                    @foreach ($projects as $item)
+                        <div>
+                            <div class="col-12">
+                                <div class="echColumn d-block w-100 bgCover position-relative"
+                                    style="background-image: url(https://busia.mcomps.africa/assets/img/projects/covers/{{ $item->cover_image }});">
+                                    <div
+                                        class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
+                                        <h3 class="mb-0 text-white">
+                                            <strong
+                                                class="mb-1 d-block font-weight-normal fontBase echCatTitle">{{ $item->department->title }}</strong>
+                                            <span class="d-block">{{ $item->title }}</span>
+                                        </h3>
+                                        <a href="{{ route('project.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}"
+                                            class="d-inline-block"><i
+                                                class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="col-12">
-                            <div class="echColumn d-block w-100 bgCover position-relative"
-                                style="background-image: url(https://placehold.co/403x300);">
-                                <a href="https://placehold.co/403x300"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true">
-                                    <i class="far fa-image icn"></i>
-                                    6
-                                </a>
-                                <div
-                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
-                                            Name</strong>
-                                        <span class="d-block">Destination Name</span>
-                                    </h3>
-                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="col-12">
-                            <div class="echColumn d-block w-100 bgCover position-relative"
-                                style="background-image: url(https://placehold.co/403x300);">
-                                <a href="https://placehold.co/403x300"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true">
-                                    <i class="far fa-image icn"></i>
-                                    6
-                                </a>
-                                <div
-                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
-                                            Name</strong>
-                                        <span class="d-block">Destination Name</span>
-                                    </h3>
-                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="col-12">
-                            <div class="echColumn d-block w-100 bgCover position-relative"
-                                style="background-image: url(https://placehold.co/403x300);">
-                                <a href="https://placehold.co/403x300"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true">
-                                    <i class="far fa-image icn"></i>
-                                    6
-                                </a>
-                                <div
-                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
-                                            Name</strong>
-                                        <span class="d-block">Destination Name</span>
-                                    </h3>
-                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="col-12">
-                            <div class="echColumn d-block w-100 bgCover position-relative"
-                                style="background-image: url(https://placehold.co/403x300);">
-                                <a href="https://placehold.co/403x300"
-                                    class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                    data-fancybox="true">
-                                    <i class="far fa-image icn"></i>
-                                    6
-                                </a>
-                                <div
-                                    class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
-                                    <h3 class="mb-0 text-white">
-                                        <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Location
-                                            Name</strong>
-                                        <span class="d-block">Destination Name</span>
-                                    </h3>
-                                    <a href="{{ route('destination') }}" class="d-inline-block"><i
-                                            class="bg-white rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
