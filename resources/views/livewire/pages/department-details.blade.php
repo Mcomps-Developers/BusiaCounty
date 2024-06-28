@@ -252,7 +252,7 @@
                                         <a href="https://busia.mcomps.africa/assets/img/projects/covers/{{ $item->cover_image }}"
                                             class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
                                             data-fancybox="true" tabindex="-1">
-                                            <i class="far fa-image icn" aria-hidden="true"><span
+                                            <i class="fa fa-arrow-right icn" aria-hidden="true"><span
                                                     class="sr-only">icon</span></i>
                                             6
                                         </a>
