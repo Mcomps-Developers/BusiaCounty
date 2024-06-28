@@ -35,8 +35,8 @@
                                             </span>
                                             <div class="descrWrap">
                                                 <h2 class="fwSemiBold">
-                                                    <a href="javascript:void(0);"
-                                                        style="text-transform: capitalize">{{ $item->title }}</a>
+                                                    <a href="https://busia.mcomps.africa/assets/documents/uploads/{{ $item->document }}"
+                                                        style="text-transform: capitalize" target="_/blank">{{ $item->title }}</a>
                                                 </h2>
                                                 <strong
                                                     class="d-block fileSize font-weight-normal">{{ date('M d, Y', strtotime($item->created_at)) }}
@@ -50,9 +50,9 @@
                                                     </a></strong>
                                             </div>
                                         </div>
-                                        <a href="javascript:void(0);"
-                                            class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"><i
-                                                class="fa fa-cloud-download"></i> Download</a>
+                                        <a href="https://busia.mcomps.africa/assets/documents/uploads/{{ $item->document }}"
+                                            class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"
+                                            target="_/blank"><i class="fa fa-cloud-download"></i> View Document</a>
                                     </div>
                                 </div>
                             @endforeach

@@ -12,6 +12,6 @@ class Downloads extends Component
     public function render()
     {
         $collection = Document::orderByDesc('created_at')->paginate(24);
-        return view('livewire.pages.downloads')->layout('layouts.base');
+        return view('livewire.pages.downloads', ['collection' => $collection])->layout('layouts.base');
     }
 }
