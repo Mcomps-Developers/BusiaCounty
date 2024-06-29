@@ -11,7 +11,7 @@ class Municipality extends Component
     public function render()
     {
         $municipality = ModelsMunicipality::where('name', $this->municipality_name)->first();
-        $mucipalities = Municipality::orderBy('name')->get();
+        $mucipalities = Municipality::all();
         return view('livewire.pages.municipality', ['municipality' => $municipality, 'mucipalities' => $mucipalities])->layout('layouts.base');
     }
 }
