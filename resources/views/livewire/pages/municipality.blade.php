@@ -26,7 +26,7 @@
                 <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
                     <div class="pl-xl-14">
                         <header class="fzMedium mb-9">
-                            <h2 class="fwSemiBold h2vii">{{ $municipality->name }} Municipality</h2>
+                            <h2 class="fwSemiBold h2vii">{{ $municipality->name }}</h2>
                             {!! $municipality->content !!}
                         </header>
                     </div>
