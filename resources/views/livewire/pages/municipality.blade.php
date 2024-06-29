@@ -1,6 +1,6 @@
 <main>
     @section('title')
-    {{ $municipality->name }} Municipality
+        {{ $municipality->name }} Municipality
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
@@ -12,7 +12,8 @@
                         <ol class="p-0 mb-0 border-0 breadcrumb breadcrWhite rounded-0 fontAlter">
                             <li class="breadcrumb-item"><a href="/">Home</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0);">Municipalities</a></li>
-                            <li class="breadcrumb-item active" aria-current="page" style="text-transform: capitalize">{{ $municipality->name }} Municipality</li>
+                            <li class="breadcrumb-item active" aria-current="page" style="text-transform: capitalize">
+                                {{ $municipality->name }} Municipality</li>
                         </ol>
                     </nav>
                 </div>
@@ -40,65 +41,20 @@
                             </h3>
                             <ul class="pl-0 mb-0 mb-3 list-unstyled mx-n2">
                                 @foreach ($municipalities as $item)
-                                    <li class="{{ request()->route('municipality_name') === $item->name ? 'active' : '' }}">
-                                        <a
-                                            href="{{ route('municipality', ['municipality_name' => $item->name]) }}" style="text-transform: capitalize">{{$item->name}} Municipality</a>
+                                    <li
+                                        class="{{ request()->route('municipality_name') === $item->name ? 'active' : '' }}">
+                                        <a href="{{ route('municipality', ['municipality_name' => $item->name]) }}"
+                                            style="text-transform: capitalize">{{ $item->name }} Municipality</a>
                                     </li>
                                 @endforeach
                             </ul>
                         </nav>
-                        <section class="mb-6 widget mb-lg-10 widgetDocs">
-                            <ul class="pl-0 list-unstyled drItemsList">
-                                <li style="margin-bottom: 9px;">
-                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fontBase font-weight-normal">
-                                                <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
-                                            </h4>
-                                            <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li style="margin-bottom: 9px;">
-                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fontBase font-weight-normal">
-                                                <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
-                                            </h4>
-                                            <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li style="margin-bottom: 9px;">
-                                    <div class="px-3 py-3 drItemRow position-relative d-flex px-md-6">
-                                        <span class="flex-shrink-0 pt-1 mr-3 icnWrap">
-                                            <img src="{{asset('assets/images/icopdf.png')}}" class="img-fluid"
-                                                alt="icon">
-                                        </span>
-                                        <div class="descrWrap">
-                                            <h4 class="mb-1 fontBase font-weight-normal">
-                                                <a href="javascript:void(0);">Transport Briefing Update for the Year</a>
-                                            </h4>
-                                            <strong class="d-block fileSize font-weight-normal">PDF (400kb)</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
                         <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">
                             <i class="mb-3 text-white icnWrap icomoon-chatq d-block"><span
                                     class="sr-only">icon</span></i>
                             <h3 class="mb-2 text-white h3Medium">Need any help?</h3>
                             <p>Here you can get your perfect answer for your problem.</p>
-                            <a href="{{route('contact')}}"
+                            <a href="{{ route('contact') }}"
                                 class="p-0 border-0 btn btnTheme btn-sm font-weight-bold text-capitalize position-relative"
                                 data-hover="Contact now">
                                 <span class="d-block btnText">Contact now</span>
@@ -113,7 +69,7 @@
             <section class="pt-3 pb-6 meetCouncilBlock noOverlay position-relative pt-md-4 pt-lg-6 pt-xl-11 pb-lg-10">
                 <div class="container">
                     <header class="text-center headingHead cdTitle mb-7 mb-md-13">
-                        <h2 class="mb-4 fwSemiBold">Municipality Leadership</h2>
+                        <h2 class="mb-4 fwSemiBold">Board Members</h2>
                         <p>Meet the municipality leadership team.</p>
                     </header>
                     <div class="row justify-content-center">
@@ -293,7 +249,7 @@
                                         <li>
                                             <a href="tel:+254xxxxxxxxx">
                                                 <i class="fas fa-phone-alt icn"><span class="sr-only">icon</span></i>
-                                               +254xxxxxxxxx
+                                                +254xxxxxxxxx
                                             </a>
                                         </li>
                                     </ul>
@@ -327,11 +283,12 @@
                                         <div
                                             class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                             <h3 class="mb-0 text-white">
-                                                <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Teso
+                                                <strong
+                                                    class="mb-1 d-block font-weight-normal fontBase echCatTitle">Teso
                                                     North</strong>
                                                 <span class="d-block">Kakapel</span>
                                             </h3>
-                                            <a href="{{route('destination')}}" class="d-inline-block"><i
+                                            <a href="{{ route('destination') }}" class="d-inline-block"><i
                                                     class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                         </div>
                                     </div>
@@ -354,7 +311,7 @@
                                                     class="mb-1 d-block font-weight-normal fontBase echCatTitle">Samia</strong>
                                                 <span class="d-block">Sio Port</span>
                                             </h3>
-                                            <a href="{{route('destination')}}" class="d-inline-block"><i
+                                            <a href="{{ route('destination') }}" class="d-inline-block"><i
                                                     class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                         </div>
                                     </div>
@@ -377,7 +334,7 @@
                                                     class="mb-1 d-block font-weight-normal fontBase echCatTitle">Business</strong>
                                                 <span class="d-block">Mayor of Arsonia</span>
                                             </h3>
-                                            <a href="{{route('destination')}}" class="d-inline-block"><i
+                                            <a href="{{ route('destination') }}" class="d-inline-block"><i
                                                     class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                         </div>
                                     </div>
@@ -400,7 +357,7 @@
                                                     class="mb-1 d-block font-weight-normal fontBase echCatTitle">Culture</strong>
                                                 <span class="d-block">Melton Art Museum</span>
                                             </h3>
-                                            <a href="{{route('destination')}}" class="d-inline-block"><i
+                                            <a href="{{ route('destination') }}" class="d-inline-block"><i
                                                     class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                         </div>
                                     </div>
@@ -419,11 +376,12 @@
                                         <div
                                             class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                             <h3 class="mb-0 text-white">
-                                                <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle">Public
+                                                <strong
+                                                    class="mb-1 d-block font-weight-normal fontBase echCatTitle">Public
                                                     Places</strong>
                                                 <span class="d-block">Cinema Teatre</span>
                                             </h3>
-                                            <a href="{{route('destination')}}" class="d-inline-block"><i
+                                            <a href="{{ route('destination') }}" class="d-inline-block"><i
                                                     class="bg-white rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center text-dark spanLinkGo"></i></a>
                                         </div>
                                     </div>
@@ -435,8 +393,8 @@
                 <div class="accordion ctAccordion" id="ctdepartsAccordion">
                     <div class="mb-4 ctaccRow">
                         <div class="ctaccOpener">
-                            <a class="fontAlter fwMedium" href="#ctr1" data-toggle="collapse" aria-expanded="false"
-                                aria-controls="ctr1">Eco-Friendly equipments and
+                            <a class="fontAlter fwMedium" href="#ctr1" data-toggle="collapse"
+                                aria-expanded="false" aria-controls="ctr1">Eco-Friendly equipments and
                                 materials</a>
                         </div>
                         <div class="collapse ctaccSlide" id="ctr1" data-parent="#ctdepartsAccordion">
@@ -469,8 +427,8 @@
                     </div>
                     <div class="mb-4 ctaccRow">
                         <div class="ctaccOpener">
-                            <a class="fontAlter fwMedium" href="#ctr3" data-toggle="collapse" aria-expanded="false"
-                                aria-controls="ctr3">Award winning design management</a>
+                            <a class="fontAlter fwMedium" href="#ctr3" data-toggle="collapse"
+                                aria-expanded="false" aria-controls="ctr3">Award winning design management</a>
                         </div>
                         <div class="collapse ctaccSlide" id="ctr3" data-parent="#ctdepartsAccordion">
                             <div class="px-5 pb-1 overflow-hidden">
