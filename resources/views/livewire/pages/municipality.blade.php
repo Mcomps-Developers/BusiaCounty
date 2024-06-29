@@ -33,21 +33,6 @@
                 </div>
                 <div class="mb-6 col-12 col-lg-4 col-xl-3 order-lg-1">
                     <aside class="pt-1 dscSidebar mr-xl-n5">
-                        <nav class="px-6 py-5 mb-6 widget mb-lg-10 widgetDepartsNav widgetBgLight">
-                            <h3 class="mb-4 fwSemiBold">
-                                <a href="javascript:void(0);" class="mr-1 align-middle btnDcsBack"><i
-                                        class="fas fa-chevron-left"><span class="sr-only">icon</span></i></a>
-                                Municipalities
-                            </h3>
-                            <ul class="pl-0 mb-0 mb-3 list-unstyled mx-n2">
-                                @foreach ($mucipalities as $item)
-                                    <li class="">
-                                        <a href="{{ route('municipality', ['slug' => $item->slug]) }}"
-                                            style="text-transform: capitalize">{{ $item->name }}</a>
-                                    </li>
-                                @endforeach
-                            </ul>
-                        </nav>
                         <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">
                             <i class="mb-3 text-white icnWrap icomoon-chatq d-block"><span
                                     class="sr-only">icon</span></i>
