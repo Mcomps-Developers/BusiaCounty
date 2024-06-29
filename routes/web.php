@@ -85,7 +85,7 @@ Route::prefix('/about')->group(function () {
     Route::get('/wards', SubcountyDetails::class)->name('wards');
 
     Route::prefix('/municipality')->group(function () {
-        Route::get('/municipality/{municipality_name}', Municipality::class)->name('municipality');
+        Route::get('/municipality/{slug}', Municipality::class)->name('municipality');
     });
 });
 

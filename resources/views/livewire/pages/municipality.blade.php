@@ -41,10 +41,9 @@
                             </h3>
                             <ul class="pl-0 mb-0 mb-3 list-unstyled mx-n2">
                                 @foreach ($mucipalities as $item)
-                                    <li
-                                        class="{{ request()->route('municipality_name') === $item->name ? 'active' : '' }}">
-                                        <a href="{{ route('municipality', ['municipality_name' => $item->name]) }}"
-                                            style="text-transform: capitalize">{{ $item->name }}</a>
+                                    <li class="{{ request()->route('slug') === $item->slug ? 'active' : '' }}">
+                                        <a href="{{ route('municipality', ['slug' => $item->slug]) }}"
+                                            style="text-transform: capitalize">{{ $item->slug }}</a>
                                     </li>
                                 @endforeach
                             </ul>
