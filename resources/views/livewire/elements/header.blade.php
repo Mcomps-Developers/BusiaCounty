@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="py-2 bg-white hdFixerWrap py-md-3 py-xl-5 sSticky">
+        <div class="py-2 bg-dark hdFixerWrap py-md-3 py-xl-5 sSticky">
             <div class="container">
                 <nav class="p-0 navbar navbar-expand-md navbar-light">
                     <div class="flex-shrink-0 mr-3 logo mr-xl-8 mr-xlwd-16">
