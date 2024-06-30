@@ -5082,7 +5082,6 @@ hdFixerWrap /.stickyWrap-sSticky
     background-color: rgba(6, 22, 58, 0.45);
 }
 .slick-current .ibBgImage {
-    opacity: 1;
     visibility: visible;
     -webkit-transform: scale(1);
             transform: scale(1);
