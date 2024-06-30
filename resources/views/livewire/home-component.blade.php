@@ -201,7 +201,7 @@
                                     class="img-fluid" alt="image description"></span> --}}
                         </div>
                         <div
-                            class="text-center text-white spwCol d-flex w-100 align-items-center position-relative bg-success">
+                            class="text-center text-white spwCol d-flex w-100 align-items-center position-relative bg-success" style="background-color: #9ECA3E">
                             <div class="px-3 py-6 spwInerWrap px-lg-5 py-sm-10 py-md-6 py-lgwd-8 w-100">
                                 <h2 class="mb-1 text-white h2 fwSemiBold">Mission</h2>
                                 <p class="mb-4">To foster equitable and sustainable economic development through
