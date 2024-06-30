@@ -112,7 +112,7 @@
         @endforeach
     </div>
     <aside class="text-white featuresAsideBlock position-relative">
-        <div class="container">
+        <div class="container" style="background-color: #9ECA3E">
             <div class="flatpWrap position-relative mt-n8 mt-md-n18" style="transform: scale(0.6)">
                 <ul class="flex-wrap mb-0 overflow-hidden list-unstyled fabFeaturesList d-flex">
                     <li>
