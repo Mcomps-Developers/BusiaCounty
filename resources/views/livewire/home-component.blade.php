@@ -106,14 +106,15 @@
                         </div>
                     </div>
                     <span class="ibBgImage bgCover position-absolute"
-                        style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }});"></span>
+                        style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }}); opacity:0;"></span>
                 </article>
             </div>
         @endforeach
     </div>
     <aside class="text-white featuresAsideBlock position-relative">
         <div class="container">
-            <div class="flatpWrap position-relative mt-n8 mt-md-n18" style="transform: scale(0.6)"  style="background-color: #9ECA3E">
+            <div class="flatpWrap position-relative mt-n8 mt-md-n18" style="transform: scale(0.6)"
+                style="background-color: #9ECA3E">
                 <ul class="flex-wrap mb-0 overflow-hidden list-unstyled fabFeaturesList d-flex">
                     <li>
                         <a href="{{ route('executive') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
@@ -351,7 +352,7 @@
                                                 <span
                                                     class="px-3 py-2 d-block">{{ date(
                                                         'M
-                                                                                                                                                                                                                                                                Y',
+                                                                                                                                                                                                                                                                                                                    Y',
                                                         strtotime($item->start_date_and_time),
                                                     ) }}</span>
                                                 <span
