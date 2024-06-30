@@ -97,8 +97,6 @@
                             <h3 class="text-secondary fwSemiBold fontBase">Deputy Governor, {{ config('app.name') }}</h3>
                             <hr class="mx-0 mt-2 mb-3 mccSeprator">
                             <dl class="overflow-hidden tmcbInfosList">
-                                <dt>Agenda:</dt>
-                                <dd>{{ $deputyGovernor->main_manifesto }}</dd>
                                 <dt>Born:</dt>
                                 <dd>{{ date('D d M, Y', strtotime($deputyGovernor->date_of_birth)) }}</dd>
                                 <dt>Phone:</dt>
