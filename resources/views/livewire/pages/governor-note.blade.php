@@ -1,6 +1,6 @@
 <main>
     @section('title')
-    Governorship
+        Governorship
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
@@ -24,45 +24,45 @@
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
                 <img class="img-fluid d-block w-100"
-                    src="https://busia.mcomps.africa/assets/img/about/governor/{{$Governor->photo}}" style="max-height: 600px"></img>
+                    src="https://busia.mcomps.africa/assets/img/about/governor/{{ $Governor->photo }}" height="300px"></img>
                 <div class="px-5 pt-6 pb-6 descrWrap flex-grow-1 px-xl-12 pt-xl-9 pb-xl-12">
                     <div class="row">
                         <div class="col-12 col-md-5">
-                            <h2 class="mb-1 fwMedium h3Small">{{$Governor->name}}</h2>
+                            <h2 class="mb-1 fwMedium h3Small">{{ $Governor->name }}</h2>
                             <h3 class="text-secondary fwSemiBold fontBase">Governor, {{ config('app.name') }}</h3>
                             <hr class="mx-0 mt-2 mb-3 mccSeprator">
                             <dl class="overflow-hidden tmcbInfosList">
                                 <dt>Agenda:</dt>
-                                <dd>{{$Governor->main_manifesto}}</dd>
+                                <dd>{{ $Governor->main_manifesto }}</dd>
                                 <dt>Born:</dt>
-                                <dd>{{date('D d M, Y',strtotime($Governor->date_of_birth))}}</dd>
+                                <dd>{{ date('D d M, Y', strtotime($Governor->date_of_birth)) }}</dd>
                                 <dt>Phone:</dt>
                                 <dd>
-                                    <a href="tel:+{{$Governor->office_phone}}">+{{$Governor->office_phone}}</a>
+                                    <a href="tel:+{{ $Governor->office_phone }}">+{{ $Governor->office_phone }}</a>
                                 </dd>
                                 <dt>Email:</dt>
                                 <dd>
-                                    <a href="mailto:{{$Governor->office_email}}">{{$Governor->office_email}}</a>
+                                    <a href="mailto:{{ $Governor->office_email }}">{{ $Governor->office_email }}</a>
                                 </dd>
                             </dl>
                             <ul class="flex-wrap mb-0 list-unstyled socialNetworks tmcbSocialNetworks d-flex mt-xl-6">
                                 <li>
-                                    <a href="{{$Governor->twitter}}">
+                                    <a href="{{ $Governor->twitter }}">
                                         <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{$Governor->facebook}}">
+                                    <a href="{{ $Governor->facebook }}">
                                         <i class="fab fa-facebook-square"><span class="sr-only">facebook</span></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{$Governor->linkedin}}">
+                                    <a href="{{ $Governor->linkedin }}">
                                         <i class="fab fa-linkedin-in"><span class="sr-only">linkedin</span></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{$Governor->instagram}}">
+                                    <a href="{{ $Governor->instagram }}">
                                         <i class="fab fa-instagram"><span class="sr-only">instagram</span></i>
                                     </a>
                                 </li>
@@ -88,46 +88,47 @@
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
                 <img class="img-fluid d-block w-100"
-                    src="https://busia.mcomps.africa/assets/img/about/deputy-governor/{{$deputyGovernor->photo}}" height="relative" width="relative"></img>
+                    src="https://busia.mcomps.africa/assets/img/about/deputy-governor/{{ $deputyGovernor->photo }}"
+                    height="relative" width="relative"></img>
                 <div class="px-5 pt-6 pb-6 descrWrap flex-grow-1 px-xl-12 pt-xl-9 pb-xl-12">
                     <div class="row">
                         <div class="col-12 col-md-5">
-                            <h2 class="mb-1 fwMedium h3Small">{{$deputyGovernor->name}}</h2>
+                            <h2 class="mb-1 fwMedium h3Small">{{ $deputyGovernor->name }}</h2>
                             <h3 class="text-secondary fwSemiBold fontBase">Deputy Governor, {{ config('app.name') }}
                             </h3>
                             <hr class="mx-0 mt-2 mb-3 mccSeprator">
                             <dl class="overflow-hidden tmcbInfosList">
                                 <dt>Born:</dt>
-                                <dd>{{date('D d M, Y',strtotime($deputyGovernor->date_of_birth))}}</dd>
+                                <dd>{{ date('D d M, Y', strtotime($deputyGovernor->date_of_birth)) }}</dd>
                                 <dt>Phone:</dt>
                                 <dd>
                                     <a
-                                        href="tel:+{{$deputyGovernor->office_phone}}">+{{$deputyGovernor->office_phone}}</a>
+                                        href="tel:+{{ $deputyGovernor->office_phone }}">+{{ $deputyGovernor->office_phone }}</a>
                                 </dd>
                                 <dt>Email:</dt>
                                 <dd>
                                     <a
-                                        href="mailto:{{$deputyGovernor->office_email}}">{{$deputyGovernor->office_email}}</a>
+                                        href="mailto:{{ $deputyGovernor->office_email }}">{{ $deputyGovernor->office_email }}</a>
                                 </dd>
                             </dl>
                             <ul class="flex-wrap mb-0 list-unstyled socialNetworks tmcbSocialNetworks d-flex mt-xl-6">
                                 <li>
-                                    <a href="{{$deputyGovernor->twitter}}">
+                                    <a href="{{ $deputyGovernor->twitter }}">
                                         <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{$deputyGovernor->facebook}}">
+                                    <a href="{{ $deputyGovernor->facebook }}">
                                         <i class="fab fa-facebook-square"><span class="sr-only">facebook</span></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{$deputyGovernor->linkedin}}">
+                                    <a href="{{ $deputyGovernor->linkedin }}">
                                         <i class="fab fa-linkedin-in"><span class="sr-only">linkedin</span></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{$deputyGovernor->instagram}}">
+                                    <a href="{{ $deputyGovernor->instagram }}">
                                         <i class="fab fa-instagram"><span class="sr-only">instagram</span></i>
                                     </a>
                                 </li>
