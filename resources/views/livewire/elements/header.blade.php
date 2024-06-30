@@ -73,10 +73,15 @@
                                                         <li><a class="dropdown-item"
                                                                 href="{{ route('deputy.governor') }}">Deputy
                                                                 Governor</a></li>
+                                                        <li><a class="dropdown-item" href="{{ route('executive') }}">The
+                                                                Executive</a>
+                                                        </li>
                                                         <li><a class="dropdown-item"
-                                                                href="{{ route('governor') }}">Office
-                                                                of
-                                                                The County Secreaty</a></li>
+                                                                href="{{ route('public.service') }}">County Public
+                                                                Service Board</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{ route('governor') }}">County Secretariate</a>
+                                                        </li>
                                                         <li><a class="dropdown-item" href="{{ route('executive') }}">The
                                                                 Executive</a>
                                                         </li>
@@ -85,12 +90,7 @@
                                                                 Officers</a></li>
                                                         <li><a class="dropdown-item"
                                                                 href="{{ route('directors') }}">Directors</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="{{ route('public.service') }}">County Public
-                                                                Service Board</a></li>
-                                                        <li><a class="dropdown-item" href="{{ route('crb') }}">County
-                                                                Revenue
-                                                                Board</a></li>
+
                                                     </ul>
                                                 </div>
                                             </li>
