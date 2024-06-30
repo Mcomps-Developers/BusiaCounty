@@ -46,8 +46,8 @@
                         </a>
                     </div>
                     <div
-                        class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
-                        <div class="mt-2 collapse navbar-collapse pageMainNavCollapse mt-md-0" id="pageMainNavCollapse" style="color:white">
+                        class="text-white hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
+                        <div class="mt-2 collapse navbar-collapse pageMainNavCollapse mt-md-0" id="pageMainNavCollapse">
                             <ul class="navbar-nav mainNavigation" >
                                 <li class="nav-item">
                                     <a class="nav-link" href="/"
