@@ -37,9 +37,9 @@
                 </div>
             </div>
         </div>
-        <div class="py-2 hdFixerWrap py-md-3 py-xl-5 sSticky text-white" style="background-color: #9ECA3E">
+        <div class="py-2 hdFixerWrap py-md-3 py-xl-5 sSticky" style="background-color: #9ECA3E">
             <div class="container">
-                <nav class="p-0 navbar navbar-expand-md navbar-dark">
+                <nav class="p-0 navbar navbar-expand-md navbar-light">
                     <div class="flex-shrink-0 mr-3 logo mr-xl-8 mr-xlwd-16">
                         <a href="/">
                             <img src="{{ asset('assets/images/logo.png') }}" class="img-fluid" alt="Busia County">
