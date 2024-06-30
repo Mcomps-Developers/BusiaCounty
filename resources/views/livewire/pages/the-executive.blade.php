@@ -26,7 +26,7 @@
                 <p>Meet the executive committee members of The County Government of Busia</p>
             </header>
             <div class="row justify-content-center">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                {{-- <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
                             <img src="https://busia.mcomps.africa/assets/img/about/governor/{{$governor->photo}}"
@@ -78,7 +78,7 @@
                             </ul>
                         </div>
                     </article>
-                </div>
+                </div> --}}
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
