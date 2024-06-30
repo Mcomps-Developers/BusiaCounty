@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <span class="ibBgImage bgCover position-absolute"
-                        style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }}); opacity:9;"></span>
+                        style="background-image: url(https://busia.mcomps.africa/assets/img/sliders/{{ $item->image }}); opacity:100%;"></span>
                 </article>
             </div>
         @endforeach
