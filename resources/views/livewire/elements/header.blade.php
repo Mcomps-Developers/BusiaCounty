@@ -47,8 +47,8 @@
                     </div>
                     <div
                         class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
-                        <div class="mt-2 collapse navbar-collapse pageMainNavCollapse mt-md-0" id="pageMainNavCollapse">
-                            <ul class="navbar-nav mainNavigation" style="color:white">
+                        <div class="mt-2 collapse navbar-collapse pageMainNavCollapse mt-md-0" id="pageMainNavCollapse" style="color:white">
+                            <ul class="navbar-nav mainNavigation" >
                                 <li class="nav-item">
                                     <a class="nav-link" href="/"
                                         onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Home</a>
