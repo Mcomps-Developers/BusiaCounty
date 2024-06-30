@@ -50,7 +50,7 @@
                             <h3 class="mb-1 fwMedium h3Small">{{$item->leader_name}}</h3>
                             <h4 class="fwSemiBold fontBase text-secondary"><a
                                     href="{{route('directorate.details',['dir_id'=>$item->id])}}">Director
-                                    {{$item->title}}</a></h4>
+                                    {{$item->title}}, Department of {{ $item->department->title }}</a></h4>
                             <hr class="mx-0 mt-4 mb-3 mccSeprator">
                             <ul class="list-unstyled mccInfoList">
                                 @if ($item->office_email)
