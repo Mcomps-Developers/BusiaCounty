@@ -39,14 +39,14 @@
         </div>
         <div class="py-2 bg-dark hdFixerWrap py-md-3 py-xl-5 sSticky">
             <div class="container">
-                <nav class="p-0 navbar navbar-expand-md navbar-light">
+                <nav class="p-0 navbar navbar-expand-md navbar-dark">
                     <div class="flex-shrink-0 mr-3 logo mr-xl-8 mr-xlwd-16">
                         <a href="/">
                             <img src="{{ asset('assets/images/logo.png') }}" class="img-fluid" alt="Busia County">
                         </a>
                     </div>
                     <div
-                        class="text-white hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
+                        class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
                         <div class="mt-2 collapse navbar-collapse pageMainNavCollapse mt-md-0" id="pageMainNavCollapse">
                             <ul class="navbar-nav mainNavigation" >
                                 <li class="nav-item">
