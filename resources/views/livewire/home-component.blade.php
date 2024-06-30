@@ -197,8 +197,8 @@
                                     in
                                     a sustainable environment.</p>
                             </div>
-                            <span class="spwIcn position-absolute"><img src="{{ asset('assets/images/img198.png') }}"
-                                    class="img-fluid" alt="image description"></span>
+                            {{-- <span class="spwIcn position-absolute"><img src="{{ asset('assets/images/img198.png') }}"
+                                    class="img-fluid" alt="image description"></span> --}}
                         </div>
                         <div
                             class="text-center text-white spwCol d-flex w-100 align-items-center position-relative bg-success">
@@ -207,8 +207,8 @@
                                 <p class="mb-4">To foster equitable and sustainable economic development through
                                     effective and efficient mobilization and utilization of available resources.</p>
                             </div>
-                            <span class="spwIcn position-absolute"><img src="{{ asset('assets/images/img199.png') }}"
-                                    class="img-fluid" alt="image description"></span>
+                            {{-- <span class="spwIcn position-absolute"><img src="{{ asset('assets/images/img199.png') }}"
+                                    class="img-fluid" alt="image description"></span> --}}
                         </div>
                     </div>
                 </div>
