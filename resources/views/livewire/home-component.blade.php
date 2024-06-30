@@ -172,7 +172,7 @@
                 </ul>
             </div>
         </div>
-        <div class="pt-6 pb-6 text-center fabBtNoteTextWrap fontAlter fzMedium pt-md-10 pb-md-10 pb-lg-14">
+        {{-- <div class="pt-6 pb-6 text-center fabBtNoteTextWrap fontAlter fzMedium pt-md-10 pb-md-10 pb-lg-14">
             <div class="container">
                 <div class="d-lg-flex justify-content-center align-items-center">
                     <p class="mb-lg-0">Partner with {{ config('app.name') }} and invest in an ocean of opportunities.
@@ -183,7 +183,7 @@
                             more</span></a>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </aside>
     <div class="supportWidgetSection position-relative" style="margin-top: 80px;">
         <div class="container">
