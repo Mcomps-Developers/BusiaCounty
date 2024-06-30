@@ -52,6 +52,8 @@ info@mcomps.co.ke--}}
     <script src="{{asset('assets/js/plugins.js')}}"></script>
     <!-- include fontAwesome -->
     <script src="https://kit.fontawesome.com/391f644c42.js"></script>
+    {{-- UserWay --}}
+    <script src="https://cdn.userway.org/widget.js" data-account="lq0zxhGiPd"></script>
     @livewireScripts
 </body>
 
