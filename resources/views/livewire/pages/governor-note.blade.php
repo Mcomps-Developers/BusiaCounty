@@ -105,9 +105,7 @@
                     <aside class="pt-1 dscSidebar mr-xl-n5">
                         <nav class="px-6 py-5 mb-6 widget mb-lg-10 widgetDepartsNav widgetBgLight">
                             <h3 class="mb-4 fwSemiBold">
-                                <a href="{{ route('departments') }}" class="mr-1 align-middle btnDcsBack"><i
-                                        class="fas fa-chevron-left"><span class="sr-only">icon</span></i></a>
-                                All Departments
+                                Directorates
                             </h3>
                             <ul class="pl-0 mb-0 mb-3 list-unstyled mx-n2">
                                 @foreach ($directors as $item)
