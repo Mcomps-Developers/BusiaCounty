@@ -84,4 +84,148 @@
             </header>
         </div>
     </article>
+    <article class="pb-2 dsSingleContent pt-7 pt-md-10 pb-md-1 pt-lg-16 pb-lg-10 pt-xl-21 pb-xl-16">
+        <div class="container">
+            <div class="row">
+                <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
+                    <div class="pl-xl-14">
+                        <header class="fzMedium mb-9">
+                            <h2 class="fwSemiBold h2vii" style="text-transform: capitalize">Department of
+                                {{ $department->title }}</h2>
+
+                            @if ($department->cover_image)
+                                <img class="alignHolder d-flex w-100 align-items-center"
+                                    src="https://busia.mcomps.africa/assets/img/departments/{{ $department->cover_image }}">
+                            @endif
+                        </header>
+
+                        <div class="mb-6 dcsPatchWrap mb-lg-11">
+                            {!! $department->description !!}
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6 col-12 col-lg-4 col-xl-3 order-lg-1">
+                    <aside class="pt-1 dscSidebar mr-xl-n5">
+                        <nav class="px-6 py-5 mb-6 widget mb-lg-10 widgetDepartsNav widgetBgLight">
+                            <h3 class="mb-4 fwSemiBold">
+                                <a href="{{ route('departments') }}" class="mr-1 align-middle btnDcsBack"><i
+                                        class="fas fa-chevron-left"><span class="sr-only">icon</span></i></a>
+                                All Departments
+                            </h3>
+                            <ul class="pl-0 mb-0 mb-3 list-unstyled mx-n2">
+                                @foreach ($directors as $item)
+                                    <li>
+                                        <a
+                                            href="{{ route('directorate.details', ['dir_id' => $item->id]) }}">{{ $item->title }}</a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </nav>
+                        <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">
+                            <i class="mb-3 text-white icnWrap icomoon-chatq d-block"><span
+                                    class="sr-only">icon</span></i>
+                            <h3 class="mb-2 text-white h3Medium">Need any help?</h3>
+                            <p>Here you can get your perfect answer for your problem.</p>
+                            <a href="{{ route('contact') }}"
+                                class="p-0 border-0 btn btnTheme btn-sm font-weight-bold text-capitalize position-relative"
+                                data-hover="Contact now">
+                                <span class="d-block btnText">Contact now</span>
+                            </a>
+                            <i class="whWatermarkIcn icomoon-helpc position-absolute"><span
+                                    class="sr-only">icon</span></i>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            <section class="pt-3 pb-6 meetCouncilBlock noOverlay position-relative pt-md-4 pt-lg-6 pt-xl-11 pb-lg-10">
+                <div class="container">
+                    <header class="text-center headingHead cdTitle mb-7 mb-md-13">
+                        <h2 class="mb-4 fwSemiBold">Administation</h2>
+                        <p>Meet the department leadership team.</p>
+                    </header>
+                    <div class="row justify-content-center">
+                        @foreach ($officers as $item)
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
+                                    <div class="imgHolder position-relative">
+                                        @if ($item->photo)
+                                            <img src="https://busia.mcomps.africa/assets/img/departments/chief_officer/{{ $item->photo }}"
+                                                class="img-fluid d-block w-100">
+                                        @else
+                                            <img src="https://placehold.co/200x300" class="img-fluid d-block w-100">
+                                        @endif
+                                        <div class="mcssHolder">
+                                            <ul
+                                                class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="mcssLink" title="Officer Profile"><i
+                                                            class="vssIcn fa fa-eye"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
+                                        <h3 class="mb-1 fwMedium h3Small">{{ $item->name }}</h3>
+                                        <h4 class="fwSemiBold fontBase text-secondary"><a href="javascript:void(0);">
+                                                {{ $item->designation }}</a>
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                        @endforeach
+                        @foreach ($directors as $item)
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
+                                    <div class="imgHolder position-relative">
+                                        @if ($item->leader_photo)
+                                            <img src="https://busia.mcomps.africa/assets/img/directors/{{ $item->leader_photo }}"
+                                                class="img-fluid d-block w-100">
+                                        @else
+                                            <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
+                                        @endif
+                                        <div class="mcssHolder">
+                                            <ul
+                                                class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
+                                                <li>
+                                                    <a href="{{ route('directorate.details', ['dir_id' => $item->id]) }}"
+                                                        class="mcssLink" title="Details"><i
+                                                            class="vssIcn fa fa-eye"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
+                                        <h3 class="mb-1 fwMedium h3Small">{{ $item->leader_name }}</h3>
+                                        <h4 class="fwSemiBold fontBase text-secondary">Director {{ $item->title }}
+                                        </h4>
+                                        <hr class="mx-0 mt-4 mb-3 mccSeprator">
+                                        <ul class="list-unstyled mccInfoList">
+                                            @if ($item->office_email)
+                                                <li>
+                                                    <a href="mailto:{{ $item->office_email }}">
+                                                        <i class="mr-1 fas fa-envelope icn"><span
+                                                                class="sr-only">icon</span></i>
+                                                        {{ $item->office_email }}
+                                                    </a>
+                                                </li>
+                                            @endif
+                                            @if ($item->office_phone)
+                                                <li>
+                                                    <a href="tel:+{{ $item->office_phone }}">
+                                                        <i class="mr-1 fas fa-phone-alt icn"><span
+                                                                class="sr-only">icon</span></i>
+                                                        +{{ $item->office_phone }}
+                                                    </a>
+                                                </li>
+                                            @endif
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </section>
+        </div>
+    </article>
 </main>
