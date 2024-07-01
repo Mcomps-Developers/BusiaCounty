@@ -73,14 +73,11 @@
                                                         {{-- <li><a class="dropdown-item"
                                                                 href="{{ route('deputy.governor') }}">Deputy
                                                                 Governor</a></li> --}}
-                                                        <li><a class="dropdown-item" href="{{ route('executive') }}">The
-                                                                Executive</a>
-                                                        </li>
                                                         <li><a class="dropdown-item"
                                                                 href="{{ route('public.service') }}">County Public
                                                                 Service Board</a></li>
                                                         <li><a class="dropdown-item"
-                                                                href="{{ route('governor') }}">County Secretariate</a>
+                                                                href="{{ route('governor') }}">County Secretary</a>
                                                         </li>
                                                         <li><a class="dropdown-item" href="{{ route('executive') }}">The
                                                                 Executive</a>
