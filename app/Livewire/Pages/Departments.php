@@ -9,7 +9,7 @@ class Departments extends Component
 {
     public function render()
     {
-        $departments = Department::orderBy('title')->get();
+        $departments = Department::orderBy('title')->where('slug','!=','governorship')->get();
         return view('livewire.pages.departments', ['departments' => $departments])->layout('layouts.base');
     }
 }
