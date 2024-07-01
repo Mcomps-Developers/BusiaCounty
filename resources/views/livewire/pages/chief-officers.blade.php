@@ -40,7 +40,7 @@
                                     <ul
                                         class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                         <li>
-                                            <a href="{{ route('department.details', ['slug' => $item->department->slug]) }}"
+                                            <a href=""
                                                 class="mcssLink" title="Details"><i class="vssIcn fa fa-eye"></i></a>
                                         </li>
                                     </ul>
@@ -55,8 +55,10 @@
                                 <hr class="mx-0 mt-4 mb-3 mccSeprator">
                                 <ul class="list-unstyled mccInfoList">
                                     <li style="text-transform: capitalize;">
-                                        <a>
-                                            Department of {{ $item->department->title }}
+                                        <a
+                                            href="{{ route('department.details', ['slug' => $item->department->slug]) }}">
+                                            Department of {{ $item->department->title }} <i
+                                                class="fa fa-external-link"></i>
                                         </a>
                                     </li>
                                 </ul>
