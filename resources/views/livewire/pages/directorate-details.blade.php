@@ -115,7 +115,7 @@
                 </div>
             </header>
             <header class="card d-flex col-12 bg-white shadow">
-                <div class="row" style="paddind: 12px">
+                <div class="col-lg-12 col-md-12" style="paddind: 12px">
                     {!! $directorate->about !!}
                 </div>
 
