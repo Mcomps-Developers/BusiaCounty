@@ -83,8 +83,8 @@
                 </div>
             </header> --}}
         </div>
-    </article>
-    <article class="pb-2 dsSingleContent pt-7 pt-md-10 pb-md-1 pt-lg-16 pb-lg-10 pt-xl-21 pb-xl-16">
+    {{-- </article>
+    <article class="pb-2 dsSingleContent pt-7 pt-md-10 pb-md-1 pt-lg-16 pb-lg-10 pt-xl-21 pb-xl-16"> --}}
         <div class="container">
             <div class="row">
                 <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
