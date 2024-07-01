@@ -40,8 +40,8 @@
                                     <ul
                                         class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                         <li>
-                                            <a href=""
-                                                class="mcssLink" title="Details"><i class="vssIcn fa fa-eye"></i></a>
+                                            <a href="javascript:void(0);"
+                                                class="mcssLink" title="Officer Profile"><i class="vssIcn fa fa-eye"></i></a>
                                         </li>
                                     </ul>
                                 </div>

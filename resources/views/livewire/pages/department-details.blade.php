@@ -127,62 +127,35 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
-                                <div class="imgHolder position-relative">
-                                    @if ($department->chief_officer_photo)
-                                        <img src="https://busia.mcomps.africa/assets/img/departments/chief_officer/{{ $department->chief_officer_photo }}"
-                                            class="img-fluid d-block w-100">
-                                    @else
-                                        <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
-                                    @endif
-                                    <div class="mcssHolder">
-                                        <ul
-                                            class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Twitter"><i
-                                                        class="vssIcn fab fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Facebook"><i
-                                                        class="vssIcn fab fa-facebook-square"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);" class="mcssLink" title="Linkedin"><i
-                                                        class="vssIcn fab fa-linkedin-in"></i></a>
-                                            </li>
-                                        </ul>
+                        @foreach ($officers as $item)
+                            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
+                                    <div class="imgHolder position-relative">
+                                        @if ($item->photo)
+                                            <img src="https://busia.mcomps.africa/assets/img/departments/chief_officer/{{ $item->photo }}"
+                                                class="img-fluid d-block w-100">
+                                        @else
+                                            <img src="https://placehold.co/200x300" class="img-fluid d-block w-100">
+                                        @endif
+                                        <div class="mcssHolder">
+                                            <ul
+                                                class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
+                                                <li>
+                                                    <a href="javascript:void(0);" class="mcssLink" title="Officer Profile"><i
+                                                            class="vssIcn fa fa-eye"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
-                                    <h3 class="mb-1 fwMedium h3Small">{{ $department->chief_officer_name }}</h3>
-                                    <h4 class="fwSemiBold fontBase text-secondary">Chief Officer,
-                                        {{ $department->title }}
-                                    </h4>
-                                    <hr class="mx-0 mt-4 mb-3 mccSeprator">
-                                    <ul class="list-unstyled mccInfoList">
-                                        @if ($department->officer_email)
-                                            <li>
-                                                <a href="mailto:{{ $department->officer_email }}">
-                                                    <i class="mr-1 fas fa-envelope icn"><span
-                                                            class="sr-only">icon</span></i>
-                                                    {{ $department->officer_email }}
-                                                </a>
-                                            </li>
-                                        @endif
-                                        @if ($department->officer_phone)
-                                            <li>
-                                                <a href="tel:+{{ $department->officer_phone }}">
-                                                    <i class="mr-1 fas fa-phone-alt icn"><span
-                                                            class="sr-only">icon</span></i>
-                                                    +{{ $department->officer_phone }}
-                                                </a>
-                                            </li>
-                                        @endif
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
+                                    <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
+                                        <h3 class="mb-1 fwMedium h3Small">{{ $item->name }}</h3>
+                                        <h4 class="fwSemiBold fontBase text-secondary"><a href="javascript:void(0);">
+                                                {{ $item->designation }}</a>
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                        @endforeach
                         @foreach ($directors as $item)
                             <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                                 <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
