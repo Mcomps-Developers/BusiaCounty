@@ -12,7 +12,7 @@ class ProjectDetails extends Component
     public function render()
     {
         $project = Project::where('reference', $this->reference)->first();
-        $relatedProjects = Project::where('department_id', $project->department_id)->limit(8)->get();
+        $relatedProjects = Project::where('department_id', $project->department_id)->where('id', '!=', $project->id)->limit(8)->get();
         return view('livewire.pages.project-details', ['project' => $project, 'relatedProjects' => $relatedProjects])->layout('layouts.base');
     }
 }
