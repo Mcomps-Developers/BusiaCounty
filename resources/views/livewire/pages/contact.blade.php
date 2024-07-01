@@ -1,6 +1,6 @@
 <main>
     @section('title')
-    Contact Us
+        Contact Us
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
         style="background-image: url(https://placehold.co/1920x300);">
@@ -28,141 +28,36 @@
                         <p>These are our network location over the world specific foreign charitable organization.</p>
                     </header>
                 </div>
-                <div class="col-12 col-lg-8 col-xl-9" >
+                <div class="col-12 col-lg-8 col-xl-9">
                     <!-- arddColumnSlider -->
                     <div class="arddColumnSlider">
-                        <div class="px-2">
-                            <!-- getDirColumn -->
-                            <div class="getDirColumn d-flex w-100">
-                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
-                                    <address class="my-3">Location : Here</address>
-                                    <ul class="mb-6 list-unstyled contactInfoList">
-                                        <li>
-                                            <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                            example@domain.com
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                            +254xxxxxxxxx
-                                        </li>
-                                    </ul>
-                                    <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
+                        @foreach ($departments as $item)
+                            <div class="px-2">
+                                <!-- getDirColumn -->
+                                <div class="getDirColumn d-flex w-100">
+                                    <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
+                                        <strong class="ardBadge fwSemiBold fontAlter">{{ $item->title }}</strong>
+                                        @if ($item->office_email)
+                                            <address class="my-3">{{ $item->office_email }}</address>
+                                        @endif
+                                        <ul class="mb-6 list-unstyled contactInfoList">
+                                            <li>
+                                                <i class="fas fa-phone-alt icn position-absolute"
+                                                    aria-hidden="true"><span class="sr-only">icon</span></i>
+                                                @if ($item->office_name)
+                                                    +{{ $item->office_name }}
+                                                @else
+                                                    Not Added
+                                                @endif
+
+                                            </li>
+                                        </ul>
+                                        <a href="mailto:{{ $item->office_email }}" class="btn btnGetDir">Email us</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="px-2">
-                            <!-- getDirColumn -->
-                            <div class="getDirColumn d-flex w-100">
-                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
-                                    <address class="my-3">Location : Here</address>
-                                    <ul class="mb-6 list-unstyled contactInfoList">
-                                        <li>
-                                            <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    example@domain.com
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    +254xxxxxxxxx
-                                        </li>
-                                    </ul>
-                                    <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <!-- getDirColumn -->
-                            <div class="getDirColumn d-flex w-100">
-                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
-                                    <address class="my-3">Location : Here</address>
-                                    <ul class="mb-6 list-unstyled contactInfoList">
-                                        <li>
-                                            <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    example@domain.com
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    +254xxxxxxxxx
-                                        </li>
-                                    </ul>
-                                    <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <!-- getDirColumn -->
-                            <div class="getDirColumn d-flex w-100">
-                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
-                                    <address class="my-3">Location : Here</address>
-                                    <ul class="mb-6 list-unstyled contactInfoList">
-                                        <li>
-                                            <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    example@domain.com
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    +254xxxxxxxxx
-                                        </li>
-                                    </ul>
-                                    <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <!-- getDirColumn -->
-                            <div class="getDirColumn d-flex w-100">
-                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
-                                    <address class="my-3">Location : Here</address>
-                                    <ul class="mb-6 list-unstyled contactInfoList">
-                                        <li>
-                                            <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    example@domain.com
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    +254xxxxxxxxx
-                                        </li>
-                                    </ul>
-                                    <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-2">
-                            <!-- getDirColumn -->
-                            <div class="getDirColumn d-flex w-100">
-                                <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                    <strong class="ardBadge fwSemiBold fontAlter">Department : Name</strong>
-                                    <address class="my-3">Location : Here</address>
-                                    <ul class="mb-6 list-unstyled contactInfoList">
-                                        <li>
-                                            <i class="far fa-envelope icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    example@domain.com
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-phone-alt icn position-absolute" aria-hidden="true"><span
-                                                    class="sr-only">icon</span></i>
-                                                    +254xxxxxxxxx
-                                        </li>
-                                    </ul>
-                                    <a href="javascript:void(0);" class="btn btnGetDir">Get Direction</a>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+
                     </div>
                     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                         <header class="mb-6 text-center">
@@ -188,8 +83,7 @@
                                 </div>
                                 <div class="px-2 col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100 d-block"
-                                            placeholder="Write your message&hellip;"></textarea>
+                                        <textarea class="form-control w-100 d-block" placeholder="Write your message&hellip;"></textarea>
                                     </div>
                                 </div>
                             </div>
