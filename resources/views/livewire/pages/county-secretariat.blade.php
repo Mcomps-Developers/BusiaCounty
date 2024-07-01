@@ -25,7 +25,7 @@
                 <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
                     <div class="pl-xl-14">
                         <header class="fzMedium mb-9">
-                            <h2 class="fwSemiBold h2vii">{{ config('app.name') }} Secretary</h2>
+                            <h2 class="fwSemiBold h2vii">County Secretary</h2>
                         </header>
                         {!! $content->content !!}
                     </div>
@@ -52,7 +52,7 @@
                 <div class="container">
                     <header class="text-center headingHead cdTitle mb-7 mb-md-13">
                         <h2 class="mb-4 fwSemiBold">Board Members</h2>
-                        <p>Board Members of The County Government of Busia Secretariat.</p>
+                        <p>Board Members of The County Government of Busia Secretary.</p>
                     </header>
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
