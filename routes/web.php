@@ -17,6 +17,7 @@ use App\Livewire\Blog\BlogsPerTag;
 use App\Livewire\HomeComponent;
 use App\Livewire\Pages\AboutCounty;
 use App\Livewire\Pages\Budget;
+use App\Livewire\Pages\CECMProfile;
 use App\Livewire\Pages\ChiefOfficerProfile;
 use App\Livewire\Pages\ChiefOfficers;
 use App\Livewire\Pages\Contact;
@@ -77,6 +78,7 @@ Route::prefix('/about')->group(function () {
     Route::get('/county-executive', TheExecutive::class)->name('executive');
     Route::get('/chief-officers', ChiefOfficers::class)->name('chief.officers');
     Route::get('/chief-officer/profile/18732{profile_id}9836273',ChiefOfficerProfile::class)->name('officer.profile');
+    Route::get('/cecm/profile/18792{profile_id}9336273',CECMProfile::class)->name('cecm.profile');
     Route::get('/county-secretary',CountySecretariat::class)->name('secretary');
     // Directors
     Route::get('/directors', Directors::class)->name('directors');
