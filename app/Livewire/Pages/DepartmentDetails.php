@@ -14,7 +14,7 @@ class DepartmentDetails extends Component
     public function render()
     {
         $department = Department::where('slug', $this->slug)->first();
-        $departments = Department::orderBy('title')->get();
+        $departments = Department::orderBy('title')->where('slug','!=','governorship')->get();
         $directors = Directorate::orderBy('title')->where('department_id', $department->id)->get();
         $projects = Project::orderBy('title')->where('department_id', $department->id)->paginate(12);
         $officers = ChiefOfficer::orderby('designation')->where('department_id', $department->id)->get();
