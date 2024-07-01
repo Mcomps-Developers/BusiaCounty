@@ -103,27 +103,6 @@
                                     <h3 class="mb-1 fwMedium h3Small">{{ $department->cecm_name }}</h3>
                                     <h4 class="fwSemiBold fontBase text-secondary">CECM, {{ $department->title }}
                                     </h4>
-                                    <hr class="mx-0 mt-4 mb-3 mccSeprator">
-                                    <ul class="list-unstyled mccInfoList">
-                                        @if ($department->cecm_department_email)
-                                            <li>
-                                                <a href="mailto:{{ $department->cecm_department_email }}">
-                                                    <i class="mr-1 fas fa-envelope icn"><span
-                                                            class="sr-only">icon</span></i>
-                                                    {{ $department->cecm_department_email }}
-                                                </a>
-                                            </li>
-                                        @endif
-                                        @if ($department->cecm_department_phone)
-                                            <li>
-                                                <a href="tel:+{{ $department->cecm_department_phone }}">
-                                                    <i class="mr-1 fas fa-phone-alt icn"><span
-                                                            class="sr-only">icon</span></i>
-                                                    +{{ $department->cecm_department_phone }}
-                                                </a>
-                                            </li>
-                                        @endif
-                                    </ul>
                                 </div>
                             </article>
                         </div>
@@ -141,7 +120,7 @@
                                             <ul
                                                 class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                                 <li>
-                                                    <a href="javascript:void(0);" class="mcssLink" title="Officer Profile"><i
+                                                    <a href="{{ route('officer.profile', ['profile_id' => $item->id]) }}" class="mcssLink" title="Officer Profile"><i
                                                             class="vssIcn fa fa-eye"></i></a>
                                                 </li>
                                             </ul>
