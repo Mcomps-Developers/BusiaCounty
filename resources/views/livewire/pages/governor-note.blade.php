@@ -90,9 +90,6 @@
                 <div class="mb-6 col-12 col-lg-8 col-xl-9 order-lg-2">
                     <div class="pl-xl-14">
                         <header class="fzMedium mb-9">
-                            <h2 class="fwSemiBold h2vii" style="text-transform: capitalize">Department of
-                                {{ $department->title }}</h2>
-
                             @if ($department->cover_image)
                                 <img class="alignHolder d-flex w-100 align-items-center"
                                     src="https://busia.mcomps.africa/assets/img/departments/{{ $department->cover_image }}">
@@ -140,7 +137,7 @@
             <section class="pt-3 pb-6 meetCouncilBlock noOverlay position-relative pt-md-4 pt-lg-6 pt-xl-11 pb-lg-10">
                 <div class="container">
                     <header class="text-center headingHead cdTitle mb-7 mb-md-13">
-                        <h2 class="mb-4 fwSemiBold">Administation</h2>
+                        <h2 class="mb-4 fwSemiBold">Administration</h2>
                         <p>Meet the department leadership team.</p>
                     </header>
                     <div class="row justify-content-center">
@@ -158,8 +155,8 @@
                                             <ul
                                                 class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
                                                 <li>
-                                                    <a href="javascript:void(0);" class="mcssLink" title="Officer Profile"><i
-                                                            class="vssIcn fa fa-eye"></i></a>
+                                                    <a href="javascript:void(0);" class="mcssLink"
+                                                        title="Officer Profile"><i class="vssIcn fa fa-eye"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
