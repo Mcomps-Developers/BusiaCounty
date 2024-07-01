@@ -49,7 +49,7 @@
                             <div class="px-5 pt-5 pb-4 mcCaptionWrap position-relative">
                                 <h3 class="mb-1 fwMedium h3Small">{{ $item->name }}</h3>
                                 <h4 class="fwSemiBold fontBase text-secondary"><a
-                                        href="{{ route('department.details', ['slug' => $item->slug]) }}">
+                                        href="{{ route('department.details', ['slug' => $item->department->slug]) }}">
                                         {{ $item->designation }}</a>
                                 </h4>
                                 <hr class="mx-0 mt-4 mb-3 mccSeprator">
