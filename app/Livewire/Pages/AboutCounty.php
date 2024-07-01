@@ -2,12 +2,14 @@
 
 namespace App\Livewire\Pages;
 
+use App\Models\About;
 use Livewire\Component;
 
 class AboutCounty extends Component
 {
     public function render()
     {
-        return view('livewire.pages.about-county')->layout('layouts.base');
+        $content = About::first();
+        return view('livewire.pages.about-county', ['content' => $content])->layout('layouts.base');
     }
 }
