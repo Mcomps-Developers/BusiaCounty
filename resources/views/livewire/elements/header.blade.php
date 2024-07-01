@@ -177,8 +177,8 @@
                                     <a class="nav-link" href="{{ route('contact') }}"
                                         onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Contact</a>
                                 </li>
-                                <li class="nav-item btn btn-secondary-outline btn-sm">
-                                    <a class="nav-link" href="https://bajetiyetu.treasury.go.ke/site/county?ctid=40"
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-secondary btn-sm" href="https://bajetiyetu.treasury.go.ke/site/county?ctid=40"
                                         target="_/blank"
                                         onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Bajeti
                                         Yetu</a>
