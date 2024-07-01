@@ -37,22 +37,14 @@
                                 <div class="getDirColumn d-flex w-100">
                                     <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
                                         <strong class="ardBadge fwSemiBold fontAlter">{{ $item->title }}</strong>
-                                        @if ($item->office_email)
-                                            <address class="my-3">{{ $item->office_email }}</address>
-                                        @endif
-                                        <ul class="mb-6 list-unstyled contactInfoList">
-                                            <li>
-                                                <i class="fas fa-phone-alt icn position-absolute"
-                                                    aria-hidden="true"><span class="sr-only">icon</span></i>
-                                                @if ($item->office_name)
-                                                    +{{ $item->office_name }}
-                                                @else
-                                                    Not Added
-                                                @endif
+                                        {{-- @if ($item->office_email) --}}
+                                            <a href="mailto:{{ $item->office_email }}" class="btn btnGetDir">Email
+                                                us</a>
+                                        {{-- @endif --}}
+                                        {{-- @if ($item->office_phone) --}}
+                                            <a href="tel:+{{ $item->office_phone }}" class="btn btnGetDir">Call us</a>
+                                        {{-- @endif --}}
 
-                                            </li>
-                                        </ul>
-                                        <a href="mailto:{{ $item->office_email }}" class="btn btnGetDir">Email us</a>
                                     </div>
                                 </div>
                             </div>
