@@ -78,7 +78,7 @@
 
         @media (max-width: 767px) {
             .featuresAsideBlock {
-                display: none;
+                /* display: none; */
             }
         }
     </style>
@@ -113,7 +113,7 @@
     </div>
     <aside class="text-white featuresAsideBlock position-relative">
         <div class="container">
-            <div class="flatpWrap position-relative mt-n8 mt-md-n18" style="transform: scale(0.6)">
+            <div class="flatpWrap position-relative mt-n8 mt-md-n18" style="transform: scale(0.5)">
                 <ul class="flex-wrap mb-0 overflow-hidden list-unstyled fabFeaturesList d-flex" style="background-color: #9ECA3E">
                     <li>
                         <a href="{{ route('executive') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
