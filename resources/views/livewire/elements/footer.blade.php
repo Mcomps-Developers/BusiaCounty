@@ -6,19 +6,19 @@
                     <nav class="mb-4 ftcaNav mb-lg-0">
                         <ul class="flex-wrap mb-0 list-unstyled d-flex justify-content-center justify-content-lg-start">
                             <li>
-                                <a href="{{route('about')}}">About</a>
+                                <a href="{{ route('about') }}">About</a>
                             </li>
                             <li>
-                                <a href="{{route('subcounties')}}">Sub-Counties</a>
+                                <a href="{{ route('subcounties') }}">Sub-Counties</a>
                             </li>
                             <li>
-                                <a href="{{route('events')}}">Events</a>
+                                <a href="{{ route('events') }}">Events</a>
                             </li>
                             <li>
-                                <a href="{{route('news.speeches')}}">Media</a>
+                                <a href="{{ route('news.speeches') }}">Media</a>
                             </li>
                             <li>
-                                <a href="{{route('contact')}}">Contact</a>
+                                <a href="{{ route('contact') }}">Contact</a>
                             </li>
 
                         </ul>
@@ -64,7 +64,7 @@
                 <div class="mb-6 col-12 col-sm-6 col-md-5 col-xl-3">
                     <div class="mb-6 ftLogo mt-md-1">
                         <a href="/">
-                            <img src="{{asset('assets/images/logoWhite.png')}}" class="img-fluid" alt="egovt">
+                            <img src="{{ asset('assets/images/logoWhite.png') }}" class="img-fluid" alt="egovt">
                         </a>
                     </div>
                     <address class="mb-0 ftPlace">
@@ -109,10 +109,11 @@
                 </div>
                 <div class="mb-6 col-12 col-sm-4 col-md-3 col-xl-2 col-xlwd-3">
                     <div class="pl-xlwd-11">
-                        <h3 class="mb-4 text-white ftHeading">Useful Links</h3>
+                        <h3 class="mb-4 text-white ftHeading">External Links</h3>
                         <ul class="mb-0 list-unstyled ftsrLinksList">
                             <li>
-                                <a href="javascript:void(0);">County Assembly</a>
+                                <a href="https://bajetiyetu.treasury.go.ke/site/county?ctid=40" target="_/blank">Bajeti
+                                    Yetu</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);">Council of Governors</a>
@@ -136,10 +137,12 @@
                     <div class="ml-xl-n1 ml-xlwd-n7">
                         <h3 class="mb-5 text-white ftHeading">Mailing List</h3>
                         <form action="#" class="ftSubscribeForm">
-                            <label class="d-block mb-7">Be the first to get the latest news, articles, and resources, sent
+                            <label class="d-block mb-7">Be the first to get the latest news, articles, and resources,
+                                sent
                                 straight to your email.</label>
                             <div class="mb-3 input-group">
-                                <input type="text" class="form-control form-control-lg" placeholder="Enter Your Email">
+                                <input type="text" class="form-control form-control-lg"
+                                    placeholder="Enter Your Email">
                                 <div class="input-group-append">
                                     <button type="button"
                                         class="p-0 border-0 btn btnTheme d-flex font-weight-bold text-capitalize position-relative"
@@ -157,7 +160,8 @@
     <!-- pageFooter -->
     <footer id="pageFooter" class="pt-6 pb-3 text-center bg-dark pt-md-8 pb-md-5">
         <div class="container">
-            <p>&copy; {{ date('Y') }} <a href="javascript:void(0);">{{config('app.name')}}</a>. All Rights Reserved.
+            <p>&copy; {{ date('Y') }} <a href="javascript:void(0);">{{ config('app.name') }}</a>. All Rights
+                Reserved.
                 Powered by <a target="_/blank" href="https://mcomps.co.ke" style="color: white"><b>Mcomps</b></a>. <br
                     class="d-md-none"></p>
         </div>
