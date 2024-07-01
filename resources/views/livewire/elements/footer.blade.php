@@ -32,22 +32,22 @@
                         <ul
                             class="flex-wrap mb-0 list-unstyled socialNetworks ftSocialNetworks d-flex justify-content-center justify-content-sm-end">
                             <li>
-                                <a href="javascript:void(0);">
+                                <a href="http://www.facebook.com/BUSIA-County-Government-1233630846650145">
                                     <i class="fab fa-facebook-square"><span class="sr-only">facebook</span></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">
+                                <a href="https://twitter.com/040County">
                                     <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">
-                                    <i class="fab fa-instagram"><span class="sr-only">instagram</span></i>
+                                <a href="tel:+254723174098">
+                                    <i class="fab fa-phone"><span class="sr-only">phone</span></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">
+                                <a href="https://www.youtube.com/channel/UCuWKmYF3yDPxa0_wBhlzKIg">
                                     <i class="fab fa-youtube"><span class="sr-only">youtube</span></i>
                                 </a>
                             </li>
@@ -116,19 +116,13 @@
                                     Yetu</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">Council of Governors</a>
+                                <a href="https://www.cog.go.ke/" target="_/blank">Council of Governors</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">E-Citizen</a>
+                                <a href="https://accounts.ecitizen.go.ke/en" target="_/blank">E-Citizen</a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);">Public Service</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Judiciary</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">National Police Service</a>
                             </li>
                         </ul>
                     </div>
