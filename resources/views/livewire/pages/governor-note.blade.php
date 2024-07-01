@@ -136,7 +136,7 @@
                 <div class="container">
                     <header class="text-center headingHead cdTitle mb-7 mb-md-13">
                         <h2 class="mb-4 fwSemiBold">Administration</h2>
-                        <p>Meet the department leadership team.</p>
+                        <p>Meet the governorship leadership team.</p>
                     </header>
                     <div class="row justify-content-center">
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
