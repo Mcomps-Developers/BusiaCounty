@@ -11,7 +11,7 @@ class Header extends Component
 {
     public function render()
     {
-        $departments = Department::orderBy('title')->get();
+        $departments = Department::orderBy('title')->where('slug','!=','governorship')->get();
         $categories = BlogCategory::orderBy('name')->get();
         $mucipality = Municipality::orderBy('name')->get();
         return view('livewire.elements.header', ['departments' => $departments, 'categories' => $categories,'mucipality'=>$mucipality]);
