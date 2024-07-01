@@ -76,12 +76,12 @@
                     </div>
                 </div>
             </header>
-            <header
+            {{-- <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
                 <div style="margin: 15px;">
                     {!! $Governor->about !!}
                 </div>
-            </header>
+            </header> --}}
         </div>
     </article>
     <article class="pb-2 dsSingleContent pt-7 pt-md-10 pb-md-1 pt-lg-16 pb-lg-10 pt-xl-21 pb-xl-16">
