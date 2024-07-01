@@ -43,7 +43,7 @@
                             </li>
                             <li>
                                 <a href="tel:+254723174098">
-                                    <i class="fab fa-phone"><span class="sr-only">phone</span></i>
+                                    <i class="fa fa-phone"><span class="sr-only">phone</span></i>
                                 </a>
                             </li>
                             <li>
