@@ -68,10 +68,10 @@
                                                     aria-expanded="false">County Structure</a>
                                                 <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                                     <ul class="mb-0 list-unstyled hdDropdownList">
-                                                        <li><a class="dropdown-item" href="{{ route('governor') }}">The Governor</a></li>
-                                                        <li><a class="dropdown-item"
+                                                        <li><a class="dropdown-item" href="{{ route('governor') }}">Governorship</a></li>
+                                                        {{-- <li><a class="dropdown-item"
                                                                 href="{{ route('deputy.governor') }}">Deputy
-                                                                Governor</a></li>
+                                                                Governor</a></li> --}}
                                                         <li><a class="dropdown-item" href="{{ route('executive') }}">The
                                                                 Executive</a>
                                                         </li>
