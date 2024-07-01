@@ -87,8 +87,8 @@
                         <div class="col-12 col-md-7">
                             <div class="pl-xl-10 pt-7 pt-md-0">
                                 <h2 class="mb-1 fwMedium h3Small">Director Profile</h2>
-                                @if ($directorate->about_rector)
-                                {!! $directorate->about_rector !!}
+                                @if ($directorate->director_profile)
+                                {!! $directorate->director_profile !!}
                                 @else
                                 <p>
                                     The text below acts as a placeholder when the director profile has not been added.
