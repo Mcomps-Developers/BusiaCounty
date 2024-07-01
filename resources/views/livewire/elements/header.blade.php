@@ -48,7 +48,7 @@
                     <div
                         class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
                         <div class="mt-2 collapse navbar-collapse pageMainNavCollapse mt-md-0" id="pageMainNavCollapse">
-                            <ul class="navbar-nav mainNavigation" >
+                            <ul class="navbar-nav mainNavigation">
                                 <li class="nav-item">
                                     <a class="nav-link" href="/"
                                         onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Home</a>
@@ -68,7 +68,8 @@
                                                     aria-expanded="false">County Structure</a>
                                                 <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                                     <ul class="mb-0 list-unstyled hdDropdownList">
-                                                        <li><a class="dropdown-item" href="{{ route('governor') }}">Governorship</a></li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{ route('governor') }}">Governorship</a></li>
                                                         {{-- <li><a class="dropdown-item"
                                                                 href="{{ route('deputy.governor') }}">Deputy
                                                                 Governor</a></li> --}}
@@ -175,6 +176,12 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('contact') }}"
                                         onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Contact</a>
+                                </li>
+                                <li class="nav-item btn btn-primary btn-sm btn-outline">
+                                    <a class="nav-link" href="https://bajetiyetu.treasury.go.ke/site/county?ctid=40"
+                                        target="_/blank"
+                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Bajeti
+                                        Yetu</a>
                                 </li>
                             </ul>
                         </div>
