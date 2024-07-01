@@ -77,7 +77,7 @@
                                                                 href="{{ route('public.service') }}">County Public
                                                                 Service Board</a></li>
                                                         <li><a class="dropdown-item"
-                                                                href="{{ route('governor') }}">County Secretary</a>
+                                                                href="{{ route('secretary') }}">County Secretary</a>
                                                         </li>
                                                         <li><a class="dropdown-item" href="{{ route('executive') }}">The
                                                                 Executive</a>

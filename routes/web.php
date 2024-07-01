@@ -20,6 +20,7 @@ use App\Livewire\Pages\Budget;
 use App\Livewire\Pages\ChiefOfficers;
 use App\Livewire\Pages\Contact;
 use App\Livewire\Pages\CountyRevenueBoard;
+use App\Livewire\Pages\CountySecretariat;
 use App\Livewire\Pages\DepartmentDetails;
 use App\Livewire\Pages\Departments;
 use App\Livewire\Pages\DeputyGovernor;
@@ -74,6 +75,7 @@ Route::prefix('/about')->group(function () {
     Route::get('/deputy-governor', DeputyGovernor::class)->name('deputy.governor');
     Route::get('/county-executive', TheExecutive::class)->name('executive');
     Route::get('/chief-officers', ChiefOfficers::class)->name('chief.officers');
+    Route::get('/county-secretary',CountySecretariat::class)->name('secretary');
     // Directors
     Route::get('/directors', Directors::class)->name('directors');
     Route::get('/directorate/page/2123{dir_id}8723', DirectorateDetails::class)->name('directorate.details');
