@@ -75,7 +75,7 @@
             <section class="pt-3 pb-6 meetCouncilBlock noOverlay position-relative pt-md-4 pt-lg-6 pt-xl-11 pb-lg-10">
                 <div class="container">
                     <header class="text-center headingHead cdTitle mb-7 mb-md-13">
-                        <h2 class="mb-4 fwSemiBold">Administation</h2>
+                        <h2 class="mb-4 fwSemiBold">Administration</h2>
                         <p>Meet the department leadership team.</p>
                     </header>
                     <div class="row justify-content-center">
