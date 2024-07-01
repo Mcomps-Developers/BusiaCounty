@@ -25,12 +25,7 @@
                     <div class="col-12 col-md-6 col-lg-4 isoCol business">
                         <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
                             style="background-image: url(https://busia.mcomps.africa/assets/img/projects/covers/{{ $item->cover_image }});">
-                            <a href="https://busia.mcomps.africa/assets/img/projects/covers/{{ $item->cover_image }}"
-                                class="px-3 py-1 text-white echCountTag position-absolute fwSemiBold lightbox"
-                                data-fancybox="true" tabindex="-1">
-                                <i class="far fa-image icn" aria-hidden="true"><span class="sr-only">icon</span></i>
-                                6
-                            </a>
+
                             <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                 <h3 class="mb-0 text-white">
                                     <strong class="mb-1 d-block font-weight-normal fontBase echCatTitle"
@@ -44,8 +39,9 @@
                                     </strong>
                                     <span class="d-block" style="">{{ $item->title }}</span>
                                 </h3>
-                                <a href="{{ route('project.details',['slug'=>$item->slug,'reference'=>$item->reference]) }}"><i
-                                        class="rounded-circle icomoon-arrowRight d-flex align-items-center justify-content-center spanLinkGo"><span
+                                <a
+                                    href="{{ route('project.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}"><i
+                                        class="rounded-circle fa fa-arrow-right d-flex align-items-center justify-content-center spanLinkGo"><span
                                             class="sr-only">icon</span></i></a>
                             </div>
                         </div>
