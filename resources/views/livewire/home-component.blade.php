@@ -77,39 +77,8 @@
         }
 
         @media (max-width: 767px) {
-            .featuresAsideBlock .fabFeaturesList {
-                display: flex;
-                flex-wrap: nowrap;
-                /* Ensure items stay in a single line */
-                overflow-x: auto;
-                /* Enable horizontal scrolling if needed */
-                -webkit-overflow-scrolling: touch;
-                /* Smooth scrolling on iOS */
-                padding: 0;
-                /* Remove default padding */
-            }
-
-            .featuresAsideBlock .fabFeaturesList li {
-                flex: 0 0 auto;
-                /* Ensure items do not shrink or grow */
-                width: 50%;
-                /* Display two items per row for better visibility */
-                max-width: 50%;
-                /* Limit the width to half the container */
-                box-sizing: border-box;
-                /* Include padding and border in width */
-            }
-
-            .featuresAsideBlock .fflColumn {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                /* Ensure items take full height of the container */
-                padding: 20px;
-                /* Adjust padding as needed */
-                text-align: center;
+            .featuresAsideBlock {
+                display: none;
             }
         }
     </style>
