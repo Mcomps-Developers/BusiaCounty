@@ -77,8 +77,39 @@
         }
 
         @media (max-width: 767px) {
-            .featuresAsideBlock {
-                /* display: none; */
+            .featuresAsideBlock .fabFeaturesList {
+                display: flex;
+                flex-wrap: nowrap;
+                /* Ensure items stay in a single line */
+                overflow-x: auto;
+                /* Enable horizontal scrolling if needed */
+                -webkit-overflow-scrolling: touch;
+                /* Smooth scrolling on iOS */
+                padding: 0;
+                /* Remove default padding */
+            }
+
+            .featuresAsideBlock .fabFeaturesList li {
+                flex: 0 0 auto;
+                /* Ensure items do not shrink or grow */
+                width: 50%;
+                /* Display two items per row for better visibility */
+                max-width: 50%;
+                /* Limit the width to half the container */
+                box-sizing: border-box;
+                /* Include padding and border in width */
+            }
+
+            .featuresAsideBlock .fflColumn {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                /* Ensure items take full height of the container */
+                padding: 20px;
+                /* Adjust padding as needed */
+                text-align: center;
             }
         }
     </style>
@@ -114,7 +145,8 @@
     <aside class="text-white featuresAsideBlock position-relative">
         <div class="container">
             <div class="flatpWrap position-relative mt-n8 mt-md-n18" style="transform: scale(0.5)">
-                <ul class="flex-wrap mb-0 overflow-hidden list-unstyled fabFeaturesList d-flex" style="background-color: #9ECA3E">
+                <ul class="flex-wrap mb-0 overflow-hidden list-unstyled fabFeaturesList d-flex"
+                    style="background-color: #9ECA3E">
                     <li>
                         <a href="{{ route('executive') }}" class="px-2 pt-4 pb-10 text-center fflColumn d-block w-100">
                             <span
@@ -200,8 +232,8 @@
                             {{-- <span class="spwIcn position-absolute"><img src="{{ asset('assets/images/img198.png') }}"
                                     class="img-fluid" alt="image description"></span> --}}
                         </div>
-                        <div
-                            class="text-center text-white spwCol d-flex w-100 align-items-center position-relative bg-success" style="background-color: #9ECA3E">
+                        <div class="text-center text-white spwCol d-flex w-100 align-items-center position-relative bg-success"
+                            style="background-color: #9ECA3E">
                             <div class="px-3 py-6 spwInerWrap px-lg-5 py-sm-10 py-md-6 py-lgwd-8 w-100">
                                 <h2 class="mb-1 text-white h2 fwSemiBold">Mission</h2>
                                 <p class="mb-4">To foster equitable and sustainable economic development through
@@ -351,7 +383,7 @@
                                                 <span
                                                     class="px-3 py-2 d-block">{{ date(
                                                         'M
-                                                                                                                                                                                                                                                                                                                    Y',
+                                                                                                                                                                                                                                                                                                                                                                        Y',
                                                         strtotime($item->start_date_and_time),
                                                     ) }}</span>
                                                 <span
