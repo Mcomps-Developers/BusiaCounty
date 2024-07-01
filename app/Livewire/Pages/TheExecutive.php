@@ -13,7 +13,7 @@ class TheExecutive extends Component
     {
         $deputyGovernor = DeputyGovernor::first();
         $governor = Governor::first();
-        $departments = Department::orderBy('title')->get();
+        $departments = Department::orderBy('title')->where('slug', '!=', 'governorship')->get();
         return view('livewire.pages.the-executive', ['deputyGovernor' => $deputyGovernor, 'governor' => $governor, 'departments' => $departments])->layout('layouts.base');
     }
 }

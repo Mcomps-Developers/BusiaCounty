@@ -79,7 +79,7 @@
                         </div>
                     </article>
                 </div> --}}
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                {{-- <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
                             <img src="https://busia.mcomps.africa/assets/img/about/deputy-governor/{{$deputyGovernor->photo}}"
@@ -130,7 +130,7 @@
                             </ul>
                         </div>
                     </article>
-                </div>
+                </div> --}}
                 @foreach ($departments as $item)
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
