@@ -10,7 +10,7 @@ class ChiefOfficers extends Component
 {
     public function render()
     {
-        $officers = ChiefOfficer::orderby('designation')->get();
+        $officers = ChiefOfficer::orderby('designation')->where('slug', '!=', 'governorship')->get();
         return view('livewire.pages.chief-officers', ['officers' => $officers])->layout('layouts.base');
     }
 }
