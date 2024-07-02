@@ -22,13 +22,13 @@
     <div class="cctBlock py-7 py-md-9 py-xl-16">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-4 col-xl-3 pt-lg-9">
+                <div class="col-12 col-lg-3 col-xl-3 pt-lg-9">
                     <header class="mb-3 mb-lg-10 mb-xl-0">
                         <h2 class="mb-4 fwSemiBold h2Medium">Contact us</h2>
                         <p>Leave a message and we'll act on it.</p>
                     </header>
                 </div>
-                <div class="col-12 col-lg-8 col-xl-9">
+                <div class="col-12 col-lg-9 col-xl-9">
                     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                         <header class="mb-6 text-center">
                             <h2 class="mb-2 fwSemiBold text-capitalize">Leave your Message</h2>
@@ -36,14 +36,20 @@
                         </header>
                         <form action="#" class="commentForm">
                             <div class="row mx-n2">
-                                <div class="px-2 col-12 col-sm-6 col-md-12 col-lg-6">
+                                <div class="px-2 col-12 col-sm-6 col-md-12 col-lg-4">
                                     <div class="form-group">
                                         <input type="text" class="form-control d-block w-100" placeholder="Name">
                                     </div>
                                 </div>
-                                <div class="px-2 col-12 col-sm-6 col-md-12 col-lg-6">
+                                <div class="px-2 col-12 col-sm-6 col-md-12 col-lg-4">
                                     <div class="form-group">
                                         <input type="email" class="form-control d-block w-100" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="px-2 col-12 col-sm-6 col-md-12 col-lg-4">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control d-block w-100"
+                                            placeholder="Phone Number">
                                     </div>
                                 </div>
                                 <div class="px-2 col-12">
