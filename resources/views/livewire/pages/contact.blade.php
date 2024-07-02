@@ -52,8 +52,9 @@
                                     </div>
                                 </div>
                                 <div class="px-2 col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control w-100 d-block" placeholder="Write your message&hellip;"></textarea>
+                                    <div class="form-group" wire:ignore>
+                                        <textarea id="message" wire:model.live='message' class="form-control w-100 d-block"
+                                            placeholder="Write your message&hellip;"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -69,3 +70,21 @@
         </div>
     </div>
 </main>
+@script
+    <script>
+        $(function() {
+            tinymce.init({
+                selector: '#message',
+                plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+                setup: function(editor) {
+                    editor.on('Change', function(e) {
+                        tinymce.triggerSave();
+                        var sd_data = $('#message').val();
+                        @this.set('message', sd_data);
+                    });
+                }
+            });
+        });
+    </script>
+@endscript

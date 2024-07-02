@@ -54,6 +54,8 @@ info@mcomps.co.ke--}}
     <script src="https://kit.fontawesome.com/391f644c42.js"></script>
     {{-- UserWay --}}
     <script src="https://cdn.userway.org/widget.js" data-account="lq0zxhGiPd"></script>
+    <script src="https://cdn.tiny.cloud/1/pdov4xcmnreq2uxhpc4xszzus9qtsp88oke8twqeh6d55zmx/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
     @livewireScripts
 </body>
 
