@@ -29,30 +29,6 @@
                     </header>
                 </div>
                 <div class="col-12 col-lg-8 col-xl-9">
-                    <!-- arddColumnSlider -->
-                    <div class="arddColumnSlider">
-                        @foreach ($departments as $item)
-                            <div class="px-2">
-                                <!-- getDirColumn -->
-                                <div class="getDirColumn d-flex w-100">
-                                    <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                        <strong class="ardBadge fwSemiBold fontAlter">{{ $item->title }}</strong>
-                                        {{-- @if ($item->office_email) --}}
-                                            <a href="mailto:{{ $item->office_email }}" class="btn btnGetDir">Email</a>
-                                        {{-- @endif --}}
-                                    </div>
-                                    <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
-                                        <strong class="ardBadge fwSemiBold fontAlter">{{ $item->title }}</strong>
-                                        {{-- @if ($item->office_phone) --}}
-                                            <a href="tel:+{{ $item->office_phone }}" class="btn btnGetDir">Call</a>
-                                        {{-- @endif --}}
-
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-
-                    </div>
                     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                         <header class="mb-6 text-center">
                             <h2 class="mb-2 fwSemiBold text-capitalize">Leave your Message</h2>
