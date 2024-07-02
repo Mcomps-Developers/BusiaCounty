@@ -40,6 +40,9 @@
                                         {{-- @if ($item->office_email) --}}
                                             <a href="mailto:{{ $item->office_email }}" class="btn btnGetDir">Email</a>
                                         {{-- @endif --}}
+                                    </div>
+                                    <div class="px-3 py-8 bg-white w-100 px-md-5 gdcHolder">
+                                        <strong class="ardBadge fwSemiBold fontAlter">{{ $item->title }}</strong>
                                         {{-- @if ($item->office_phone) --}}
                                             <a href="tel:+{{ $item->office_phone }}" class="btn btnGetDir">Call</a>
                                         {{-- @endif --}}
