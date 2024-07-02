@@ -3,7 +3,7 @@
     Events
     @endsection
     <header class="text-white pageMainHead d-flex position-relative bgCover w-100"
-        style="background-image: url(https://placehold.co/1920x300);">
+        style="background-image: url({{@asset('assets/images/img158.jpg')}});">
         <div class="alignHolder d-flex w-100 align-items-center">
             <div class="align w-100 position-relative">
                 <div class="container">
