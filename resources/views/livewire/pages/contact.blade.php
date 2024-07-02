@@ -24,8 +24,8 @@
             <div class="row">
                 <div class="col-12 col-lg-4 col-xl-3 pt-lg-9">
                     <header class="mb-3 mb-lg-10 mb-xl-0">
-                        <h2 class="mb-4 fwSemiBold h2Medium">County Contact Centre</h2>
-                        <p>These are our network location over the world specific foreign charitable organization.</p>
+                        <h2 class="mb-4 fwSemiBold h2Medium">Contact us</h2>
+                        <p>Leave a message and we'll act on it.</p>
                     </header>
                 </div>
                 <div class="col-12 col-lg-8 col-xl-9">
