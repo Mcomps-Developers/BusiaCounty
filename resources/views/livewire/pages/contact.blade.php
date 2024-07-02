@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="px-2 col-12">
                                     <div class="form-group" wire:ignore>
-                                        <textarea id="message" wire:model.live='message' class="form-control w-100 d-block"
+                                        <textarea id="message" wire:model.live='message'
                                             placeholder="Write your message&hellip;"></textarea>
                                     </div>
                                 </div>
