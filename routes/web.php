@@ -72,14 +72,14 @@ Route::prefix('e-services')->group(function () {
 });
 
 Route::prefix('/about')->group(function () {
-    Route::get('/busia-county', AboutCounty::class)->name('about');
+    Route::get('/history-of-busia-county', AboutCounty::class)->name('about');
     Route::get('/governorship', GovernorNote::class)->name('governor');
     Route::get('/deputy-governor', DeputyGovernor::class)->name('deputy.governor');
     Route::get('/county-executive', TheExecutive::class)->name('executive');
     Route::get('/chief-officers', ChiefOfficers::class)->name('chief.officers');
-    Route::get('/chief-officer/profile/18732{profile_id}9836273',ChiefOfficerProfile::class)->name('officer.profile');
-    Route::get('/cecm/profile/18792{profile_id}9336273',CECMProfile::class)->name('cecm.profile');
-    Route::get('/county-secretary',CountySecretariat::class)->name('secretary');
+    Route::get('/chief-officer/profile/18732{profile_id}9836273', ChiefOfficerProfile::class)->name('officer.profile');
+    Route::get('/cecm/profile/18792{profile_id}9336273', CECMProfile::class)->name('cecm.profile');
+    Route::get('/county-secretary', CountySecretariat::class)->name('secretary');
     // Directors
     Route::get('/directors', Directors::class)->name('directors');
     Route::get('/directorate/page/2123{dir_id}8723', DirectorateDetails::class)->name('directorate.details');
