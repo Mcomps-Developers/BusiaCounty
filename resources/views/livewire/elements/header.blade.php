@@ -54,12 +54,11 @@
                                         onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Home</a>
                                 </li>
                                 <li class="nav-item dropdown ddohOpener">
-                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">About</a>
+                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
-                                            <li><a class="dropdown-item" href="{{ route('about') }}">About Busia
+                                            <li><a class="dropdown-item" href="{{ route('about') }}">History of Busia
                                                     County</a></li>
                                             <li class="dropdown-submenu">
                                                 <a href="javascript:void(0);"
@@ -99,9 +98,10 @@
                                                 <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                                     <ul class="mb-0 list-unstyled hdDropdownList">
                                                         @foreach ($mucipality as $item)
-                                                            <li><a class="dropdown-item"
-                                                                    href="{{ route('municipality', ['slug' => $item->slug]) }}">{{ $item->name }}</a>
-                                                            </li>
+                                                        <li><a class="dropdown-item"
+                                                                href="{{ route('municipality', ['slug' => $item->slug]) }}">{{
+                                                                $item->name }}</a>
+                                                        </li>
                                                         @endforeach
                                                     </ul>
                                                 </div>
@@ -118,8 +118,8 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown ddohOpener">
-                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">Departments</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
@@ -127,24 +127,24 @@
                                                     style="text-transform:capitalize">All Departments</a>
                                             </li>
                                             @foreach ($departments as $item)
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('department.details', ['slug' => $item->slug]) }}"
-                                                        style="text-transform:capitalize">{{ $item->title }}</a>
-                                                </li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{ route('department.details', ['slug' => $item->slug]) }}"
+                                                    style="text-transform:capitalize">{{ $item->title }}</a>
+                                            </li>
                                             @endforeach
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown ddohOpener">
-                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">Media</a>
+                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
                                             @foreach ($categories as $item)
-                                                <li><a class="dropdown-item"
-                                                        href="{{ route('blogs.per.category', ['slug' => $item->slug]) }}">{{ $item->name }}</a>
-                                                </li>
+                                            <li><a class="dropdown-item"
+                                                    href="{{ route('blogs.per.category', ['slug' => $item->slug]) }}">{{
+                                                    $item->name }}</a>
+                                            </li>
                                             @endforeach
                                         </ul>
                                     </div>
@@ -154,13 +154,11 @@
                                         onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Projects</a>
                                 </li>
                                 <li class="nav-item dropdown ddohOpener">
-                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">Resources</a>
+                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
-                                            <li><a class="dropdown-item"
-                                                    href="{{ route('downloads') }}">Downloads</a>
+                                            <li><a class="dropdown-item" href="{{ route('downloads') }}">Downloads</a>
                                             </li>
                                             <li><a class="dropdown-item" href="{{ route('events') }}">Events</a></li>
                                             <li><a class="dropdown-item" href="{{ route('tenders') }}">Tenders</a>
@@ -190,8 +188,7 @@
                                                     <input type="search" class="text-left form-control"
                                                         placeholder="Search&hellip;">
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-secondary"
-                                                            type="button">Search</button>
+                                                        <button class="btn btn-secondary" type="button">Search</button>
                                                     </div>
                                                 </div>
                                                 <p class="mb-0">Popular searches: <br class="d-md-none"><a
@@ -202,8 +199,8 @@
                                     </div>
                                 </div>
                                 <a class="text-white position-absolute rounded-circle bg-danger btnClose d-flex align-items-center justify-content-center"
-                                    data-toggle="collapse" href="#hdSearchCollapse" role="button"
-                                    aria-expanded="true" aria-controls="hdSearchCollapse">
+                                    data-toggle="collapse" href="#hdSearchCollapse" role="button" aria-expanded="true"
+                                    aria-controls="hdSearchCollapse">
                                     <i class="fas fa-times"><span class="sr-only">search</span></i>
                                 </a>
                             </div>
