@@ -157,10 +157,12 @@
                                         <ul class="mb-0 list-unstyled hdDropdownList">
                                             <li><a class="dropdown-item" href="{{ route('downloads') }}">Downloads</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="{{ route('events') }}">Events</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('events') }}">County Events</a>
+                                            </li>
                                             <li><a class="dropdown-item" href="{{ route('tenders') }}">Tenders</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="{{ route('budget') }}">Budgets</a>
+                                            <li><a class="dropdown-item" href="{{ route('budget') }}">Budget
+                                                    Documents</a>
                                             </li>
                                         </ul>
                                     </div>
