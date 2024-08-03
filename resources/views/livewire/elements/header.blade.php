@@ -123,9 +123,6 @@
                                         aria-expanded="false">Departments</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
-                                            <li><a class="dropdown-item" href="{{ route('departments') }}"
-                                                    style="text-transform:capitalize">All Departments</a>
-                                            </li>
                                             @foreach ($departments as $item)
                                             <li><a class="dropdown-item"
                                                     href="{{ route('department.details', ['slug' => $item->slug]) }}"
