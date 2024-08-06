@@ -210,9 +210,15 @@
                                 aria-expanded="false">Eng</a>
                             <div class="p-0 overflow-hidden rounded-lg dropdown-menu dropdown-menu-right desktopDropOnHover"
                                 aria-labelledby="hdLanguagedropdown">
-                                <a class="text-center dropdown-item active" href="javascript:void(0);">Eng</a>
-                                <a class="text-center dropdown-item" href="javascript:void(0);">Swa</a>
-
+                                <a href="javascript:void(0);" class="text-center dropdown-item" data-lang="en"
+                                    {{ session()->get('locale') == 'en' ? 'selected' : '' }}>ENG
+                                </a>
+                                <a href="javascript:void(0);" class="text-center dropdown-item" data-lang="sw"
+                                    {{ session()->get('locale') == 'sw' ? 'selected' : '' }}>SW
+                                </a>
+                                <a href="javascript:void(0);" class="text-center dropdown-item" data-lang="fr"
+                                    {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>FR
+                                </a>
                             </div>
                         </div>
                         <a href="{{ route('eservices') }}"
