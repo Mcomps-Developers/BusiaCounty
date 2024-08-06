@@ -24,7 +24,7 @@
                 @foreach ($projects as $item)
                     <div class="col-12 col-md-6 col-lg-4 isoCol business">
                         <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                            style="background-image: url(https://busia.mcomps.africa/assets/img/projects/covers/{{ $item->cover_image }});">
+                            style="background-image: url(http://dashboard.localhost/assets/img/projects/covers/{{ $item->cover_image }});">
 
                             <div class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                 <h3 class="mb-0 text-white">

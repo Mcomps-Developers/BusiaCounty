@@ -24,7 +24,7 @@
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
                 @if ($directorate->leader_photo)
-                    <img src="https://busia.mcomps.africa/assets/img/directors/{{ $directorate->leader_photo }}"
+                    <img src="http://dashboard.localhost/assets/img/directors/{{ $directorate->leader_photo }}"
                         class="img-fluid d-block w-100">
                 @else
                     <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">

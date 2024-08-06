@@ -27,7 +27,7 @@
                     <article class="mb-6 bg-white shadow ueEveColumn position-relative">
                         <div class="imgHolder position-relative">
                             <a href="{{ route('event.details',['slug'=>$item->slug,'reference'=>$item->reference]) }}">
-                                <img src="https://busia.mcomps.africa/assets/img/events/{{ $item->image }}"
+                                <img src="http://dashboard.localhost/assets/img/events/{{ $item->image }}"
                                     class="img-fluid d-block w-100">
                             </a>
                             <time

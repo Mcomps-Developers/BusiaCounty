@@ -15,7 +15,7 @@
                                 <a href="{{ route('events') }}">Events</a>
                             </li>
                             <li>
-                                <a href="{{ route('news.speeches') }}">Media</a>
+                                <a href="{{ route('news.speeches') }}">Speeches</a>
                             </li>
                             <li>
                                 <a href="{{ route('contact') }}">Contact</a>
@@ -156,7 +156,7 @@
         <div class="container">
             <p>&copy; {{ date('Y') }} <a href="javascript:void(0);">{{ config('app.name') }}</a>. All Rights
                 Reserved.
-                Powered by <a target="_/blank" href="https://mcomps.co.ke" style="color: white"><b>Mcomps</b></a>. <br
+                Powered by <a target="_/blank" href="https://mcomps.africa" style="color: white"><b>Mcomps</b></a>. <br
                     class="d-md-none"></p>
         </div>
     </footer>

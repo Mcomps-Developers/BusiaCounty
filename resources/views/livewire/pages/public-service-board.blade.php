@@ -43,14 +43,14 @@
                                         </span>
                                         <div class="descrWrap">
                                             <h4 class="mb-1 fontBase font-weight-normal">
-                                                <a href="https://busia.mcomps.africa/assets/documents/uploads/{{ $item->document }}" target="_/blank" style="text-transform: capitalize;">{{$item->title}}</a>
+                                                <a href="http://dashboard.localhost/assets/documents/uploads/{{ $item->document }}" target="_/blank" style="text-transform: capitalize;">{{$item->title}}</a>
                                             </h4>
                                             <strong class="d-block fileSize font-weight-normal">{{ date('M d, Y', strtotime($item->created_at)) }}</strong>
                                         </div>
                                     </div>
                                 </li>
                                 @endforeach
-                                
+
                             </ul>
                         </section>
                         <div class="px-6 pt-5 pb-8 mb-6 widget mb-lg-10 widgetHelp bg-lDark position-relative">

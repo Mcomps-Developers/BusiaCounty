@@ -24,7 +24,7 @@
             <header
                 class="pt-4 overflow-hidden bg-white shadow tmcbDescriptionBox d-lg-flex pt-lg-0 position-relative mb-7 mb-md-10 mb-lg-15">
                 <img class="img-fluid d-block w-100"
-                    src="https://busia.mcomps.africa/assets/img/about/governor/{{ $Governor->photo }}"></img>
+                    src="http://dashboard.localhost/assets/img/about/governor/{{ $Governor->photo }}"></img>
                 <div class="px-5 pt-6 pb-6 descrWrap flex-grow-1 px-xl-12 pt-xl-9 pb-xl-12">
                     <div class="row">
                         <div class="col-12 col-md-5">
@@ -92,7 +92,7 @@
                         <header class="fzMedium mb-9">
                             @if ($department->cover_image)
                                 <img class="alignHolder d-flex w-100 align-items-center"
-                                    src="https://busia.mcomps.africa/assets/img/departments/{{ $department->cover_image }}">
+                                    src="http://dashboard.localhost/assets/img/departments/{{ $department->cover_image }}">
                             @endif
                         </header>
 
@@ -142,7 +142,7 @@
                         <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
-                                    <img src="https://busia.mcomps.africa/assets/img/about/deputy-governor/{{$deputyGovernor->photo}}"
+                                    <img src="http://dashboard.localhost/assets/img/about/deputy-governor/{{$deputyGovernor->photo}}"
                                         class="img-fluid d-block w-100" height="255" width="255">
                                     <div class="mcssHolder">
                                         <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
@@ -196,7 +196,7 @@
                                 <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                     <div class="imgHolder position-relative">
                                         @if ($item->photo)
-                                            <img src="https://busia.mcomps.africa/assets/img/departments/chief_officer/{{ $item->photo }}"
+                                            <img src="http://dashboard.localhost/assets/img/departments/chief_officer/{{ $item->photo }}"
                                                 class="img-fluid d-block w-100">
                                         @else
                                             <img src="https://placehold.co/200x300" class="img-fluid d-block w-100">
@@ -225,7 +225,7 @@
                                 <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                     <div class="imgHolder position-relative">
                                         @if ($item->leader_photo)
-                                            <img src="https://busia.mcomps.africa/assets/img/directors/{{ $item->leader_photo }}"
+                                            <img src="http://dashboard.localhost/assets/img/directors/{{ $item->leader_photo }}"
                                                 class="img-fluid d-block w-100">
                                         @else
                                             <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">

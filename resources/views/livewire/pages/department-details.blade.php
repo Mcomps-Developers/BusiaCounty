@@ -30,7 +30,7 @@
 
                             @if ($department->cover_image)
                                 <img class="alignHolder d-flex w-100 align-items-center"
-                                    src="https://busia.mcomps.africa/assets/img/departments/{{ $department->cover_image }}">
+                                    src="http://dashboard.localhost/assets/img/departments/{{ $department->cover_image }}">
                             @endif
                         </header>
 
@@ -83,7 +83,7 @@
                             <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                 <div class="imgHolder position-relative">
                                     @if ($department->cecm_photo)
-                                        <img src="https://busia.mcomps.africa/assets/img/departments/cecm/{{ $department->cecm_photo }}"
+                                        <img src="http://dashboard.localhost/assets/img/departments/cecm/{{ $department->cecm_photo }}"
                                             class="img-fluid d-block w-100" alt="image description">
                                     @else
                                         <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
@@ -112,7 +112,7 @@
                                 <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                     <div class="imgHolder position-relative">
                                         @if ($item->photo)
-                                            <img src="https://busia.mcomps.africa/assets/img/departments/chief_officer/{{ $item->photo }}"
+                                            <img src="http://dashboard.localhost/assets/img/departments/chief_officer/{{ $item->photo }}"
                                                 class="img-fluid d-block w-100">
                                         @else
                                             <img src="https://placehold.co/200x300" class="img-fluid d-block w-100">
@@ -142,7 +142,7 @@
                                 <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                                     <div class="imgHolder position-relative">
                                         @if ($item->leader_photo)
-                                            <img src="https://busia.mcomps.africa/assets/img/directors/{{ $item->leader_photo }}"
+                                            <img src="http://dashboard.localhost/assets/img/directors/{{ $item->leader_photo }}"
                                                 class="img-fluid d-block w-100">
                                         @else
                                             <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">
@@ -202,7 +202,7 @@
                             @foreach ($projects as $item)
                                 <div class="col-12 col-md-6 col-lg-4 isoCol business">
                                     <div class="mb-6 echColumn echColumnii d-block w-100 bgCover position-relative"
-                                        style="background-image: url(https://busia.mcomps.africa/assets/img/projects/covers/{{ $item->cover_image }});">
+                                        style="background-image: url(http://dashboard.localhost/assets/img/projects/covers/{{ $item->cover_image }});">
                                         <div
                                             class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                             <h3 class="mb-0 text-white">

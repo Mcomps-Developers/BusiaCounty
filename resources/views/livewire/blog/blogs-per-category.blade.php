@@ -30,7 +30,7 @@
                         <div class="imgHolder position-relative">
                             <a
                                 href="{{ route('news.speeches.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">
-                                <img src="https://busia.mcomps.africa/assets/img/blogs/{{ $item->image }}"
+                                <img src="http://dashboard.localhost/assets/img/blogs/{{ $item->image }}"
                                     class="img-fluid w-100 d-block">
                             </a>
                             <time datetime="2011-01-12"
