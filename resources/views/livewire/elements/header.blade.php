@@ -120,7 +120,7 @@
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
                                         role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">Departments</a>
+                                        aria-expanded="false">Our Departments</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
                                             @foreach ($departments as $item)
