@@ -102,7 +102,7 @@ Route::middleware(ChangeLocale::class)->group(function () {
 
     Route::prefix('resources')->group(function () {
         Route::get('/county-treasury', CountyTreasury::class)->name('county-treasury');
-        Route::get('/downloads', Downloads::class)->name('downloads');
+        Route::get('/documents', Downloads::class)->name('downloads');
         Route::get('/events', Events::class)->name('events');
         Route::get('/event/{slug}/view/{reference}', EventDetails::class)->name('event.details');
         Route::get('/tenders', Tenders::class)->name('tenders');

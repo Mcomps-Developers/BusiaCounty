@@ -24,13 +24,13 @@
                     <div class="col-4">
                         <ul class="flex-wrap mb-0 text-white list-unstyled hdAlterLinksList d-flex justify-content-end">
                             <li>
+                                <a href="{{ route('jobs') }}">Residents</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Visitors</a>
+                            </li>
+                            <li>
                                 <a href="https://mail.busiacounty.go.ke">Staff Mail</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('jobs') }}">Careers</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">Report Corruption</a>
                             </li>
                         </ul>
                     </div>
@@ -49,10 +49,6 @@
                         class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
                         <div class="mt-2 collapse navbar-collapse pageMainNavCollapse mt-md-0" id="pageMainNavCollapse">
                             <ul class="navbar-nav mainNavigation">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/"
-                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Home</a>
-                                </li>
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
                                         role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -61,36 +57,15 @@
                                         <ul class="mb-0 list-unstyled hdDropdownList">
                                             <li><a class="dropdown-item" href="{{ route('about') }}">History of Busia
                                                     County</a></li>
-                                            <li class="dropdown-submenu">
-                                                <a href="javascript:void(0);"
-                                                    class="dropdown-item dropdown-toggle dropIcn" role="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">County Structure</a>
-                                                <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
-                                                    <ul class="mb-0 list-unstyled hdDropdownList">
-                                                        <li><a class="dropdown-item"
-                                                                href="{{ route('governor') }}">Governorship</a></li>
-                                                        {{-- <li><a class="dropdown-item"
-                                                                href="{{ route('deputy.governor') }}">Deputy
-                                                                Governor</a></li> --}}
-                                                        <li><a class="dropdown-item"
-                                                                href="{{ route('public.service') }}">County Public
-                                                                Service Board</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="{{ route('secretary') }}">County Secretary</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="{{ route('executive') }}">The
-                                                                Executive</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                                href="{{ route('chief.officers') }}">Chief
-                                                                Officers</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="{{ route('directors') }}">Directors</a></li>
-
-                                                    </ul>
-                                                </div>
+                                            <li><a class="dropdown-item" href="{{ route('about') }}">Explore Busia
+                                                    County</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('about') }}">Invest in Busia
+                                                    County</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('public.service') }}">County
+                                                    Public
+                                                    Service Board</a>
                                             </li>
+
                                             <li class="dropdown-submenu">
                                                 <a href="javascript:void(0);"
                                                     class="dropdown-item dropdown-toggle dropIcn" role="button"
@@ -106,13 +81,13 @@
                                                     </ul>
                                                 </div>
                                             </li>
+                                            <li><a class="dropdown-item" target="_/blank"
+                                                    href="https://busiaassembly.go.ke/">County Assembly</a>
+                                            </li>
                                             <li><a class="dropdown-item"
                                                     href="{{ route('subcounties') }}">Sub-Counties</a>
                                             </li>
                                             <li><a class="dropdown-item" href="{{ route('wards') }}">Wards</a>
-                                            </li>
-                                            <li><a class="dropdown-item" target="_/blank"
-                                                    href="https://busiaassembly.go.ke/">County Assembly</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -120,7 +95,39 @@
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
                                         role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">Our Departments</a>
+                                        aria-expanded="false">Leadership</a>
+                                    <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
+                                        <ul class="mb-0 list-unstyled hdDropdownList">
+                                            <li><a class="dropdown-item" href="{{ route('governor') }}">Office Of The
+                                                    Governor</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="{{ route('deputy.governor') }}">Office
+                                                    Of The
+                                                    Deputy Governor</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="{{ route('secretary') }}">Office Of The
+                                                    County
+                                                    Secretary</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="{{ route('secretary') }}">Office Of The
+                                                    County
+                                                    Attorney</a>
+                                            </li>
+
+                                            <li><a class="dropdown-item" href="{{ route('executive') }}">County
+                                                    Executives</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="{{ route('chief.officers') }}">Chief
+                                                    Officers</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('directors') }}">Directors</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown ddohOpener">
+                                    <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Departments</a>
                                     <div class="dropdown-menu hdMainDropdown desktopDropOnHover">
                                         <ul class="mb-0 list-unstyled hdDropdownList">
                                             @foreach ($departments as $item)
@@ -134,7 +141,8 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('projects') }}"
-                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Projects</a>
+                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Our
+                                        Projects</a>
                                 </li>
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
@@ -159,7 +167,7 @@
                                                 </li>
                                             @endforeach
                                             <li><a class="dropdown-item"
-                                                    href="{{ route('downloads') }}">Downloads</a>
+                                                    href="{{ route('downloads') }}">Documents</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -204,23 +212,6 @@
                         </form>
                     </div>
                     <div class="hdRighterWrap d-flex align-items-center justify-content-end">
-                        <div class="dropdown hdLangDropdown ddohOpener d-none d-lg-block">
-                            <a class="align-top d-inline-block dropdown-toggle dropIcn" href="javascript:void(0);"
-                                role="button" id="hdLanguagedropdown" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">Eng</a>
-                            <div class="p-0 overflow-hidden rounded-lg dropdown-menu dropdown-menu-right desktopDropOnHover"
-                                aria-labelledby="hdLanguagedropdown">
-                                <a href="javascript:void(0);" class="text-center dropdown-item" data-lang="en"
-                                    {{ session()->get('locale') == 'en' ? 'selected' : '' }}>ENG
-                                </a>
-                                <a href="javascript:void(0);" class="text-center dropdown-item" data-lang="sw"
-                                    {{ session()->get('locale') == 'sw' ? 'selected' : '' }}>SW
-                                </a>
-                                <a href="javascript:void(0);" class="text-center dropdown-item" data-lang="fr"
-                                    {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>FR
-                                </a>
-                            </div>
-                        </div>
                         <a href="{{ route('eservices') }}"
                             class="p-0 ml-3 border-0 btn btn-outline-secondary bdrWidthAlter ml-xl-6 btnHd d-none d-lg-block text-capitalize position-relative"
                             data-hover="E-Services Portal">
