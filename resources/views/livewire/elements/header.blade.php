@@ -49,6 +49,10 @@
                         class="hdNavWrap flex-grow-1 d-flex align-items-center justify-content-end justify-content-lg-start">
                         <div class="mt-2 collapse navbar-collapse pageMainNavCollapse mt-md-0" id="pageMainNavCollapse">
                             <ul class="navbar-nav mainNavigation">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/"
+                                        onclick="event.preventDefault(); window.location.href = this.getAttribute('href');">Home</a>
+                                </li>
                                 <li class="nav-item dropdown ddohOpener">
                                     <a class="nav-link dropdown-toggle dropIcn" href="javascript:void(0);"
                                         role="button" data-toggle="dropdown" aria-haspopup="true"
