@@ -23,6 +23,7 @@ use App\Livewire\Pages\ChiefOfficers;
 use App\Livewire\Pages\Contact;
 use App\Livewire\Pages\CountyRevenueBoard;
 use App\Livewire\Pages\CountySecretariat;
+use App\Livewire\Pages\CountyTreasury;
 use App\Livewire\Pages\DepartmentDetails;
 use App\Livewire\Pages\Departments;
 use App\Livewire\Pages\DeputyGovernor;
@@ -87,7 +88,7 @@ Route::prefix('/about')->group(function () {
     Route::get('public-service', PublicServiceBoard::class)->name('public.service');
     Route::get('county-revenue-board', CountyRevenueBoard::class)->name('crb');
 
-    Route::get('/constituencies', Subcounties::class)->name('subcounties');
+    Route::get('/sub-counties', Subcounties::class)->name('subcounties');
     Route::get('/wards', SubcountyDetails::class)->name('wards');
 
     Route::prefix('/municipality')->group(function () {
@@ -97,6 +98,7 @@ Route::prefix('/about')->group(function () {
 
 
 Route::prefix('resources')->group(function () {
+    Route::get('/county-treasury', CountyTreasury::class)->name('county-treasury');
     Route::get('/downloads', Downloads::class)->name('downloads');
     Route::get('/events', Events::class)->name('events');
     Route::get('/event/{slug}/view/{reference}', EventDetails::class)->name('event.details');

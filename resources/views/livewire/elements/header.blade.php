@@ -107,7 +107,7 @@
                                                 </div>
                                             </li>
                                             <li><a class="dropdown-item"
-                                                    href="{{ route('subcounties') }}">Constituencies</a>
+                                                    href="{{ route('subcounties') }}">Sub-Counties</a>
                                             </li>
                                             <li><a class="dropdown-item" href="{{ route('wards') }}">Wards</a>
                                             </li>
