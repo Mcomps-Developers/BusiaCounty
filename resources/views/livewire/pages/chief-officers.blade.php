@@ -31,7 +31,7 @@
                         <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                             <div class="imgHolder position-relative">
                                 @if ($item->photo)
-                                    <img src="http://dashboard.localhost/assets/img/departments/chief_officer/{{ $item->photo }}"
+                                    <img src="assets/img/departments/chief_officer/{{ $item->photo }}"
                                         class="img-fluid d-block w-100">
                                 @else
                                     <img src="https://placehold.co/200x300" class="img-fluid d-block w-100">

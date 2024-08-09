@@ -29,7 +29,7 @@
                 {{-- <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
-                            <img src="http://dashboard.localhost/assets/img/about/governor/{{$governor->photo}}"
+                            <img src="assets/img/about/governor/{{$governor->photo}}"
                                 class="img-fluid d-block w-100" height="255" width="255">
                             <div class="mcssHolder">
                                 <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
@@ -82,7 +82,7 @@
                 {{-- <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
-                            <img src="http://dashboard.localhost/assets/img/about/deputy-governor/{{$deputyGovernor->photo}}"
+                            <img src="assets/img/about/deputy-governor/{{$deputyGovernor->photo}}"
                                 class="img-fluid d-block w-100" height="255" width="255">
                             <div class="mcssHolder">
                                 <ul class="p-0 m-0 overflow-hidden bg-white mcssList list-unstyled rounded-pill d-flex">
@@ -136,7 +136,7 @@
                     <article class="mx-auto mb-6 bg-white shadow mccColumn mx-sm-0">
                         <div class="imgHolder position-relative">
                             @if ($item->cecm_photo)
-                            <img src="http://dashboard.localhost/assets/img/departments/cecm/{{$item->cecm_photo}}"
+                            <img src="assets/img/departments/cecm/{{$item->cecm_photo}}"
                                 class="img-fluid d-block w-100" alt="image description">
                             @else
                             <img src="https://placehold.co/295x295" class="img-fluid d-block w-100">

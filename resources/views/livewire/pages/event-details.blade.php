@@ -29,7 +29,7 @@
                                     href="javascript:void(0);">{{$event->category->name}}</a></strong>
                             <h2 class="mb-9">{{$event->title}}</h2>
                             <div class="imgHolder">
-                                <img src="http://dashboard.localhost/assets/img/events/{{ $event->image }}"
+                                <img src="assets/img/events/{{ $event->image }}"
                                     class="img-fluid w-100">
                             </div>
                             <address class="mb-0 dtlhDress fontAlter">
@@ -77,9 +77,9 @@
                                     <ul class="flex-wrap list-unstyled d-flex scgGalleryList">
                                         @foreach (explode(',', $event->gallery) as $item)
                                         <li>
-                                            <a href="http://dashboard.localhost/assets/img/events/gallery{{ $item }}"
+                                            <a href="assets/img/events/gallery{{ $item }}"
                                                 class="lightbox" data-fancybox="true">
-                                                <img src="http://dashboard.localhost/assets/img/events/gallery{{ $item }}"
+                                                <img src="assets/img/events/gallery{{ $item }}"
                                                     class="img-fluid" alt="image description">
                                             </a>
                                         </li>
@@ -207,7 +207,7 @@
                                     @foreach ($relatedEvents as $item)
                                     <li>
                                         <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                            <img src="http://dashboard.localhost/assets/img/events/{{ $item->image }}"
+                                            <img src="assets/img/events/{{ $item->image }}"
                                                 class="img-fluid">
                                         </div>
                                         <div class="descrWrap">

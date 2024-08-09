@@ -31,7 +31,7 @@
                         class="mx-auto mb-6 text-center bg-white shadow egdColumn position-relative w-100 mb-lg-12">
                         <div class="mb-5 imgHolder position-relative">
                             @if ($item->cover_image)
-                            <img src="http://dashboard.localhost/assets/img/departments/{{$item->cover_image}}"
+                            <img src="assets/img/departments/{{$item->cover_image}}"
                                 class="img-fluid w-100">
                             @else
                             <img src="https://placehold.co/403x220" class="img-fluid w-100">

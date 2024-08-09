@@ -35,7 +35,7 @@
                                             </span>
                                             <div class="descrWrap">
                                                 <h2 class="fwSemiBold">
-                                                    <a href="http://dashboard.localhost/assets/documents/uploads/{{ $item->document }}"
+                                                    <a href="assets/documents/uploads/{{ $item->document }}"
                                                         style="text-transform: capitalize"
                                                         target="_/blank">{{ $item->title }}</a>
                                                 </h2>
@@ -47,7 +47,7 @@
                                                     </a></strong>
                                             </div>
                                         </div>
-                                        <a href="http://dashboard.localhost/assets/documents/uploads/{{ $item->document }}"
+                                        <a href="assets/documents/uploads/{{ $item->document }}"
                                             class="btn btn-outline-light btnAlterDark btnNoOver btn-sm"
                                             target="_/blank"><i class="fa fa-cloud-download"></i> View Document</a>
                                     </div>

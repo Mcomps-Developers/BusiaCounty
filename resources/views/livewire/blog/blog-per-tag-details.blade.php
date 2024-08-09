@@ -29,7 +29,7 @@
                             <div class="nrcImageSlider">
                                 <div>
                                     <div class="imgWrap">
-                                        <img src="http://dashboard.localhost/assets/img/blogs/{{ $blog->image }}"
+                                        <img src="assets/img/blogs/{{ $blog->image }}"
                                             class="img-fluid w-100" height="426" width="873">
                                     </div>
                                 </div>
@@ -172,7 +172,7 @@
                                     @foreach ($relatedBlogs->where('id','!=',$blog->id) as $item)
                                     <li>
                                         <div class="flex-shrink-0 mt-1 mr-4 imgHolder">
-                                            <img src="http://dashboard.localhost/assets/img/blogs/{{ $item->image }}"
+                                            <img src="assets/img/blogs/{{ $item->image }}"
                                                 class="img-fluid">
                                         </div>
                                         <div class="descrWrap">

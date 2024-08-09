@@ -61,9 +61,9 @@
                                         <ul class="mb-0 list-unstyled hdDropdownList">
                                             <li><a class="dropdown-item" href="{{ route('about') }}">History of Busia
                                                     County</a></li>
-                                            <li><a class="dropdown-item" href="{{ route('about') }}">Explore Busia
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Explore Busia
                                                     County</a></li>
-                                            <li><a class="dropdown-item" href="{{ route('about') }}">Invest in Busia
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Invest in Busia
                                                     County</a></li>
                                             <li><a class="dropdown-item" href="{{ route('public.service') }}">County
                                                     Public

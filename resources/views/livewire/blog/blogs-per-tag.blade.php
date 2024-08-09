@@ -31,7 +31,7 @@
                         <div class="imgHolder position-relative">
                             <a
                                 href="{{ route('blog.tag.details', ['tag'=>$tag, 'slug' => $item->slug, 'reference' => $item->reference]) }}">
-                                <img src="http://dashboard.localhost/assets/img/blogs/{{ $item->image }}"
+                                <img src="assets/img/blogs/{{ $item->image }}"
                                     class="img-fluid w-100 d-block">
                             </a>
                             <time datetime="2011-01-12"

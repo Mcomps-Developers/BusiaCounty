@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <span class="ibBgImage bgCover position-absolute"
-                        style="background-image: url(http://dashboard.localhost/assets/img/sliders/{{ $item->image }}); opacity:100%;"></span>
+                        style="background-image: url({{ @asset('assets/img/sliders') }}/{{ $item->image }}); opacity:100%;"></span>
                 </article>
             </div>
         @endforeach
@@ -246,8 +246,8 @@
                     <div class="mb-20 imgTwoImageHolder position-relative mt-7 mt-md-0 mb-md-0">
                         <span class="img img1 position-relative d-block">
                             @if ($note->photo)
-                                <img src="http://dashboard.localhost/assets/img/governors/{{ $note->photo }}"
-                                    class="img-fluid" height="700" width="500">
+                                <img src="assets/img/governors/{{ $note->photo }}" class="img-fluid" height="700"
+                                    width="500">
                             @else
                                 <img src="https://placehold.co/600x650" class="img-fluid">
                             @endif
@@ -341,7 +341,7 @@
                                         <div class="imgHolder position-relative">
                                             <a
                                                 href="{{ route('event.details', ['slug' => $item->slug, 'reference' => $item->reference]) }}">
-                                                <img src="http://dashboard.localhost/assets/img/events/{{ $item->image }}"
+                                                <img src="assets/img/events/{{ $item->image }}"
                                                     class="img-fluid d-block w-100">
                                             </a>
                                             <time
@@ -352,7 +352,7 @@
                                                 <span
                                                     class="px-3 py-2 d-block">{{ date(
                                                         'M
-                                                                                                                                                                                                                                                                                                                                                                        Y',
+                                                                                                                                                                                                                                                                                                                                                                                                                            Y',
                                                         strtotime($item->start_date_and_time),
                                                     ) }}</span>
                                                 <span
@@ -412,7 +412,7 @@
                                 @foreach ($recentDocuments as $item)
                                     <li>
                                         <h3 class="mb-1 font-weight-normal cdTitle">
-                                            <a href="http://dashboard.localhost/assets/documents/uploads/{{ $item->document }}"
+                                            <a href="assets/documents/uploads/{{ $item->document }}"
                                                 target="_/blank">
                                                 <i class="fa fa-file-pdf f-2x"></i>{{ $item->title }}</a>
                                         </h3>
@@ -454,7 +454,7 @@
                                 <article class="mb-6 bg-white shadow npbColumn">
                                     <div class="imgHolder position-relative">
                                         <a href="javascript:void(0);">
-                                            <img src="http://dashboard.localhost/assets/img/blogs/{{ $item->image }}"
+                                            <img src="assets/img/blogs/{{ $item->image }}"
                                                 class="img-fluid w-100 d-block">
                                         </a>
                                         <time datetime="2011-01-12"
@@ -497,7 +497,7 @@
                         <div>
                             <div class="col-12">
                                 <div class="echColumn d-block w-100 bgCover position-relative"
-                                    style="background-image: url(http://dashboard.localhost/assets/img/projects/covers/{{ $item->cover_image }});">
+                                    style="background-image: url(assets/img/projects/covers/{{ $item->cover_image }});">
                                     <div
                                         class="px-3 py-2 text-white echcCaptionWrap position-absolute w-100 px-sm-5 py-sm-4">
                                         <h3 class="mb-0 text-white">
